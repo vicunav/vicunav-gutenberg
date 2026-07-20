@@ -1,0 +1,423 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "color": {
+      "custom": false,
+      "customDuotone": false,
+      "customGradient": false,
+      "defaultDuotone": false,
+      "defaultGradients": false,
+      "defaultPalette": false,
+      "palette": [
+        {
+          "color": "#090909",
+          "name": "Primario",
+          "slug": "primary"
+        },
+        {
+          "color": "#F7F0ED",
+          "name": "Secundario",
+          "slug": "secondary"
+        },
+        {
+          "color": "#222222",
+          "name": "Texto",
+          "slug": "text"
+        },
+        {
+          "color": "#444444",
+          "name": "Acento",
+          "slug": "accent"
+        },
+        {
+          "color": "#FFFCFB",
+          "name": "Neutral 100",
+          "slug": "neutral-100"
+        },
+        {
+          "color": "#F7F3EE",
+          "name": "Neutral 200",
+          "slug": "neutral-200"
+        },
+        {
+          "color": "#F0E8DE",
+          "name": "Neutral 300",
+          "slug": "neutral-300"
+        },
+        {
+          "color": "#DFC4A5",
+          "name": "Neutral 400",
+          "slug": "neutral-400"
+        },
+        {
+          "color": "#CDAF8C",
+          "name": "Neutral 500",
+          "slug": "neutral-500"
+        },
+        {
+          "color": "#B88D5C",
+          "name": "Neutral 600",
+          "slug": "neutral-600"
+        },
+        {
+          "color": "#937049",
+          "name": "Neutral 700",
+          "slug": "neutral-700"
+        },
+        {
+          "color": "#493824",
+          "name": "Neutral 800",
+          "slug": "neutral-800"
+        },
+        {
+          "color": "#372A1B",
+          "name": "Neutral 900",
+          "slug": "neutral-900"
+        }
+      ]
+    },
+    "layout": {
+      "contentSize": "800px",
+      "wideSize": "1280px"
+    },
+    "spacing": {
+      "blockGap": true,
+      "customSpacingSize": false,
+      "defaultSpacingSizes": false,
+      "margin": true,
+      "padding": true,
+      "spacingSizes": [
+        {
+          "name": "Sin espacio",
+          "size": "0",
+          "slug": "0"
+        },
+        {
+          "name": "Extra pequeño",
+          "size": "4px",
+          "slug": "10"
+        },
+        {
+          "name": "Pequeño",
+          "size": "8px",
+          "slug": "20"
+        },
+        {
+          "name": "Compacto",
+          "size": "12px",
+          "slug": "30"
+        },
+        {
+          "name": "Base",
+          "size": "16px",
+          "slug": "40"
+        },
+        {
+          "name": "Medio",
+          "size": "24px",
+          "slug": "50"
+        },
+        {
+          "name": "Amplio",
+          "size": "32px",
+          "slug": "60"
+        },
+        {
+          "name": "Grande",
+          "size": "48px",
+          "slug": "70"
+        },
+        {
+          "name": "Extra grande",
+          "size": "64px",
+          "slug": "80"
+        },
+        {
+          "name": "Sección",
+          "size": "96px",
+          "slug": "90"
+        },
+        {
+          "name": "Sección amplia",
+          "size": "128px",
+          "slug": "100"
+        }
+      ],
+      "units": [
+        "px",
+        "em",
+        "rem",
+        "%",
+        "vw",
+        "vh"
+      ]
+    },
+    "typography": {
+      "customFontSize": false,
+      "defaultFontSizes": false,
+      "dropCap": false,
+      "fluid": false,
+      "fontFamilies": [
+        {
+          "fontFace": [
+            {
+              "fontFamily": "Red Hat Display",
+              "fontStyle": "normal",
+              "fontWeight": "300 900",
+              "src": [
+                "file:./assets/fonts/red-hat-display/RedHatDisplay-Variable.ttf"
+              ]
+            },
+            {
+              "fontFamily": "Red Hat Display",
+              "fontStyle": "italic",
+              "fontWeight": "300 900",
+              "src": [
+                "file:./assets/fonts/red-hat-display/RedHatDisplay-Italic-Variable.ttf"
+              ]
+            }
+          ],
+          "fontFamily": "\"Red Hat Display\", sans-serif",
+          "name": "Red Hat Display",
+          "slug": "body"
+        },
+        {
+          "fontFace": [
+            {
+              "fontFamily": "Bodoni Moda",
+              "fontStyle": "normal",
+              "fontWeight": "400 900",
+              "src": [
+                "file:./assets/fonts/bodoni-moda/BodoniModa-Variable.ttf"
+              ]
+            },
+            {
+              "fontFamily": "Bodoni Moda",
+              "fontStyle": "italic",
+              "fontWeight": "400 900",
+              "src": [
+                "file:./assets/fonts/bodoni-moda/BodoniModa-Italic-Variable.ttf"
+              ]
+            }
+          ],
+          "fontFamily": "\"Bodoni Moda\", serif",
+          "name": "Bodoni Moda",
+          "slug": "heading"
+        },
+        {
+          "fontFace": [
+            {
+              "fontFamily": "Gloock",
+              "fontStyle": "normal",
+              "fontWeight": "400",
+              "src": [
+                "file:./assets/fonts/gloock/Gloock-Regular.ttf"
+              ]
+            }
+          ],
+          "fontFamily": "Gloock, serif",
+          "name": "Gloock",
+          "slug": "accent-serif"
+        },
+        {
+          "fontFace": [
+            {
+              "fontFamily": "Caveat",
+              "fontStyle": "normal",
+              "fontWeight": "400 700",
+              "src": [
+                "file:./assets/fonts/caveat/Caveat-Variable.ttf"
+              ]
+            }
+          ],
+          "fontFamily": "Caveat, cursive",
+          "name": "Caveat",
+          "slug": "handwritten"
+        }
+      ],
+      "fontSizes": [
+        {
+          "name": "Legal",
+          "size": "0.694rem",
+          "slug": "legal"
+        },
+        {
+          "name": "Eyebrow",
+          "size": "0.833rem",
+          "slug": "eyebrow"
+        },
+        {
+          "name": "Cuerpo",
+          "size": "1rem",
+          "slug": "body"
+        },
+        {
+          "name": "Título 6",
+          "size": "1.2rem",
+          "slug": "h6"
+        },
+        {
+          "name": "Título 5",
+          "size": "1.44rem",
+          "slug": "h5"
+        },
+        {
+          "name": "Título 4",
+          "size": "1.728rem",
+          "slug": "h4"
+        },
+        {
+          "name": "Título 3",
+          "size": "2.074rem",
+          "slug": "h3"
+        },
+        {
+          "name": "Título 2",
+          "size": "2.488rem",
+          "slug": "h2"
+        },
+        {
+          "name": "Título 1",
+          "size": "2.986rem",
+          "slug": "h1"
+        },
+        {
+          "name": "Display",
+          "size": "3rem",
+          "slug": "display"
+        }
+      ],
+      "fontStyle": true,
+      "fontWeight": true,
+      "letterSpacing": true,
+      "lineHeight": true,
+      "textDecoration": true,
+      "textTransform": true
+    },
+    "useRootPaddingAwareAlignments": true
+  },
+  "styles": {
+    "color": {
+      "background": "var:preset|color|neutral-100",
+      "text": "var:preset|color|text"
+    },
+    "elements": {
+      "button": {
+        "border": {
+          "radius": "0"
+        },
+        "color": {
+          "background": "var:preset|color|neutral-900",
+          "text": "var:preset|color|neutral-100"
+        },
+        "spacing": {
+          "padding": {
+            "bottom": "var:preset|spacing|40",
+            "left": "var:preset|spacing|50",
+            "right": "var:preset|spacing|50",
+            "top": "var:preset|spacing|40"
+          }
+        },
+        "typography": {
+          "fontFamily": "var:preset|font-family|body",
+          "fontSize": "var:preset|font-size|body",
+          "fontWeight": "300",
+          "letterSpacing": "1px",
+          "lineHeight": "1",
+          "textDecoration": "none",
+          "textTransform": "uppercase"
+        }
+      },
+      "h1": {
+        "typography": {
+          "fontFamily": "var:preset|font-family|heading",
+          "fontSize": "var:preset|font-size|h1",
+          "fontWeight": "700",
+          "lineHeight": "1.1"
+        }
+      },
+      "h2": {
+        "typography": {
+          "fontFamily": "var:preset|font-family|heading",
+          "fontSize": "var:preset|font-size|h2",
+          "fontWeight": "600",
+          "lineHeight": "1.1"
+        }
+      },
+      "h3": {
+        "typography": {
+          "fontFamily": "var:preset|font-family|heading",
+          "fontSize": "var:preset|font-size|h3",
+          "fontWeight": "500",
+          "lineHeight": "1.2"
+        }
+      },
+      "h4": {
+        "typography": {
+          "fontFamily": "var:preset|font-family|heading",
+          "fontSize": "var:preset|font-size|h4",
+          "fontWeight": "500",
+          "lineHeight": "1.2"
+        }
+      },
+      "h5": {
+        "typography": {
+          "fontFamily": "var:preset|font-family|accent-serif",
+          "fontSize": "var:preset|font-size|h5",
+          "fontWeight": "400",
+          "lineHeight": "1.2"
+        }
+      },
+      "h6": {
+        "typography": {
+          "fontFamily": "var:preset|font-family|heading",
+          "fontSize": "var:preset|font-size|h6",
+          "fontWeight": "500",
+          "lineHeight": "1.2"
+        }
+      },
+      "link": {
+        "color": {
+          "text": "var:preset|color|neutral-600"
+        },
+        "typography": {
+          "textDecoration": "none"
+        },
+        ":hover": {
+          "color": {
+            "text": "var:preset|color|neutral-700"
+          }
+        }
+      }
+    },
+    "spacing": {
+      "blockGap": "var:preset|spacing|50",
+      "padding": {
+        "bottom": "0",
+        "left": "0",
+        "right": "0",
+        "top": "0"
+      }
+    },
+    "typography": {
+      "fontFamily": "var:preset|font-family|body",
+      "fontSize": "var:preset|font-size|body",
+      "fontWeight": "500",
+      "lineHeight": "1.6"
+    }
+  },
+  "templateParts": [
+    {
+      "area": "header",
+      "name": "header",
+      "title": "Cabecera"
+    },
+    {
+      "area": "footer",
+      "name": "footer",
+      "title": "Pie de página"
+    }
+  ]
+}
