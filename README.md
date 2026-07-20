@@ -1,0 +1,70 @@
+# Vicunav Gutenberg
+
+Theme de bloques nativo para migrar el homepage de Vicunav desde Elementor a Gutenberg Full Site Editing.
+
+La Fase 1 es una reproducción fiel del sitio existente. No incluye rediseño, cambios de copy ni ampliación funcional. Las decisiones visuales nuevas pertenecen a fases posteriores.
+
+## Estado
+
+Baseline comprobada el 20 de julio de 2026:
+
+- WordPress local: `7.0.2`.
+- PHP local: `8.2`.
+- Compatibilidad declarada: WordPress `6.7+` y PHP `8.0+`.
+- Completado: `theme.json`, cabecera y pie de página.
+- Pendiente: patterns del homepage, `front-page.html`, QA visual y preparación de release.
+
+## Principios
+
+1. `theme.json` es la fuente única de tokens visuales.
+2. Se prefieren bloques core y patterns registrados antes que bloques custom.
+3. Cada sección del homepage es una unidad trazable y verificable.
+4. El copy, el orden y la jerarquía definidos para la Fase 1 no se reinterpretan.
+5. Accesibilidad, rendimiento y seguridad son criterios de aceptación, no tareas posteriores.
+6. Una implementación no está terminada sin evidencia de QA.
+
+Las reglas completas están en [AGENTS.md](AGENTS.md) y en la [Constitución del proyecto](docs/CONSTITUTION.md).
+
+## Desarrollo local
+
+La instalación LocalWP consume este repositorio mediante un enlace simbólico:
+
+```text
+/Users/vicunav/Local Sites/vicunav-gutenberg/app/public/wp-content/themes/vicunav
+  → /Users/vicunav/Documents/Codex/vicunav/vicunav-gutenberg
+```
+
+Sitio: <https://vicunav-gutenberg.local/>
+
+Los cambios guardados en el repositorio quedan disponibles inmediatamente en LocalWP. Antes de probar PHP o WP-CLI, revisar las reglas de socket MySQL de `AGENTS.md`.
+
+## Estructura
+
+```text
+assets/       Fuentes, imágenes y otros recursos locales
+parts/        Template parts
+patterns/     Una sección registrada por archivo (pendiente)
+templates/    Templates FSE
+docs/         Arquitectura, SDD, QA y operación
+.github/      Plantillas de issues y pull requests
+theme.json    Tokens, settings y estilos globales
+style.css     Metadatos del theme
+```
+
+## Documentación
+
+Empezar por [docs/README.md](docs/README.md). Las rutas principales son:
+
+- [Arquitectura](docs/ARCHITECTURE.md)
+- [Spec-Driven Development](docs/SPEC_DRIVEN_DEVELOPMENT.md)
+- [Workflow de GitHub](docs/WORKFLOW.md)
+- [Estrategia de QA](docs/QA.md)
+- [Rendimiento](docs/PERFORMANCE.md)
+- [Accesibilidad](docs/ACCESSIBILITY.md)
+- [Seguridad](SECURITY.md)
+- [Releases](docs/RELEASES.md)
+- [Referencias oficiales](docs/REFERENCES.md)
+
+## Contribuir
+
+Todo cambio comienza en un issue preparado y termina en un pull request trazable. Consultar [CONTRIBUTING.md](CONTRIBUTING.md) antes de modificar el theme.
