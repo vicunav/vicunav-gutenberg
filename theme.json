@@ -10,6 +10,13 @@
       "defaultDuotone": false,
       "defaultGradients": false,
       "defaultPalette": false,
+      "gradients": [
+        {
+          "gradient": "radial-gradient(var(--wp--preset--color--neutral-100) 0%, color-mix(in srgb, var(--wp--preset--color--neutral-100) 10%, transparent) 100%)",
+          "name": "Lectura del Hero",
+          "slug": "hero-readability"
+        }
+      ],
       "palette": [
         {
           "color": "#090909",
@@ -84,6 +91,13 @@
         "flagWidth": "21px",
         "logoWidth": "145px",
         "logoWidthMobile": "160px"
+      },
+      "hero": {
+        "minHeight": "clamp(35.663rem, 35.157rem + 2.16vw, 37.063rem)"
+      },
+      "typography": {
+        "leadLineHeight": "clamp(1.225rem, 0.988rem + 1.014vw, 1.9rem)",
+        "trackingWide": "1px"
       }
     },
     "layout": {
@@ -277,6 +291,11 @@
           "slug": "h6"
         },
         {
+          "name": "Texto destacado",
+          "size": "clamp(0.875rem, 0.761rem + 0.488vw, 1.2rem)",
+          "slug": "lead"
+        },
+        {
           "name": "Título 5",
           "size": "1.44rem",
           "slug": "h5"
@@ -298,7 +317,7 @@
         },
         {
           "name": "Título 1",
-          "size": "2.986rem",
+          "size": "clamp(2rem, 1.652rem + 1.484vw, 2.986rem)",
           "slug": "h1"
         },
         {
@@ -324,7 +343,7 @@
     "elements": {
       "button": {
         "border": {
-          "radius": "0"
+          "radius": "6px"
         },
         "color": {
           "background": "var:preset|color|neutral-900",
@@ -341,19 +360,19 @@
         "typography": {
           "fontFamily": "var:preset|font-family|body",
           "fontSize": "var:preset|font-size|body",
-          "fontWeight": "300",
+          "fontWeight": "500",
           "letterSpacing": "1px",
           "lineHeight": "1",
           "textDecoration": "none",
-          "textTransform": "uppercase"
+          "textTransform": "none"
         }
       },
       "h1": {
         "typography": {
           "fontFamily": "var:preset|font-family|heading",
           "fontSize": "var:preset|font-size|h1",
-          "fontWeight": "700",
-          "lineHeight": "1.1"
+          "fontWeight": "400",
+          "lineHeight": "clamp(2.4rem, 2.189rem + 0.901vw, 3rem)"
         }
       },
       "h2": {

@@ -109,8 +109,11 @@ Entorno: WordPress 7.0.2, PHP 8.2.29 y theme `vicunav` activo en LocalWP
 | 390×844 | Hero ≈570,6 px; H1 32/38,4 px; cuerpo 14/19,6 px; CTA 48 px | Hero ≈570,9 px; H1 32,2/38,5 px; cuerpo 14,1/19,8 px; CTA 48 px | Pass |
 | 768×1024 | Composición responsive intermedia | Hero ≈579,1 px; sin overflow; H1 37,8 px; cuerpo 15,9 px | Pass funcional |
 | 1440×900 | Hero ≈592,7 px; H1 48/48 px; cuerpo 19/30,4 px; CTA 48 px | Hero ≈593 px; H1 47,8/48 px; cuerpo 19,2/30,4 px; CTA 48 px | Pass |
+| Overlay de lectura | Gradiente radial `neutral-100` → `neutral-100` al 10 % | Preset `hero-readability` de `theme.json` con la misma composición | Pass |
 
 Se compararon encuadre, posición vertical, saltos de línea, familias, peso, color y dimensiones del CTA. El asset local es la misma imagen optimizada servida por la referencia, sin hotlink. La cabecera y el footer pertenecen a su baseline previa y no alteran el veredicto del pattern.
+
+La inspección computada de producción confirmó dos capas superpuestas: un gradiente radial desde `neutral-100` hasta transparente y una capa `neutral-100` al 10 %. El preset local combina ambas en un solo gradiente equivalente; el pattern consume ese preset y solo tres variables semánticas para altura e interlineado/tracking. Los demás tamaños y espacios reutilizan la escala global.
 
 ### Ensamblaje incremental en `/`
 
