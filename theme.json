@@ -143,6 +143,11 @@
           "name": "Sección amplia",
           "size": "128px",
           "slug": "100"
+        },
+        {
+          "name": "Margen del sitio",
+          "size": "clamp(1.25rem, 5vw, 5.5rem)",
+          "slug": "site-gutter"
         }
       ],
       "units": [
