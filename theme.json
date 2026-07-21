@@ -156,6 +156,11 @@
           "name": "Margen del sitio",
           "size": "clamp(1.25rem, 5vw, 5.5rem)",
           "slug": "site-gutter"
+        },
+        {
+          "name": "Margen del Hero",
+          "size": "42px",
+          "slug": "hero-gutter"
         }
       ],
       "units": [

@@ -49,7 +49,7 @@ Los comandos PHP que carguen WordPress deben usar el runtime de LocalWP y el soc
 | AC-07 | #8 | Pattern debería sentirse | Lint, CTA y captura | Pendiente |
 | AC-08 | #9 | Pattern conoce a Mario | Lint, bio, alt/assets y captura | Pendiente |
 | AC-09 | #10 | Pattern CTA final | Lint, teclado, destino y captura | Pendiente |
-| AC-10 | #11 | Template completo | Parse, render, HTTP 200 y Site Editor | Pendiente |
+| AC-10 | #3/#11 | Template incremental y cierre del ensamblaje | Parse, render, HTTP 200, orden y Site Editor | En progreso: header → Hero → footer |
 | AC-11 | #12 | Comparación sección por sección | Capturas/diff con commit y viewport | Pendiente |
 | AC-12 | #13 | Responsive + navegadores | Matriz y defectos resueltos | Pendiente |
 | AC-13 | #14 | WCAG 2.2 AA | Scanner + revisión manual | Pendiente |
@@ -99,7 +99,7 @@ Entorno: WordPress 7.0.2, PHP 8.2.29 y theme `vicunav` activo en LocalWP
 | Copy | Pass | Eyebrow, H1, descripción y CTA coinciden literalmente con el spec. |
 | Asset | Pass con seguimiento | WebP local 1536×1024, 45.092 bytes y checksum registrado en `assets/images/SOURCES.md`; licencia original se reverifica en #16. |
 | Site Editor | Pass | Hero aparece en “All patterns”, “Banners” y “Featured”; el preview contiene un `h1`. |
-| Frontend | Pass | Página local de QA responde HTTP 200 y contiene `.vicunav-hero`. |
+| Frontend | Pass | `front-page.html` incremental elimina el wrapper constrained; `/` responde HTTP 200 y contiene `.vicunav-hero` a ancho completo. |
 | Consola | Pass | Sin errores ni warnings durante la matriz responsive. |
 
 ### Comparación visual
@@ -112,9 +112,22 @@ Entorno: WordPress 7.0.2, PHP 8.2.29 y theme `vicunav` activo en LocalWP
 
 Se compararon encuadre, posición vertical, saltos de línea, familias, peso, color y dimensiones del CTA. El asset local es la misma imagen optimizada servida por la referencia, sin hotlink. La cabecera y el footer pertenecen a su baseline previa y no alteran el veredicto del pattern.
 
+### Ensamblaje incremental en `/`
+
+La comparación final usa el mismo viewport y elimina del cálculo la barra de administración local. `front-page.html` contiene únicamente header → Hero → footer en esta etapa; el footer inmediato es inventario pendiente, no una representación de que el homepage esté completo.
+
+| Control | Referencia | Local | Resultado |
+|---|---|---|---|
+| 1440×900 | Header 80 px; Hero 593 px; imagen x=0/ancho=1425; contenido x=313/ancho=800 | Header 79 px; Hero 593 px; imagen x=0/ancho=1425; contenido x=313/ancho=800 | Pass |
+| Posición desktop | Eyebrow y=157; título y=207; cuerpo y=343; CTA y≈501 | Eyebrow y=155; título y=202; cuerpo y=338; CTA y=499 | Pass, diferencia ≤6 px |
+| 390×844 | Header 80 px; Hero 571 px; contenido x=42/ancho=291; CTA 168×48 px | Header 81 px; Hero 571 px; contenido x=42/ancho=291; CTA 168×48 px | Pass, diferencia ≤4 px |
+| 768×1024 | Composición intermedia | Hero 579 px; un `h1`; sin overflow | Pass funcional |
+| Flujo vertical | Header y Hero adyacentes | Gap 0; Hero y footer adyacentes mientras faltan secciones | Pass estructural |
+| Consola | Sin errores atribuibles a la sección | 0 errores/warnings | Pass |
+
 ### Veredicto del issue
 
-**Pass local; pendiente de review del PR.** No se avanzó al pattern de situaciones.
+**Pass local sobre la portada incremental; pendiente de review del PR.** No se avanzó al pattern de situaciones.
 
 ## Controles estáticos por pattern/template
 
