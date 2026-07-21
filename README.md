@@ -38,6 +38,12 @@ Sitio: <https://vicunav-gutenberg.local/>
 
 Los cambios guardados en el repositorio quedan disponibles inmediatamente en LocalWP. Antes de probar PHP o WP-CLI, revisar las reglas de socket MySQL de `AGENTS.md`.
 
+## Editar la portada, el header y el footer
+
+La portada se edita desde **Apariencia → Editor → Diseño → Plantillas → Portada**. El theme redirige los accesos “Editar página” de la página configurada como inicio hacia ese lienzo, porque `front-page.html` —no el contenido ni el título de la página estática— es la fuente real del diseño.
+
+El header y el footer se editan desde **Apariencia → Editor → Diseño → Patrones → Administrar mis patrones → Partes de plantilla**. Allí aparecen como **Cabecera** y **Pie de página**. Sus archivos fuente son `parts/header.html` y `parts/footer.html`; guardar una personalización desde WordPress crea un override en la base de datos, que debe exportarse al repositorio o eliminarse antes de comparar el theme limpio.
+
 ## Estructura
 
 ```text
