@@ -152,6 +152,23 @@ La baseline aplicaba `neutral-900` a todo el footer. Producción usa una superfi
 
 En 390×844, las dos filas de columnas colapsan en orden de lectura, el contenido conserva 20 px de margen lateral, no existe overflow horizontal y todos los enlaces permanecen en el DOM accesible. El ajuste estructural se registra junto a `core/columns`, por lo que se carga también en el Editor del sitio.
 
+## Ejecución #22 — Acceso canónico al Editor del sitio
+
+Fecha: 2026-07-20<br>
+Entorno: WordPress 7.0.2, PHP 8.2.29 y sesión administradora local
+
+| Control | Resultado | Veredicto |
+|---|---|---|
+| Enlace “Edit Page” de la portada | Apunta al template `vicunav//front-page` | Pass |
+| URL directa `post.php?action=edit` de la portada | Redirige al lienzo `Front Page · Template` | Pass |
+| Campo `Add title` | No aparece en el lienzo canónico | Pass |
+| Diseño | Header, Hero y Footer visibles en el iframe del Site Editor | Pass |
+| Validez de bloques | 0 avisos “Block contains unexpected or invalid content” | Pass |
+| Otra página | Conserva su enlace normal a `post.php` | Pass |
+| Permisos | El filtro y la redirección exigen `edit_theme_options` | Pass estático/funcional |
+
+La solución no elimina la página Inicio, no modifica `show_on_front`, no borra contenido y no altera títulos de otras páginas. `README.md` documenta la ruta de edición de la portada y de las partes Cabecera/Pie de página.
+
 ## Controles estáticos por pattern/template
 
 Registrar comando, versión y salida en el PR correspondiente:
