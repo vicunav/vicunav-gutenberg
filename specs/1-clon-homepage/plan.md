@@ -27,14 +27,15 @@ El trabajo se entrega en el orden definido por las dependencias de GitHub. Cada 
 | `assets/fonts/` | Sustituir TTF por WOFF2/subsets cuando #15 lo valide | Cumplir RNF-02 sin cambiar la apariencia. |
 | `theme.json` | Añadir el token fluido `site-gutter` en #19 | La comparación del header demostró que los presets fijos no reproducen el margen responsive de la referencia. |
 | `parts/header.html` | Corregir dimensiones, casing y selector de idioma mediante #19 | QA demostró incumplimiento reproducible de AC-01. |
-| `parts/footer.html` | Sin cambio previsto; corrección solo si QA demuestra incumplimiento | Baseline terminada, cubierta por AC-01. |
+| `parts/footer.html` | Corregir mediante #21 las superficies, proporciones y ritmos demostrados por QA | La baseline oscura no coincide con el footer claro vigente de producción. |
 | `specs/1-clon-homepage/qa.md` | Actualización progresiva | Consolidar evidencia AC-01–AC-15. |
-| `functions.php` | Registrar en #19 una hoja específica mediante `wp_enqueue_block_style()` | Core Navigation no expone bandera ni etiqueta móvil como atributos; el registro cubre frontend/editor y carga solo con el bloque. |
+| `functions.php` | Registrar en #19/#21 hojas específicas mediante `wp_enqueue_block_style()` | Navigation y Columns requieren ajustes estructurales acotados; el registro cubre frontend/editor y carga solo con el bloque correspondiente. |
 | `assets/css/header.css` | CSS estructural mínimo para logo, bandera y etiqueta móvil del menú en #19 | No se hardcodean colores ni familias; consume presets de `theme.json`. |
+| `assets/css/footer.css` | Ritmos internos y box model del footer en #21 | Consume exclusivamente presets/variables y conserva en el editor las proporciones medidas. |
 | `style.css` | Sin CSS visual; release docs en #16 | Conserva únicamente metadata del theme. |
 | `CHANGELOG.md` | Actualización en #16 | Preparar versión coherente del release candidate. |
 
-El issue #19 demuestra la única necesidad actual de `functions.php`: registrar con la API estándar una hoja específica de bloque que WordPress cargue en frontend y editor. No se añade lógica de negocio ni JavaScript.
+Los issues #19 y #21 limitan `functions.php` al registro de hojas específicas de bloques mediante la API estándar. No se añade lógica de negocio ni JavaScript.
 
 ## Bloques, APIs y tokens
 
