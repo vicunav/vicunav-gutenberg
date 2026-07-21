@@ -1,0 +1,156 @@
+# QA: clon exacto del homepage en Gutenberg
+
+Issue padre: #1<br>
+Estado: Baseline definida; ejecución pendiente por sub-issue<br>
+Responsable: @mariovicunadev<br>
+Última actualización: 2026-07-20
+
+## Propósito
+
+Este archivo consolida la evidencia de Fase 1. Cada PR registra sus pruebas inmediatas; #12–#16 completan la matriz integral sobre el commit candidato. Un estado `Pendiente` no equivale a aprobado.
+
+## Entorno baseline
+
+| Campo | Valor |
+|---|---|
+| URL local | `https://vicunav-gutenberg.local/` |
+| Referencia de solo lectura | `https://vicunav.com/` |
+| WordPress local comprobado | 7.0.2 |
+| PHP local comprobado | 8.2 |
+| WordPress mínimo declarado | 6.7 |
+| PHP mínimo declarado | 8.0 |
+| Theme | `vicunav`, activo mediante symlink al repositorio |
+| Navegadores objetivo | Chrome, Firefox y Safari estables disponibles |
+| Viewports de referencia | 390×844, 768×1024 y 1440×900 |
+| Commit candidato | Se registra en #16 después de integrar los sub-issues |
+
+Los comandos PHP que carguen WordPress deben usar el runtime de LocalWP y el socket MySQL correcto según `AGENTS.md`. Un mensaje HTML de error de base de datos se registra como `Fail` aunque el proceso devuelva exit code 0.
+
+## Evidencia del paquete SDD (#2)
+
+| Check | Procedimiento | Resultado esperado | Estado |
+|---|---|---|---|
+| Estructura | Verificar `spec.md`, `plan.md`, `tasks.md`, `qa.md` | Cuatro archivos presentes | Pendiente de PR |
+| Marcadores | Buscar `TBD`, `TODO`, placeholders de plantilla y preguntas materiales | Sin marcadores no resueltos | Pendiente de PR |
+| Trazabilidad | Comparar AC-01–AC-16 con #3–#16 | Cobertura completa y sin issue huérfano | Pendiente de PR |
+| Consistencia | Constitución ↔ spec ↔ plan ↔ tasks ↔ QA | Sin contradicciones | Pendiente de revisión |
+| Markdown | `git diff --check` e inspección de enlaces/rutas | Sin errores de whitespace o rutas inexistentes | Pendiente de PR |
+
+## Matriz de criterios
+
+| Criterio | Owner | Prueba principal | Evidencia requerida | Estado |
+|---|---:|---|---|---|
+| AC-01 | #12 | Render + comparación header/footer | Capturas y smoke | Pendiente |
+| AC-02 | #3 | Pattern hero | Lint, render, copy, asset y captura | Pendiente |
+| AC-03 | #4 | Pattern situaciones | Lint, lista/checks y captura | Pendiente |
+| AC-04 | #5 | Pattern cómo ayudamos | Lint, render, copy y captura | Pendiente |
+| AC-05 | #6 | Pattern testimonio | Lint, cita y captura | Pendiente |
+| AC-06 | #7 | Pattern resultados | Lint, render, copy y captura | Pendiente |
+| AC-07 | #8 | Pattern debería sentirse | Lint, CTA y captura | Pendiente |
+| AC-08 | #9 | Pattern conoce a Mario | Lint, bio, alt/assets y captura | Pendiente |
+| AC-09 | #10 | Pattern CTA final | Lint, teclado, destino y captura | Pendiente |
+| AC-10 | #11 | Template completo | Parse, render, HTTP 200 y Site Editor | Pendiente |
+| AC-11 | #12 | Comparación sección por sección | Capturas/diff con commit y viewport | Pendiente |
+| AC-12 | #13 | Responsive + navegadores | Matriz y defectos resueltos | Pendiente |
+| AC-13 | #14 | WCAG 2.2 AA | Scanner + revisión manual | Pendiente |
+| AC-14 | #15 | Assets + rendimiento | Peso, fuentes y Lighthouse ×3 | Pendiente |
+| AC-15 | #16 | Gate final | Theme Check, seguridad y release docs | Pendiente |
+| AC-16 | #1 | Consistency check y cierre | Todos los sub-issues/evidencia | Pendiente |
+
+## Controles estáticos por pattern/template
+
+Registrar comando, versión y salida en el PR correspondiente:
+
+```bash
+jq empty theme.json
+git diff --check
+rg '#[0-9A-Fa-f]{3,8}|font-family' parts patterns templates
+php -l patterns/<archivo>.php
+rg -n 'TODO|FIXME|debug|/Users/|vicunav-gutenberg\.local|https?://' patterns parts templates assets
+```
+
+El resultado de búsquedas se revisa manualmente: una URL de enlace aprobada no es igual a un hotlink de asset; un hex dentro de `theme.json` es válido y uno dentro de un pattern no.
+
+## Smoke de WordPress
+
+| Control | Resultado esperado | Issue de evidencia | Estado |
+|---|---|---:|---|
+| `wp theme status vicunav` | Theme activo | #11 | Pendiente |
+| `parse_blocks()` | Parts, patterns y template procesados | #3–#11 | Pendiente |
+| `do_blocks()` | Salida no vacía y sin fatal | #3–#11 | Pendiente |
+| Homepage | HTTP 200; contiene header, `main` y footer | #11 | Pendiente |
+| Site Editor | Sin bloques inválidos; intención equivalente | #11/#12 | Pendiente |
+| Logs/consola | Sin warnings PHP ni errores de navegador | #11/#16 | Pendiente |
+
+## Comparación visual
+
+Para cada fila, capturar referencia y LocalWP con mismo navegador, viewport, estado de navegación, contenido, cache y fecha.
+
+| Área | 390×844 | 768×1024 | 1440×900 | Evidencia | Estado |
+|---|---|---|---|---|---|
+| Header + navegación | — | — | — | #12/#13 | Pendiente |
+| Hero | — | — | — | #3/#12 | Pendiente |
+| Situaciones | — | — | — | #4/#12 | Pendiente |
+| Cómo ayudamos | — | — | — | #5/#12 | Pendiente |
+| Testimonio | — | — | — | #6/#12 | Pendiente |
+| Resultados | — | — | — | #7/#12 | Pendiente |
+| Debería sentirse | — | — | — | #8/#12 | Pendiente |
+| Conoce a Mario | — | — | — | #9/#12 | Pendiente |
+| CTA final | — | — | — | #10/#12 | Pendiente |
+| Footer | — | — | — | #12/#13 | Pendiente |
+
+## Accesibilidad manual
+
+Owner: #14.
+
+- [ ] Recorrido completo con `Tab`, `Shift+Tab`, `Enter`, `Space` y `Escape`.
+- [ ] Foco visible, no oculto y con orden coherente.
+- [ ] Menú overlay abre, cierra, contiene y devuelve foco correctamente.
+- [ ] Un `h1`; headings y landmarks con jerarquía lógica.
+- [ ] Nombres accesibles de logo, navegación, enlaces, botones e iconos.
+- [ ] Alt text contextual; imágenes decorativas con `alt=""`.
+- [ ] Contraste y targets conforme a WCAG 2.2 AA.
+- [ ] Zoom 200 %, reflow a 320 CSS px y texto aumentado sin pérdida.
+- [ ] `prefers-reduced-motion` y contraste forzado cuando aplique.
+- [ ] Smoke de VoiceOver/Safari para navegación principal.
+- [ ] Scan automatizado sin violaciones críticas o serias, complementado por revisión manual.
+
+## Rendimiento
+
+Owner: #15. Registrar mediana de al menos tres corridas móviles comparables.
+
+| Métrica/asset | Baseline | Resultado | Budget | Estado |
+|---|---:|---:|---:|---|
+| Lighthouse Performance | Por medir | — | ≥ 90 | Pendiente |
+| LCP laboratorio | Por medir | — | ≤ 2.5 s objetivo | Pendiente |
+| CLS | Por medir | — | ≤ 0.1 | Pendiente |
+| TBT laboratorio | Por medir | — | Sin regresión significativa | Pendiente |
+| JavaScript propio | 0 KB | — | 0 KB | Pendiente |
+| Fuentes iniciales | TTF sin baseline transferida | — | ≤ 250 KB | Pendiente |
+| Imagen hero | No incorporada | — | ≤ 250 KB | Pendiente |
+| Recursos de terceros en primer render | Por medir | — | 0 | Pendiente |
+
+## Seguridad y release
+
+Owner: #16.
+
+- [ ] Sin secretos, credenciales, dumps, logs ni datos personales en Git.
+- [ ] Sin rutas absolutas del entorno ni URLs locales en el artefacto.
+- [ ] Assets con procedencia/licencia y sin scripts incrustados.
+- [ ] URLs PHP escapadas; sin input, queries o APIs innecesarias.
+- [ ] Theme Check sin errores de seguridad bloqueantes.
+- [ ] `style.css`, `CHANGELOG.md` y tag propuesto usan la misma versión.
+- [ ] ZIP probado sin symlink, `.git`, `.github`, caches ni archivos locales.
+- [ ] Producción no se modifica durante el gate.
+
+## Registro de diferencias y riesgos residuales
+
+| Fecha | Área | Diferencia/riesgo | Evidencia | Decisión/issue | Estado |
+|---|---|---|---|---|---|
+| — | — | Sin diferencias registradas todavía | — | — | Pendiente de ejecución |
+
+Una preferencia visual no puede registrarse como limitación. Toda excepción A/AA, de seguridad o de pérdida de contenido bloquea release.
+
+## Veredicto de Fase 1
+
+**Pendiente.** Solo #16 puede proponer `Pass` después de completar la matriz y probar el commit candidato. El cierre de #1 requiere revisión y aceptación del resultado; no autoriza despliegue a producción.
