@@ -78,6 +78,14 @@
         }
       ]
     },
+    "custom": {
+      "header": {
+        "flagHeight": "15px",
+        "flagWidth": "21px",
+        "logoWidth": "145px",
+        "logoWidthMobile": "160px"
+      }
+    },
     "layout": {
       "contentSize": "800px",
       "wideSize": "1280px"
