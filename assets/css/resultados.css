@@ -1,0 +1,64 @@
+.vicunav-resultados__columns {
+	gap: var(--wp--preset--spacing--65) !important;
+	margin-block: 0;
+}
+
+.vicunav-resultados__image {
+	margin: 0 auto !important;
+	max-width: var(--wp--custom--layout--editorial-media);
+}
+
+.vicunav-resultados__image img {
+	display: block;
+	height: auto;
+	width: 100%;
+}
+
+.vicunav-resultados__list {
+	display: flex;
+	flex-direction: column;
+	gap: var(--wp--preset--spacing--40);
+	font-weight: 700;
+	list-style: none;
+	padding: 0;
+}
+
+.vicunav-resultados__list li {
+	align-items: center;
+	display: flex;
+	gap: var(--wp--preset--spacing--20);
+	margin-block-start: 0 !important;
+}
+
+.vicunav-resultados__list li::before {
+	flex: 0 0 var(--wp--preset--spacing--40);
+	font-size: var(--wp--preset--font-size--body);
+	line-height: 1;
+	width: var(--wp--preset--spacing--40);
+}
+
+.vicunav-resultados__item--mirror::before {
+	content: "🪞";
+}
+
+.vicunav-resultados__item--people::before {
+	content: "🤝";
+}
+
+.vicunav-resultados__item--search::before {
+	content: "🔍";
+}
+
+.vicunav-resultados__item--calendar::before {
+	content: "📅";
+}
+
+.vicunav-resultados__item--tools::before {
+	content: "⚙️";
+}
+
+@media (max-width: 782px) {
+	.vicunav-resultados__columns {
+		gap: var(--wp--preset--spacing--70);
+	}
+}

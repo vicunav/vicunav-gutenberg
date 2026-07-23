@@ -134,7 +134,7 @@ La comparación final usa el mismo viewport y elimina del cálculo la barra de a
 
 ## Ejecución #4 — Situaciones
 
-Fecha: 2026-07-23<br>
+Fecha: 2026-07-25<br>
 Rama: `agent/4-pattern-situaciones`<br>
 Entorno: WordPress 7.0.2, PHP 8.2.29 y navegador Chromium
 
@@ -234,6 +234,35 @@ Producción inserta un MP4 vertical de 112.225.142 bytes. Incluirlo en el theme 
 ### Veredicto del issue
 
 **Pass local con sustitución estática justificada; pendiente de review del PR.**
+
+## Ejecución #7 — Los Resultados
+
+Fecha: 2026-07-23<br>
+Rama: `agent/7-pattern-resultados`<br>
+Base de revisión: PR del issue #6
+
+| Check | Resultado | Evidencia |
+|---|---|---|
+| PHP y JSON | Pass | Lint, JSON y whitespace sin errores. |
+| Registro y render | Pass | `vicunav/resultados` produce un H2, una lista semántica de cinco resultados, una imagen y el copy exacto. |
+| Asset | Pass | PNG de origen 1024×1280 y 1,6 MB convertido a WebP local de 67.184 bytes. |
+| Frontend | Pass | HTTP 200, asset cargado y sin overflow horizontal. |
+| Responsive | Pass funcional | Columns colapsa nativamente; el ajuste de ancho completo se desactiva en el breakpoint de WordPress. |
+
+### Comparación visual a 1280×720
+
+| Control | Referencia | Local | Veredicto |
+|---|---:|---:|---|
+| Sección | 1792×787,45 px | 1792×787,45 px | Pass |
+| Imagen | 501,96×627,45 px | 502×627,5 px | Pass |
+| H2 | Bodoni 48/48, peso 300 | Mismo preset y peso | Pass |
+| Composición | Imagen izquierda; contenido derecha | 44/56 %, gap normalizado | Pass |
+
+La auditoría del 2026-07-25 recuperó cuatro resultados que faltaban en el inventario inicial. El pattern incluye ahora los cinco textos, sus superficies escalonadas y sus iconos decorativos sin depender de assets remotos.
+
+### Veredicto del issue
+
+**Pass local; pendiente de review del PR.**
 
 ## Hallazgo y corrección #21 — Footer
 

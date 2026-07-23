@@ -97,6 +97,7 @@
     },
     "custom": {
       "layout": {
+        "editorialMedia": "502px",
         "sectionContent": "1080px",
         "testimonialCard": "500px"
       },
@@ -197,6 +198,11 @@
           "name": "Extra grande",
           "size": "64px",
           "slug": "80"
+        },
+        {
+          "name": "Sección editorial",
+          "size": "80px",
+          "slug": "section-editorial"
         },
         {
           "name": "Sección",
