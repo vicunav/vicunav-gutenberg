@@ -59,6 +59,11 @@
           "slug": "neutral-250"
         },
         {
+          "color": "rgba(247, 243, 238, 0.8)",
+          "name": "Neutral 200 al 80 %",
+          "slug": "neutral-200-80"
+        },
+        {
           "color": "#F0E8DE",
           "name": "Neutral 300",
           "slug": "neutral-300"
@@ -97,6 +102,8 @@
     },
     "custom": {
       "layout": {
+        "ctaContent": "1100px",
+        "ctaText": "900px",
         "editorialMedia": "502px",
         "sectionContent": "1080px",
         "testimonialCard": "500px"
@@ -214,6 +221,16 @@
           "size": "128px",
           "slug": "100"
         },
+        {
+          "name": "Sección CTA",
+          "size": "120px",
+          "slug": "cta-section"
+        },
+      {
+        "name": "Panel CTA",
+        "size": "61px",
+        "slug": "cta-panel"
+      },
         {
           "name": "Margen del sitio",
           "size": "clamp(1.25rem, 5vw, 5.5rem)",

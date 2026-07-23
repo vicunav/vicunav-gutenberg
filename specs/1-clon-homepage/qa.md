@@ -1,9 +1,9 @@
 # QA: clon exacto del homepage en Gutenberg
 
 Issue padre: #1<br>
-Estado: Baseline definida; ejecución pendiente por sub-issue<br>
+Estado: diez patterns implementados; #25 integrado y PRs apilados listos para revisión<br>
 Responsable: @mariovicunadev<br>
-Última actualización: 2026-07-20
+Última actualización: 2026-07-25
 
 ## Propósito
 
@@ -40,16 +40,16 @@ Los comandos PHP que carguen WordPress deben usar el runtime de LocalWP y el soc
 
 | Criterio | Owner | Prueba principal | Evidencia requerida | Estado |
 |---|---:|---|---|---|
-| AC-01 | #12/#19/#21 | Render + comparación header/footer | Capturas y smoke | Header en corrección mediante #19; footer corregido localmente en #21 |
-| AC-02 | #3 | Pattern hero | Lint, render, copy, asset y comparación visual | Pass local; pendiente de review |
-| AC-03 | #4 | Pattern situaciones | Lint, lista/checks y captura | Pendiente |
-| AC-04 | #5 | Pattern cómo ayudamos | Lint, render, copy y captura | Pendiente |
-| AC-05 | #6 | Pattern testimonio | Lint, cita y captura | Pendiente |
-| AC-06 | #7 | Pattern resultados | Lint, render, copy y captura | Pendiente |
-| AC-07 | #8 | Pattern debería sentirse | Lint, CTA y captura | Pendiente |
-| AC-08 | #9 | Pattern conoce a Mario | Lint, bio, alt/assets y captura | Pendiente |
-| AC-09 | #10 | Pattern CTA final | Lint, teclado, destino y captura | Pendiente |
-| AC-10 | #3/#11 | Template incremental y cierre del ensamblaje | Parse, render, HTTP 200, orden y Site Editor | En progreso: header → Hero → footer |
+| AC-01 | #12/#19/#21 | Render + comparación header/footer | Capturas y smoke | Pass local; header y footer integrados en `main` |
+| AC-02 | #3 | Pattern hero | Lint, render, copy, asset y comparación visual | Pass local; integrado en `main` |
+| AC-03 | #4 | Pattern situaciones | Lint, lista/checks y captura | Pass; PR #25 integrado en `main` |
+| AC-04 | #5 | Patterns introducción + proceso | Lint, render, copy y captura | Pass local; PR #32 pendiente de review |
+| AC-05 | #6 | Pattern testimonio | Lint, cita y captura | Pass local con limitación documentada; PR #27 pendiente de review |
+| AC-06 | #7 | Pattern resultados | Lint, render, copy y captura | Pass local; PR #28 pendiente de review |
+| AC-07 | #8 | Pattern debería sentirse | Lint, CTA y captura | Pass local; PR #29 pendiente de review |
+| AC-08 | #9 | Pattern conoce a Mario | Lint, bio, alt/assets y captura | Pass local; PR #30 pendiente de review |
+| AC-09 | #33/#10 | Marcas + CTA final | Lint, assets, teclado, destinos y captura | Pass local; PRs #34 y #31 pendientes de review |
+| AC-10 | #3/#11 | Template incremental y cierre del ensamblaje | Parse, render, HTTP 200, orden y Site Editor | Pass sobre la pila #32–#34/#31; cierre formal pendiente en #11 |
 | AC-11 | #12 | Comparación sección por sección | Capturas/diff con commit y viewport | Pendiente |
 | AC-12 | #13 | Responsive + navegadores | Matriz y defectos resueltos | Pendiente |
 | AC-13 | #14 | WCAG 2.2 AA | Scanner + revisión manual | Pendiente |
@@ -357,6 +357,39 @@ En 390×844 la cuadrícula colapsa a dos columnas, conserva las cinco marcas, no
 
 **Pass local; pendiente de review del PR.**
 
+## Ejecución #10 — CTA final
+
+Fecha: 2026-07-25<br>
+Rama: `agent/10-pattern-cta-final`<br>
+Base de revisión: PR del issue #33
+
+| Check | Resultado | Evidencia |
+|---|---|---|
+| PHP y JSON | Pass | Lint, JSON y whitespace sin errores. |
+| Registro y render | Pass | `vicunav/cta-final` produce H2, párrafo, botón y destino `/contacto/`. |
+| Copy | Pass | H2, párrafo y CTA coinciden literalmente; conserva énfasis visual no semánticamente destructivo. |
+| Tokens | Pass | Superficie translúcida, anchos, padding 120/61 y gap 40 viven en `theme.json`. |
+| Teclado | Pass estático | CTA es un enlace nativo dentro de `core/button`, con foco y activación nativos. |
+| Frontend | Pass | HTTP 200, un único H1 en la portada y sin overflow horizontal. |
+
+### Comparación visual a 1792 px
+
+| Control | Referencia | Local | Veredicto |
+|---|---:|---:|---|
+| Sección | 1792×648,8 px | 1792×648,8 px | Pass |
+| Panel | 1100×408,8 px | 1100×408,8 px | Pass |
+| Área textual | 900 px | 900 px | Pass |
+| H2 | 900×96 px | 900×96 px | Pass |
+| Párrafo | 900×60,8 px | 900×60,8 px | Pass |
+| CTA | 317,4×50 px | 317,4×50 px | Pass |
+| Superficie | `neutral-200` al 80 % | Preset `neutral-200-80` | Pass |
+
+El fondo WebP local reproduce el encuadre de producción sin hotlink. En 390×844 el CSS reduce el padding exterior a 64 px y el panel a 32/24 px usando la escala global; el enlace mide 48 px de alto y no existe overflow.
+
+### Veredicto del issue
+
+**Pass local; pendiente de review del PR.**
+
 ## Hallazgo y corrección #21 — Footer
 
 Fecha: 2026-07-20<br>
@@ -412,12 +445,33 @@ El resultado de búsquedas se revisa manualmente: una URL de enlace aprobada no 
 
 | Control | Resultado esperado | Issue de evidencia | Estado |
 |---|---|---:|---|
-| `wp theme status vicunav` | Theme activo | #11 | Pendiente |
-| `parse_blocks()` | Parts, patterns y template procesados | #3–#11 | Pendiente |
-| `do_blocks()` | Salida no vacía y sin fatal | #3–#11 | Pendiente |
-| Homepage | HTTP 200; contiene header, `main` y footer | #11 | Pendiente |
-| Site Editor | Sin bloques inválidos; intención equivalente | #11/#12 | Pendiente |
-| Logs/consola | Sin warnings PHP ni errores de navegador | #11/#16 | Pendiente |
+| `wp theme status vicunav` | Theme activo | #11 | Pass sobre la pila #32–#34/#31 |
+| `parse_blocks()` | Parts, patterns y template procesados | #3–#11 | Pass; diez patterns registrados |
+| `do_blocks()` | Salida no vacía y sin fatal | #3–#11 | Pass; 53.839 bytes renderizados |
+| Homepage | HTTP 200; contiene header, `main` y footer | #11 | Pass; orden completo verificado |
+| Site Editor | Sin bloques inválidos; intención equivalente | #11/#12 | Pass; diez secciones presentes y cero bloques inválidos |
+| Logs/consola | Sin warnings PHP ni errores de navegador | #11/#16 | Pass en Chromium; gate final pendiente |
+
+### Gate integral de la pila #32–#34/#31
+
+Fecha: 2026-07-25<br>
+Commit superior probado: rama `agent/10-pattern-cta-final`<br>
+Entorno: runtime PHP 8.2.29 de LocalWP, socket MySQL identificado por `home/siteurl`, WordPress 7.0.2 y Chromium
+
+| Control | Resultado | Veredicto |
+|---|---|---|
+| Theme y base de datos | `vicunav` activo; `wp-load.php` carga sin respuesta HTML de error | Pass |
+| Registro | Los diez patterns `vicunav/*` de la portada están registrados | Pass |
+| Render integral | 53.839 bytes; un H1, nueve H2 y 24 elementos de lista | Pass |
+| Orden | Hero → situaciones → introducción → proceso → testimonio → resultados → debería sentirse → Mario → marcas → CTA | Pass |
+| Copy contractual | Todas las agujas del inventario de `AGENTS.md` presentes | Pass |
+| Estáticos | PHP lint, JSON, `git diff --check`, hotlinks y rutas locales | Pass |
+| Frontend | HTTP 200, 20 imágenes cargadas, cero assets remotos y consola sin errores del theme | Pass |
+| Responsive 390×844 | Ancho cliente y scroll de 390 px; cero elementos desbordados | Pass |
+| Targets móviles | Todos los CTA visibles miden al menos 48 px de alto | Pass |
+| Site Editor | Diez secciones presentes; cero avisos de bloque inválido; sin campo “Add title” | Pass |
+
+Los únicos literales CSS fuera de tokens son hairlines de `1px`, una compensación óptica de `2px`, aspect ratios y breakpoints estructurales. No representan decisiones reutilizables de color, tipografía, superficie o espaciado. Los PRs son deliberadamente apilados y contienen un commit cada uno; el siguiente se reconstruye sobre `main` después de cada squash merge.
 
 ## Comparación visual
 
@@ -425,16 +479,17 @@ Para cada fila, capturar referencia y LocalWP con mismo navegador, viewport, est
 
 | Área | 390×844 | 768×1024 | 1440×900 | Evidencia | Estado |
 |---|---|---|---|---|---|
-| Header + navegación | — | — | — | #12/#13 | Pendiente |
-| Hero | — | — | — | #3/#12 | Pendiente |
-| Situaciones | — | — | — | #4/#12 | Pendiente |
-| Cómo ayudamos | — | — | — | #5/#12 | Pendiente |
-| Testimonio | — | — | — | #6/#12 | Pendiente |
-| Resultados | — | — | — | #7/#12 | Pendiente |
-| Debería sentirse | — | — | — | #8/#12 | Pendiente |
-| Conoce a Mario | — | — | — | #9/#12 | Pendiente |
-| CTA final | — | — | — | #10/#12 | Pendiente |
-| Footer | — | — | — | #12/#13 | Pendiente |
+| Header + navegación | Pass local | — | Pass local | #12/#13 | Gate formal pendiente |
+| Hero | Pass local | Pass local | Pass local | #3/#12 | Gate formal pendiente |
+| Situaciones | Pass local | — | Pass local | #4/#12 | Gate formal pendiente |
+| Cómo ayudamos | Pass local | — | Pass local | #5/#12 | Gate formal pendiente |
+| Testimonio | Pass local | — | Pass local | #6/#12 | Gate formal pendiente |
+| Resultados | Pass local | — | Pass local | #7/#12 | Gate formal pendiente |
+| Debería sentirse | Pass local | — | Pass local | #8/#12 | Gate formal pendiente |
+| Conoce a Mario | Pass local | — | Pass local | #9/#12 | Gate formal pendiente |
+| Marcas | Pass local | — | Pass local | #33/#12 | Gate formal pendiente |
+| CTA final | Pass local | — | Pass local | #10/#12 | Gate formal pendiente |
+| Footer | Pass local | — | Pass local | #12/#13 | Gate formal pendiente |
 
 ## Accesibilidad manual
 
@@ -484,10 +539,12 @@ Owner: #16.
 
 | Fecha | Área | Diferencia/riesgo | Evidencia | Decisión/issue | Estado |
 |---|---|---|---|---|---|
-| — | — | Sin diferencias registradas todavía | — | — | Pendiente de ejecución |
+| 2026-07-23 | Testimonio | El video de producción pesa 112.225.142 bytes; el theme conserva el estado visual inicial con un poster local | `SOURCES.md` y QA #6 | Definir video optimizado o alojamiento autorizado en #15 | Abierto |
+| 2026-07-23 | Copy | Producción contiene copy adicional en proceso, resultados y debería sentirse que no figura en el inventario contractual | Comparación visual #5, #7 y #8 | Respetar `AGENTS.md`; resolver cualquier cambio de inventario en un issue nuevo | Aceptado para Fase 1 |
+| 2026-07-23 | Integración | GitHub está configurado para squash merge; una pila retiene ancestros ya integrados | PRs #25–#31 | Reconstruir y retargetear el siguiente PR después de cada merge | Control operativo |
 
 Una preferencia visual no puede registrarse como limitación. Toda excepción A/AA, de seguridad o de pérdida de contenido bloquea release.
 
 ## Veredicto de Fase 1
 
-**Pendiente.** Solo #16 puede proponer `Pass` después de completar la matriz y probar el commit candidato. El cierre de #1 requiere revisión y aceptación del resultado; no autoriza despliegue a producción.
+**Pendiente.** Los diez patterns pasan su gate local y están listos para revisión secuencial. Los issues #11–#16 todavía deben completar ensamblaje formal, comparación visual integral, navegadores, accesibilidad, rendimiento, seguridad y release. Solo #16 puede proponer `Pass` sobre el commit candidato; esto no autoriza despliegue a producción.

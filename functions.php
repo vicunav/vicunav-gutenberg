@@ -168,6 +168,24 @@ function vicunav_register_marcas_block_styles() {
 add_action( 'init', 'vicunav_register_marcas_block_styles' );
 
 /**
+ * Registra la composición del CTA final junto al bloque Group.
+ */
+function vicunav_register_cta_final_block_styles() {
+	$stylesheet_path = get_theme_file_path( 'assets/css/cta-final.css' );
+
+	wp_enqueue_block_style(
+		'core/group',
+		array(
+			'handle' => 'vicunav-cta-final',
+			'src'    => get_theme_file_uri( 'assets/css/cta-final.css' ),
+			'path'   => $stylesheet_path,
+			'ver'    => (string) filemtime( $stylesheet_path ),
+		)
+	);
+}
+add_action( 'init', 'vicunav_register_cta_final_block_styles' );
+
+/**
  * Registra los ritmos internos del footer junto al bloque Columns.
  */
 function vicunav_register_footer_block_styles() {
