@@ -63,3 +63,12 @@ Producción carga además `Mario-Vicuna-Tati-Pilates.mp4` (112.225.142 bytes). E
 - Dimensiones: 1024×1280 px.
 - Optimización local: PNG de 1.604.927 bytes convertido a WebP de 67.184 bytes.
 - SHA-256 local: `1233f64f1ba74682e97331cf5d8c49e245c55c50b1f96ce3082aa34a5e486eda`.
+
+## Conoce a Mario
+
+- Archivo local: `mario-vicuna.webp`.
+- Fuente: `https://vicunav.com/wp-content/uploads/2026/03/mario-vicuna-vicunav.jpg`.
+- Uso: retrato editorial de Mario Vicuña.
+- Dimensiones: 1024×1536 px.
+- Peso: 62.166 bytes.
+- SHA-256: `f25be752ca2c6d0ca848b703bfeaef253a18ce09943cdc846f512814e21e0c4f`.

@@ -266,7 +266,7 @@ La auditoría del 2026-07-25 recuperó cuatro resultados que faltaban en el inve
 
 ## Ejecución #8 — Debería Sentirse Como Tú
 
-Fecha: 2026-07-23<br>
+Fecha: 2026-07-25<br>
 Rama: `agent/8-pattern-deberia-sentirse`<br>
 Base de revisión: PR del issue #7
 
@@ -290,6 +290,37 @@ Base de revisión: PR del issue #7
 | Fondo | `neutral-300` | `neutral-300` | Pass |
 
 El eyebrow “Sin presiones, ni tácticas raras”, omitido por el inventario inicial, se recuperó durante la auditoría del 2026-07-25 y quedó incorporado al contrato de contenido.
+
+### Veredicto del issue
+
+**Pass local; pendiente de review del PR.**
+
+## Ejecución #9 — Conoce a Mario
+
+Fecha: 2026-07-23<br>
+Rama: `agent/9-pattern-conoce-a-mario`<br>
+Base de revisión: PR del issue #8
+
+| Check | Resultado | Evidencia |
+|---|---|---|
+| PHP | Pass | Pattern y functions sin errores; diff limpio. |
+| Registro y render | Pass | `vicunav/conoce-a-mario` produce H2, subtítulo, tres párrafos completos y retrato. |
+| Copy | Pass | Los tres párrafos coinciden literalmente con `AGENTS.md`. |
+| Accesibilidad | Pass | Retrato informativo con alt que identifica a Mario y su rol. |
+| Asset | Pass | WebP local 1024×1536, 62.166 bytes y checksum documentado. |
+| Frontend | Pass | HTTP 200, imagen cargada y sin overflow horizontal. |
+
+### Comparación visual a 1280×720
+
+| Control | Referencia | Local | Veredicto |
+|---|---:|---:|---|
+| Sección | 1792×912,94 px | 1792×912,94 px | Pass |
+| Columna de texto | 669,60 px, x=256 | 669,60 px, x=256 | Pass |
+| Retrato | 501,96×752,94 px, x=999,82 | 502×753 px, x=999,80 | Pass |
+| Gap entre columnas | 40 px | 40 px tokenizados | Pass |
+| H2 | 48/48 px, dos líneas | 48/48 px, dos líneas | Pass |
+
+La cuadrícula colapsa mediante el breakpoint nativo de Columns; el retrato conserva proporción intrínseca y ancho máximo tokenizado.
 
 ### Veredicto del issue
 
