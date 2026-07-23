@@ -86,6 +86,11 @@
       ]
     },
     "custom": {
+      "footer": {
+        "bodyLineHeight": "1.3",
+        "headingLineHeight": "1.25",
+        "legalPadding": "56px"
+      },
       "header": {
         "flagHeight": "15px",
         "flagWidth": "21px",
@@ -294,6 +299,11 @@
           "name": "Texto destacado",
           "size": "clamp(0.875rem, 0.761rem + 0.488vw, 1.2rem)",
           "slug": "lead"
+        },
+        {
+          "name": "Cuerpo del footer",
+          "size": "1.125rem",
+          "slug": "footer-body"
         },
         {
           "name": "Título 5",

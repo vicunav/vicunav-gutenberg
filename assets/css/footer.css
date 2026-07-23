@@ -1,0 +1,37 @@
+.vicunav-footer__column,
+.vicunav-footer__audience-list {
+	box-sizing: border-box;
+	flex-grow: 0;
+}
+
+.vicunav-footer__column > * + * {
+	margin-block-start: var(--wp--preset--spacing--40) !important;
+}
+
+.vicunav-footer__identity p,
+.vicunav-footer__audience-list p {
+	line-height: var(--wp--custom--footer--body-line-height);
+}
+
+.vicunav-footer__identity .wp-block-separator {
+	background: transparent !important;
+	border: 0;
+	padding-block: var(--wp--preset--spacing--30);
+	position: relative;
+}
+
+.vicunav-footer__identity .wp-block-separator::before {
+	border-top: 1px solid var(--wp--preset--color--neutral-400);
+	content: "";
+	inset-inline: 0;
+	position: absolute;
+	top: 50%;
+}
+
+.vicunav-footer__contact > * + * {
+	margin-block-start: var(--wp--preset--spacing--50) !important;
+}
+
+.vicunav-footer__audience-list > * + * {
+	margin-block-start: var(--wp--preset--spacing--40) !important;
+}

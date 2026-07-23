@@ -36,13 +36,15 @@ Plan: `specs/1-clon-homepage/plan.md`
 | T-13 | #15 | Assets y presupuesto de rendimiento aprobados | AC-14 | #12 | Pesos, fuentes WOFF2 y Lighthouse ×3 |
 | T-14 | #16 | Release candidate preparado sin despliegue | AC-15, AC-16 | #13, #14, #15 | Theme Check, seguridad, changelog, versión y evidencia consolidada |
 | T-15 | #19 | Header corregido contra la referencia vigente | AC-01 | #2; bloquea aprobación de #3 | Comparación desktop/móvil, render, teclado y captura |
+| T-16 | #21 | Footer corregido contra la referencia vigente | AC-01, AC-11 | #3; bloquea inicio de #4 | Comparación desktop/móvil, render, teclado y captura |
+| T-17 | #22 | Accesos de la portada abren directamente el Editor del sitio | RF-01, RF-06; escenario 3 | #21; bloquea inicio de #4 | Enlaces de edición, permisos y smoke del Site Editor |
 
 ## Orden crítico
 
 ```text
 #2 → #19
        ↓
-      #3 → #4 → #5 → #6 → #7 → #8 → #9 → #10 → #11 → #12
+      #3 → #21 → #22 → #4 → #5 → #6 → #7 → #8 → #9 → #10 → #11 → #12
                                                     ├→ #13 ─┐
                                                     ├→ #14 ─┼→ #16 → cierre #1
                                                     └→ #15 ─┘

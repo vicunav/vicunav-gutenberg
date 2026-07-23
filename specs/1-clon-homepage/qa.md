@@ -40,7 +40,7 @@ Los comandos PHP que carguen WordPress deben usar el runtime de LocalWP y el soc
 
 | Criterio | Owner | Prueba principal | Evidencia requerida | Estado |
 |---|---:|---|---|---|
-| AC-01 | #12/#19 | Render + comparación header/footer | Capturas y smoke | Header en corrección mediante #19; footer pendiente |
+| AC-01 | #12/#19/#21 | Render + comparación header/footer | Capturas y smoke | Header en corrección mediante #19; footer corregido localmente en #21 |
 | AC-02 | #3 | Pattern hero | Lint, render, copy, asset y comparación visual | Pass local; pendiente de review |
 | AC-03 | #4 | Pattern situaciones | Lint, lista/checks y captura | Pendiente |
 | AC-04 | #5 | Pattern cómo ayudamos | Lint, render, copy y captura | Pendiente |
@@ -131,6 +131,26 @@ La comparación final usa el mismo viewport y elimina del cálculo la barra de a
 ### Veredicto del issue
 
 **Pass local sobre la portada incremental; pendiente de review del PR.** No se avanzó al pattern de situaciones.
+
+## Hallazgo y corrección #21 — Footer
+
+Fecha: 2026-07-20<br>
+Referencia: footer vigente de `vicunav.com` inspeccionado en modo de solo lectura<br>
+Entorno local: WordPress 7.0.2, PHP 8.2.29 y Chrome
+
+La baseline aplicaba `neutral-900` a todo el footer. Producción usa una superficie principal `neutral-100` y reserva `neutral-900` para la franja legal. La corrección conserva el inventario exacto y normaliza las mediciones repetibles mediante presets y tres variables semánticas del componente.
+
+| Control a 1440×900 | Referencia | Local corregido | Veredicto |
+|---|---:|---:|---|
+| Footer total | ≈1098 px | ≈1093 px | Pass; diferencia ≈5 px |
+| Primera fila | 409,6 / 230,4 / 230,4 / 409,6 px | 409,6 / 230,4 / 230,4 / 409,6 px | Pass |
+| Audiencias | 320 / 320 / 384 px, 20 % libre | 320 / 320 / 384 px, 20 % libre | Pass |
+| Tagline | 24/28,8 px; 86,4 px de alto | 23/28,8 px; 86,4 px de alto | Pass |
+| Descripción | 18/23,4 px; 140,4 px de alto | 18/23,4 px; 140,4 px de alto | Pass |
+| Franja legal | ≈166 px | ≈171 px | Pass; diferencia ≈5 px |
+| Colores | Superficie `neutral-100`; legal `neutral-900` | Mismos presets | Pass |
+
+En 390×844, las dos filas de columnas colapsan en orden de lectura, el contenido conserva 20 px de margen lateral, no existe overflow horizontal y todos los enlaces permanecen en el DOM accesible. El ajuste estructural se registra junto a `core/columns`, por lo que se carga también en el Editor del sitio.
 
 ## Controles estáticos por pattern/template
 
