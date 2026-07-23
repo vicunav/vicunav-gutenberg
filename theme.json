@@ -349,6 +349,11 @@
           "slug": "footer-body"
         },
         {
+          "name": "Cuerpo destacado",
+          "size": "1.0625rem",
+          "slug": "callout-body"
+        },
+        {
           "name": "Acento manuscrito",
           "size": "1.3125rem",
           "slug": "eyebrow-display"

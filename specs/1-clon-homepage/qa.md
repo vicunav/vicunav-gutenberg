@@ -237,7 +237,7 @@ Producción inserta un MP4 vertical de 112.225.142 bytes. Incluirlo en el theme 
 
 ## Ejecución #7 — Los Resultados
 
-Fecha: 2026-07-23<br>
+Fecha: 2026-07-25<br>
 Rama: `agent/7-pattern-resultados`<br>
 Base de revisión: PR del issue #6
 
@@ -259,6 +259,37 @@ Base de revisión: PR del issue #6
 | Composición | Imagen izquierda; contenido derecha | 44/56 %, gap normalizado | Pass |
 
 La auditoría del 2026-07-25 recuperó cuatro resultados que faltaban en el inventario inicial. El pattern incluye ahora los cinco textos, sus superficies escalonadas y sus iconos decorativos sin depender de assets remotos.
+
+### Veredicto del issue
+
+**Pass local; pendiente de review del PR.**
+
+## Ejecución #8 — Debería Sentirse Como Tú
+
+Fecha: 2026-07-23<br>
+Rama: `agent/8-pattern-deberia-sentirse`<br>
+Base de revisión: PR del issue #7
+
+| Check | Resultado | Evidencia |
+|---|---|---|
+| PHP y JSON | Pass | Pattern sin errores y `theme.json` válido. |
+| Registro y render | Pass | `vicunav/deberia-sentirse-como-tu` produce eyebrow, H2, párrafo y CTA exactos. |
+| Enlace | Pass | “¡Hablemos!” apunta a la ruta local `/contacto/`. |
+| Tokens | Pass | Fondo, color, tipografía, padding y CTA consumen presets; no requiere CSS propio. |
+| Frontend | Pass | HTTP 200 y cero overflow horizontal. |
+
+### Comparación visual a 1280×720
+
+| Control | Referencia | Local | Veredicto |
+|---|---:|---:|---|
+| Sección | 1792×401,01 px | 1792×401,01 px | Pass |
+| Contenido | 800 px | 800 px | Pass |
+| H2 | 48/48 px, peso 300 | 48/48 px, peso 300 | Pass |
+| Párrafo | 17/27,2 px | 17/27,2 px | Pass |
+| CTA | 137×48 px | 137×48 px | Pass |
+| Fondo | `neutral-300` | `neutral-300` | Pass |
+
+El eyebrow “Sin presiones, ni tácticas raras”, omitido por el inventario inicial, se recuperó durante la auditoría del 2026-07-25 y quedó incorporado al contrato de contenido.
 
 ### Veredicto del issue
 
