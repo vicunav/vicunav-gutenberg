@@ -92,11 +92,12 @@ El resultado se puede editar e inspeccionar en Gutenberg sin bloques inválidos,
 | Header | Logo “Vicunav”; Portafolio; Servicios; Comencemos; English | `header` + `nav` | Baseline / #12 |
 | Hero | Eyebrow, H1, párrafo, “Ver servicios”, escena de escritorio | Único `h1` | #3 |
 | Situaciones | H2 y ocho situaciones completas con check | `h2` + lista | #4 |
-| Cómo ayudamos | Eyebrow, H2, subtítulo, pasos 01–06, “Ver paquetes” | `h2` + títulos de paso | #5 |
+| Cómo ayudamos | Introducción con cuatro puntos y medio editorial; proceso 01–06; “Ver paquetes” | Dos `section`, cada una con `h2` | #5 |
 | Testimonio | Eyebrow, cita de TatiPilates y atribución | `h2` visual o cita semántica según referencia | #6 |
-| Resultados | Eyebrow, H2 y copy aprobado | `h2` | #7 |
-| Debería sentirse | H2, párrafo y “¡Hablemos!” | `h2` | #8 |
+| Resultados | Eyebrow, H2, subtítulo y cinco resultados | `h2` + lista | #7 |
+| Debería sentirse | Eyebrow, H2, párrafo y “¡Hablemos!” | `h2` | #8 |
 | Conoce a Mario | Eyebrow, H2, subtítulo y bio de tres párrafos | `h2` | #9 |
+| Marcas | H2 y cinco logos locales | `h2` + imágenes | Issue específico derivado de la auditoría |
 | CTA final | H2, párrafo y “Hablemos sobre tu sitio web” | `h2` | #10 |
 | Footer | Identidad, descripción, 3 columnas, audiencias, fit y legal | `footer` + headings internos | Baseline / #12 |
 
@@ -106,11 +107,12 @@ Los siguientes textos deben aparecer sin paráfrasis:
 
 - **Hero:** “Para profesionales independientes y negocios”; “Tu sitio web es el primer paso que tus clientes dan hacia ti”; “Sitios web profesionales para profesionales independientes y negocios que ofrecen servicios. Diseñados para generar confianza, comunicar con claridad lo que haces, aparecer en Google y en sistemas de IA, recibir reservas en línea, y convertir visitantes en clientes.”; “Ver servicios”.
 - **Situaciones:** el título “¿Alguna de estas situaciones te describe?” y los ocho puntos numerados en `AGENTS.md`, en el mismo orden.
-- **Cómo ayudamos:** “Cómo ayudamos”; “Tu Sitio Web, Sin el Estrés”; “Guiamos el proceso con claridad en cada paso”; los pasos 01–06 completos de `AGENTS.md`; “Ver paquetes”.
+- **Cómo ayudamos:** “Cómo ayudamos”; “Tu Sitio Web, Sin el Estrés”; “Guiamos el proceso con claridad en cada paso”; los cuatro puntos introductorios; “Así funciona”; “Tu Sitio Web, Completamente Acompañado”; los pasos 01–06 completos de `AGENTS.md`; “Ver paquetes”.
 - **Testimonio:** “Testimonio destacado”; “TatiPilates maneja ahora todo su negocio desde un solo lugar”; “— Tatiana Diaz, TatiPilates”.
-- **Resultados:** “Los Resultados”; “Un Sitio Web del que Sientes Orgullo de Compartir”; “Porque sabes que va a: Reflejar tu trabajo con claridad y honestidad”.
-- **Debería sentirse:** “Debería Sentirse Como Tú”; el párrafo completo de `AGENTS.md`; “¡Hablemos!”.
+- **Resultados:** “Los Resultados”; “Un Sitio Web del que Sientes Orgullo de Compartir”; “Porque sabes que va a:” y los cinco resultados de `AGENTS.md`.
+- **Debería sentirse:** “Sin presiones, ni tácticas raras”; “Debería Sentirse Como Tú”; el párrafo completo de `AGENTS.md`; “¡Hablemos!”.
 - **Conoce a Mario:** “Conoce a Mario”; “Construyendo sitios web desde 2016”; “Haciendo el proceso simple, del inicio al lanzamiento”; los tres párrafos completos de bio de `AGENTS.md`.
+- **Marcas:** “Marcas con las que he trabajado” y los cinco logos locales de la referencia.
 - **CTA final:** “¿Listo para un sitio web que realmente refleje tu trabajo y te ayude a crecer?”; el párrafo completo de `AGENTS.md`; “Hablemos sobre tu sitio web”.
 - **Header y footer:** todo el contenido enumerado en las secciones “Header / Nav” y “Footer” de `AGENTS.md`.
 

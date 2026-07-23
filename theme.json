@@ -44,9 +44,19 @@
           "slug": "neutral-100"
         },
         {
+          "color": "#FFFAF6",
+          "name": "Neutral 150",
+          "slug": "neutral-150"
+        },
+        {
           "color": "#F7F3EE",
           "name": "Neutral 200",
           "slug": "neutral-200"
+        },
+        {
+          "color": "#F4EEE6",
+          "name": "Neutral 250",
+          "slug": "neutral-250"
         },
         {
           "color": "#F0E8DE",
@@ -88,6 +98,10 @@
     "custom": {
       "layout": {
         "sectionContent": "1080px"
+      },
+      "process": {
+        "imageColumn": "27.232%",
+        "imageMinWidth": "8.75rem"
       },
       "shadow": {
         "card": "0 2px 8px -2px var(--wp--preset--color--neutral-500)"
@@ -148,6 +162,11 @@
           "slug": "40"
         },
         {
+          "name": "Base amplia",
+          "size": "20px",
+          "slug": "45"
+        },
+        {
           "name": "Medio",
           "size": "24px",
           "slug": "50"
@@ -156,6 +175,11 @@
           "name": "Amplio",
           "size": "32px",
           "slug": "60"
+        },
+        {
+          "name": "Intermedio",
+          "size": "40px",
+          "slug": "65"
         },
         {
           "name": "Grande",
@@ -312,9 +336,24 @@
           "slug": "footer-body"
         },
         {
+          "name": "Acento manuscrito",
+          "size": "1.3125rem",
+          "slug": "eyebrow-display"
+        },
+        {
           "name": "Título 5",
           "size": "1.44rem",
           "slug": "h5"
+        },
+        {
+          "name": "Título de paso",
+          "size": "1.375rem",
+          "slug": "process-title"
+        },
+        {
+          "name": "Número de paso",
+          "size": "2rem",
+          "slug": "process-number"
         },
         {
           "name": "Título 4",
