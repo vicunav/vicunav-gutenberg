@@ -89,6 +89,10 @@
       "layout": {
         "sectionContent": "1080px"
       },
+      "process": {
+        "imageColumn": "28%",
+        "imageMinWidth": "8.75rem"
+      },
       "shadow": {
         "card": "0 2px 8px -2px var(--wp--preset--color--neutral-500)"
       },
@@ -310,6 +314,11 @@
           "name": "Cuerpo del footer",
           "size": "1.125rem",
           "slug": "footer-body"
+        },
+        {
+          "name": "Acento manuscrito",
+          "size": "1.3125rem",
+          "slug": "eyebrow-display"
         },
         {
           "name": "Título 5",

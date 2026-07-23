@@ -20,3 +20,16 @@ La reutilización dentro de esta migración está autorizada por el alcance del 
 - Dimensiones: 1536×1024 px.
 - Peso local: 32.062 bytes.
 - SHA-256: `c6e80955d5504cff708f5a6fca06b35dbbf7961bffa74c73c047a0e9b09027be`.
+
+## Proceso
+
+Los seis assets se recuperaron el 2026-07-23 desde la biblioteca pública de Vicunav y se almacenan localmente como WebP, sin hotlinks:
+
+| Archivo local | Fuente de referencia | Uso | Peso | SHA-256 |
+|---|---|---|---:|---|
+| `proceso-textos.webp` | `https://vicunav.com/wp-content/uploads/2026/05/Get-Your-Website-Written.png` | Paso 01 | 39.328 bytes | `714f2cf434f39c8cfa21a07fa118dbcb02f8123b594f645decce476b8088cf1c` |
+| `proceso-visual.webp` | `https://vicunav.com/wp-content/uploads/2026/05/Get-The-Look-Feel-Of-Your-Site-1.png` | Paso 02 | 35.648 bytes | `5b13309ff6ba47e6e5ffa95e070f663cf5e9dacb0fe9354204206f6350bec592` |
+| `proceso-desarrollo.webp` | `https://vicunav.com/wp-content/uploads/2026/05/Get-Your-Website-Designed.png` | Paso 03 | 32.266 bytes | `21919d39cd2187150a47c92e328b1461cb4b675c6d0edc6e4193a09f4263d6e9` |
+| `proceso-encontrado.webp` | `https://vicunav.com/wp-content/uploads/2026/06/Tu-sitio-listo-para-ser-encontrado-1.webp` | Paso 04 | 15.882 bytes | `ad285eb87b86914de4d2f13d49709650760873d3ab3faf9a497ada8e178422d8` |
+| `proceso-herramientas.webp` | `https://vicunav.com/wp-content/uploads/2026/06/Tus-herramientas-configuradas.webp` | Paso 05 | 15.968 bytes | `ea5ff79091ba7fa06dbb149086cc853e8fc730809b33cbf5dfd29a746446bc70` |
+| `proceso-soporte.webp` | `https://vicunav.com/wp-content/uploads/2026/05/Get-Assistance-Ongoing.png` | Paso 06 | 40.006 bytes | `25401d996b68818a02c8e9cc9b7ef4b3415aa5e9bdca277be8598ce54fd07bfd` |

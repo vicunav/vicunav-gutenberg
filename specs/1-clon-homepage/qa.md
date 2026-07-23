@@ -165,6 +165,41 @@ En 390×844 la tarjeta ocupa 335 px con margen de sitio de 20 px, los ocho punto
 
 **Pass local; pendiente de review del PR.**
 
+## Ejecución #5 — Cómo ayudamos
+
+Fecha: 2026-07-23<br>
+Rama: `agent/5-pattern-como-ayudamos`<br>
+Base de revisión: PR del issue #4
+
+### Resultados
+
+| Check | Resultado | Evidencia |
+|---|---|---|
+| PHP y JSON | Pass | `php -l`, `jq empty theme.json` y `git diff --check` sin errores. |
+| Registro y render | Pass | `vicunav/como-ayudamos` registrado; salida con un H2, seis H3, seis imágenes y CTA. |
+| Copy | Pass | Eyebrow, título, subtítulo, números, títulos, descripciones y “Ver paquetes” coinciden con el inventario. |
+| Bloques | Pass | Composición exclusiva con Group, Paragraph, Heading, Image, Buttons y Button. |
+| Assets | Pass con seguimiento | Seis WebP locales, 179.098 bytes combinados, fuentes y checksums documentados. |
+| Frontend | Pass | HTTP 200, un H1 en la página, imágenes cargadas y cero overflow horizontal. |
+
+### Comparación visual
+
+La referencia vigente separa el encabezado editorial y la cuadrícula de proceso en dos contenedores de Elementor. El inventario contractual los define como una sola sección; el pattern conserva el contenido del inventario y replica la cuadrícula visual de producción.
+
+| Control a 1280×720 | Referencia de proceso | Local | Veredicto |
+|---|---:|---:|---|
+| Sección | 1265×923 px | 1265×917 px | Pass; diferencia ≈6 px |
+| H2 | 48/48 px, peso 300 | 48/48 px, peso 300 | Pass |
+| Cuadrícula | 1265×550 px; dos columnas | 1265×534 px; dos columnas | Pass; diferencia ≈16 px |
+| CTA | 155,9×48 px | 155,9×48 px | Pass |
+| Espaciado exterior | 64 px | 64 px | Pass |
+
+En 390×844 la cuadrícula colapsa a una columna de 335 px, conserva los pasos 01–06 en orden, todas las imágenes cargan y el CTA mantiene 48 px de alto. La diferencia estructural entre la referencia y el inventario queda trazada; no se añadió el copy extra de producción porque contradiría `AGENTS.md`.
+
+### Veredicto del issue
+
+**Pass local; pendiente de review del PR.**
+
 ## Hallazgo y corrección #21 — Footer
 
 Fecha: 2026-07-20<br>
