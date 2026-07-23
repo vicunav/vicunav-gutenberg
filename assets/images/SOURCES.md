@@ -44,3 +44,13 @@ Los seis assets se recuperaron el 2026-07-23 desde la biblioteca pública de Vic
 - Peso local: 72.212 bytes.
 - SHA-256 del origen: `2ac40c3ff19ec7e95dd1bbeb1d0a840ce64a53b11dda015677173fb0ce58102d`.
 - SHA-256 local: `3e726be6d82b9957d72128fdeb67092dc780ce62ddb43e0d37bf184c8bbd77c3`.
+
+## Testimonio destacado
+
+| Archivo local | Fuente de referencia | Uso | Peso | SHA-256 |
+|---|---|---|---:|---|
+| `testimonio-fondo.webp` | `https://vicunav.com/wp-content/uploads/2026/01/ChatGPT-Image-19-ene-2026-03_28_14-p.m.webp` | Textura decorativa | 49.050 bytes | `78728d488bff4a17c317768c51952c9c0d56c47936ac851d257d0e5074a878e7` |
+| `testimonio-tatipilates.webp` | `https://vicunav.com/wp-content/uploads/2026/05/TatiPilates-testimonial.jpg` | Poster del testimonio | 33.954 bytes | `b0ddd7e5d4acd0ce1fc7cf17bc54b2ccd52ecfdbefc9b873c0f30d3a82cf05c6` |
+| `testimonio-tatiana.webp` | `https://vicunav.com/wp-content/uploads/2026/05/tatiana-diaz-tatipilates.jpg` | Retrato de atribución | 16.128 bytes | `e50af8e73781149b3522fc9331436de72c00bb3f6dbb10191a722f6316bee003` |
+
+Producción carga además `Mario-Vicuna-Tati-Pilates.mp4` (112.225.142 bytes). El pattern usa su poster local para mantener la composición inicial sin añadir 112 MB al repositorio ni degradar el presupuesto de rendimiento; la decisión se revisa en #15.

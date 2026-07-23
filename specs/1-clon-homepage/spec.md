@@ -108,7 +108,7 @@ Los siguientes textos deben aparecer sin paráfrasis:
 - **Hero:** “Para profesionales independientes y negocios”; “Tu sitio web es el primer paso que tus clientes dan hacia ti”; “Sitios web profesionales para profesionales independientes y negocios que ofrecen servicios. Diseñados para generar confianza, comunicar con claridad lo que haces, aparecer en Google y en sistemas de IA, recibir reservas en línea, y convertir visitantes en clientes.”; “Ver servicios”.
 - **Situaciones:** el título “¿Alguna de estas situaciones te describe?” y los ocho puntos numerados en `AGENTS.md`, en el mismo orden.
 - **Cómo ayudamos:** “Cómo ayudamos”; “Tu Sitio Web, Sin el Estrés”; “Guiamos el proceso con claridad en cada paso”; los cuatro puntos introductorios; “Así funciona”; “Tu Sitio Web, Completamente Acompañado”; los pasos 01–06 completos de `AGENTS.md`; “Ver paquetes”.
-- **Testimonio:** “Testimonio destacado”; “TatiPilates maneja ahora todo su negocio desde un solo lugar”; “— Tatiana Diaz, TatiPilates”.
+- **Testimonio:** “Testimonio destacado”; “TatiPilates maneja ahora todo su negocio desde un solo lugar”; “- Tatiana Diaz, TatiPilates”.
 - **Resultados:** “Los Resultados”; “Un Sitio Web del que Sientes Orgullo de Compartir”; “Porque sabes que va a:” y los cinco resultados de `AGENTS.md`.
 - **Debería sentirse:** “Sin presiones, ni tácticas raras”; “Debería Sentirse Como Tú”; el párrafo completo de `AGENTS.md`; “¡Hablemos!”.
 - **Conoce a Mario:** “Conoce a Mario”; “Construyendo sitios web desde 2016”; “Haciendo el proceso simple, del inicio al lanzamiento”; los tres párrafos completos de bio de `AGENTS.md`.

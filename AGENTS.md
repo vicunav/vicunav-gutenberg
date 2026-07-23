@@ -113,7 +113,7 @@ Nota: ambas fuentes (Bodoni Moda, Red Hat Display, Gloock, Caveat) deben cargars
 ### 4. Testimonio destacado
 - Eyebrow: "Testimonio destacado"
 - Cita/headline: "TatiPilates maneja ahora todo su negocio desde un solo lugar"
-- Atribución: "— Tatiana Diaz, TatiPilates"
+- Atribución: "- Tatiana Diaz, TatiPilates"
 
 ### 5. "Los Resultados"
 - Eyebrow: "Los Resultados"
