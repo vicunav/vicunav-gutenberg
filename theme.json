@@ -78,6 +78,14 @@
         }
       ]
     },
+    "custom": {
+      "header": {
+        "flagHeight": "15px",
+        "flagWidth": "21px",
+        "logoWidth": "145px",
+        "logoWidthMobile": "160px"
+      }
+    },
     "layout": {
       "contentSize": "800px",
       "wideSize": "1280px"
@@ -143,6 +151,11 @@
           "name": "Sección amplia",
           "size": "128px",
           "slug": "100"
+        },
+        {
+          "name": "Margen del sitio",
+          "size": "clamp(1.25rem, 5vw, 5.5rem)",
+          "slug": "site-gutter"
         }
       ],
       "units": [

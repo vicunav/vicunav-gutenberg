@@ -35,13 +35,14 @@ Plan: `specs/1-clon-homepage/plan.md`
 | T-12 | #14 | Auditoría WCAG 2.2 AA aprobada | AC-13 | #12 | Scanner y controles manuales |
 | T-13 | #15 | Assets y presupuesto de rendimiento aprobados | AC-14 | #12 | Pesos, fuentes WOFF2 y Lighthouse ×3 |
 | T-14 | #16 | Release candidate preparado sin despliegue | AC-15, AC-16 | #13, #14, #15 | Theme Check, seguridad, changelog, versión y evidencia consolidada |
+| T-15 | #19 | Header corregido contra la referencia vigente | AC-01 | #2; bloquea aprobación de #3 | Comparación desktop/móvil, render, teclado y captura |
 
 ## Orden crítico
 
 ```text
-#2
- ↓
-#3 → #4 → #5 → #6 → #7 → #8 → #9 → #10 → #11 → #12
+#2 → #19
+       ↓
+      #3 → #4 → #5 → #6 → #7 → #8 → #9 → #10 → #11 → #12
                                                     ├→ #13 ─┐
                                                     ├→ #14 ─┼→ #16 → cierre #1
                                                     └→ #15 ─┘

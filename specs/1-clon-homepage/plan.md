@@ -25,13 +25,16 @@ El trabajo se entrega en el orden definido por las dependencias de GitHub. Cada 
 | `templates/front-page.html` | Nuevo template FSE | Ensamblar AC-10 y establecer el landmark `main`. |
 | `assets/images/` | Añadir assets aprobados y optimizados | Evitar hotlinks y cumplir RD-07–RD-09. |
 | `assets/fonts/` | Sustituir TTF por WOFF2/subsets cuando #15 lo valide | Cumplir RNF-02 sin cambiar la apariencia. |
-| `theme.json` | Sin cambio previsto | Ya contiene tokens; una carencia comprobada obliga a actualizar spec antes de tocarlo. |
-| `parts/header.html` | Sin cambio previsto; corrección solo si QA demuestra incumplimiento | Baseline terminada, cubierta por AC-01. |
+| `theme.json` | Añadir el token fluido `site-gutter` en #19 | La comparación del header demostró que los presets fijos no reproducen el margen responsive de la referencia. |
+| `parts/header.html` | Corregir dimensiones, casing y selector de idioma mediante #19 | QA demostró incumplimiento reproducible de AC-01. |
 | `parts/footer.html` | Sin cambio previsto; corrección solo si QA demuestra incumplimiento | Baseline terminada, cubierta por AC-01. |
 | `specs/1-clon-homepage/qa.md` | Actualización progresiva | Consolidar evidencia AC-01–AC-15. |
-| `CHANGELOG.md` y `style.css` | Actualización en #16 | Preparar versión coherente del release candidate. |
+| `functions.php` | Registrar en #19 una hoja específica mediante `wp_enqueue_block_style()` | Core Navigation no expone bandera ni etiqueta móvil como atributos; el registro cubre frontend/editor y carga solo con el bloque. |
+| `assets/css/header.css` | CSS estructural mínimo para logo, bandera y etiqueta móvil del menú en #19 | No se hardcodean colores ni familias; consume presets de `theme.json`. |
+| `style.css` | Sin CSS visual; release docs en #16 | Conserva únicamente metadata del theme. |
+| `CHANGELOG.md` | Actualización en #16 | Preparar versión coherente del release candidate. |
 
-No se crea `functions.php` salvo que un issue demuestre una necesidad que no pueda resolverse dentro del pattern con APIs estándar.
+El issue #19 demuestra la única necesidad actual de `functions.php`: registrar con la API estándar una hoja específica de bloque que WordPress cargue en frontend y editor. No se añade lógica de negocio ni JavaScript.
 
 ## Bloques, APIs y tokens
 
@@ -70,14 +73,15 @@ La selección final de bloques dentro de cada sección debe reproducir la semán
 ## Flujo de implementación
 
 1. Aprobar este paquete SDD y cerrar #2 mediante PR.
-2. Implementar #3 hero y aprobar su asset local.
-3. Implementar en orden #4 situaciones, #5 cómo ayudamos, #6 testimonio, #7 resultados, #8 debería sentirse, #9 conoce a Mario y #10 CTA final.
-4. Ensamblar los ocho patterns en `templates/front-page.html` mediante #11.
-5. Completar comparación visual 1:1 de página completa en #12.
-6. Ejecutar en paralelo, una vez aprobada la comparación base: #13 responsive/navegadores, #14 accesibilidad y #15 rendimiento/assets.
-7. Corregir defectos en el issue que introdujo el comportamiento; no ampliar silenciosamente el gate de QA.
-8. Ejecutar #16 sobre un commit candidato, consolidar `qa.md`, changelog y versión, y preparar revisión de release sin desplegar producción.
-9. Cerrar #1 únicamente cuando AC-01–AC-16 tengan evidencia y todos los sub-issues estén cerrados.
+2. Corregir en #19 la baseline visual del header detectada durante la revisión del Hero.
+3. Implementar #3 hero, aprobar su asset local y crear `front-page.html` como ensamblaje incremental revisable.
+4. Implementar en orden #4 situaciones, #5 cómo ayudamos, #6 testimonio, #7 resultados, #8 debería sentirse, #9 conoce a Mario y #10 CTA final; cada PR añade su pattern al template incremental.
+5. Completar y verificar el ensamblaje de los ocho patterns mediante #11.
+6. Completar comparación visual 1:1 de página completa en #12.
+7. Ejecutar en paralelo, una vez aprobada la comparación base: #13 responsive/navegadores, #14 accesibilidad y #15 rendimiento/assets.
+8. Corregir defectos en el issue que introdujo el comportamiento; no ampliar silenciosamente el gate de QA.
+9. Ejecutar #16 sobre un commit candidato, consolidar `qa.md`, changelog y versión, y preparar revisión de release sin desplegar producción.
+10. Cerrar #1 únicamente cuando AC-01–AC-16 tengan evidencia y todos los sub-issues estén cerrados.
 
 ## Diseño de los patterns
 

@@ -203,3 +203,4 @@ No hay preguntas abiertas que cambien el resultado de Fase 1. La selección conc
 | 2026-07-20 | Usar ocho patterns registrados y bloques core. | Es el contrato arquitectónico de Fase 1. |
 | 2026-07-20 | Mantener producción fuera de toda mutación. | La migración se desarrolla y valida en LocalWP. |
 | 2026-07-20 | Separar optimización WOFF2 en #15. | Las TTF son baseline funcional; la conversión requiere medición y comparación visual propias. |
+| 2026-07-20 | Corregir la baseline del header mediante #19 antes de aprobar el Hero. | La comparación directa demostró dimensiones, casing y selector de idioma distintos a producción; AC-01 no puede diferirse hasta el QA integral. |

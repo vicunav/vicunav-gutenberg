@@ -7,6 +7,8 @@
 - [Theme Handbook](https://developer.wordpress.org/themes/)
 - [Theme Structure](https://developer.wordpress.org/themes/core-concepts/theme-structure/)
 - [Templates](https://developer.wordpress.org/themes/templates/)
+- [Block Stylesheets](https://developer.wordpress.org/themes/features/block-stylesheets/)
+- [`wp_enqueue_block_style()`](https://developer.wordpress.org/reference/functions/wp_enqueue_block_style/)
 - [Registering Patterns](https://developer.wordpress.org/themes/patterns/registering-patterns/)
 - [theme.json Reference, versión 3](https://developer.wordpress.org/block-editor/reference-guides/theme-json-reference/)
 - [WordPress Coding Standards](https://developer.wordpress.org/coding-standards/wordpress-coding-standards/)

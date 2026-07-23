@@ -40,7 +40,7 @@ Los comandos PHP que carguen WordPress deben usar el runtime de LocalWP y el soc
 
 | Criterio | Owner | Prueba principal | Evidencia requerida | Estado |
 |---|---:|---|---|---|
-| AC-01 | #12 | Render + comparación header/footer | Capturas y smoke | Pendiente |
+| AC-01 | #12/#19 | Render + comparación header/footer | Capturas y smoke | Header en corrección mediante #19; footer pendiente |
 | AC-02 | #3 | Pattern hero | Lint, render, copy, asset y captura | Pendiente |
 | AC-03 | #4 | Pattern situaciones | Lint, lista/checks y captura | Pendiente |
 | AC-04 | #5 | Pattern cómo ayudamos | Lint, render, copy y captura | Pendiente |
@@ -56,6 +56,31 @@ Los comandos PHP que carguen WordPress deben usar el runtime de LocalWP y el soc
 | AC-14 | #15 | Assets + rendimiento | Peso, fuentes y Lighthouse ×3 | Pendiente |
 | AC-15 | #16 | Gate final | Theme Check, seguridad y release docs | Pendiente |
 | AC-16 | #1 | Consistency check y cierre | Todos los sub-issues/evidencia | Pendiente |
+
+## Hallazgo de baseline #19 — Header
+
+Fecha: 2026-07-20<br>
+Origen: revisión visual de `https://vicunav-gutenberg.local/` contra `https://vicunav.com/`
+
+| Control | Local observado | Referencia | Estado inicial |
+|---|---|---|---|
+| Header desktop | ≈84,7 px | 80 px | Fail |
+| Logo desktop | 180×37 px | ≈145×30 px | Fail |
+| Navegación | Mayúsculas; sin bandera ni subrayado de idioma | Title case; bandera y subrayado | Fail |
+| Header móvil | Logo de 180 px; icono de menú sin etiqueta | Logo ≈160×33 px; “MENU” visible | Fail |
+
+### Resultado de la corrección
+
+Entorno: WordPress 7.0.2, PHP 8.2.29, Chrome y theme activo mediante symlink temporal al worktree de #19.
+
+| Viewport/control | Resultado corregido | Veredicto |
+|---|---|---|
+| 1440×900 autenticado | Header 79 px; logo 145×30 px; margen lateral 72 px; title case; bandera 21×15 px; sin overflow | Pass |
+| 390×844 autenticado | Header 81 px; logo 160×33 px; margen lateral 20 px; botón “MENU” 71×24 px; sin links desktop visibles ni overflow | Pass |
+| Menú overlay | Abre con los cuatro destinos; `Escape` cierra y devuelve foco a “Open menu” | Pass |
+| Frontend/editor | Hoja registrada mediante `wp_enqueue_block_style()`; WordPress la sirve inline con `sourceURL` portable | Pass funcional |
+
+La diferencia de un píxel en la altura depende del redondeo subpíxel de la relación intrínseca del logo y está dentro de la tolerancia de rasterización. La comparación integral anónima y entre navegadores permanece en #12/#13.
 
 ## Controles estáticos por pattern/template
 

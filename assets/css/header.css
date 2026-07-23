@@ -1,0 +1,32 @@
+.vicunav-header__navigation .wp-block-navigation-item:last-child .wp-block-navigation-item__content {
+	align-items: center;
+	border-bottom: 1px solid currentColor;
+	display: inline-flex;
+	gap: var(--wp--preset--spacing--20);
+	padding-bottom: var(--wp--preset--spacing--10);
+}
+
+.vicunav-header__navigation .wp-block-navigation-item:last-child .wp-block-navigation-item__content::before {
+	background: url("../images/flag-en.svg") center / cover no-repeat;
+	content: "";
+	display: inline-block;
+	height: var(--wp--custom--header--flag-height);
+	width: var(--wp--custom--header--flag-width);
+}
+
+@media (max-width: 600px) {
+	.vicunav-header__logo img {
+		width: var(--wp--custom--header--logo-width-mobile) !important;
+	}
+
+	.vicunav-header__navigation .wp-block-navigation__responsive-container-open {
+		align-items: center;
+		display: inline-flex;
+		gap: var(--wp--preset--spacing--20);
+	}
+
+	.vicunav-header__navigation .wp-block-navigation__responsive-container-open::after {
+		content: "MENU";
+		font-size: var(--wp--preset--font-size--eyebrow);
+	}
+}
