@@ -41,7 +41,7 @@ Los comandos PHP que carguen WordPress deben usar el runtime de LocalWP y el soc
 | Criterio | Owner | Prueba principal | Evidencia requerida | Estado |
 |---|---:|---|---|---|
 | AC-01 | #12/#19 | Render + comparación header/footer | Capturas y smoke | Header en corrección mediante #19; footer pendiente |
-| AC-02 | #3 | Pattern hero | Lint, render, copy, asset y captura | Pendiente |
+| AC-02 | #3 | Pattern hero | Lint, render, copy, asset y comparación visual | Pass local; pendiente de review |
 | AC-03 | #4 | Pattern situaciones | Lint, lista/checks y captura | Pendiente |
 | AC-04 | #5 | Pattern cómo ayudamos | Lint, render, copy y captura | Pendiente |
 | AC-05 | #6 | Pattern testimonio | Lint, cita y captura | Pendiente |
@@ -49,7 +49,7 @@ Los comandos PHP que carguen WordPress deben usar el runtime de LocalWP y el soc
 | AC-07 | #8 | Pattern debería sentirse | Lint, CTA y captura | Pendiente |
 | AC-08 | #9 | Pattern conoce a Mario | Lint, bio, alt/assets y captura | Pendiente |
 | AC-09 | #10 | Pattern CTA final | Lint, teclado, destino y captura | Pendiente |
-| AC-10 | #11 | Template completo | Parse, render, HTTP 200 y Site Editor | Pendiente |
+| AC-10 | #3/#11 | Template incremental y cierre del ensamblaje | Parse, render, HTTP 200, orden y Site Editor | En progreso: header → Hero → footer |
 | AC-11 | #12 | Comparación sección por sección | Capturas/diff con commit y viewport | Pendiente |
 | AC-12 | #13 | Responsive + navegadores | Matriz y defectos resueltos | Pendiente |
 | AC-13 | #14 | WCAG 2.2 AA | Scanner + revisión manual | Pendiente |
@@ -81,6 +81,56 @@ Entorno: WordPress 7.0.2, PHP 8.2.29, Chrome y theme activo mediante symlink tem
 | Frontend/editor | Hoja registrada mediante `wp_enqueue_block_style()`; WordPress la sirve inline con `sourceURL` portable | Pass funcional |
 
 La diferencia de un píxel en la altura depende del redondeo subpíxel de la relación intrínseca del logo y está dentro de la tolerancia de rasterización. La comparación integral anónima y entre navegadores permanece en #12/#13.
+
+## Ejecución #3 — Hero
+
+Fecha: 2026-07-20<br>
+Rama: `agent/3-pattern-hero`<br>
+Commit probado: se registra en el PR del issue #3<br>
+Entorno: WordPress 7.0.2, PHP 8.2.29 y theme `vicunav` activo en LocalWP
+
+### Resultados
+
+| Check | Resultado | Evidencia |
+|---|---|---|
+| PHP | Pass | `php -l patterns/hero.php` sin errores. |
+| Registro | Pass | `WP_Block_Patterns_Registry` devuelve `vicunav/hero`. |
+| Render | Pass | `parse_blocks()` + `do_blocks()` producen salida no vacía, un `h1` y asset local. |
+| Copy | Pass | Eyebrow, H1, descripción y CTA coinciden literalmente con el spec. |
+| Asset | Pass con seguimiento | WebP local 1536×1024, 45.092 bytes y checksum registrado en `assets/images/SOURCES.md`; licencia original se reverifica en #16. |
+| Site Editor | Pass | Hero aparece en “All patterns”, “Banners” y “Featured”; el preview contiene un `h1`. |
+| Frontend | Pass | `front-page.html` incremental elimina el wrapper constrained; `/` responde HTTP 200 y contiene `.vicunav-hero` a ancho completo. |
+| Consola | Pass | Sin errores ni warnings durante la matriz responsive. |
+
+### Comparación visual
+
+| Viewport | Referencia | Local | Resultado |
+|---|---|---|---|
+| 390×844 | Hero ≈570,6 px; H1 32/38,4 px; cuerpo 14/19,6 px; CTA 48 px | Hero ≈570,9 px; H1 32,2/38,5 px; cuerpo 14,1/19,8 px; CTA 48 px | Pass |
+| 768×1024 | Composición responsive intermedia | Hero ≈579,1 px; sin overflow; H1 37,8 px; cuerpo 15,9 px | Pass funcional |
+| 1440×900 | Hero ≈592,7 px; H1 48/48 px; cuerpo 19/30,4 px; CTA 48 px | Hero ≈593 px; H1 47,8/48 px; cuerpo 19,2/30,4 px; CTA 48 px | Pass |
+| Overlay de lectura | Gradiente radial `neutral-100` → `neutral-100` al 10 % | Preset `hero-readability` de `theme.json` con la misma composición | Pass |
+
+Se compararon encuadre, posición vertical, saltos de línea, familias, peso, color y dimensiones del CTA. El asset local es la misma imagen optimizada servida por la referencia, sin hotlink. La cabecera y el footer pertenecen a su baseline previa y no alteran el veredicto del pattern.
+
+La inspección computada de producción confirmó dos capas superpuestas: un gradiente radial desde `neutral-100` hasta transparente y una capa `neutral-100` al 10 %. El preset local combina ambas en un solo gradiente equivalente; el pattern consume ese preset y solo tres variables semánticas para altura e interlineado/tracking. Los demás tamaños y espacios reutilizan la escala global.
+
+### Ensamblaje incremental en `/`
+
+La comparación final usa el mismo viewport y elimina del cálculo la barra de administración local. `front-page.html` contiene únicamente header → Hero → footer en esta etapa; el footer inmediato es inventario pendiente, no una representación de que el homepage esté completo.
+
+| Control | Referencia | Local | Resultado |
+|---|---|---|---|
+| 1440×900 | Header 80 px; Hero 593 px; imagen x=0/ancho=1425; contenido x=313/ancho=800 | Header 79 px; Hero 593 px; imagen x=0/ancho=1425; contenido x=313/ancho=800 | Pass |
+| Posición desktop | Eyebrow y=157; título y=207; cuerpo y=343; CTA y≈501 | Eyebrow y=155; título y=202; cuerpo y=338; CTA y=499 | Pass, diferencia ≤6 px |
+| 390×844 | Header 80 px; Hero 571 px; contenido x=42/ancho=291; CTA 168×48 px | Header 81 px; Hero 571 px; contenido x=42/ancho=291; CTA 168×48 px | Pass, diferencia ≤4 px |
+| 768×1024 | Composición intermedia | Hero 579 px; un `h1`; sin overflow | Pass funcional |
+| Flujo vertical | Header y Hero adyacentes | Gap 0; Hero y footer adyacentes mientras faltan secciones | Pass estructural |
+| Consola | Sin errores atribuibles a la sección | 0 errores/warnings | Pass |
+
+### Veredicto del issue
+
+**Pass local sobre la portada incremental; pendiente de review del PR.** No se avanzó al pattern de situaciones.
 
 ## Controles estáticos por pattern/template
 
