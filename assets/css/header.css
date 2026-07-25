@@ -10,6 +10,12 @@
 	width: 100% !important;
 }
 
+.vicunav-header__logo a {
+	display: block;
+	height: 100%;
+	line-height: 0;
+}
+
 .vicunav-header__navigation .wp-block-navigation-item:last-child .wp-block-navigation-item__content {
 	align-items: center;
 	border-bottom: 1px solid currentColor;
