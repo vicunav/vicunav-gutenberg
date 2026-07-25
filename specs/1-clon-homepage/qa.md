@@ -1,7 +1,7 @@
 # QA: clon exacto del homepage en Gutenberg
 
 Issue padre: #1<br>
-Estado: QA visual #12 y matriz responsive/navegadores #13 completadas<br>
+Estado: QA visual #12, responsive #13 y accesibilidad #14 completadas<br>
 Responsable: @mariovicunadev<br>
 Última actualización: 2026-07-25
 
@@ -52,7 +52,7 @@ Los comandos PHP que carguen WordPress deben usar el runtime de LocalWP y el soc
 | AC-10 | #3/#11 | Template incremental y cierre del ensamblaje | Parse, render, HTTP 200, orden y Site Editor | Pass; PR #35 integrado en `main` |
 | AC-11 | #12 | Comparación sección por sección | Capturas/diff con commit y viewport | Pass; evidencia reproducible en `docs/qa/evidence/phase-1/` |
 | AC-12 | #13 | Responsive + navegadores | Matriz y defectos resueltos | Pass; 21 recorridos en Chrome, Firefox y WebKit |
-| AC-13 | #14 | WCAG 2.2 AA | Scanner + revisión manual | Pendiente |
+| AC-13 | #14 | WCAG 2.2 AA | Scanner + revisión manual | Pass; cero violaciones abiertas sobre `c23602f` |
 | AC-14 | #15 | Assets + rendimiento | Peso, fuentes y Lighthouse ×3 | Pendiente |
 | AC-15 | #16 | Gate final | Theme Check, seguridad y release docs | Pendiente |
 | AC-16 | #1 | Consistency check y cierre | Todos los sub-issues/evidencia | Pendiente |
@@ -503,6 +503,33 @@ Firefox requirió desactivar HTTP/2 en el perfil aislado de prueba porque LocalW
 
 **Pass; listo para integrar.** No se encontraron defectos responsive ni específicos de motor.
 
+## Ejecución #14 — Accesibilidad WCAG 2.2 AA
+
+Fecha: 2026-07-25<br>
+Rama: `agent/14-qa-accesibilidad`<br>
+Commit probado: `c23602f`<br>
+Entorno: WordPress 7.0.2, PHP 8.2.29, axe-core 4.12.1, Chrome 150 y WebKit 26
+
+| Check | Resultado | Evidencia |
+|---|---|---|
+| WCAG automatizado | Pass | Cuatro estados; cero violaciones con tags 2.0/2.1/2.2 A/AA. |
+| Buenas prácticas | Pass | 17 reglas aprobadas; cero violaciones o incompletos. |
+| Contraste | Pass | Email corregido a 10,97:1; fondos complejos muestreados entre 9,19:1 y 20,57:1. |
+| Idioma | Pass | LocalWP configurado en `es_ES`; documento declara `lang="es"`. |
+| Teclado y foco | Pass | 21 controles desktop; indicador bicolor; orden lógico y sin foco oculto. |
+| Overlay móvil | Pass | Foco contenido, `Shift+Tab`, `Escape` y devolución al disparador. |
+| Semántica | Pass | Headings sin saltos, landmarks únicos, listas/cita y nombres accesibles. |
+| Medios | Pass | 20 alt revisados; decorativos vacíos y contenido contextual. |
+| Reflow/texto | Pass | 320 CSS px, zoom equivalente a 200 %/400 % y texto 200 % sin pérdida. |
+| Preferencias | Pass | Movimiento reducido y colores forzados sin pérdida funcional. |
+| Árbol accesible | Pass | WebKit expone banner, nav, main y contentinfo en orden lógico. |
+
+Se corrigieron cinco hallazgos: idioma de la instalación, contraste del email, nombres de navegación, foco bicolor y gutter del overlay. La evidencia completa con scanner, ratios, revisión manual y capturas está en [docs/qa/evidence/phase-1/accessibility/README.md](../../docs/qa/evidence/phase-1/accessibility/README.md).
+
+### Veredicto del issue
+
+**Pass; listo para integrar.** Cero violaciones A/AA bloqueantes permanecen abiertas.
+
 ## Controles estáticos por pattern/template
 
 Registrar comando, versión y salida en el PR correspondiente:
@@ -571,17 +598,17 @@ Para cada fila, capturar referencia y LocalWP con mismo navegador, viewport, est
 
 Owner: #14.
 
-- [ ] Recorrido completo con `Tab`, `Shift+Tab`, `Enter`, `Space` y `Escape`.
-- [ ] Foco visible, no oculto y con orden coherente.
-- [ ] Menú overlay abre, cierra, contiene y devuelve foco correctamente.
-- [ ] Un `h1`; headings y landmarks con jerarquía lógica.
-- [ ] Nombres accesibles de logo, navegación, enlaces, botones e iconos.
-- [ ] Alt text contextual; imágenes decorativas con `alt=""`.
-- [ ] Contraste y targets conforme a WCAG 2.2 AA.
-- [ ] Zoom 200 %, reflow a 320 CSS px y texto aumentado sin pérdida.
-- [ ] `prefers-reduced-motion` y contraste forzado cuando aplique.
-- [ ] Smoke de VoiceOver/Safari para navegación principal.
-- [ ] Scan automatizado sin violaciones críticas o serias, complementado por revisión manual.
+- [x] Recorrido completo con `Tab`, `Shift+Tab`, `Enter`, `Space` y `Escape`.
+- [x] Foco visible, no oculto y con orden coherente.
+- [x] Menú overlay abre, cierra, contiene y devuelve foco correctamente.
+- [x] Un `h1`; headings y landmarks con jerarquía lógica.
+- [x] Nombres accesibles de logo, navegación, enlaces, botones e iconos.
+- [x] Alt text contextual; imágenes decorativas con `alt=""`.
+- [x] Contraste y targets conforme a WCAG 2.2 AA.
+- [x] Zoom 200 %, reflow a 320 CSS px y texto aumentado sin pérdida.
+- [x] `prefers-reduced-motion` y contraste forzado cuando aplique.
+- [x] Smoke del árbol accesible WebKit/Safari para navegación principal.
+- [x] Scan automatizado sin violaciones críticas o serias, complementado por revisión manual.
 
 ## Rendimiento
 
@@ -621,9 +648,10 @@ Owner: #16.
 | 2026-07-25 | Movimiento | Las capturas de producción muestran estados atenuados por animaciones de entrada de Elementor | Evidencia visual #12 | Omitir animaciones según `AGENTS.md`; contenido local visible de inmediato | Resuelto por contrato |
 | 2026-07-25 | Semántica | La jerarquía H1 de Elementor no coincide con el inventario contractual | Render y evidencia #11/#12 | Mantener un único H1 correcto en el hero | Resuelto por contrato |
 | 2026-07-25 | Entorno QA | Firefox aislado no completaba el evento de carga sobre HTTP/2 de LocalWP | Evidencia #13 | Ejecutar el perfil local con HTTP/1.1; DOM y theme no cambian | Resuelto en harness |
+| 2026-07-25 | Accesibilidad | Email 2,93:1, idioma inglés, nav sin nombre útil y foco parcial/insuficiente | Evidencia #14 | Tokens existentes, labels explícitos, `es_ES` y foco bicolor con gutter | Resuelto |
 
 Una preferencia visual no puede registrarse como limitación. Toda excepción A/AA, de seguridad o de pérdida de contenido bloquea release.
 
 ## Veredicto de Fase 1
 
-**Pendiente.** Los diez patterns y #11 están integrados; #12 y #13 pasan comparación visual, responsive y compatibilidad de motores. Los issues #14–#16 todavía deben completar accesibilidad, rendimiento, seguridad y release. Solo #16 puede proponer `Pass` sobre el commit candidato; esto no autoriza despliegue a producción.
+**Pendiente.** Los diez patterns y #11 están integrados; #12–#14 pasan comparación visual, responsive, motores y accesibilidad. Los issues #15–#16 todavía deben completar rendimiento/assets, seguridad y release. Solo #16 puede proponer `Pass` sobre el commit candidato; esto no autoriza despliegue a producción.
