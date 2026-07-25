@@ -97,7 +97,11 @@
     },
     "custom": {
       "layout": {
-        "sectionContent": "1080px"
+        "sectionContent": "1080px",
+        "testimonialCard": "500px"
+      },
+      "media": {
+        "testimonialAvatar": "120px"
       },
       "process": {
         "imageColumn": "27.232%",
@@ -105,6 +109,9 @@
       },
       "shadow": {
         "card": "0 2px 8px -2px var(--wp--preset--color--neutral-500)"
+      },
+      "radius": {
+        "card": "8px"
       },
       "footer": {
         "bodyLineHeight": "1.3",

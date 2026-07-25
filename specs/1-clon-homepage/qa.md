@@ -202,6 +202,39 @@ En 390×844 ambas secciones colapsan a una columna de 350 px, conservan el orden
 
 **Pass local; pendiente de review del PR.**
 
+## Ejecución #6 — Testimonio destacado
+
+Fecha: 2026-07-25<br>
+Rama: `agent/6-pattern-testimonio`<br>
+Base de revisión: PR del issue #5
+
+### Resultados
+
+| Check | Resultado | Evidencia |
+|---|---|---|
+| PHP y JSON | Pass | Lint de pattern/functions, JSON válido y diff sin whitespace inválido. |
+| Registro y render | Pass | `vicunav/testimonio-destacado` produce un `blockquote`, tres imágenes y atribución. |
+| Copy | Pass | Eyebrow, cita y atribución con guion coinciden literalmente con la referencia vigente. |
+| Semántica | Pass | La cita usa `core/quote`; retrato con alt de identidad y fondo decorativo con alt vacío. |
+| Assets | Pass con limitación trazada | Fondo, poster y retrato locales: 99.132 bytes combinados. |
+| Frontend | Pass | HTTP 200, medios cargados y sin overflow horizontal. |
+
+### Comparación visual a 1280×720
+
+| Control | Referencia | Local | Veredicto |
+|---|---:|---:|---|
+| Sección | 1792×1377,71 px | 1792×1377,70 px | Pass |
+| Tarjeta | 500×968,7 px | 500×968,7 px | Pass |
+| Medio principal | 436×775,1 px | 436×775,1 px | Pass |
+| Retrato | 120×120 px | 120×120 px | Pass |
+| Hilo visual | Fondo al 20 %, superficie `neutral-100`, sombra y radio 8 px | Mismos presets/tokens | Pass |
+
+Producción inserta un MP4 vertical de 112.225.142 bytes. Incluirlo en el theme rompería el presupuesto de assets y añadiría más de 112 MB al repositorio. La implementación conserva el estado visual inicial mediante su poster local; #15 decidirá una estrategia de video optimizado o alojamiento autorizado. Esta es una limitación técnica explícita, no una decisión silenciosa de diseño.
+
+### Veredicto del issue
+
+**Pass local con sustitución estática justificada; pendiente de review del PR.**
+
 ## Hallazgo y corrección #21 — Footer
 
 Fecha: 2026-07-20<br>

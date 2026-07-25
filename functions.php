@@ -96,6 +96,24 @@ function vicunav_register_proceso_block_styles() {
 add_action( 'init', 'vicunav_register_proceso_block_styles' );
 
 /**
+ * Registra la composición del testimonio junto al bloque Quote.
+ */
+function vicunav_register_testimonio_block_styles() {
+	$stylesheet_path = get_theme_file_path( 'assets/css/testimonio.css' );
+
+	wp_enqueue_block_style(
+		'core/quote',
+		array(
+			'handle' => 'vicunav-testimonio',
+			'src'    => get_theme_file_uri( 'assets/css/testimonio.css' ),
+			'path'   => $stylesheet_path,
+			'ver'    => (string) filemtime( $stylesheet_path ),
+		)
+	);
+}
+add_action( 'init', 'vicunav_register_testimonio_block_styles' );
+
+/**
  * Registra los ritmos internos del footer junto al bloque Columns.
  */
 function vicunav_register_footer_block_styles() {
