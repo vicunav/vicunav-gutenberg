@@ -1,7 +1,7 @@
 # QA: clon exacto del homepage en Gutenberg
 
 Issue padre: #1<br>
-Estado: diez patterns y gate de ensamblaje #11 integrados; QA visual #12 completado<br>
+Estado: QA visual #12 y matriz responsive/navegadores #13 completadas<br>
 Responsable: @mariovicunadev<br>
 Última actualización: 2026-07-25
 
@@ -51,7 +51,7 @@ Los comandos PHP que carguen WordPress deben usar el runtime de LocalWP y el soc
 | AC-09 | #33/#10 | Marcas + CTA final | Lint, assets, teclado, destinos y captura | Pass; PRs #34 y #31 integrados |
 | AC-10 | #3/#11 | Template incremental y cierre del ensamblaje | Parse, render, HTTP 200, orden y Site Editor | Pass; PR #35 integrado en `main` |
 | AC-11 | #12 | Comparación sección por sección | Capturas/diff con commit y viewport | Pass; evidencia reproducible en `docs/qa/evidence/phase-1/` |
-| AC-12 | #13 | Responsive + navegadores | Matriz y defectos resueltos | Pendiente |
+| AC-12 | #13 | Responsive + navegadores | Matriz y defectos resueltos | Pass; 21 recorridos en Chrome, Firefox y WebKit |
 | AC-13 | #14 | WCAG 2.2 AA | Scanner + revisión manual | Pendiente |
 | AC-14 | #15 | Assets + rendimiento | Peso, fuentes y Lighthouse ×3 | Pendiente |
 | AC-15 | #16 | Gate final | Theme Check, seguridad y release docs | Pendiente |
@@ -476,6 +476,33 @@ Las capturas de producción conservan estados intermedios de las animaciones de 
 
 **Pass para Chromium desktop; listo para integrar.** La matriz responsive y entre navegadores permanece separada en #13.
 
+## Ejecución #13 — Responsive y compatibilidad entre navegadores
+
+Fecha: 2026-07-25<br>
+Rama: `agent/13-qa-responsive-browser`<br>
+Commit base probado: `5a01490`<br>
+Entorno: macOS, Playwright 1.57.0, Chrome 150.0.7871.182, Firefox 144.0.2 y WebKit 26.0
+
+| Check | Resultado | Evidencia |
+|---|---|---|
+| Matriz base | Pass | 360×800, 390×844, 768×1024, 844×390 y 1440×900 en tres motores. |
+| Zoom y reflow | Pass | 720 px equivalentes a 200 % y 320 px equivalentes a 400 %, en tres motores. |
+| Overflow | Pass | `scrollWidth === clientWidth` en los 21 recorridos. |
+| Contenido y medios | Pass | Diez secciones, un H1 y 20/20 imágenes cargadas en cada recorrido. |
+| Navegación móvil | Pass | Cuatro destinos; abre, cierra con `Escape` y devuelve el foco. |
+| Navegación amplia | Pass | Cuatro destinos visibles desde 720 px. |
+| Landmarks | Pass | Un `header`, un `main` y un `footer`. |
+| Consola | Pass | Cero errores de consola y cero excepciones de página. |
+| Evidencia visual | Pass | Nueve capturas representativas con checksums y revisión manual. |
+
+La evidencia reproducible, matriz completa, condiciones, acomodación local de Firefox y SHA-256 está en [docs/qa/evidence/phase-1/responsive/README.md](../../docs/qa/evidence/phase-1/responsive/README.md).
+
+Firefox requirió desactivar HTTP/2 en el perfil aislado de prueba porque LocalWP mantenía abierto el evento de navegación con ese binario. La portada ya estaba renderizada y el cambio a HTTP/1.1 eliminó el comportamiento del servidor local; no se modificó el theme. Chrome y WebKit no necesitaron esta acomodación.
+
+### Veredicto del issue
+
+**Pass; listo para integrar.** No se encontraron defectos responsive ni específicos de motor.
+
 ## Controles estáticos por pattern/template
 
 Registrar comando, versión y salida en el PR correspondiente:
@@ -528,17 +555,17 @@ Para cada fila, capturar referencia y LocalWP con mismo navegador, viewport, est
 
 | Área | 390×844 | 768×1024 | 1440×900 | Evidencia | Estado |
 |---|---|---|---|---|---|
-| Header + navegación | Pass local | — | Pass visual | #12/#13 | Desktop aprobado; motores pendiente |
-| Hero | Pass local | Pass local | Pass visual | #3/#12 | Desktop aprobado; motores pendiente |
-| Situaciones | Pass local | — | Pass visual | #4/#12 | Desktop aprobado; motores pendiente |
-| Cómo ayudamos | Pass local | — | Pass visual | #5/#12 | Desktop aprobado; motores pendiente |
-| Testimonio | Pass local | — | Pass visual | #6/#12/#15 | Poster aprobado; video pendiente en #15 |
-| Resultados | Pass local | — | Pass visual | #7/#12 | Desktop aprobado; motores pendiente |
-| Debería sentirse | Pass local | — | Pass visual | #8/#12 | Desktop aprobado; motores pendiente |
-| Conoce a Mario | Pass local | — | Pass visual | #9/#12 | Desktop aprobado; motores pendiente |
-| Marcas | Pass local | — | Pass visual | #33/#12 | Desktop aprobado; motores pendiente |
-| CTA final | Pass local | — | Pass visual | #10/#12 | Desktop aprobado; motores pendiente |
-| Footer | Pass local | — | Pass visual | #12/#13 | Desktop aprobado; motores pendiente |
+| Header + navegación | Pass | Pass | Pass | #12/#13 | Aprobado en tres motores |
+| Hero | Pass | Pass | Pass | #3/#12/#13 | Aprobado en tres motores |
+| Situaciones | Pass | Pass | Pass | #4/#12/#13 | Aprobado en tres motores |
+| Cómo ayudamos | Pass | Pass | Pass | #5/#12/#13 | Aprobado en tres motores |
+| Testimonio | Pass | Pass | Pass | #6/#12/#13/#15 | Responsive aprobado; video pendiente en #15 |
+| Resultados | Pass | Pass | Pass | #7/#12/#13 | Aprobado en tres motores |
+| Debería sentirse | Pass | Pass | Pass | #8/#12/#13 | Aprobado en tres motores |
+| Conoce a Mario | Pass | Pass | Pass | #9/#12/#13 | Aprobado en tres motores |
+| Marcas | Pass | Pass | Pass | #33/#12/#13 | Aprobado en tres motores |
+| CTA final | Pass | Pass | Pass | #10/#12/#13 | Aprobado en tres motores |
+| Footer | Pass | Pass | Pass | #12/#13 | Aprobado en tres motores |
 
 ## Accesibilidad manual
 
@@ -593,9 +620,10 @@ Owner: #16.
 | 2026-07-23 | Integración | GitHub está configurado para squash merge; una pila retiene ancestros ya integrados | PRs #25–#34 | Se reconstruyó y retargeteó cada PR después de su merge | Resuelto |
 | 2026-07-25 | Movimiento | Las capturas de producción muestran estados atenuados por animaciones de entrada de Elementor | Evidencia visual #12 | Omitir animaciones según `AGENTS.md`; contenido local visible de inmediato | Resuelto por contrato |
 | 2026-07-25 | Semántica | La jerarquía H1 de Elementor no coincide con el inventario contractual | Render y evidencia #11/#12 | Mantener un único H1 correcto en el hero | Resuelto por contrato |
+| 2026-07-25 | Entorno QA | Firefox aislado no completaba el evento de carga sobre HTTP/2 de LocalWP | Evidencia #13 | Ejecutar el perfil local con HTTP/1.1; DOM y theme no cambian | Resuelto en harness |
 
 Una preferencia visual no puede registrarse como limitación. Toda excepción A/AA, de seguridad o de pérdida de contenido bloquea release.
 
 ## Veredicto de Fase 1
 
-**Pendiente.** Los diez patterns y #11 están integrados; #12 pasa la comparación visual integral en Chromium desktop. Los issues #13–#16 todavía deben completar navegadores/responsive, accesibilidad, rendimiento, seguridad y release. Solo #16 puede proponer `Pass` sobre el commit candidato; esto no autoriza despliegue a producción.
+**Pendiente.** Los diez patterns y #11 están integrados; #12 y #13 pasan comparación visual, responsive y compatibilidad de motores. Los issues #14–#16 todavía deben completar accesibilidad, rendimiento, seguridad y release. Solo #16 puede proponer `Pass` sobre el commit candidato; esto no autoriza despliegue a producción.
