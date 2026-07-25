@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "theme": "vicunav",
+  "version": "0.2.0",
+  "date": "2026-07-25",
+  "sourceCommit": "356e341",
+  "archive": {
+    "filename": "vicunav-0.2.0.zip",
+    "bytes": 1183399,
+    "sha256": "84562ad4d6dbe55adf55590b4c38534a8fe22c0fd5865223b18a0ca57bd1a042",
+    "root": "vicunav/",
+    "files": 65,
+    "symlinks": 0
+  },
+  "checks": {
+    "themeCheck": "pass",
+    "phpLint": "pass",
+    "themeJson": "pass",
+    "secretScan": "pass",
+    "localPathScan": "pass",
+    "frontendSmoke": "pass"
+  },
+  "productionChanged": false
+}
