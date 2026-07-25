@@ -297,7 +297,7 @@ El eyebrow “Sin presiones, ni tácticas raras”, omitido por el inventario in
 
 ## Ejecución #9 — Conoce a Mario
 
-Fecha: 2026-07-23<br>
+Fecha: 2026-07-25<br>
 Rama: `agent/9-pattern-conoce-a-mario`<br>
 Base de revisión: PR del issue #8
 
@@ -321,6 +321,37 @@ Base de revisión: PR del issue #8
 | H2 | 48/48 px, dos líneas | 48/48 px, dos líneas | Pass |
 
 La cuadrícula colapsa mediante el breakpoint nativo de Columns; el retrato conserva proporción intrínseca y ancho máximo tokenizado.
+
+### Veredicto del issue
+
+**Pass local; pendiente de review del PR.**
+
+## Ejecución #33 — Marcas con las que he trabajado
+
+Fecha: 2026-07-25<br>
+Rama: `agent/33-pattern-marcas`<br>
+Base de revisión: PR del issue #9
+
+| Check | Resultado | Evidencia |
+|---|---|---|
+| PHP | Pass | Pattern y functions sin errores; diff limpio. |
+| Registro y render | Pass | `vicunav/marcas` produce un H2 y cinco imágenes en el orden aprobado. |
+| Copy | Pass | “Marcas con las que he trabajado” coincide literalmente con producción. |
+| Accesibilidad | Pass | Cada logo conserva el nombre de la marca como texto alternativo. |
+| Assets | Pass | Cinco WebP locales, 294.450 bytes combinados, con procedencia y checksums. |
+| Frontend | Pass | HTTP 200, imágenes cargadas y sin overflow horizontal. |
+
+### Comparación visual a 1792 px
+
+| Control | Referencia | Local | Veredicto |
+|---|---:|---:|---|
+| Sección | 1792×304,74 px | 1792×304,74 px | Pass |
+| Área de logos | 1248 px | 1248 px | Pass |
+| Cada celda | 198,40 px | 198,40 px | Pass |
+| Gap | 64 px | 64 px tokenizados | Pass |
+| Superficie | `neutral-800` | `neutral-800` | Pass |
+
+En 390×844 la cuadrícula colapsa a dos columnas, conserva las cinco marcas, no recorta logos y no genera overflow.
 
 ### Veredicto del issue
 

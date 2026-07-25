@@ -97,7 +97,7 @@ El resultado se puede editar e inspeccionar en Gutenberg sin bloques inválidos,
 | Resultados | Eyebrow, H2, subtítulo y cinco resultados | `h2` + lista | #7 |
 | Debería sentirse | Eyebrow, H2, párrafo y “¡Hablemos!” | `h2` | #8 |
 | Conoce a Mario | Eyebrow, H2, subtítulo y bio de tres párrafos | `h2` | #9 |
-| Marcas | H2 y cinco logos locales | `h2` + imágenes | Issue específico derivado de la auditoría |
+| Marcas | H2 y cinco logos locales | `h2` + imágenes | #33 |
 | CTA final | H2, párrafo y “Hablemos sobre tu sitio web” | `h2` | #10 |
 | Footer | Identidad, descripción, 3 columnas, audiencias, fit y legal | `footer` + headings internos | Baseline / #12 |
 

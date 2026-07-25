@@ -150,6 +150,24 @@ function vicunav_register_conoce_mario_block_styles() {
 add_action( 'init', 'vicunav_register_conoce_mario_block_styles' );
 
 /**
+ * Registra la cuadrícula de marcas junto al bloque Group.
+ */
+function vicunav_register_marcas_block_styles() {
+	$stylesheet_path = get_theme_file_path( 'assets/css/marcas.css' );
+
+	wp_enqueue_block_style(
+		'core/group',
+		array(
+			'handle' => 'vicunav-marcas',
+			'src'    => get_theme_file_uri( 'assets/css/marcas.css' ),
+			'path'   => $stylesheet_path,
+			'ver'    => (string) filemtime( $stylesheet_path ),
+		)
+	);
+}
+add_action( 'init', 'vicunav_register_marcas_block_styles' );
+
+/**
  * Registra los ritmos internos del footer junto al bloque Columns.
  */
 function vicunav_register_footer_block_styles() {
