@@ -84,10 +84,20 @@ Nota: ambas fuentes (Bodoni Moda, Red Hat Display, Gloock, Caveat) deben cargars
 7. Tus clientes aún tienen que llamarte o escribirte para agendar. No hay una forma clara de reservar desde tu sitio.
 8. Usas demasiadas herramientas separadas para gestionar tu negocio y nada está conectado.
 
-### 3. "Cómo ayudamos" — Proceso (eyebrow + H2 + subtítulo + 6 pasos numerados)
+### 3A. "Cómo ayudamos" — Introducción
 - Eyebrow: "Cómo ayudamos"
 - H2: "Tu Sitio Web, Sin el Estrés"
 - Subtítulo: "Guiamos el proceso con claridad en cada paso"
+- Puntos:
+  1. "Escribimos - Para que nunca tengas que adivinar qué decir. El texto suena como tú y comunica claramente cómo ayudas."
+  2. "Diseñamos - Para que no te pierdas en decisiones interminables. Definimos juntos una dirección visual que refleje tu negocio."
+  3. "Configuramos - Para que tus clientes puedan reservar o contactarte directamente desde tu sitio, sin pasar por WhatsApp o llamadas."
+  4. "Apoyamos - Para que no tengas que manejar la parte técnica solo. Estamos contigo antes, durante y después del lanzamiento."
+- Imagen editorial: composición vertical “How Vicunav helps”.
+
+### 3B. "Así funciona" — Proceso
+- Eyebrow: "Así funciona"
+- H2: "Tu Sitio Web, Completamente Acompañado"
 
 | # | Título | Descripción |
 |---|---|---|
@@ -108,9 +118,16 @@ Nota: ambas fuentes (Bodoni Moda, Red Hat Display, Gloock, Caveat) deben cargars
 ### 5. "Los Resultados"
 - Eyebrow: "Los Resultados"
 - H2: "Un Sitio Web del que Sientes Orgullo de Compartir"
-- Copy: "Porque sabes que va a: Reflejar tu trabajo con claridad y honestidad"
+- Subtítulo: "Porque sabes que va a:"
+- Resultados:
+  1. "Reflejar tu trabajo con claridad y honestidad"
+  2. "Atraer a las personas correctas para tu negocio"
+  3. "Aparecer cuando te buscan en Google y en sistemas de IA"
+  4. "Permitir que tus clientes reserven directamente, sin pasos intermedios"
+  5. "Funcionar con las herramientas que ya usas o las que configuremos juntos"
 
 ### 6. "Debería Sentirse Como Tú"
+- Eyebrow: "Sin presiones, ni tácticas raras"
 - H2: "Debería Sentirse Como Tú"
 - Párrafo: "Si ofreces un servicio, lo último que quieres es un sitio web que se sienta agresivo o de ventas. Eso simplemente no es como operas. Tu sitio debería sentirse como lo que eres: claro, honesto, y una extensión natural de cómo ya apoyas a las personas que trabajan contigo."
 - Botón: "¡Hablemos!"
@@ -124,12 +141,16 @@ Nota: ambas fuentes (Bodoni Moda, Red Hat Display, Gloock, Caveat) deben cargars
   2. "Eso fue lo que me llevó a crear Vicunav. Un estudio enfocado en diseñar sitios web claros y profesionales para coaches, consultores, terapeutas, formadores y cualquier profesional cuyo negocio se basa en el servicio que ofrece. Sin marketing agresivo, sin diseños genéricos, sin que tengas que resolverlo todo solo."
   3. "Si tu trabajo importa, tu sitio web debería reflejarlo. Y las personas correctas deberían poder encontrarte, tanto en Google como cuando le preguntan a una IA."
 
-### 8. CTA final
+### 8. "Marcas con las que he trabajado"
+- H2: "Marcas con las que he trabajado"
+- Cinco logos del sitio de referencia, almacenados localmente y presentados como una fila responsive.
+
+### 9. CTA final
 - H2: "¿Listo para un sitio web que realmente refleje tu trabajo y te ayude a crecer?"
 - Párrafo: "Si buscas un sitio claro y profesional, con reservas en línea y las herramientas que tu negocio necesita, podemos empezar con una conversación sencilla."
 - Botón: "Hablemos sobre tu sitio web"
 
-### 9. Footer
+### 10. Footer
 - Logo + tagline: "Vicunav — Diseño web profesional para profesionales independientes y negocios."
 - Descripción: "Sitios web y herramientas para profesionales independientes y negocios de servicios. Diseñados para generar confianza, aparecer en Google y en sistemas de IA, recibir reservas en línea, y funcionar bien desde el primer día."
 - Columna "Explorar": Inicio · Servicios · Portfolio · Comencemos
@@ -149,7 +170,7 @@ Nota: ambas fuentes (Bodoni Moda, Red Hat Display, Gloock, Caveat) deben cargars
 1. `theme.json` completo (colores + tipografía) — primero, antes de cualquier pattern.
 2. `parts/header.html`
 3. `parts/footer.html`
-4. Patterns en el orden del inventario: hero → situaciones → cómo-ayudamos → testimonio → resultados → deberia-sentirse-como-tu → conoce-a-mario → cta-final
+4. Patterns en el orden del inventario: hero → situaciones → cómo-ayudamos-intro → cómo-ayudamos/proceso → testimonio → resultados → deberia-sentirse-como-tu → conoce-a-mario → marcas → cta-final
 5. `templates/front-page.html` ensamblando todo
 6. Verificación visual contra vicunav.com en vivo, sección por sección
 7. Commit por cada paso completado

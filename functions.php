@@ -60,6 +60,42 @@ function vicunav_register_situaciones_block_styles() {
 add_action( 'init', 'vicunav_register_situaciones_block_styles' );
 
 /**
+ * Registra la composición de la introducción de servicios junto al bloque Group.
+ */
+function vicunav_register_ayuda_block_styles() {
+	$stylesheet_path = get_theme_file_path( 'assets/css/ayuda.css' );
+
+	wp_enqueue_block_style(
+		'core/group',
+		array(
+			'handle' => 'vicunav-ayuda',
+			'src'    => get_theme_file_uri( 'assets/css/ayuda.css' ),
+			'path'   => $stylesheet_path,
+			'ver'    => (string) filemtime( $stylesheet_path ),
+		)
+	);
+}
+add_action( 'init', 'vicunav_register_ayuda_block_styles' );
+
+/**
+ * Registra la cuadrícula del proceso junto al bloque Group.
+ */
+function vicunav_register_proceso_block_styles() {
+	$stylesheet_path = get_theme_file_path( 'assets/css/proceso.css' );
+
+	wp_enqueue_block_style(
+		'core/group',
+		array(
+			'handle' => 'vicunav-proceso',
+			'src'    => get_theme_file_uri( 'assets/css/proceso.css' ),
+			'path'   => $stylesheet_path,
+			'ver'    => (string) filemtime( $stylesheet_path ),
+		)
+	);
+}
+add_action( 'init', 'vicunav_register_proceso_block_styles' );
+
+/**
  * Registra los ritmos internos del footer junto al bloque Columns.
  */
 function vicunav_register_footer_block_styles() {

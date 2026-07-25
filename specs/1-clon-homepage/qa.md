@@ -165,6 +165,43 @@ En 390×844 la tarjeta ocupa 335 px con margen de sitio de 20 px, los ocho punto
 
 **Pass local; pendiente de review del PR.**
 
+## Ejecución #5 — Cómo ayudamos
+
+Fecha: 2026-07-25<br>
+Rama: `agent/5-pattern-como-ayudamos`<br>
+Base de revisión: `main`, después del squash merge del issue #4
+
+### Resultados
+
+| Check | Resultado | Evidencia |
+|---|---|---|
+| PHP y JSON | Pass | `php -l`, `jq empty theme.json` y `git diff --check` sin errores. |
+| Registro y render | Pass | `vicunav/como-ayudamos-intro` y `vicunav/como-ayudamos` registrados; dos H2, seis títulos de paso, siete imágenes y CTA. |
+| Copy | Pass | Introducción, cuatro puntos, proceso 01–06 y “Ver paquetes” coinciden con la referencia vigente. |
+| Bloques | Pass | Composición exclusiva con Group, Paragraph, Heading, Image, Buttons y Button. |
+| Assets | Pass con seguimiento | Siete WebP locales, 251.310 bytes combinados, fuentes y checksums documentados. |
+| Frontend | Pass | HTTP 200, un H1 en la página, imágenes cargadas y cero overflow horizontal. |
+
+### Comparación visual
+
+La auditoría del 2026-07-25 confirmó que la referencia contiene dos secciones completas. Se implementan como patterns independientes para conservar responsabilidad única y edición directa desde Gutenberg.
+
+| Control a 1792 px | Referencia | Local | Veredicto |
+|---|---:|---:|---|
+| Introducción | 1792×723,42 px | 1792×723,39 px | Pass |
+| Copy de introducción | 669,60×635,42 px | 669,88×635,39 px | Pass |
+| Imagen editorial | 501,96×627,45 px | 506,11×632,63 px | Pass; diferencia ≤5,2 px |
+| Proceso | 1792×894,17 px | 1792×894,17 px | Pass |
+| Cuadrícula | 1280 px; dos columnas de 624 px | 1280 px; dos columnas de 624 px | Pass |
+| Medio de cada paso | 145,93×111,63 px | 145,92×111,63 px | Pass |
+| CTA | 155,85×48 px | 155,85×48 px | Pass |
+
+En 390×844 ambas secciones colapsan a una columna de 350 px, conservan el orden editorial, todas las imágenes cargan y no existe overflow horizontal. `AGENTS.md` y el spec se actualizaron con el contenido real detectado, evitando que la documentación vuelva a ocultar estas diferencias.
+
+### Veredicto del issue
+
+**Pass local; pendiente de review del PR.**
+
 ## Hallazgo y corrección #21 — Footer
 
 Fecha: 2026-07-20<br>
