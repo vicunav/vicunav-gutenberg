@@ -6,6 +6,19 @@
  */
 
 /**
+ * Carga los estilos globales mínimos del theme.
+ */
+function vicunav_enqueue_theme_styles() {
+	wp_enqueue_style(
+		'vicunav-style',
+		get_stylesheet_uri(),
+		array(),
+		(string) wp_get_theme()->get( 'Version' )
+	);
+}
+add_action( 'wp_enqueue_scripts', 'vicunav_enqueue_theme_styles' );
+
+/**
  * Registra los estilos estructurales del header junto al bloque Navigation.
  */
 function vicunav_register_header_block_styles() {
