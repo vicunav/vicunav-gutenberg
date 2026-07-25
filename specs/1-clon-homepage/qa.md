@@ -1,7 +1,7 @@
 # QA: clon exacto del homepage en Gutenberg
 
 Issue padre: #1<br>
-Estado: diez patterns integrados; gate de ensamblaje #11 en revisión<br>
+Estado: diez patterns y gate de ensamblaje #11 integrados; QA visual #12 completado<br>
 Responsable: @mariovicunadev<br>
 Última actualización: 2026-07-25
 
@@ -49,8 +49,8 @@ Los comandos PHP que carguen WordPress deben usar el runtime de LocalWP y el soc
 | AC-07 | #8 | Pattern debería sentirse | Lint, CTA y captura | Pass; PR #29 integrado |
 | AC-08 | #9 | Pattern conoce a Mario | Lint, bio, alt/assets y captura | Pass; PR #30 integrado |
 | AC-09 | #33/#10 | Marcas + CTA final | Lint, assets, teclado, destinos y captura | Pass; PRs #34 y #31 integrados |
-| AC-10 | #3/#11 | Template incremental y cierre del ensamblaje | Parse, render, HTTP 200, orden y Site Editor | Pass en `agent/11-ensamblaje-portada`; PR pendiente |
-| AC-11 | #12 | Comparación sección por sección | Capturas/diff con commit y viewport | Pendiente |
+| AC-10 | #3/#11 | Template incremental y cierre del ensamblaje | Parse, render, HTTP 200, orden y Site Editor | Pass; PR #35 integrado en `main` |
+| AC-11 | #12 | Comparación sección por sección | Capturas/diff con commit y viewport | Pass; evidencia reproducible en `docs/qa/evidence/phase-1/` |
 | AC-12 | #13 | Responsive + navegadores | Matriz y defectos resueltos | Pendiente |
 | AC-13 | #14 | WCAG 2.2 AA | Scanner + revisión manual | Pendiente |
 | AC-14 | #15 | Assets + rendimiento | Peso, fuentes y Lighthouse ×3 | Pendiente |
@@ -447,7 +447,34 @@ WordPress agrega el landmark semántico al wrapper de cada `core/template-part`.
 
 ### Veredicto del issue
 
-**Pass; listo para integrar.**
+**Pass; integrado mediante PR #35.**
+
+## Ejecución #12 — Comparación visual integral
+
+Fecha: 2026-07-25<br>
+Rama: `agent/12-qa-visual`<br>
+Commit base probado: `ab47ba0`<br>
+Entorno: Codex In-app Browser basado en Chromium, macOS, sesión anónima y viewport 1440×900
+
+| Check | Resultado | Evidencia |
+|---|---|---|
+| Cobertura | Pass | Se compararon header, diez patterns y footer en seis pares de captura. |
+| Condiciones equivalentes | Pass | Mismo navegador, viewport, zoom y posiciones de scroll equivalentes. |
+| Copy y orden | Pass | Sin diferencias silenciosas; el inventario y la secuencia coinciden. |
+| Geometría | Pass | Documento de 8530 px en producción y 8532 px local; delta total de 2 px. |
+| Estilos y medios | Pass | Tipografía, color, espaciado, composición e imágenes equivalentes. |
+| Desviaciones | Pass | Animaciones omitidas por contrato, H1 semántico correcto y poster del testimonio trazado en #15. |
+| Integridad de evidencia | Pass | Doce WebP de 1440×900 con SHA-256 documentado. |
+
+La evidencia completa, incluidas las alturas por sección, condiciones de captura, checksums, hallazgos y enlaces a los doce archivos, está en [docs/qa/evidence/phase-1/README.md](../../docs/qa/evidence/phase-1/README.md).
+
+El mayor delta individual es 10,38 px en Situaciones, aproximadamente 1,46 % de la altura de la sección. Todas las demás secciones son idénticas o difieren menos de 7,2 px; la suma del documento queda a dos píxeles de producción. La revisión visual no encontró overflow, copy faltante, assets incorrectos ni cambios de lenguaje visual.
+
+Las capturas de producción conservan estados intermedios de las animaciones de entrada de Elementor y pueden mostrar contenido atenuado. El theme no replica esas animaciones porque `AGENTS.md` las excluye expresamente de Fase 1. El contenido local se presenta completo de inmediato.
+
+### Veredicto del issue
+
+**Pass para Chromium desktop; listo para integrar.** La matriz responsive y entre navegadores permanece separada en #13.
 
 ## Controles estáticos por pattern/template
 
@@ -501,17 +528,17 @@ Para cada fila, capturar referencia y LocalWP con mismo navegador, viewport, est
 
 | Área | 390×844 | 768×1024 | 1440×900 | Evidencia | Estado |
 |---|---|---|---|---|---|
-| Header + navegación | Pass local | — | Pass local | #12/#13 | Gate formal pendiente |
-| Hero | Pass local | Pass local | Pass local | #3/#12 | Gate formal pendiente |
-| Situaciones | Pass local | — | Pass local | #4/#12 | Gate formal pendiente |
-| Cómo ayudamos | Pass local | — | Pass local | #5/#12 | Gate formal pendiente |
-| Testimonio | Pass local | — | Pass local | #6/#12 | Gate formal pendiente |
-| Resultados | Pass local | — | Pass local | #7/#12 | Gate formal pendiente |
-| Debería sentirse | Pass local | — | Pass local | #8/#12 | Gate formal pendiente |
-| Conoce a Mario | Pass local | — | Pass local | #9/#12 | Gate formal pendiente |
-| Marcas | Pass local | — | Pass local | #33/#12 | Gate formal pendiente |
-| CTA final | Pass local | — | Pass local | #10/#12 | Gate formal pendiente |
-| Footer | Pass local | — | Pass local | #12/#13 | Gate formal pendiente |
+| Header + navegación | Pass local | — | Pass visual | #12/#13 | Desktop aprobado; motores pendiente |
+| Hero | Pass local | Pass local | Pass visual | #3/#12 | Desktop aprobado; motores pendiente |
+| Situaciones | Pass local | — | Pass visual | #4/#12 | Desktop aprobado; motores pendiente |
+| Cómo ayudamos | Pass local | — | Pass visual | #5/#12 | Desktop aprobado; motores pendiente |
+| Testimonio | Pass local | — | Pass visual | #6/#12/#15 | Poster aprobado; video pendiente en #15 |
+| Resultados | Pass local | — | Pass visual | #7/#12 | Desktop aprobado; motores pendiente |
+| Debería sentirse | Pass local | — | Pass visual | #8/#12 | Desktop aprobado; motores pendiente |
+| Conoce a Mario | Pass local | — | Pass visual | #9/#12 | Desktop aprobado; motores pendiente |
+| Marcas | Pass local | — | Pass visual | #33/#12 | Desktop aprobado; motores pendiente |
+| CTA final | Pass local | — | Pass visual | #10/#12 | Desktop aprobado; motores pendiente |
+| Footer | Pass local | — | Pass visual | #12/#13 | Desktop aprobado; motores pendiente |
 
 ## Accesibilidad manual
 
@@ -564,9 +591,11 @@ Owner: #16.
 | 2026-07-23 | Testimonio | El video de producción pesa 112.225.142 bytes; el theme conserva el estado visual inicial con un poster local | `SOURCES.md` y QA #6 | Definir video optimizado o alojamiento autorizado en #15 | Abierto |
 | 2026-07-23 | Copy | La auditoría encontró copy adicional en proceso, resultados y debería sentirse | Comparación visual #5, #7 y #8 | Inventario, spec y patterns actualizados con copy literal | Resuelto |
 | 2026-07-23 | Integración | GitHub está configurado para squash merge; una pila retiene ancestros ya integrados | PRs #25–#34 | Se reconstruyó y retargeteó cada PR después de su merge | Resuelto |
+| 2026-07-25 | Movimiento | Las capturas de producción muestran estados atenuados por animaciones de entrada de Elementor | Evidencia visual #12 | Omitir animaciones según `AGENTS.md`; contenido local visible de inmediato | Resuelto por contrato |
+| 2026-07-25 | Semántica | La jerarquía H1 de Elementor no coincide con el inventario contractual | Render y evidencia #11/#12 | Mantener un único H1 correcto en el hero | Resuelto por contrato |
 
 Una preferencia visual no puede registrarse como limitación. Toda excepción A/AA, de seguridad o de pérdida de contenido bloquea release.
 
 ## Veredicto de Fase 1
 
-**Pendiente.** Los diez patterns están integrados y #11 pasa el gate formal de ensamblaje. Los issues #12–#16 todavía deben completar comparación visual integral, navegadores, accesibilidad, rendimiento, seguridad y release. Solo #16 puede proponer `Pass` sobre el commit candidato; esto no autoriza despliegue a producción.
+**Pendiente.** Los diez patterns y #11 están integrados; #12 pasa la comparación visual integral en Chromium desktop. Los issues #13–#16 todavía deben completar navegadores/responsive, accesibilidad, rendimiento, seguridad y release. Solo #16 puede proponer `Pass` sobre el commit candidato; esto no autoriza despliegue a producción.
