@@ -143,7 +143,8 @@ Nota: ambas fuentes (Bodoni Moda, Red Hat Display, Gloock, Caveat) deben cargars
 
 ### 8. "Marcas con las que he trabajado"
 - H2: "Marcas con las que he trabajado"
-- Cinco logos del sitio de referencia, almacenados localmente y presentados como una fila responsive.
+- Logos, en orden: Clearpath Therapy · TatiPilates · Redstage · Quiet Path Wellness · eleanor.
+- Los cinco assets se almacenan localmente y se presentan como una fila responsive.
 
 ### 9. CTA final
 - H2: "¿Listo para un sitio web que realmente refleje tu trabajo y te ayude a crecer?"

@@ -1,0 +1,33 @@
+.vicunav-marcas__grid {
+	align-items: center;
+	display: grid;
+	gap: var(--wp--preset--spacing--80);
+	grid-template-columns: repeat(5, minmax(0, 1fr));
+	margin: 0 auto !important;
+	max-width: calc(
+		var(--wp--style--global--wide-size) -
+		(var(--wp--preset--spacing--40) * 2)
+	) !important;
+	width: 100% !important;
+}
+
+.vicunav-marcas__logo {
+	margin: 0 !important;
+	width: 100%;
+}
+
+.vicunav-marcas__logo img {
+	display: block;
+	filter: brightness(0) invert(1);
+	height: auto;
+	width: 100%;
+}
+
+@media (max-width: 782px) {
+	.vicunav-marcas__grid {
+		gap: var(--wp--preset--spacing--70) var(--wp--preset--spacing--60);
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		max-width: 100% !important;
+		width: 100% !important;
+	}
+}
