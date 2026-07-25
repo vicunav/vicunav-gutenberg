@@ -1,3 +1,15 @@
+.vicunav-header__logo {
+	aspect-ratio: 554 / 113;
+	flex: 0 0 auto;
+	width: var(--wp--custom--header--logo-width);
+}
+
+.vicunav-header__logo img {
+	display: block;
+	height: auto;
+	width: 100% !important;
+}
+
 .vicunav-header__navigation .wp-block-navigation-item:last-child .wp-block-navigation-item__content {
 	align-items: center;
 	border-bottom: 1px solid currentColor;
@@ -15,8 +27,8 @@
 }
 
 @media (max-width: 600px) {
-	.vicunav-header__logo img {
-		width: var(--wp--custom--header--logo-width-mobile) !important;
+	.vicunav-header__logo {
+		width: var(--wp--custom--header--logo-width-mobile);
 	}
 
 	.vicunav-header__navigation .wp-block-navigation__responsive-container-open {
