@@ -29,4 +29,13 @@
 		content: "MENU";
 		font-size: var(--wp--preset--font-size--eyebrow);
 	}
+
+	.vicunav-header__navigation .wp-block-navigation__responsive-container-content {
+		padding-right: var(--wp--preset--spacing--site-gutter);
+	}
+
+	.vicunav-header__navigation .wp-block-navigation__responsive-container-close {
+		right: var(--wp--preset--spacing--site-gutter);
+		top: var(--wp--preset--spacing--site-gutter);
+	}
 }

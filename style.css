@@ -10,3 +10,8 @@ Version: 0.1.0
 Text Domain: vicunav
 */
 
+:where(a, button, [tabindex]):focus-visible {
+	box-shadow: 0 0 0 4px var(--wp--preset--color--neutral-100);
+	outline: 2px solid var(--wp--preset--color--primary);
+	outline-offset: 2px;
+}
