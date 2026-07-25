@@ -54,3 +54,12 @@ Los seis assets se recuperaron el 2026-07-23 desde la biblioteca pública de Vic
 | `testimonio-tatiana.webp` | `https://vicunav.com/wp-content/uploads/2026/05/tatiana-diaz-tatipilates.jpg` | Retrato de atribución | 16.128 bytes | `e50af8e73781149b3522fc9331436de72c00bb3f6dbb10191a722f6316bee003` |
 
 Producción carga además `Mario-Vicuna-Tati-Pilates.mp4` (112.225.142 bytes). El pattern usa su poster local para mantener la composición inicial sin añadir 112 MB al repositorio ni degradar el presupuesto de rendimiento; la decisión se revisa en #15.
+
+## Resultados
+
+- Archivo local: `resultados-vicunav.webp`.
+- Fuente: `https://vicunav.com/wp-content/uploads/2026/03/the-results-of-vicunav-e1772571021971.png`.
+- Uso: imagen editorial de la sección “Los Resultados”.
+- Dimensiones: 1024×1280 px.
+- Optimización local: PNG de 1.604.927 bytes convertido a WebP de 67.184 bytes.
+- SHA-256 local: `1233f64f1ba74682e97331cf5d8c49e245c55c50b1f96ce3082aa34a5e486eda`.
