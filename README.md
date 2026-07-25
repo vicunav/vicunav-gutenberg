@@ -6,13 +6,15 @@ La Fase 1 es una reproducción fiel del sitio existente. No incluye rediseño, c
 
 ## Estado
 
-Baseline comprobada el 20 de julio de 2026:
+Candidato de Fase 1 comprobado el 25 de julio de 2026:
 
 - WordPress local: `7.0.2`.
 - PHP local: `8.2`.
 - Compatibilidad declarada: WordPress `6.7+` y PHP `8.0+`.
-- Completado: `theme.json`, cabecera y pie de página.
-- Pendiente: patterns del homepage, `front-page.html`, QA visual y preparación de release.
+- Release candidate: `0.2.0`.
+- Completado: `theme.json`, cabecera, pie de página, diez patterns y `front-page.html`.
+- QA completado: paridad visual, responsive cross-browser, WCAG 2.2 AA y rendimiento.
+- Pendiente: gate final de release; no incluye despliegue a producción.
 
 ## Principios
 
@@ -51,7 +53,7 @@ El header y el footer se editan desde **Apariencia → Editor → Diseño → Pa
 ```text
 assets/       Fuentes, imágenes y otros recursos locales
 parts/        Template parts
-patterns/     Una sección registrada por archivo (pendiente)
+patterns/     Una sección registrada por archivo
 templates/    Templates FSE
 docs/         Arquitectura, SDD, QA y operación
 .github/      Plantillas de issues y pull requests
