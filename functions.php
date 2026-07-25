@@ -19,6 +19,94 @@ function vicunav_enqueue_theme_styles() {
 add_action( 'wp_enqueue_scripts', 'vicunav_enqueue_theme_styles' );
 
 /**
+ * Inicia la descarga del asset LCP antes de analizar el cuerpo de la página.
+ *
+ * @param array $preloads Recursos registrados para precarga.
+ * @return array
+ */
+function vicunav_preload_lcp_asset( $preloads ) {
+	if ( ! is_front_page() ) {
+		return $preloads;
+	}
+
+	$preloads[] = array(
+		'href'          => get_theme_file_uri( 'assets/images/hero-vicunav.webp' ),
+		'as'            => 'image',
+		'type'          => 'image/webp',
+		'fetchpriority' => 'high',
+	);
+
+	return $preloads;
+}
+add_filter( 'wp_preload_resources', 'vicunav_preload_lcp_asset' );
+
+/**
+ * Añade dimensiones y prioridades de carga a los assets raster del theme.
+ *
+ * @param string $block_content HTML renderizado del bloque.
+ * @param array  $block         Bloque analizado por WordPress.
+ * @return string
+ */
+function vicunav_add_image_performance_attributes( $block_content, $block ) {
+	if ( ! in_array( $block['blockName'] ?? '', array( 'core/cover', 'core/image' ), true ) ) {
+		return $block_content;
+	}
+
+	$dimensions = array(
+		'logo-dark.webp'                  => array( 554, 113 ),
+		'hero-vicunav.webp'               => array( 1536, 1024 ),
+		'situaciones-vicunav.webp'        => array( 1536, 1024 ),
+		'como-ayudamos-vicunav.webp'      => array( 1024, 1280 ),
+		'proceso-textos.webp'              => array( 400, 306 ),
+		'proceso-visual.webp'              => array( 400, 306 ),
+		'proceso-desarrollo.webp'          => array( 400, 306 ),
+		'proceso-encontrado.webp'          => array( 400, 306 ),
+		'proceso-herramientas.webp'        => array( 400, 306 ),
+		'proceso-soporte.webp'             => array( 400, 306 ),
+		'testimonio-fondo.webp'            => array( 1536, 1024 ),
+		'testimonio-tatiana.webp'          => array( 300, 300 ),
+		'testimonio-tatipilates.webp'      => array( 520, 767 ),
+		'resultados-vicunav.webp'          => array( 1024, 1280 ),
+		'mario-vicuna.webp'                => array( 1024, 1536 ),
+		'marca-clearpath.webp'             => array( 400, 125 ),
+		'marca-tatipilates.webp'           => array( 400, 310 ),
+		'marca-redstage.webp'              => array( 400, 95 ),
+		'marca-quiet-path.webp'            => array( 400, 180 ),
+		'marca-eleanor.webp'               => array( 400, 96 ),
+	);
+
+	$processor = new WP_HTML_Tag_Processor( $block_content );
+
+	if ( ! $processor->next_tag( 'img' ) ) {
+		return $block_content;
+	}
+
+	$source_path = wp_parse_url( (string) $processor->get_attribute( 'src' ), PHP_URL_PATH );
+	$filename    = basename( (string) $source_path );
+
+	if ( ! isset( $dimensions[ $filename ] ) ) {
+		return $block_content;
+	}
+
+	$processor->set_attribute( 'width', (string) $dimensions[ $filename ][0] );
+	$processor->set_attribute( 'height', (string) $dimensions[ $filename ][1] );
+	$processor->set_attribute( 'decoding', 'async' );
+
+	if ( 'hero-vicunav.webp' === $filename ) {
+		$processor->set_attribute( 'loading', 'eager' );
+		$processor->set_attribute( 'fetchpriority', 'high' );
+	} elseif ( 'logo-dark.webp' === $filename ) {
+		$processor->set_attribute( 'loading', 'eager' );
+		$processor->set_attribute( 'fetchpriority', 'auto' );
+	} else {
+		$processor->set_attribute( 'loading', 'lazy' );
+	}
+
+	return $processor->get_updated_html();
+}
+add_filter( 'render_block', 'vicunav_add_image_performance_attributes', 10, 2 );
+
+/**
  * Registra los estilos estructurales del header junto al bloque Navigation.
  */
 function vicunav_register_header_block_styles() {

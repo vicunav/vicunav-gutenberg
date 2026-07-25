@@ -76,7 +76,7 @@ El mayor delta de sección es 10,38 px en Situaciones, equivalente a aproximadam
 | Tipografía, color y espaciado | La comparación visual y geométrica coincide dentro de tolerancias de rasterización. | Pass. |
 | Animaciones de entrada | Elementor deja contenido temporalmente atenuado durante algunas capturas de producción. | No se replica: `AGENTS.md` excluye animaciones y el contenido local aparece completo de inmediato. |
 | H1 | La referencia usa una jerarquía de Elementor que no corresponde al inventario contractual. | El theme conserva un único H1 correcto en el hero; es una mejora semántica exigida por el proyecto. |
-| Testimonio | Producción reproduce un MP4 de 112.225.142 bytes; el theme usa su poster visual. | Limitación explícita ya trazada en #15 para definir video optimizado o alojamiento autorizado. |
+| Testimonio | Producción reproduce un MP4 de 112.225.142 bytes; el theme usa su poster visual. | Decisión resuelta en [la evidencia de #15](performance/README.md): Fase 1 conserva el poster; cualquier video futuro requiere spec y presupuesto propios. |
 | Responsive y motores | Esta evidencia formaliza Chromium desktop. | La matriz de 390×844, 768×1024, Chrome, Firefox y Safari pertenece a #13. |
 
 ## Veredicto

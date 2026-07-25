@@ -261,18 +261,20 @@
           "fontFace": [
             {
               "fontFamily": "Red Hat Display",
+              "fontDisplay": "swap",
               "fontStyle": "normal",
               "fontWeight": "300 900",
               "src": [
-                "file:./assets/fonts/red-hat-display/RedHatDisplay-Variable.ttf"
+                "file:./assets/fonts/red-hat-display/RedHatDisplay-Variable.woff2"
               ]
             },
             {
               "fontFamily": "Red Hat Display",
+              "fontDisplay": "swap",
               "fontStyle": "italic",
               "fontWeight": "300 900",
               "src": [
-                "file:./assets/fonts/red-hat-display/RedHatDisplay-Italic-Variable.ttf"
+                "file:./assets/fonts/red-hat-display/RedHatDisplay-Italic-Variable.woff2"
               ]
             }
           ],
@@ -284,18 +286,20 @@
           "fontFace": [
             {
               "fontFamily": "Bodoni Moda",
+              "fontDisplay": "swap",
               "fontStyle": "normal",
               "fontWeight": "400 900",
               "src": [
-                "file:./assets/fonts/bodoni-moda/BodoniModa-Variable.ttf"
+                "file:./assets/fonts/bodoni-moda/BodoniModa-Variable.woff2"
               ]
             },
             {
               "fontFamily": "Bodoni Moda",
+              "fontDisplay": "swap",
               "fontStyle": "italic",
               "fontWeight": "400 900",
               "src": [
-                "file:./assets/fonts/bodoni-moda/BodoniModa-Italic-Variable.ttf"
+                "file:./assets/fonts/bodoni-moda/BodoniModa-Italic-Variable.woff2"
               ]
             }
           ],
@@ -307,10 +311,11 @@
           "fontFace": [
             {
               "fontFamily": "Gloock",
+              "fontDisplay": "swap",
               "fontStyle": "normal",
               "fontWeight": "400",
               "src": [
-                "file:./assets/fonts/gloock/Gloock-Regular.ttf"
+                "file:./assets/fonts/gloock/Gloock-Regular.woff2"
               ]
             }
           ],
@@ -322,10 +327,11 @@
           "fontFace": [
             {
               "fontFamily": "Caveat",
+              "fontDisplay": "swap",
               "fontStyle": "normal",
               "fontWeight": "400 700",
               "src": [
-                "file:./assets/fonts/caveat/Caveat-Variable.ttf"
+                "file:./assets/fonts/caveat/Caveat-Variable.woff2"
               ]
             }
           ],
