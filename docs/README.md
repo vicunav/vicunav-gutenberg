@@ -31,6 +31,8 @@ El código existente no invalida una regla superior. Si una regla necesita cambi
 
 Las plantillas reutilizables viven en `docs/templates/`. Las decisiones arquitectónicas futuras se documentan en `docs/adr/`.
 
+La evidencia consolidada de Fase 1 vive en `docs/qa/evidence/phase-1/`: comparación visual, responsive cross-browser, accesibilidad, rendimiento y release candidate.
+
 ## Mantenimiento
 
 - Un cambio de contrato actualiza el spec.

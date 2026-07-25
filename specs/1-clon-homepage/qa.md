@@ -1,7 +1,7 @@
 # QA: clon exacto del homepage en Gutenberg
 
 Issue padre: #1<br>
-Estado: QA visual #12, responsive #13 y accesibilidad #14 completadas<br>
+Estado: QA visual #12, responsive #13, accesibilidad #14 y rendimiento #15 completadas; release candidate #16 en revisión<br>
 Responsable: @mariovicunadev<br>
 Última actualización: 2026-07-25
 
@@ -53,9 +53,9 @@ Los comandos PHP que carguen WordPress deben usar el runtime de LocalWP y el soc
 | AC-11 | #12 | Comparación sección por sección | Capturas/diff con commit y viewport | Pass; evidencia reproducible en `docs/qa/evidence/phase-1/` |
 | AC-12 | #13 | Responsive + navegadores | Matriz y defectos resueltos | Pass; 21 recorridos en Chrome, Firefox y WebKit |
 | AC-13 | #14 | WCAG 2.2 AA | Scanner + revisión manual | Pass; cero violaciones abiertas sobre `c23602f` |
-| AC-14 | #15 | Assets + rendimiento | Peso, fuentes y Lighthouse ×3 | Pendiente |
-| AC-15 | #16 | Gate final | Theme Check, seguridad y release docs | Pendiente |
-| AC-16 | #1 | Consistency check y cierre | Todos los sub-issues/evidencia | Pendiente |
+| AC-14 | #15 | Assets + rendimiento | Peso, fuentes y Lighthouse ×3 | Pass; evidencia reproducible en `docs/qa/evidence/phase-1/performance/` |
+| AC-15 | #16 | Gate final | Theme Check, seguridad y release docs | Pass sobre `356e341`; evidencia en `docs/qa/evidence/phase-1/release-candidate/` |
+| AC-16 | #1 | Consistency check y cierre | Todos los sub-issues/evidencia | Pendiente del merge de #16 y smoke del SHA resultante en `main` |
 
 ## Hallazgo de baseline #19 — Header
 
