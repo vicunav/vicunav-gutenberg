@@ -19,6 +19,28 @@ function vicunav_enqueue_theme_styles() {
 add_action( 'wp_enqueue_scripts', 'vicunav_enqueue_theme_styles' );
 
 /**
+ * Inicia la descarga del asset LCP antes de analizar el cuerpo de la página.
+ *
+ * @param array $preloads Recursos registrados para precarga.
+ * @return array
+ */
+function vicunav_preload_lcp_asset( $preloads ) {
+	if ( ! is_front_page() ) {
+		return $preloads;
+	}
+
+	$preloads[] = array(
+		'href'          => get_theme_file_uri( 'assets/images/hero-vicunav.webp' ),
+		'as'            => 'image',
+		'type'          => 'image/webp',
+		'fetchpriority' => 'high',
+	);
+
+	return $preloads;
+}
+add_filter( 'wp_preload_resources', 'vicunav_preload_lcp_asset' );
+
+/**
  * Añade dimensiones y prioridades de carga a los assets raster del theme.
  *
  * @param string $block_content HTML renderizado del bloque.
