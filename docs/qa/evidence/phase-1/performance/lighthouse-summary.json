@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-07-25",
+  "tool": {
+    "name": "Lighthouse",
+    "version": "13.4.1",
+    "category": "performance",
+    "profile": "mobile-default"
+  },
+  "url": "https://vicunav-gutenberg.local/",
+  "runsPerCondition": 3,
+  "baselineCold": {
+    "commit": "75ae531",
+    "runs": [
+      {
+        "score": 59,
+        "fcpMs": 5552.729,
+        "lcpMs": 8252.729,
+        "cls": 0,
+        "tbtMs": 174.5,
+        "transferBytes": 1907159,
+        "requests": 36
+      },
+      {
+        "score": 57,
+        "fcpMs": 5552.071,
+        "lcpMs": 8252.071,
+        "cls": 0,
+        "tbtMs": 250,
+        "transferBytes": 1907159,
+        "requests": 36
+      },
+      {
+        "score": 58,
+        "fcpMs": 5552.476,
+        "lcpMs": 8252.476,
+        "cls": 0,
+        "tbtMs": 228,
+        "transferBytes": 1907159,
+        "requests": 36
+      }
+    ],
+    "median": {
+      "score": 58,
+      "fcpMs": 5552.476,
+      "lcpMs": 8252.476,
+      "cls": 0,
+      "tbtMs": 228,
+      "transferBytes": 1907159,
+      "requests": 36
+    }
+  },
+  "optimizedCold": {
+    "commit": "30c1a96",
+    "runs": [
+      {
+        "score": 91,
+        "fcpMs": 2252.86,
+        "lcpMs": 2552.86,
+        "cls": 0.07553948888715321,
+        "tbtMs": 170.5,
+        "transferBytes": 607484,
+        "requests": 23
+      },
+      {
+        "score": 84,
+        "fcpMs": 2251.7415,
+        "lcpMs": 3376.7415,
+        "cls": 0.07553948888715321,
+        "tbtMs": 224.5,
+        "transferBytes": 607484,
+        "requests": 23
+      },
+      {
+        "score": 84,
+        "fcpMs": 2251.4475,
+        "lcpMs": 3376.4475,
+        "cls": 0.07553948888715321,
+        "tbtMs": 223,
+        "transferBytes": 607484,
+        "requests": 23
+      }
+    ],
+    "median": {
+      "score": 84,
+      "fcpMs": 2251.7415,
+      "lcpMs": 3376.4475,
+      "cls": 0.07553948888715321,
+      "tbtMs": 223,
+      "transferBytes": 607484,
+      "requests": 23
+    }
+  },
+  "optimizedWarm": {
+    "commit": "30c1a96",
+    "warmupRuns": 1,
+    "storageReset": false,
+    "runs": [
+      {
+        "score": 90,
+        "fcpMs": 1043.571,
+        "lcpMs": 1043.571,
+        "cls": 0.07553948888715321,
+        "tbtMs": 369,
+        "transferBytes": 22907,
+        "requests": 23
+      },
+      {
+        "score": 91,
+        "fcpMs": 1077,
+        "lcpMs": 1095,
+        "cls": 0.07553948888715321,
+        "tbtMs": 326,
+        "transferBytes": 22907,
+        "requests": 23
+      },
+      {
+        "score": 90,
+        "fcpMs": 1029.72,
+        "lcpMs": 1048.22,
+        "cls": 0.07553948888715321,
+        "tbtMs": 355,
+        "transferBytes": 22907,
+        "requests": 23
+      }
+    ],
+    "median": {
+      "score": 90,
+      "fcpMs": 1043.571,
+      "lcpMs": 1048.22,
+      "cls": 0.07553948888715321,
+      "tbtMs": 355,
+      "transferBytes": 22907,
+      "requests": 23
+    }
+  }
+}
