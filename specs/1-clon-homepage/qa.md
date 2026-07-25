@@ -1,7 +1,7 @@
 # QA: clon exacto del homepage en Gutenberg
 
 Issue padre: #1<br>
-Estado: diez patterns implementados; #25 integrado y PRs apilados listos para revisión<br>
+Estado: diez patterns integrados; gate de ensamblaje #11 en revisión<br>
 Responsable: @mariovicunadev<br>
 Última actualización: 2026-07-25
 
@@ -43,13 +43,13 @@ Los comandos PHP que carguen WordPress deben usar el runtime de LocalWP y el soc
 | AC-01 | #12/#19/#21 | Render + comparación header/footer | Capturas y smoke | Pass local; header y footer integrados en `main` |
 | AC-02 | #3 | Pattern hero | Lint, render, copy, asset y comparación visual | Pass local; integrado en `main` |
 | AC-03 | #4 | Pattern situaciones | Lint, lista/checks y captura | Pass; PR #25 integrado en `main` |
-| AC-04 | #5 | Patterns introducción + proceso | Lint, render, copy y captura | Pass local; PR #32 pendiente de review |
-| AC-05 | #6 | Pattern testimonio | Lint, cita y captura | Pass local con limitación documentada; PR #27 pendiente de review |
-| AC-06 | #7 | Pattern resultados | Lint, render, copy y captura | Pass local; PR #28 pendiente de review |
-| AC-07 | #8 | Pattern debería sentirse | Lint, CTA y captura | Pass local; PR #29 pendiente de review |
-| AC-08 | #9 | Pattern conoce a Mario | Lint, bio, alt/assets y captura | Pass local; PR #30 pendiente de review |
-| AC-09 | #33/#10 | Marcas + CTA final | Lint, assets, teclado, destinos y captura | Pass local; PRs #34 y #31 pendientes de review |
-| AC-10 | #3/#11 | Template incremental y cierre del ensamblaje | Parse, render, HTTP 200, orden y Site Editor | Pass sobre la pila #32–#34/#31; cierre formal pendiente en #11 |
+| AC-04 | #5 | Patterns introducción + proceso | Lint, render, copy y captura | Pass; PR #32 integrado en `main` |
+| AC-05 | #6 | Pattern testimonio | Lint, cita y captura | Pass con limitación documentada; PR #27 integrado |
+| AC-06 | #7 | Pattern resultados | Lint, render, copy y captura | Pass; PR #28 integrado |
+| AC-07 | #8 | Pattern debería sentirse | Lint, CTA y captura | Pass; PR #29 integrado |
+| AC-08 | #9 | Pattern conoce a Mario | Lint, bio, alt/assets y captura | Pass; PR #30 integrado |
+| AC-09 | #33/#10 | Marcas + CTA final | Lint, assets, teclado, destinos y captura | Pass; PRs #34 y #31 integrados |
+| AC-10 | #3/#11 | Template incremental y cierre del ensamblaje | Parse, render, HTTP 200, orden y Site Editor | Pass en `agent/11-ensamblaje-portada`; PR pendiente |
 | AC-11 | #12 | Comparación sección por sección | Capturas/diff con commit y viewport | Pendiente |
 | AC-12 | #13 | Responsive + navegadores | Matriz y defectos resueltos | Pendiente |
 | AC-13 | #14 | WCAG 2.2 AA | Scanner + revisión manual | Pendiente |
@@ -427,6 +427,28 @@ Entorno: WordPress 7.0.2, PHP 8.2.29 y sesión administradora local
 
 La solución no elimina la página Inicio, no modifica `show_on_front`, no borra contenido y no altera títulos de otras páginas. `README.md` documenta la ruta de edición de la portada y de las partes Cabecera/Pie de página.
 
+## Ejecución #11 — Ensamblaje final de la portada
+
+Fecha: 2026-07-25<br>
+Rama: `agent/11-ensamblaje-portada`<br>
+Base: `main` después de integrar #32, #27, #28, #29, #30, #34 y #31
+
+| Check | Resultado | Evidencia |
+|---|---|---|
+| Template serializado | Pass | Header, diez referencias `core/pattern` y footer aparecen una sola vez y en el orden contractual. |
+| Registro WordPress | Pass | Los diez slugs `vicunav/*` están registrados después de limpiar el cache de patterns del theme. |
+| Render | Pass | 53.827 bytes, un H1 y ausencia de `post-content` o dependencia de Elementor. |
+| Landmarks | Pass | Se corrigió el anidamiento de los template parts; frontend contiene exactamente un `header`, un `main` y un `footer`. |
+| Frontend | Pass | HTTP 200, diez secciones únicas, 20 imágenes cargadas, sin overflow ni errores de consola. |
+| Site Editor | Pass | Las diez secciones aparecen una vez, cero avisos de bloque inválido, cero errores de consola y sin campo “Add title”. |
+| Estáticos | Pass | PHP lint, `jq`, whitespace, rutas locales, hotlinks y marcadores de debug sin hallazgos. |
+
+WordPress agrega el landmark semántico al wrapper de cada `core/template-part`. Los archivos `parts/header.html` y `parts/footer.html` usaban además `tagName` con el mismo landmark, lo que generaba HTML anidado. #11 conserva las clases y composición visual, pero deja los grupos internos como `div`; el wrapper de WordPress aporta los únicos `header` y `footer`.
+
+### Veredicto del issue
+
+**Pass; listo para integrar.**
+
 ## Controles estáticos por pattern/template
 
 Registrar comando, versión y salida en el PR correspondiente:
@@ -445,24 +467,24 @@ El resultado de búsquedas se revisa manualmente: una URL de enlace aprobada no 
 
 | Control | Resultado esperado | Issue de evidencia | Estado |
 |---|---|---:|---|
-| `wp theme status vicunav` | Theme activo | #11 | Pass sobre la pila #32–#34/#31 |
+| `wp theme status vicunav` | Theme activo | #11 | Pass sobre `main` integrado |
 | `parse_blocks()` | Parts, patterns y template procesados | #3–#11 | Pass; diez patterns registrados |
-| `do_blocks()` | Salida no vacía y sin fatal | #3–#11 | Pass; 53.839 bytes renderizados |
+| `do_blocks()` | Salida no vacía y sin fatal | #3–#11 | Pass; 53.827 bytes renderizados |
 | Homepage | HTTP 200; contiene header, `main` y footer | #11 | Pass; orden completo verificado |
 | Site Editor | Sin bloques inválidos; intención equivalente | #11/#12 | Pass; diez secciones presentes y cero bloques inválidos |
 | Logs/consola | Sin warnings PHP ni errores de navegador | #11/#16 | Pass en Chromium; gate final pendiente |
 
-### Gate integral de la pila #32–#34/#31
+### Gate integral sobre `main`
 
 Fecha: 2026-07-25<br>
-Commit superior probado: rama `agent/10-pattern-cta-final`<br>
+Commit base probado: `70dd576`; corrección estructural en `agent/11-ensamblaje-portada`<br>
 Entorno: runtime PHP 8.2.29 de LocalWP, socket MySQL identificado por `home/siteurl`, WordPress 7.0.2 y Chromium
 
 | Control | Resultado | Veredicto |
 |---|---|---|
 | Theme y base de datos | `vicunav` activo; `wp-load.php` carga sin respuesta HTML de error | Pass |
 | Registro | Los diez patterns `vicunav/*` de la portada están registrados | Pass |
-| Render integral | 53.839 bytes; un H1, nueve H2 y 24 elementos de lista | Pass |
+| Render integral | 53.827 bytes; un H1, nueve H2 y 24 elementos de lista | Pass |
 | Orden | Hero → situaciones → introducción → proceso → testimonio → resultados → debería sentirse → Mario → marcas → CTA | Pass |
 | Copy contractual | Todas las agujas del inventario de `AGENTS.md` presentes | Pass |
 | Estáticos | PHP lint, JSON, `git diff --check`, hotlinks y rutas locales | Pass |
@@ -471,7 +493,7 @@ Entorno: runtime PHP 8.2.29 de LocalWP, socket MySQL identificado por `home/site
 | Targets móviles | Todos los CTA visibles miden al menos 48 px de alto | Pass |
 | Site Editor | Diez secciones presentes; cero avisos de bloque inválido; sin campo “Add title” | Pass |
 
-Los únicos literales CSS fuera de tokens son hairlines de `1px`, una compensación óptica de `2px`, aspect ratios y breakpoints estructurales. No representan decisiones reutilizables de color, tipografía, superficie o espaciado. Los PRs son deliberadamente apilados y contienen un commit cada uno; el siguiente se reconstruye sobre `main` después de cada squash merge.
+Los únicos literales CSS fuera de tokens son hairlines de `1px`, una compensación óptica de `2px`, aspect ratios y breakpoints estructurales. No representan decisiones reutilizables de color, tipografía, superficie o espaciado. Los PRs de sección se integraron por squash manteniendo un commit atómico por unidad.
 
 ## Comparación visual
 
@@ -540,11 +562,11 @@ Owner: #16.
 | Fecha | Área | Diferencia/riesgo | Evidencia | Decisión/issue | Estado |
 |---|---|---|---|---|---|
 | 2026-07-23 | Testimonio | El video de producción pesa 112.225.142 bytes; el theme conserva el estado visual inicial con un poster local | `SOURCES.md` y QA #6 | Definir video optimizado o alojamiento autorizado en #15 | Abierto |
-| 2026-07-23 | Copy | Producción contiene copy adicional en proceso, resultados y debería sentirse que no figura en el inventario contractual | Comparación visual #5, #7 y #8 | Respetar `AGENTS.md`; resolver cualquier cambio de inventario en un issue nuevo | Aceptado para Fase 1 |
-| 2026-07-23 | Integración | GitHub está configurado para squash merge; una pila retiene ancestros ya integrados | PRs #25–#31 | Reconstruir y retargetear el siguiente PR después de cada merge | Control operativo |
+| 2026-07-23 | Copy | La auditoría encontró copy adicional en proceso, resultados y debería sentirse | Comparación visual #5, #7 y #8 | Inventario, spec y patterns actualizados con copy literal | Resuelto |
+| 2026-07-23 | Integración | GitHub está configurado para squash merge; una pila retiene ancestros ya integrados | PRs #25–#34 | Se reconstruyó y retargeteó cada PR después de su merge | Resuelto |
 
 Una preferencia visual no puede registrarse como limitación. Toda excepción A/AA, de seguridad o de pérdida de contenido bloquea release.
 
 ## Veredicto de Fase 1
 
-**Pendiente.** Los diez patterns pasan su gate local y están listos para revisión secuencial. Los issues #11–#16 todavía deben completar ensamblaje formal, comparación visual integral, navegadores, accesibilidad, rendimiento, seguridad y release. Solo #16 puede proponer `Pass` sobre el commit candidato; esto no autoriza despliegue a producción.
+**Pendiente.** Los diez patterns están integrados y #11 pasa el gate formal de ensamblaje. Los issues #12–#16 todavía deben completar comparación visual integral, navegadores, accesibilidad, rendimiento, seguridad y release. Solo #16 puede proponer `Pass` sobre el commit candidato; esto no autoriza despliegue a producción.
