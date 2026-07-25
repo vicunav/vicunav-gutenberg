@@ -28,7 +28,7 @@ Plan: `specs/1-clon-homepage/plan.md`
 | T-05 | #7 | Pattern resultados | AC-06 | #6 | Lint, render, copy y captura |
 | T-06 | #8 | Pattern debería sentirse como tú | AC-07 | #7 | Lint, render, CTA y captura |
 | T-07 | #9 | Pattern conoce a Mario | AC-08 | #8 | Lint, bio exacta, assets/alt y captura |
-| T-08 | #10 | Pattern CTA final | AC-09 | #9 | Lint, teclado, destino y captura |
+| T-08 | #10 | Pattern CTA final | AC-09 | #33 | Lint, teclado, destino, fondo local y captura |
 | T-09 | #11 | `front-page.html` completado y verificado | AC-10 | #10 | Parse/render, HTTP 200, orden final y Site Editor |
 | T-10 | #12 | Paridad visual 1:1 documentada | AC-01, AC-11 | #11 | Capturas referencia/local y registro de diferencias |
 | T-11 | #13 | Matriz responsive y navegadores aprobada | AC-12 | #12 | Viewports/navegadores y defectos resueltos |
@@ -38,13 +38,14 @@ Plan: `specs/1-clon-homepage/plan.md`
 | T-15 | #19 | Header corregido contra la referencia vigente | AC-01 | #2; bloquea aprobación de #3 | Comparación desktop/móvil, render, teclado y captura |
 | T-16 | #21 | Footer corregido contra la referencia vigente | AC-01, AC-11 | #3; bloquea inicio de #4 | Comparación desktop/móvil, render, teclado y captura |
 | T-17 | #22 | Accesos de la portada abren directamente el Editor del sitio | RF-01, RF-06; escenario 3 | #21; bloquea inicio de #4 | Enlaces de edición, permisos y smoke del Site Editor |
+| T-18 | #33 | Franja de cinco marcas recuperada de producción | AC-09, AC-11 | #9; bloquea #10 | Assets locales, orden, alt, captura desktop/móvil |
 
 ## Orden crítico
 
 ```text
 #2 → #19
        ↓
-      #3 → #21 → #22 → #4 → #5 → #6 → #7 → #8 → #9 → #10 → #11 → #12
+      #3 → #21 → #22 → #4 → #5 → #6 → #7 → #8 → #9 → #33 → #10 → #11 → #12
                                                     ├→ #13 ─┐
                                                     ├→ #14 ─┼→ #16 → cierre #1
                                                     └→ #15 ─┘

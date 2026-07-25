@@ -84,3 +84,13 @@ Los cinco logos se recuperaron el 2026-07-25 de la biblioteca pública de Vicuna
 | `marca-redstage.webp` | `https://vicunav.com/wp-content/uploads/2026/03/redstage.png` | Redstage | 6.436 bytes | `70f37bd94cf7284694c3849328a0aa1ecd0c72394dd8f0121572eac2bccbcc99` |
 | `marca-quiet-path.webp` | `https://vicunav.com/wp-content/uploads/2026/03/ChatGPT-Image-6-mar-2026-03_06_48-p.m-e1772824114256.png` | Quiet Path Wellness | 174.584 bytes | `b87f0722b31c781a877000973680b8f7470a5f6436438bf843cdea3ee245681b` |
 | `marca-eleanor.webp` | `https://vicunav.com/wp-content/uploads/2026/03/logo-white.webp` | eleanor. | 4.594 bytes | `0101dffbd5b72fe6cc09a4cd91598208265eeb2003eefdf264967332486943ea` |
+
+## CTA final
+
+- Archivo local: `cta-final-vicunav.webp`.
+- Fuente: `https://vicunav.com/wp-content/uploads/2026/01/ChatGPT-Image-18-ene-2026-06_00_40-p.m.webp`.
+- Uso: fondo decorativo del CTA final.
+- Dimensiones: 1536×1024 px.
+- Peso: 47.696 bytes.
+- SHA-256: `abcf81789cf8af732dc2c0f0ab1a5f2574cffb9633bcdddf9ef6ba0f128f83af`.
+- Accesibilidad: se carga desde CSS porque ambienta el contenido y no aporta información necesaria.

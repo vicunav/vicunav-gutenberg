@@ -16,11 +16,13 @@ El trabajo se entrega en el orden definido por las dependencias de GitHub. Cada 
 |---|---|---|
 | `patterns/hero.php` | Nuevo pattern registrado | Implementar AC-02. |
 | `patterns/situaciones.php` | Nuevo pattern registrado | Implementar AC-03. |
-| `patterns/como-ayudamos.php` | Nuevo pattern registrado | Implementar AC-04. |
-| `patterns/testimonio.php` | Nuevo pattern registrado | Implementar AC-05. |
+| `patterns/como-ayudamos-intro.php` | Nuevo pattern registrado | Recuperar la introducción y los cuatro servicios observados en producción. |
+| `patterns/como-ayudamos.php` | Nuevo pattern registrado | Implementar el proceso de AC-04. |
+| `patterns/testimonio-destacado.php` | Nuevo pattern registrado | Implementar AC-05. |
 | `patterns/resultados.php` | Nuevo pattern registrado | Implementar AC-06. |
 | `patterns/deberia-sentirse-como-tu.php` | Nuevo pattern registrado | Implementar AC-07. |
 | `patterns/conoce-a-mario.php` | Nuevo pattern registrado | Implementar AC-08. |
+| `patterns/marcas.php` | Nuevo pattern registrado | Recuperar la franja de cinco marcas de #33. |
 | `patterns/cta-final.php` | Nuevo pattern registrado | Implementar AC-09. |
 | `templates/front-page.html` | Nuevo template FSE | Ensamblar AC-10 y establecer el landmark `main`. |
 | `assets/images/` | Añadir assets aprobados y optimizados | Evitar hotlinks y cumplir RD-07–RD-09. |
@@ -76,8 +78,8 @@ La selección final de bloques dentro de cada sección debe reproducir la semán
 1. Aprobar este paquete SDD y cerrar #2 mediante PR.
 2. Corregir en #19 la baseline visual del header detectada durante la revisión del Hero.
 3. Implementar #3 hero, aprobar su asset local y crear `front-page.html` como ensamblaje incremental revisable.
-4. Implementar en orden #4 situaciones, #5 cómo ayudamos, #6 testimonio, #7 resultados, #8 debería sentirse, #9 conoce a Mario y #10 CTA final; cada PR añade su pattern al template incremental.
-5. Completar y verificar el ensamblaje de los ocho patterns mediante #11.
+4. Implementar en orden #4 situaciones, #5 cómo ayudamos, #6 testimonio, #7 resultados, #8 debería sentirse, #9 conoce a Mario, #33 marcas y #10 CTA final; cada PR añade su pattern al template incremental.
+5. Completar y verificar el ensamblaje de los diez patterns mediante #11.
 6. Completar comparación visual 1:1 de página completa en #12.
 7. Ejecutar en paralelo, una vez aprobada la comparación base: #13 responsive/navegadores, #14 accesibilidad y #15 rendimiento/assets.
 8. Corregir defectos en el issue que introdujo el comportamiento; no ampliar silenciosamente el gate de QA.
@@ -103,11 +105,13 @@ core/template-part header
 main
   vicunav/hero
   vicunav/situaciones
+  vicunav/como-ayudamos-intro
   vicunav/como-ayudamos
-  vicunav/testimonio
+  vicunav/testimonio-destacado
   vicunav/resultados
   vicunav/deberia-sentirse-como-tu
   vicunav/conoce-a-mario
+  vicunav/marcas
   vicunav/cta-final
 core/template-part footer
 ```
@@ -165,7 +169,7 @@ El template solo ensambla. No copia el markup de los patterns ni añade post con
 | Criterio | Prueba | Evidencia |
 |---|---|---|
 | AC-01 | Render de theme, inspección de header/footer y comparación integral | Salida smoke + capturas #12 |
-| AC-02–AC-09 | PHP lint, parse/render del pattern, copy exacto y comparación visual por sección | PR de #3–#10 |
+| AC-02–AC-09 | PHP lint, parse/render del pattern, copy exacto y comparación visual por sección | PR de #3–#10 y #33 |
 | AC-10 | Parse/render de `front-page.html`, orden y respuesta HTTP 200 | PR #11 |
 | AC-11 | Capturas referencia/local en mismos viewports y revisión de diferencias | `qa.md` + PR #12 |
 | AC-12 | Matriz 390×844, 768×1024, 1440×900 en Chrome/Safari/Firefox | `qa.md` + PR #13 |

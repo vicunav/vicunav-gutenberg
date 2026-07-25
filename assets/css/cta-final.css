@@ -1,0 +1,36 @@
+.vicunav-cta-final {
+	background-image: url("../images/cta-final-vicunav.webp");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.vicunav-cta-final__panel {
+	max-width: var(--wp--custom--layout--cta-content) !important;
+	width: 100%;
+}
+
+.vicunav-cta-final__title,
+.vicunav-cta-final__text,
+.vicunav-cta-final__actions {
+	margin-left: auto !important;
+	margin-right: auto !important;
+	max-width: var(--wp--custom--layout--cta-text);
+}
+
+.vicunav-cta-final__title u {
+	text-decoration-thickness: 2px;
+}
+
+@media (max-width: 782px) {
+	.vicunav-cta-final {
+		padding-bottom: var(--wp--preset--spacing--80) !important;
+		padding-top: var(--wp--preset--spacing--80) !important;
+	}
+
+	.vicunav-cta-final__panel {
+		padding:
+			var(--wp--preset--spacing--60)
+			var(--wp--preset--spacing--50) !important;
+	}
+}

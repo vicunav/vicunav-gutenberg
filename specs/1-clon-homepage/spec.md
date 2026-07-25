@@ -3,7 +3,7 @@
 Issue padre: #1<br>
 Estado: Draft para aprobación<br>
 Owner: @mariovicunadev<br>
-Última actualización: 2026-07-20
+Última actualización: 2026-07-25
 
 ## Problema
 
@@ -13,7 +13,7 @@ La persona afectada es quien visita el homepage para entender la oferta de Vicun
 
 ## Resultado esperado
 
-Al activar el theme `vicunav` en LocalWP, la portada usa `templates/front-page.html`, template parts y ocho patterns registrados para reproducir el homepage de referencia. Estructura, copy, colores, tipografía, imágenes y comportamiento responsive son equivalentes al sitio actual dentro de las excepciones explícitas de este spec.
+Al activar el theme `vicunav` en LocalWP, la portada usa `templates/front-page.html`, template parts y diez patterns registrados para reproducir el homepage de referencia. Estructura, copy, colores, tipografía, imágenes y comportamiento responsive son equivalentes al sitio actual dentro de las excepciones explícitas de este spec.
 
 El resultado se puede editar e inspeccionar en Gutenberg sin bloques inválidos, no depende de Elementor para renderizar el homepage y no modifica producción.
 
@@ -21,7 +21,7 @@ El resultado se puede editar e inspeccionar en Gutenberg sin bloques inválidos,
 
 - El homepage servido por `front-page.html`.
 - Los template parts existentes `parts/header.html` y `parts/footer.html` como cabecera y pie del homepage.
-- Ocho patterns: hero, situaciones, cómo ayudamos, testimonio, resultados, debería sentirse como tú, conoce a Mario y CTA final.
+- Diez patterns: hero, situaciones, introducción de cómo ayudamos, proceso, testimonio, resultados, debería sentirse como tú, conoce a Mario, marcas y CTA final.
 - Assets locales necesarios para reproducir el contenido aprobado.
 - Paridad visual en desktop, tableta y móvil.
 - Compatibilidad con el editor del sitio y el frontend.
@@ -50,7 +50,7 @@ El resultado se puede editar e inspeccionar en Gutenberg sin bloques inválidos,
 ### Funcionales
 
 - **RF-01:** WordPress debe seleccionar `templates/front-page.html` para la portada.
-- **RF-02:** `front-page.html` debe incluir header, un landmark `main`, los ocho patterns en el orden aprobado y footer.
+- **RF-02:** `front-page.html` debe incluir header, un landmark `main`, los diez patterns en el orden aprobado y footer.
 - **RF-03:** cada sección debe existir en un único archivo PHP registrado dentro de `patterns/`, con headers `Title`, `Slug`, `Categories` y `Block Types` y namespace `vicunav/`.
 - **RF-04:** todos los patterns deben componerse con bloques core. Un bloque custom exige un spec distinto y queda fuera de esta fase.
 - **RF-05:** el logo debe enlazar al inicio; navegación y CTAs deben tener destinos coherentes con el contenido aprobado.
@@ -60,7 +60,7 @@ El resultado se puede editar e inspeccionar en Gutenberg sin bloques inválidos,
 
 ### Contenido y diseño
 
-- **RD-01:** el orden obligatorio es header → hero → situaciones → cómo ayudamos → testimonio → resultados → debería sentirse como tú → conoce a Mario → CTA final → footer.
+- **RD-01:** el orden obligatorio es header → hero → situaciones → introducción de cómo ayudamos → proceso → testimonio → resultados → debería sentirse como tú → conoce a Mario → marcas → CTA final → footer.
 - **RD-02:** el copy, las mayúsculas, la puntuación, los números y la jerarquía editorial deben coincidir literalmente con el inventario de `AGENTS.md` y el contrato de contenido de este documento.
 - **RD-03:** debe existir un solo `h1`, ubicado en el hero. Los títulos principales de sección usan `h2`; los títulos internos continúan la jerarquía sin saltos arbitrarios.
 - **RD-04:** colores y familias tipográficas solo se consumen mediante presets de `theme.json`. No se permiten valores de color ni `font-family` hardcodeados en patterns, parts, templates o CSS suelto.
@@ -153,12 +153,12 @@ Los siguientes textos deben aparecer sin paráfrasis:
 - [ ] **AC-01:** la baseline `theme.json` + header + footer se carga sin errores y coincide con el inventario durante el QA integral.
 - [ ] **AC-02:** el hero cumple RF-03–RF-08, RD-02–RD-10 y su contenido específico. Issue #3.
 - [ ] **AC-03:** situaciones contiene exactamente los ocho puntos, semántica de lista y checks accesibles. Issue #4.
-- [ ] **AC-04:** cómo ayudamos contiene eyebrow, H2, subtítulo, pasos 01–06 y CTA exactos. Issue #5.
+- [ ] **AC-04:** cómo ayudamos contiene su introducción de cuatro puntos, imagen editorial, eyebrow, H2, subtítulo, pasos 01–06 y CTA exactos. Issue #5.
 - [ ] **AC-05:** el testimonio conserva cita, atribución y semántica apropiada. Issue #6.
 - [ ] **AC-06:** resultados conserva eyebrow, título y copy exactos. Issue #7.
 - [ ] **AC-07:** debería sentirse conserva H2, párrafo y CTA exactos. Issue #8.
 - [ ] **AC-08:** conoce a Mario conserva eyebrow, títulos y tres párrafos, con assets locales accesibles cuando aplique. Issue #9.
-- [ ] **AC-09:** CTA final conserva título, párrafo y enlace exactos y es operable por teclado. Issue #10.
+- [ ] **AC-09:** la franja de marcas conserva el título y cinco logos locales; el CTA final conserva título, párrafo, enlace y fondo exactos y es operable por teclado. Issues #33 y #10.
 - [ ] **AC-10:** `front-page.html` ensambla template parts y patterns en el orden RD-01 sin duplicación. Issue #11.
 - [ ] **AC-11:** una comparación lado a lado confirma paridad visual sección por sección o documenta una limitación técnica real. Issue #12.
 - [ ] **AC-12:** la matriz responsive y de navegadores termina sin overflow, pérdida de contenido ni controles inoperables. Issue #13.
@@ -202,7 +202,7 @@ No hay preguntas abiertas que cambien el resultado de Fase 1. La selección conc
 |---|---|---|
 | 2026-07-20 | Tratar `AGENTS.md` como inventario verbatim normativo. | Evita duplicaciones divergentes y preserva el contenido aprobado. |
 | 2026-07-20 | Mantener la excepción de asset local equivalente solo para el hero. | Está autorizada explícitamente en el inventario; no habilita un rediseño general. |
-| 2026-07-20 | Usar ocho patterns registrados y bloques core. | Es el contrato arquitectónico de Fase 1. |
+| 2026-07-25 | Usar diez patterns registrados y bloques core. | La auditoría visual recuperó la introducción de cómo ayudamos y la franja de marcas presentes en producción pero ausentes del inventario inicial. |
 | 2026-07-20 | Mantener producción fuera de toda mutación. | La migración se desarrolla y valida en LocalWP. |
 | 2026-07-20 | Separar optimización WOFF2 en #15. | Las TTF son baseline funcional; la conversión requiere medición y comparación visual propias. |
 | 2026-07-20 | Corregir la baseline del header mediante #19 antes de aprobar el Hero. | La comparación directa demostró dimensiones, casing y selector de idioma distintos a producción; AC-01 no puede diferirse hasta el QA integral. |
