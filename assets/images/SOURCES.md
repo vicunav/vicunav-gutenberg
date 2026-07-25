@@ -75,15 +75,15 @@ Producción carga además `Mario-Vicuna-Tati-Pilates.mp4` (112.225.142 bytes). E
 
 ## Marcas
 
-Los cinco logos se recuperaron el 2026-07-25 de la biblioteca pública de Vicunav. Se conservan localmente y se normalizan visualmente a blanco mediante CSS, como en la referencia.
+Los cinco logos se recuperaron el 2026-07-25 de la biblioteca pública de Vicunav. Se conservan localmente, se normalizan visualmente a blanco mediante CSS y se exportan a un ancho máximo de 400 px —más del doble de su tamaño renderizado— para evitar descargas sobredimensionadas.
 
-| Archivo local | Fuente de referencia | Marca | Peso | SHA-256 |
-|---|---|---|---:|---|
-| `marca-clearpath.webp` | `https://vicunav.com/wp-content/uploads/2026/03/logo-clearpth-1.webp` | Clearpath Therapy | 21.066 bytes | `357c99e90984c1f0341d5c6a2223f6de177576d9e7ea69542c357534bb72a9bb` |
-| `marca-tatipilates.webp` | `https://vicunav.com/wp-content/uploads/2026/05/1775228635121-2048x1587-2-1536x1190.webp` | TatiPilates | 87.770 bytes | `efa72fc52c1dea7a6c55d1d1502caeded3e16a592c539ca680ac20ab755d3e30` |
-| `marca-redstage.webp` | `https://vicunav.com/wp-content/uploads/2026/03/redstage.png` | Redstage | 6.436 bytes | `70f37bd94cf7284694c3849328a0aa1ecd0c72394dd8f0121572eac2bccbcc99` |
-| `marca-quiet-path.webp` | `https://vicunav.com/wp-content/uploads/2026/03/ChatGPT-Image-6-mar-2026-03_06_48-p.m-e1772824114256.png` | Quiet Path Wellness | 174.584 bytes | `b87f0722b31c781a877000973680b8f7470a5f6436438bf843cdea3ee245681b` |
-| `marca-eleanor.webp` | `https://vicunav.com/wp-content/uploads/2026/03/logo-white.webp` | eleanor. | 4.594 bytes | `0101dffbd5b72fe6cc09a4cd91598208265eeb2003eefdf264967332486943ea` |
+| Archivo local | Fuente de referencia | Marca | Dimensiones | Peso | SHA-256 |
+|---|---|---|---:|---:|---|
+| `marca-clearpath.webp` | `https://vicunav.com/wp-content/uploads/2026/03/logo-clearpth-1.webp` | Clearpath Therapy | 400×125 | 12.728 bytes | `663041941a6e4e0af9d79d96941a8fe351328db96e1b895326eb6ce564d94b24` |
+| `marca-tatipilates.webp` | `https://vicunav.com/wp-content/uploads/2026/05/1775228635121-2048x1587-2-1536x1190.webp` | TatiPilates | 400×310 | 18.766 bytes | `bc2bc964c9fddd46ec0e942a5bd1b7d917051c2414601cf840b45ca7292a3f00` |
+| `marca-redstage.webp` | `https://vicunav.com/wp-content/uploads/2026/03/redstage.png` | Redstage | 400×95 | 4.704 bytes | `2c204475eff924c025b99bf137baeed3805fd6e3927dbbf53215a7f275142b24` |
+| `marca-quiet-path.webp` | `https://vicunav.com/wp-content/uploads/2026/03/ChatGPT-Image-6-mar-2026-03_06_48-p.m-e1772824114256.png` | Quiet Path Wellness | 400×180 | 31.464 bytes | `756d0b2b7939b63fc967370a5e1afe85ed4570027e15b4de5839303e44d3be24` |
+| `marca-eleanor.webp` | `https://vicunav.com/wp-content/uploads/2026/03/logo-white.webp` | eleanor. | 400×96 | 5.366 bytes | `1d31e59cb4edd0aa5b5b474550ee6b01d7f6df8208c6c71feaf29e579d8e4e99` |
 
 ## CTA final
 
