@@ -42,6 +42,24 @@ function vicunav_register_hero_block_styles() {
 add_action( 'init', 'vicunav_register_hero_block_styles' );
 
 /**
+ * Registra la composición de la lista de situaciones junto al bloque List.
+ */
+function vicunav_register_situaciones_block_styles() {
+	$stylesheet_path = get_theme_file_path( 'assets/css/situaciones.css' );
+
+	wp_enqueue_block_style(
+		'core/list',
+		array(
+			'handle' => 'vicunav-situaciones',
+			'src'    => get_theme_file_uri( 'assets/css/situaciones.css' ),
+			'path'   => $stylesheet_path,
+			'ver'    => (string) filemtime( $stylesheet_path ),
+		)
+	);
+}
+add_action( 'init', 'vicunav_register_situaciones_block_styles' );
+
+/**
  * Registra los ritmos internos del footer junto al bloque Columns.
  */
 function vicunav_register_footer_block_styles() {

@@ -132,6 +132,39 @@ La comparación final usa el mismo viewport y elimina del cálculo la barra de a
 
 **Pass local sobre la portada incremental; pendiente de review del PR.** No se avanzó al pattern de situaciones.
 
+## Ejecución #4 — Situaciones
+
+Fecha: 2026-07-23<br>
+Rama: `agent/4-pattern-situaciones`<br>
+Entorno: WordPress 7.0.2, PHP 8.2.29 y navegador Chromium
+
+### Resultados
+
+| Check | Resultado | Evidencia |
+|---|---|---|
+| PHP y JSON | Pass | `php -l` para pattern/functions, `jq empty theme.json` y `git diff --check`. |
+| Registro y render | Pass | `vicunav/situaciones` registrado; `parse_blocks()` y `do_blocks()` producen un H2, ocho elementos de lista y el asset local. |
+| Copy | Pass | Título y ocho situaciones coinciden literalmente con `AGENTS.md`. |
+| Semántica | Pass | Un único bloque `core/list`; los checks son decorativos y no duplican contenido para tecnologías de asistencia. |
+| Assets | Pass con seguimiento | WebP local 1536×1024, 32.062 bytes y SHA-256 documentado; sin hotlink. |
+| Frontend | Pass | `/` responde HTTP 200, mantiene un solo H1 y no presenta overflow horizontal. |
+
+### Comparación visual
+
+| Control a 1280×720 | Referencia | Local | Veredicto |
+|---|---:|---:|---|
+| Sección | 1265×709,6 px | 1265×717,6 px | Pass; diferencia vertical ≈8 px |
+| H2 | 1265×48 px; Bodoni 48/48, peso 300 | 1137×45,6 px; Bodoni 48/48, peso 300 | Pass; el ancho local respeta el margen global |
+| Tarjeta | 1080×489,6 px; padding 32 px | 1080×496 px; padding 32 px | Pass; diferencia ≈6,4 px por rasterización tipográfica |
+| Lista | 1016×425,6 px; texto 18/25,2 | 1016×432 px; texto 18/25,2 | Pass |
+| Fondo | Asset original + `neutral-100` al 60 % | Mismo asset local + preset `neutral-100` al 60 % | Pass |
+
+En 390×844 la tarjeta ocupa 335 px con margen de sitio de 20 px, los ocho puntos conservan el orden y no existe overflow. Los valores reutilizables se limitan a un ancho de contenido y una sombra semántica en `theme.json`; color, tipografía y espaciado consumen presets globales.
+
+### Veredicto del issue
+
+**Pass local; pendiente de review del PR.**
+
 ## Hallazgo y corrección #21 — Footer
 
 Fecha: 2026-07-20<br>
