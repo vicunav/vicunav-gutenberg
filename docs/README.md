@@ -21,6 +21,7 @@ El código existente no invalida una regla superior. Si una regla necesita cambi
 |---|---|
 | [CONSTITUTION.md](CONSTITUTION.md) | ¿Qué principios no se negocian? |
 | [ARCHITECTURE.md](ARCHITECTURE.md) | ¿Cómo se estructura y dónde vive cada responsabilidad? |
+| [DESIGN_SYSTEM.md](DESIGN_SYSTEM.md) | ¿Qué tokens existen y cuándo se puede añadir otro? |
 | [SPEC_DRIVEN_DEVELOPMENT.md](SPEC_DRIVEN_DEVELOPMENT.md) | ¿Cómo pasa una intención a implementación verificable? |
 | [WORKFLOW.md](WORKFLOW.md) | ¿Cómo se organiza el trabajo en GitHub y Git? |
 | [QA.md](QA.md) | ¿Qué evidencia demuestra que un cambio está terminado? |

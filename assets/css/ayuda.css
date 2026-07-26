@@ -20,7 +20,7 @@
 	box-sizing: border-box;
 	min-height: calc(
 		(var(--wp--preset--spacing--45) * 2) +
-		(var(--wp--preset--font-size--section-body) * 2.8)
+		(var(--wp--preset--font-size--body-responsive) * 2.8)
 	);
 }
 

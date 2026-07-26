@@ -23,16 +23,16 @@
 
 		<!-- wp:column {"verticalAlignment":"center","width":"54%","className":"vicunav-resultados__copy"} -->
 		<div class="wp-block-column is-vertically-aligned-center vicunav-resultados__copy" style="flex-basis:54%">
-			<!-- wp:paragraph {"textColor":"primary","fontFamily":"handwritten","fontSize":"eyebrow-display","style":{"typography":{"fontWeight":"400","lineHeight":"1"},"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|40"}}}} -->
-			<p class="has-primary-color has-text-color has-handwritten-font-family has-eyebrow-display-font-size" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--40);font-weight:400;line-height:1"><?php echo esc_html_x( 'Los Resultados', 'Eyebrow de Resultados.', 'vicunav' ); ?></p>
+			<!-- wp:paragraph {"textColor":"primary","fontFamily":"handwritten","fontSize":"accent-text","style":{"typography":{"fontWeight":"400","lineHeight":"1"},"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|40"}}}} -->
+			<p class="has-primary-color has-text-color has-handwritten-font-family has-accent-text-font-size" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--40);font-weight:400;line-height:1"><?php echo esc_html_x( 'Los Resultados', 'Eyebrow de Resultados.', 'vicunav' ); ?></p>
 			<!-- /wp:paragraph -->
 
-			<!-- wp:heading {"level":2,"textColor":"neutral-800","fontFamily":"heading","fontSize":"section-title","style":{"typography":{"fontWeight":"300","lineHeight":"1"},"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|60"}}}} -->
-			<h2 class="wp-block-heading has-neutral-800-color has-text-color has-heading-font-family has-section-title-font-size" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--60);font-weight:300;line-height:1"><?php echo esc_html_x( 'Un Sitio Web del que', 'Primera línea del título de Resultados.', 'vicunav' ); ?><br><?php echo esc_html_x( 'Sientes Orgullo de Compartir', 'Segunda línea del título de Resultados.', 'vicunav' ); ?></h2>
+			<!-- wp:heading {"level":2,"textColor":"neutral-800","fontFamily":"heading","fontSize":"heading-large","style":{"typography":{"fontWeight":"300","lineHeight":"1"},"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|60"}}}} -->
+			<h2 class="wp-block-heading has-neutral-800-color has-text-color has-heading-font-family has-heading-large-font-size" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--60);font-weight:300;line-height:1"><?php echo esc_html_x( 'Un Sitio Web del que', 'Primera línea del título de Resultados.', 'vicunav' ); ?><br><?php echo esc_html_x( 'Sientes Orgullo de Compartir', 'Segunda línea del título de Resultados.', 'vicunav' ); ?></h2>
 			<!-- /wp:heading -->
 
-			<!-- wp:paragraph {"textColor":"neutral-800","fontSize":"section-body","style":{"typography":{"fontWeight":"700","lineHeight":"1.6"},"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|60"}}}} -->
-			<p class="has-neutral-800-color has-text-color has-section-body-font-size" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--60);font-weight:700;line-height:1.6"><?php echo esc_html_x( 'Porque sabes que va a:', 'Introducción de Resultados.', 'vicunav' ); ?></p>
+			<!-- wp:paragraph {"textColor":"neutral-800","fontSize":"body-responsive","style":{"typography":{"fontWeight":"700","lineHeight":"1.6"},"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|60"}}}} -->
+			<p class="has-neutral-800-color has-text-color has-body-responsive-font-size" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--60);font-weight:700;line-height:1.6"><?php echo esc_html_x( 'Porque sabes que va a:', 'Introducción de Resultados.', 'vicunav' ); ?></p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:list {"className":"vicunav-resultados__list","style":{"spacing":{"margin":{"top":"0","bottom":"0"},"blockGap":"var:preset|spacing|40"},"typography":{"fontWeight":"700","lineHeight":"1"}},"fontSize":"body"} -->
