@@ -46,6 +46,14 @@ El cero se escribe como `0`, porque no representa una elección de ritmo. `hero-
 
 Los colores conservan el inventario aprobado de Fase 1. No se agregan variaciones por componente; las superficies reutilizables se expresan como estilos de sección y consumen la paleta existente.
 
+| Estilo del editor | Slug | Uso |
+|---|---|---|
+| Superficie clara | `surface-light` | Header, footer y secciones principales |
+| Superficie tenue | `surface-muted` | Separadores editoriales cálidos |
+| Superficie oscura | `surface-dark` | Secciones de alto contraste |
+
+Los archivos viven en `styles/section/` y se registran para Group, Columns y Cover. WordPress muestra estas tres opciones en la pestaña **Estilos** del bloque seleccionado; no requieren PHP ni CSS duplicado.
+
 ## Tolerancia de consolidación
 
 Una consolidación puede aproximar un valor cuando:

@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "slug": "surface-muted",
+  "title": "Superficie tenue",
+  "description": "Fondo editorial cálido con texto oscuro.",
+  "blockTypes": [
+    "core/group",
+    "core/columns",
+    "core/cover"
+  ],
+  "styles": {
+    "color": {
+      "background": "var:preset|color|neutral-300",
+      "text": "var:preset|color|text"
+    },
+    "elements": {
+      "link": {
+        "color": {
+          "text": "var:preset|color|neutral-800"
+        },
+        ":hover": {
+          "color": {
+            "text": "var:preset|color|primary"
+          }
+        }
+      }
+    }
+  }
+}

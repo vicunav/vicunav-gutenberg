@@ -382,6 +382,35 @@
     "useRootPaddingAwareAlignments": true
   },
   "styles": {
+    "blocks": {
+      "core/button": {
+        "typography": {
+          "fontFamily": "var:preset|font-family|body",
+          "fontSize": "var:preset|font-size|body",
+          "fontWeight": "500"
+        }
+      },
+      "core/group": {
+        "spacing": {
+          "blockGap": "var:preset|spacing|50"
+        }
+      },
+      "core/heading": {
+        "typography": {
+          "fontFamily": "var:preset|font-family|heading"
+        }
+      },
+      "core/image": {
+        "border": {
+          "radius": "0"
+        }
+      },
+      "core/paragraph": {
+        "typography": {
+          "fontFamily": "var:preset|font-family|body"
+        }
+      }
+    },
     "color": {
       "background": "var:preset|color|neutral-100",
       "text": "var:preset|color|text"
