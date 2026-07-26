@@ -6,7 +6,10 @@
  * Block Types: core/post-content
  * Viewport Width: 1440
  * Description: Resultado principal de trabajar con Vicunav.
+ *
+ * @package Vicunav
  */
+
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","tagName":"section","align":"full","backgroundColor":"neutral-100","className":"vicunav-resultados is-style-surface-light","style":{"spacing":{"padding":{"top":"var:preset|spacing|section-editorial","right":"var:preset|spacing|site-gutter","bottom":"var:preset|spacing|section-editorial","left":"var:preset|spacing|site-gutter"},"blockGap":"0","margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->

@@ -6,7 +6,10 @@
  * Block Types: core/post-content
  * Viewport Width: 1440
  * Description: Declaración sobre una presencia digital auténtica.
+ *
+ * @package Vicunav
  */
+
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","tagName":"section","align":"full","backgroundColor":"neutral-300","className":"vicunav-deberia-sentirse is-style-surface-muted","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","right":"var:preset|spacing|site-gutter","bottom":"var:preset|spacing|80","left":"var:preset|spacing|site-gutter"},"blockGap":"0","margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->

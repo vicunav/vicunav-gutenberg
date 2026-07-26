@@ -6,7 +6,10 @@
  * Block Types: core/post-content
  * Viewport Width: 1440
  * Description: Invitación final a conversar sobre el sitio web.
+ *
+ * @package Vicunav
  */
+
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","tagName":"section","align":"full","backgroundColor":"neutral-100","className":"vicunav-cta-final is-style-surface-light","style":{"spacing":{"padding":{"top":"var:preset|spacing|cta-section","right":"var:preset|spacing|site-gutter","bottom":"var:preset|spacing|cta-section","left":"var:preset|spacing|site-gutter"},"blockGap":"0","margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->

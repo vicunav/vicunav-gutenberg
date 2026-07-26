@@ -6,7 +6,10 @@
  * Block Types: core/post-content
  * Viewport Width: 1440
  * Description: Ocho situaciones frecuentes que Vicunav ayuda a resolver.
+ *
+ * @package Vicunav
  */
+
 ?>
 
 <!-- wp:cover {"templateLock":"contentOnly","url":"<?php echo esc_url( get_theme_file_uri( 'assets/images/situaciones-vicunav.webp' ) ); ?>","alt":"","dimRatio":60,"overlayColor":"neutral-100","isDark":false,"align":"full","className":"vicunav-situaciones","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","right":"var:preset|spacing|site-gutter","bottom":"var:preset|spacing|80","left":"var:preset|spacing|site-gutter"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->

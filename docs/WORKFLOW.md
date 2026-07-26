@@ -101,21 +101,16 @@ Usar `Closes #N` en el PR para cerrar el issue al integrar. El issue padre se ci
 - abrir issue separado para deuda descubierta, sin ampliar el PR cerrado;
 - incluir el cambio en `CHANGELOG.md` si es notable.
 
-## Checks requeridos previstos
+## Checks requeridos
 
-Cuando se implemente CI, proteger `main` con:
+El workflow `Quality` ejecuta el job `static-analysis` en PHP 8.0 y 8.2. Proteger `main` con ambos resultados:
 
 ```text
-validate-theme-json
-lint-markup-and-php
-wordpress-render-smoke
-accessibility
-visual-regression
-performance-budget
-secret-and-dependency-scan
+Quality / PHP 8.0
+Quality / PHP 8.2
 ```
 
-No se documenta un comando como disponible hasta que exista su configuración en el repositorio. La creación de CI debe ser una iniciativa SDD propia.
+El job usa permisos `contents: read`, actions fijadas a SHA, Composer lock y ejecuta lint, WPCS, PHPCompatibility, validación estructural y búsqueda de firmas sensibles. Smoke de WordPress, accesibilidad, regresión visual y rendimiento permanecen como gates de evidencia hasta que su entorno CI sea reproducible.
 
 ## Emergencias
 

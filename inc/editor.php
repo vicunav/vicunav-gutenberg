@@ -48,16 +48,19 @@ add_filter( 'get_edit_post_link', 'vicunav_filter_front_page_edit_link', 10, 3 )
 function vicunav_redirect_front_page_editor() {
 	global $pagenow;
 
+	// La lectura de esta URL administrativa no modifica estado y se valida por capacidad.
+	// phpcs:disable WordPress.Security.NonceVerification.Recommended
 	if ( 'post.php' !== $pagenow || ! isset( $_GET['post'], $_GET['action'] ) ) {
 		return;
 	}
 
 	$post_id = absint( wp_unslash( $_GET['post'] ) );
 	$action  = sanitize_key( wp_unslash( $_GET['action'] ) );
+	// phpcs:enable WordPress.Security.NonceVerification.Recommended
 
 	if (
 		'edit' !== $action ||
-		$post_id !== (int) get_option( 'page_on_front' ) ||
+		(int) get_option( 'page_on_front' ) !== $post_id ||
 		! current_user_can( 'edit_theme_options' )
 	) {
 		return;

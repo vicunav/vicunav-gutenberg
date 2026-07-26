@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<ruleset name="Vicunav">
+	<description>Estándares de PHP, WordPress y compatibilidad para el theme Vicunav.</description>
+
+	<arg name="basepath" value="."/>
+	<arg name="colors"/>
+	<arg name="extensions" value="php"/>
+	<arg name="parallel" value="8"/>
+	<arg value="sp"/>
+
+	<config name="testVersion" value="8.0-"/>
+	<config name="minimum_supported_wp_version" value="6.7"/>
+
+	<file>functions.php</file>
+	<file>inc</file>
+	<file>patterns</file>
+
+	<exclude-pattern>vendor/*</exclude-pattern>
+
+	<rule ref="WordPress"/>
+	<rule ref="PHPCompatibilityWP"/>
+</ruleset>

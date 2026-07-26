@@ -6,7 +6,10 @@
  * Block Types: core/post-content
  * Viewport Width: 1440
  * Description: Testimonio destacado de TatiPilates.
+ *
+ * @package Vicunav
  */
+
 ?>
 
 <!-- wp:cover {"templateLock":"contentOnly","url":"<?php echo esc_url( get_theme_file_uri( 'assets/images/testimonio-fondo.webp' ) ); ?>","alt":"","dimRatio":80,"overlayColor":"neutral-200","isDark":false,"align":"full","className":"vicunav-testimonio","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","right":"var:preset|spacing|site-gutter","bottom":"var:preset|spacing|80","left":"var:preset|spacing|site-gutter"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->

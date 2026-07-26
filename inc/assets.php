@@ -86,10 +86,10 @@ add_filter( 'wp_preload_resources', 'vicunav_preload_lcp_asset' );
  */
 function vicunav_get_image_manifest() {
 	return array(
-		'logo-dark.webp'             => array( 554, 113, 'eager', 'auto' ),
-		'hero-vicunav.webp'          => array( 1536, 1024, 'eager', 'high' ),
-		'situaciones-vicunav.webp'   => array( 1536, 1024, 'lazy', null ),
-		'como-ayudamos-vicunav.webp' => array( 1024, 1280, 'lazy', null ),
+		'logo-dark.webp'              => array( 554, 113, 'eager', 'auto' ),
+		'hero-vicunav.webp'           => array( 1536, 1024, 'eager', 'high' ),
+		'situaciones-vicunav.webp'    => array( 1536, 1024, 'lazy', null ),
+		'como-ayudamos-vicunav.webp'  => array( 1024, 1280, 'lazy', null ),
 		'proceso-textos.webp'         => array( 400, 306, 'lazy', null ),
 		'proceso-visual.webp'         => array( 400, 306, 'lazy', null ),
 		'proceso-desarrollo.webp'     => array( 400, 306, 'lazy', null ),

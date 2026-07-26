@@ -6,7 +6,10 @@
  * Block Types: core/post-content
  * Viewport Width: 1440
  * Description: Selección de cinco marcas con las que ha trabajado Vicunav.
+ *
+ * @package Vicunav
  */
+
 ?>
 
 <!-- wp:group {"templateLock":"contentOnly","tagName":"section","align":"full","backgroundColor":"neutral-800","className":"vicunav-marcas is-style-surface-dark","style":{"spacing":{"padding":{"top":"var:preset|spacing|70","right":"var:preset|spacing|site-gutter","bottom":"var:preset|spacing|70","left":"var:preset|spacing|site-gutter"},"blockGap":"0","margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->

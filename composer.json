@@ -1,0 +1,28 @@
+{
+  "name": "vicunav/vicunav",
+  "description": "Tooling de calidad para el block theme Vicunav.",
+  "type": "wordpress-theme",
+  "license": "GPL-2.0-or-later",
+  "require-dev": {
+    "dealerdirect/phpcodesniffer-composer-installer": "^1.1",
+    "php-parallel-lint/php-parallel-lint": "^1.4",
+    "phpcompatibility/phpcompatibility-wp": "^2.1",
+    "wp-coding-standards/wpcs": "^3.3"
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true
+    },
+    "sort-packages": true
+  },
+  "scripts": {
+    "lint:php": "parallel-lint --exclude vendor .",
+    "lint:standards": "phpcs",
+    "validate:theme": "php bin/validate-theme.php",
+    "qa": [
+      "@lint:php",
+      "@lint:standards",
+      "@validate:theme"
+    ]
+  }
+}

@@ -73,6 +73,7 @@ Como heurística, un PR debería poder revisarse en menos de 30 minutos. Si supe
 
 Un cambio está terminado cuando:
 
+- `composer qa` y `composer audit` pasan;
 - satisface todos los criterios de aceptación;
 - pasa los gates aplicables de `docs/QA.md`;
 - no introduce warnings de WordPress, PHP o consola;

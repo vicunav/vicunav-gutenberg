@@ -6,7 +6,10 @@
  * Block Types: core/post-content
  * Viewport Width: 1440
  * Description: Presentación principal del homepage de Vicunav.
+ *
+ * @package Vicunav
  */
+
 ?>
 
 <!-- wp:cover {"templateLock":"contentOnly","url":"<?php echo esc_url( get_theme_file_uri( 'assets/images/hero-vicunav.webp' ) ); ?>","alt":"","dimRatio":100,"gradient":"hero-readability","isDark":false,"align":"full","className":"vicunav-hero","style":{"spacing":{"padding":{"top":"var:preset|spacing|40","right":"var:preset|spacing|65","bottom":"var:preset|spacing|80","left":"var:preset|spacing|65"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
