@@ -1,0 +1,69 @@
+<?php
+/**
+ * Integración con el Editor del sitio.
+ *
+ * @package Vicunav
+ */
+
+/**
+ * Devuelve la URL canónica del lienzo de la portada en el Editor del sitio.
+ *
+ * @return string
+ */
+function vicunav_get_front_page_template_edit_url() {
+	return add_query_arg(
+		array(
+			'postType' => 'wp_template',
+			'postId'   => get_stylesheet() . '//front-page',
+			'canvas'   => 'edit',
+		),
+		admin_url( 'site-editor.php' )
+	);
+}
+
+/**
+ * Sustituye el enlace de edición de la página estática por el template real.
+ *
+ * @param string $link    Enlace de edición original.
+ * @param int    $post_id ID de la entrada.
+ * @param string $context Contexto de escape solicitado por WordPress.
+ * @return string
+ */
+function vicunav_filter_front_page_edit_link( $link, $post_id, $context ) {
+	$front_page_id = (int) get_option( 'page_on_front' );
+
+	if ( $front_page_id <= 0 || $front_page_id !== (int) $post_id || ! current_user_can( 'edit_theme_options' ) ) {
+		return $link;
+	}
+
+	$template_url = vicunav_get_front_page_template_edit_url();
+
+	return 'display' === $context ? esc_url( $template_url ) : esc_url_raw( $template_url );
+}
+add_filter( 'get_edit_post_link', 'vicunav_filter_front_page_edit_link', 10, 3 );
+
+/**
+ * Evita que una URL directa abra el editor de contenido que la portada no usa.
+ */
+function vicunav_redirect_front_page_editor() {
+	global $pagenow;
+
+	if ( 'post.php' !== $pagenow || ! isset( $_GET['post'], $_GET['action'] ) ) {
+		return;
+	}
+
+	$post_id = absint( wp_unslash( $_GET['post'] ) );
+	$action  = sanitize_key( wp_unslash( $_GET['action'] ) );
+
+	if (
+		'edit' !== $action ||
+		$post_id !== (int) get_option( 'page_on_front' ) ||
+		! current_user_can( 'edit_theme_options' )
+	) {
+		return;
+	}
+
+	wp_safe_redirect( vicunav_get_front_page_template_edit_url() );
+	exit;
+}
+add_action( 'admin_init', 'vicunav_redirect_front_page_editor' );

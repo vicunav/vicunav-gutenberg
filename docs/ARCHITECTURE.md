@@ -26,7 +26,9 @@ Una API introducida después de WordPress 6.7 solo puede usarse con fallback o e
 | `parts/` | Cabecera, pie y otras regiones reutilizables |
 | `patterns/` | Una sección del homepage por archivo registrado |
 | `assets/` | Recursos locales con licencia y procedencia verificables |
-| `functions.php` | Solo hooks imprescindibles; no existe hasta que un spec justifique su necesidad |
+| `functions.php` | Bootstrap mínimo de módulos PHP |
+| `inc/assets.php` | Registro declarativo de CSS, preload y manifiesto de imágenes |
+| `inc/editor.php` | Integración y rutas canónicas del Editor del sitio |
 | `docs/` | Contratos de arquitectura, proceso y calidad |
 
 ## Composición esperada del homepage
