@@ -1,0 +1,877 @@
+{
+  "desktop": {
+    "document": {
+      "height": 8564,
+      "overflow": 0,
+      "width": 1440
+    },
+    "footer": {
+      "bottom": 8564.7421875,
+      "height": 1090.796875,
+      "left": 0,
+      "right": 1440,
+      "top": 7473.9453125,
+      "width": 1440,
+      "x": 0,
+      "y": 7473.9453125
+    },
+    "header": {
+      "bottom": 110.59375,
+      "height": 78.59375,
+      "left": 0,
+      "right": 1440,
+      "top": 32,
+      "width": 1440,
+      "x": 0,
+      "y": 32
+    },
+    "images": [
+      {
+        "file": "a36d7605b7c5c889c5be3e511243d1c06b9d92844ebf0b690bd7a0b07328d6fb?s=26&d=mm&r=g",
+        "loading": "lazy",
+        "natural": [
+          26,
+          26
+        ],
+        "rendered": [
+          18,
+          18
+        ]
+      },
+      {
+        "file": "a36d7605b7c5c889c5be3e511243d1c06b9d92844ebf0b690bd7a0b07328d6fb?s=64&d=mm&r=g",
+        "loading": "lazy",
+        "natural": [
+          0,
+          0
+        ],
+        "rendered": [
+          0,
+          0
+        ]
+      },
+      {
+        "file": "logo-dark.webp",
+        "loading": "eager",
+        "natural": [
+          554,
+          113
+        ],
+        "rendered": [
+          145,
+          29.5703125
+        ]
+      },
+      {
+        "file": "hero-vicunav.webp",
+        "loading": "eager",
+        "natural": [
+          1536,
+          1024
+        ],
+        "rendered": [
+          1440,
+          593.0078125
+        ]
+      },
+      {
+        "file": "situaciones-vicunav.webp",
+        "loading": "lazy",
+        "natural": [
+          1536,
+          1024
+        ],
+        "rendered": [
+          1440,
+          720
+        ]
+      },
+      {
+        "file": "como-ayudamos-vicunav.webp",
+        "loading": "lazy",
+        "natural": [
+          1024,
+          1280
+        ],
+        "rendered": [
+          506.109375,
+          632.6328125
+        ]
+      },
+      {
+        "file": "proceso-textos.webp",
+        "loading": "lazy",
+        "natural": [
+          0,
+          0
+        ],
+        "rendered": [
+          145.921875,
+          111.625
+        ]
+      },
+      {
+        "file": "proceso-visual.webp",
+        "loading": "lazy",
+        "natural": [
+          0,
+          0
+        ],
+        "rendered": [
+          145.921875,
+          111.625
+        ]
+      },
+      {
+        "file": "proceso-desarrollo.webp",
+        "loading": "lazy",
+        "natural": [
+          0,
+          0
+        ],
+        "rendered": [
+          145.921875,
+          111.625
+        ]
+      },
+      {
+        "file": "proceso-encontrado.webp",
+        "loading": "lazy",
+        "natural": [
+          0,
+          0
+        ],
+        "rendered": [
+          145.921875,
+          111.625
+        ]
+      },
+      {
+        "file": "proceso-herramientas.webp",
+        "loading": "lazy",
+        "natural": [
+          0,
+          0
+        ],
+        "rendered": [
+          145.921875,
+          111.625
+        ]
+      },
+      {
+        "file": "proceso-soporte.webp",
+        "loading": "lazy",
+        "natural": [
+          0,
+          0
+        ],
+        "rendered": [
+          145.921875,
+          111.625
+        ]
+      },
+      {
+        "file": "testimonio-fondo.webp",
+        "loading": "lazy",
+        "natural": [
+          0,
+          0
+        ],
+        "rendered": [
+          1440,
+          1377.703125
+        ]
+      },
+      {
+        "file": "testimonio-tatiana.webp",
+        "loading": "lazy",
+        "natural": [
+          0,
+          0
+        ],
+        "rendered": [
+          120,
+          120
+        ]
+      },
+      {
+        "file": "testimonio-tatipilates.webp",
+        "loading": "lazy",
+        "natural": [
+          0,
+          0
+        ],
+        "rendered": [
+          436,
+          775.109375
+        ]
+      },
+      {
+        "file": "resultados-vicunav.webp",
+        "loading": "lazy",
+        "natural": [
+          0,
+          0
+        ],
+        "rendered": [
+          502,
+          627.5
+        ]
+      },
+      {
+        "file": "mario-vicuna.webp",
+        "loading": "lazy",
+        "natural": [
+          0,
+          0
+        ],
+        "rendered": [
+          502,
+          753
+        ]
+      },
+      {
+        "file": "marca-clearpath.webp",
+        "loading": "lazy",
+        "natural": [
+          0,
+          0
+        ],
+        "rendered": [
+          198.3984375,
+          61.9921875
+        ]
+      },
+      {
+        "file": "marca-tatipilates.webp",
+        "loading": "lazy",
+        "natural": [
+          0,
+          0
+        ],
+        "rendered": [
+          198.3984375,
+          153.7578125
+        ]
+      },
+      {
+        "file": "marca-redstage.webp",
+        "loading": "lazy",
+        "natural": [
+          0,
+          0
+        ],
+        "rendered": [
+          198.3984375,
+          47.1171875
+        ]
+      },
+      {
+        "file": "marca-quiet-path.webp",
+        "loading": "lazy",
+        "natural": [
+          0,
+          0
+        ],
+        "rendered": [
+          198.3984375,
+          89.2734375
+        ]
+      },
+      {
+        "file": "marca-eleanor.webp",
+        "loading": "lazy",
+        "natural": [
+          0,
+          0
+        ],
+        "rendered": [
+          198.3984375,
+          47.609375
+        ]
+      }
+    ],
+    "sections": [
+      {
+        "classes": "wp-block-cover alignfull is-light vicunav-hero",
+        "heading": "Tu sitio web es el primer paso que tus clientes dan hacia ti",
+        "headingStyle": {
+          "fontFamily": "\"Bodoni Moda\", serif",
+          "fontSize": "47.776px",
+          "lineHeight": "47.9984px"
+        },
+        "index": 0,
+        "rect": {
+          "bottom": 703.6015625,
+          "height": 593.0078125,
+          "left": 0,
+          "right": 1440,
+          "top": 110.59375,
+          "width": 1440,
+          "x": 0,
+          "y": 110.59375
+        }
+      },
+      {
+        "classes": "wp-block-cover alignfull is-light vicunav-situaciones",
+        "heading": "¿Alguna de estas situaciones te describe?",
+        "headingStyle": {
+          "fontFamily": "\"Bodoni Moda\", serif",
+          "fontSize": "48px",
+          "lineHeight": "48px"
+        },
+        "index": 1,
+        "rect": {
+          "bottom": 1423.6015625,
+          "height": 720,
+          "left": 0,
+          "right": 1440,
+          "top": 703.6015625,
+          "width": 1440,
+          "x": 0,
+          "y": 703.6015625
+        }
+      },
+      {
+        "classes": "wp-block-group alignfull vicunav-ayuda has-neutral-100-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-8c839fd4 wp-block-group-is-layout-constrained",
+        "heading": "Tu Sitio Web,Sin el Estrés",
+        "headingStyle": {
+          "fontFamily": "\"Bodoni Moda\", serif",
+          "fontSize": "48px",
+          "lineHeight": "48px"
+        },
+        "index": 2,
+        "rect": {
+          "bottom": 2146.9921875,
+          "height": 723.390625,
+          "left": 0,
+          "right": 1440,
+          "top": 1423.6015625,
+          "width": 1440,
+          "x": 0,
+          "y": 1423.6015625
+        }
+      },
+      {
+        "classes": "wp-block-group alignfull vicunav-proceso has-neutral-100-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-23babb86 wp-block-group-is-layout-constrained",
+        "heading": "Tu Sitio Web, Completamente Acompañado",
+        "headingStyle": {
+          "fontFamily": "\"Bodoni Moda\", serif",
+          "fontSize": "48px",
+          "lineHeight": "48px"
+        },
+        "index": 3,
+        "rect": {
+          "bottom": 3041.1640625,
+          "height": 894.171875,
+          "left": 0,
+          "right": 1440,
+          "top": 2146.9921875,
+          "width": 1440,
+          "x": 0,
+          "y": 2146.9921875
+        }
+      },
+      {
+        "classes": "wp-block-cover alignfull is-light vicunav-testimonio",
+        "headingStyle": null,
+        "index": 4,
+        "rect": {
+          "bottom": 4418.8671875,
+          "height": 1377.703125,
+          "left": 0,
+          "right": 1440,
+          "top": 3041.1640625,
+          "width": 1440,
+          "x": 0,
+          "y": 3041.1640625
+        }
+      },
+      {
+        "classes": "wp-block-group alignfull vicunav-resultados has-neutral-100-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-7f66eb9e wp-block-group-is-layout-constrained",
+        "heading": "Un Sitio Web del queSientes Orgullo de Compartir",
+        "headingStyle": {
+          "fontFamily": "\"Bodoni Moda\", serif",
+          "fontSize": "48px",
+          "lineHeight": "48px"
+        },
+        "index": 5,
+        "rect": {
+          "bottom": 5206.3671875,
+          "height": 787.5,
+          "left": 0,
+          "right": 1440,
+          "top": 4418.8671875,
+          "width": 1440,
+          "x": 0,
+          "y": 4418.8671875
+        }
+      },
+      {
+        "classes": "wp-block-group alignfull vicunav-deberia-sentirse has-neutral-300-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-23babb86 wp-block-group-is-layout-constrained",
+        "heading": "Debería Sentirse Como Tú",
+        "headingStyle": {
+          "fontFamily": "\"Bodoni Moda\", serif",
+          "fontSize": "48px",
+          "lineHeight": "48px"
+        },
+        "index": 6,
+        "rect": {
+          "bottom": 5607.3515625,
+          "height": 400.984375,
+          "left": 0,
+          "right": 1440,
+          "top": 5206.3671875,
+          "width": 1440,
+          "x": 0,
+          "y": 5206.3671875
+        }
+      },
+      {
+        "classes": "wp-block-group alignfull vicunav-conoce-mario has-neutral-100-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-7f66eb9e wp-block-group-is-layout-constrained",
+        "heading": "Construyendo sitiosweb desde 2016",
+        "headingStyle": {
+          "fontFamily": "\"Bodoni Moda\", serif",
+          "fontSize": "48px",
+          "lineHeight": "48px"
+        },
+        "index": 7,
+        "rect": {
+          "bottom": 6520.3515625,
+          "height": 913,
+          "left": 0,
+          "right": 1440,
+          "top": 5607.3515625,
+          "width": 1440,
+          "x": 0,
+          "y": 5607.3515625
+        }
+      },
+      {
+        "classes": "wp-block-group alignfull vicunav-marcas has-neutral-800-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-d2ae9ada wp-block-group-is-layout-constrained",
+        "heading": "Marcas con las que he trabajado",
+        "headingStyle": {
+          "fontFamily": "Gloock, serif",
+          "fontSize": "23.04px",
+          "lineHeight": "23.04px"
+        },
+        "index": 8,
+        "rect": {
+          "bottom": 6825.1484375,
+          "height": 304.796875,
+          "left": 0,
+          "right": 1440,
+          "top": 6520.3515625,
+          "width": 1440,
+          "x": 0,
+          "y": 6520.3515625
+        }
+      },
+      {
+        "classes": "wp-block-group alignfull vicunav-cta-final has-neutral-100-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-0129d875 wp-block-group-is-layout-constrained",
+        "heading": "¿Listo para un sitio web que realmente refleje tu trabajo y te ayude a crecer?",
+        "headingStyle": {
+          "fontFamily": "\"Bodoni Moda\", serif",
+          "fontSize": "48px",
+          "lineHeight": "48px"
+        },
+        "index": 9,
+        "rect": {
+          "bottom": 7473.9453125,
+          "height": 648.796875,
+          "left": 0,
+          "right": 1440,
+          "top": 6825.1484375,
+          "width": 1440,
+          "x": 0,
+          "y": 6825.1484375
+        }
+      }
+    ],
+    "viewport": {
+      "height": 900,
+      "width": 1440
+    }
+  },
+  "mobile": {
+    "document": {
+      "height": 12901,
+      "overflow": 0,
+      "width": 390
+    },
+    "footer": {
+      "bottom": 12900.8984375,
+      "height": 2504,
+      "left": 0,
+      "right": 390,
+      "top": 10396.8984375,
+      "width": 390,
+      "x": 0,
+      "y": 10396.8984375
+    },
+    "header": {
+      "bottom": 126.6328125,
+      "height": 80.6328125,
+      "left": 0,
+      "right": 390,
+      "top": 46,
+      "width": 390,
+      "x": 0,
+      "y": 46
+    },
+    "sections": [
+      {
+        "classes": "wp-block-cover alignfull is-light vicunav-hero",
+        "heading": "Tu sitio web es el primer paso que tus clientes dan hacia ti",
+        "headingStyle": {
+          "fontSize": "32.2196px",
+          "lineHeight": "38.5379px"
+        },
+        "index": 0,
+        "rect": {
+          "bottom": 697.5625,
+          "height": 570.9296875,
+          "left": 0,
+          "right": 390,
+          "top": 126.6328125,
+          "width": 390,
+          "x": 0,
+          "y": 126.6328125
+        }
+      },
+      {
+        "classes": "wp-block-cover alignfull is-light vicunav-situaciones",
+        "heading": "¿Alguna de estas situaciones te describe?",
+        "headingStyle": {
+          "fontSize": "32.2293px",
+          "lineHeight": "32.2293px"
+        },
+        "index": 1,
+        "rect": {
+          "bottom": 1892.9296875,
+          "height": 1195.3671875,
+          "left": 0,
+          "right": 390,
+          "top": 697.5625,
+          "width": 390,
+          "x": 0,
+          "y": 697.5625
+        }
+      },
+      {
+        "classes": "wp-block-group alignfull vicunav-ayuda has-neutral-100-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-8c839fd4 wp-block-group-is-layout-constrained",
+        "heading": "Tu Sitio Web,Sin el Estrés",
+        "headingStyle": {
+          "fontSize": "32.2293px",
+          "lineHeight": "32.2293px"
+        },
+        "index": 2,
+        "rect": {
+          "bottom": 3171.65625,
+          "height": 1278.7265625,
+          "left": 0,
+          "right": 390,
+          "top": 1892.9296875,
+          "width": 390,
+          "x": 0,
+          "y": 1892.9296875
+        }
+      },
+      {
+        "classes": "wp-block-group alignfull vicunav-proceso has-neutral-100-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-23babb86 wp-block-group-is-layout-constrained",
+        "heading": "Tu Sitio Web, Completamente Acompañado",
+        "headingStyle": {
+          "fontSize": "32.2293px",
+          "lineHeight": "32.2293px"
+        },
+        "index": 3,
+        "rect": {
+          "bottom": 5028.7890625,
+          "height": 1857.1328125,
+          "left": 0,
+          "right": 390,
+          "top": 3171.65625,
+          "width": 390,
+          "x": 0,
+          "y": 3171.65625
+        }
+      },
+      {
+        "classes": "wp-block-cover alignfull is-light vicunav-testimonio",
+        "headingStyle": null,
+        "index": 4,
+        "rect": {
+          "bottom": 6140.5,
+          "height": 1111.7109375,
+          "left": 0,
+          "right": 390,
+          "top": 5028.7890625,
+          "width": 390,
+          "x": 0,
+          "y": 5028.7890625
+        }
+      },
+      {
+        "classes": "wp-block-group alignfull vicunav-resultados has-neutral-100-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-7f66eb9e wp-block-group-is-layout-constrained",
+        "heading": "Un Sitio Web del queSientes Orgullo de Compartir",
+        "headingStyle": {
+          "fontSize": "32.2293px",
+          "lineHeight": "32.2293px"
+        },
+        "index": 5,
+        "rect": {
+          "bottom": 7425.328125,
+          "height": 1284.828125,
+          "left": 0,
+          "right": 390,
+          "top": 6140.5,
+          "width": 390,
+          "x": 0,
+          "y": 6140.5
+        }
+      },
+      {
+        "classes": "wp-block-group alignfull vicunav-deberia-sentirse has-neutral-300-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-23babb86 wp-block-group-is-layout-constrained",
+        "heading": "Debería Sentirse Como Tú",
+        "headingStyle": {
+          "fontSize": "32.2293px",
+          "lineHeight": "32.2293px"
+        },
+        "index": 6,
+        "rect": {
+          "bottom": 7940.90625,
+          "height": 515.578125,
+          "left": 0,
+          "right": 390,
+          "top": 7425.328125,
+          "width": 390,
+          "x": 0,
+          "y": 7425.328125
+        }
+      },
+      {
+        "classes": "wp-block-group alignfull vicunav-conoce-mario has-neutral-100-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-7f66eb9e wp-block-group-is-layout-constrained",
+        "heading": "Construyendo sitiosweb desde 2016",
+        "headingStyle": {
+          "fontSize": "32.2293px",
+          "lineHeight": "32.2293px"
+        },
+        "index": 7,
+        "rect": {
+          "bottom": 9388.9375,
+          "height": 1448.03125,
+          "left": 0,
+          "right": 390,
+          "top": 7940.90625,
+          "width": 390,
+          "x": 0,
+          "y": 7940.90625
+        }
+      },
+      {
+        "classes": "wp-block-group alignfull vicunav-marcas has-neutral-800-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-d2ae9ada wp-block-group-is-layout-constrained",
+        "heading": "Marcas con las que he trabajado",
+        "headingStyle": {
+          "fontSize": "23.04px",
+          "lineHeight": "23.04px"
+        },
+        "index": 8,
+        "rect": {
+          "bottom": 9868.8984375,
+          "height": 479.9609375,
+          "left": 0,
+          "right": 390,
+          "top": 9388.9375,
+          "width": 390,
+          "x": 0,
+          "y": 9388.9375
+        }
+      },
+      {
+        "classes": "wp-block-group alignfull vicunav-cta-final has-neutral-100-background-color has-background has-global-padding is-layout-constrained wp-container-core-group-is-layout-0129d875 wp-block-group-is-layout-constrained",
+        "heading": "¿Listo para un sitio web que realmente refleje tu trabajo y te ayude a crecer?",
+        "headingStyle": {
+          "fontSize": "32.2293px",
+          "lineHeight": "32.2293px"
+        },
+        "index": 9,
+        "rect": {
+          "bottom": 10396.8984375,
+          "height": 528,
+          "left": 0,
+          "right": 390,
+          "top": 9868.8984375,
+          "width": 390,
+          "x": 0,
+          "y": 9868.8984375
+        }
+      }
+    ],
+    "themeImages": [
+      {
+        "file": "logo-dark.webp",
+        "loaded": true,
+        "rendered": [
+          160,
+          32.6328125
+        ]
+      },
+      {
+        "file": "hero-vicunav.webp",
+        "loaded": true,
+        "rendered": [
+          390,
+          570.9296875
+        ]
+      },
+      {
+        "file": "situaciones-vicunav.webp",
+        "loaded": true,
+        "rendered": [
+          390,
+          1195.3671875
+        ]
+      },
+      {
+        "file": "como-ayudamos-vicunav.webp",
+        "loaded": true,
+        "rendered": [
+          350,
+          437.5
+        ]
+      },
+      {
+        "file": "proceso-textos.webp",
+        "loaded": true,
+        "rendered": [
+          80,
+          61.1953125
+        ]
+      },
+      {
+        "file": "proceso-visual.webp",
+        "loaded": true,
+        "rendered": [
+          80,
+          61.1953125
+        ]
+      },
+      {
+        "file": "proceso-desarrollo.webp",
+        "loaded": true,
+        "rendered": [
+          80,
+          61.1953125
+        ]
+      },
+      {
+        "file": "proceso-encontrado.webp",
+        "loaded": true,
+        "rendered": [
+          80,
+          61.1953125
+        ]
+      },
+      {
+        "file": "proceso-herramientas.webp",
+        "loaded": true,
+        "rendered": [
+          80,
+          61.1953125
+        ]
+      },
+      {
+        "file": "proceso-soporte.webp",
+        "loaded": true,
+        "rendered": [
+          80,
+          61.1953125
+        ]
+      },
+      {
+        "file": "testimonio-fondo.webp",
+        "loaded": true,
+        "rendered": [
+          390,
+          1111.7109375
+        ]
+      },
+      {
+        "file": "testimonio-tatiana.webp",
+        "loaded": true,
+        "rendered": [
+          120,
+          120
+        ]
+      },
+      {
+        "file": "testimonio-tatipilates.webp",
+        "loaded": true,
+        "rendered": [
+          286,
+          508.4375
+        ]
+      },
+      {
+        "file": "resultados-vicunav.webp",
+        "loaded": true,
+        "rendered": [
+          350,
+          437.5
+        ]
+      },
+      {
+        "file": "mario-vicuna.webp",
+        "loaded": true,
+        "rendered": [
+          350,
+          525
+        ]
+      },
+      {
+        "file": "marca-clearpath.webp",
+        "loaded": true,
+        "rendered": [
+          159,
+          49.6875
+        ]
+      },
+      {
+        "file": "marca-tatipilates.webp",
+        "loaded": true,
+        "rendered": [
+          159,
+          123.21875
+        ]
+      },
+      {
+        "file": "marca-redstage.webp",
+        "loaded": true,
+        "rendered": [
+          159,
+          37.7578125
+        ]
+      },
+      {
+        "file": "marca-quiet-path.webp",
+        "loaded": true,
+        "rendered": [
+          159,
+          71.546875
+        ]
+      },
+      {
+        "file": "marca-eleanor.webp",
+        "loaded": true,
+        "rendered": [
+          159,
+          38.15625
+        ]
+      }
+    ],
+    "viewport": {
+      "height": 844,
+      "width": 390
+    }
+  }
+}
