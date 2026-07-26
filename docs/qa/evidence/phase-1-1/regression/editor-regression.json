@@ -1,0 +1,16 @@
+{
+  "generatedAt": "2026-07-26T18:57:21.662Z",
+  "template": "vicunav//front-page",
+  "editorLoaded": true,
+  "headerPresent": true,
+  "footerPresent": true,
+  "heroHeadingPresent": true,
+  "finalCtaPresent": true,
+  "invalidBlockMessagePresent": false,
+  "unsavedChanges": false,
+  "notes": [
+    "La plantilla completa se renderiza dentro del editor del sitio.",
+    "La interfaz global de Estilos carga tipografía, colores, fondo, sombras, estructura y estilos por bloque.",
+    "No se detectaron mensajes de bloque inválido ni cambios pendientes."
+  ]
+}

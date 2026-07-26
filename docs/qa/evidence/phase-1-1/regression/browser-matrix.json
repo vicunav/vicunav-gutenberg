@@ -1,0 +1,351 @@
+{
+  "generatedAt": "2026-07-26T19:01:01.829Z",
+  "playwrightVersion": "1.57.0",
+  "results": [
+    {
+      "engine": "chrome",
+      "version": "150.0.7871.182",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "http": 200,
+      "metrics": {
+        "lang": "es",
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "height": 12866,
+        "h1": 1,
+        "h2": 9,
+        "sections": 10,
+        "header": 1,
+        "main": 1,
+        "footer": 1,
+        "themeImages": 20,
+        "failedThemeImages": [],
+        "missingDimensions": [],
+        "surfaces": 9,
+        "menuOpeners": 1
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": 1,
+        "passes": 21
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "navigation": {
+        "openerCount": 1,
+        "opened": true,
+        "linkCount": 4,
+        "closedWithEscape": true,
+        "focusReturned": true
+      },
+      "consoleErrorsAfterInteraction": [],
+      "pageErrorsAfterInteraction": []
+    },
+    {
+      "engine": "chrome",
+      "version": "150.0.7871.182",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "http": 200,
+      "metrics": {
+        "lang": "es",
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "height": 12656,
+        "h1": 1,
+        "h2": 9,
+        "sections": 10,
+        "header": 1,
+        "main": 1,
+        "footer": 1,
+        "themeImages": 20,
+        "failedThemeImages": [],
+        "missingDimensions": [],
+        "surfaces": 9,
+        "menuOpeners": 1
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": 1,
+        "passes": 36
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "navigation": {
+        "openerCount": 0,
+        "opened": false,
+        "linkCount": 0,
+        "closedWithEscape": false,
+        "focusReturned": false
+      }
+    },
+    {
+      "engine": "chrome",
+      "version": "150.0.7871.182",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "http": 200,
+      "metrics": {
+        "lang": "es",
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "height": 8542,
+        "h1": 1,
+        "h2": 9,
+        "sections": 10,
+        "header": 1,
+        "main": 1,
+        "footer": 1,
+        "themeImages": 20,
+        "failedThemeImages": [],
+        "missingDimensions": [],
+        "surfaces": 9,
+        "menuOpeners": 0
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": 1,
+        "passes": 20
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "engine": "firefox",
+      "version": "144.0.2",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "http": 200,
+      "metrics": {
+        "lang": "es",
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "height": 12864,
+        "h1": 1,
+        "h2": 9,
+        "sections": 10,
+        "header": 1,
+        "main": 1,
+        "footer": 1,
+        "themeImages": 20,
+        "failedThemeImages": [],
+        "missingDimensions": [],
+        "surfaces": 9,
+        "menuOpeners": 1
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": 1,
+        "passes": 21
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "navigation": {
+        "openerCount": 1,
+        "opened": true,
+        "linkCount": 4,
+        "closedWithEscape": true,
+        "focusReturned": true
+      },
+      "consoleErrorsAfterInteraction": [],
+      "pageErrorsAfterInteraction": []
+    },
+    {
+      "engine": "firefox",
+      "version": "144.0.2",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "http": 200,
+      "metrics": {
+        "lang": "es",
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "height": 12656,
+        "h1": 1,
+        "h2": 9,
+        "sections": 10,
+        "header": 1,
+        "main": 1,
+        "footer": 1,
+        "themeImages": 20,
+        "failedThemeImages": [],
+        "missingDimensions": [],
+        "surfaces": 9,
+        "menuOpeners": 1
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": 1,
+        "passes": 36
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "navigation": {
+        "openerCount": 0,
+        "opened": false,
+        "linkCount": 0,
+        "closedWithEscape": false,
+        "focusReturned": false
+      }
+    },
+    {
+      "engine": "firefox",
+      "version": "144.0.2",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "http": 200,
+      "metrics": {
+        "lang": "es",
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "height": 8542,
+        "h1": 1,
+        "h2": 9,
+        "sections": 10,
+        "header": 1,
+        "main": 1,
+        "footer": 1,
+        "themeImages": 20,
+        "failedThemeImages": [],
+        "missingDimensions": [],
+        "surfaces": 9,
+        "menuOpeners": 0
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": 1,
+        "passes": 20
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    },
+    {
+      "engine": "webkit",
+      "version": "26.0",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "http": 200,
+      "metrics": {
+        "lang": "es",
+        "clientWidth": 390,
+        "scrollWidth": 390,
+        "height": 12779,
+        "h1": 1,
+        "h2": 9,
+        "sections": 10,
+        "header": 1,
+        "main": 1,
+        "footer": 1,
+        "themeImages": 20,
+        "failedThemeImages": [],
+        "missingDimensions": [],
+        "surfaces": 9,
+        "menuOpeners": 1
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": 1,
+        "passes": 21
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "navigation": {
+        "openerCount": 1,
+        "opened": true,
+        "linkCount": 4,
+        "closedWithEscape": true,
+        "focusReturned": true
+      },
+      "consoleErrorsAfterInteraction": [],
+      "pageErrorsAfterInteraction": []
+    },
+    {
+      "engine": "webkit",
+      "version": "26.0",
+      "viewport": {
+        "width": 768,
+        "height": 1024
+      },
+      "http": 200,
+      "metrics": {
+        "lang": "es",
+        "clientWidth": 768,
+        "scrollWidth": 768,
+        "height": 12601,
+        "h1": 1,
+        "h2": 9,
+        "sections": 10,
+        "header": 1,
+        "main": 1,
+        "footer": 1,
+        "themeImages": 20,
+        "failedThemeImages": [],
+        "missingDimensions": [],
+        "surfaces": 9,
+        "menuOpeners": 1
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": 1,
+        "passes": 36
+      },
+      "consoleErrors": [],
+      "pageErrors": [],
+      "navigation": {
+        "openerCount": 0,
+        "opened": false,
+        "linkCount": 0,
+        "closedWithEscape": false,
+        "focusReturned": false
+      }
+    },
+    {
+      "engine": "webkit",
+      "version": "26.0",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "http": 200,
+      "metrics": {
+        "lang": "es",
+        "clientWidth": 1440,
+        "scrollWidth": 1440,
+        "height": 8521,
+        "h1": 1,
+        "h2": 9,
+        "sections": 10,
+        "header": 1,
+        "main": 1,
+        "footer": 1,
+        "themeImages": 20,
+        "failedThemeImages": [],
+        "missingDimensions": [],
+        "surfaces": 9,
+        "menuOpeners": 0
+      },
+      "axe": {
+        "violations": [],
+        "incomplete": 1,
+        "passes": 20
+      },
+      "consoleErrors": [],
+      "pageErrors": []
+    }
+  ]
+}

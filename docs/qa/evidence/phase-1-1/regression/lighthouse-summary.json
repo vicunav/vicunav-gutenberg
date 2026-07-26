@@ -1,0 +1,56 @@
+{
+  "generatedAt": "2026-07-26T18:56:32.046Z",
+  "tool": "Lighthouse 13.4.1",
+  "profile": "mobile cold-load, 390x844",
+  "baseline": {
+    "score": 84,
+    "fcpMs": 2252,
+    "lcpMs": 3376,
+    "cls": 0.0755,
+    "tbtMs": 223,
+    "transferBytes": 607484,
+    "requests": 23
+  },
+  "runs": [
+    {
+      "run": 1,
+      "score": 91,
+      "fcpMs": 2280,
+      "lcpMs": 2730,
+      "cls": 0.0192,
+      "tbtMs": 179,
+      "transferBytes": 575589,
+      "requests": 22
+    },
+    {
+      "run": 2,
+      "score": 91,
+      "fcpMs": 2280,
+      "lcpMs": 2730,
+      "cls": 0.0192,
+      "tbtMs": 174,
+      "transferBytes": 575589,
+      "requests": 22
+    },
+    {
+      "run": 3,
+      "score": 91,
+      "fcpMs": 2280,
+      "lcpMs": 2730,
+      "cls": 0.0192,
+      "tbtMs": 180,
+      "transferBytes": 575589,
+      "requests": 22
+    }
+  ],
+  "medianByScore": {
+    "run": 2,
+    "score": 91,
+    "fcpMs": 2280,
+    "lcpMs": 2730,
+    "cls": 0.0192,
+    "tbtMs": 174,
+    "transferBytes": 575589,
+    "requests": 22
+  }
+}
