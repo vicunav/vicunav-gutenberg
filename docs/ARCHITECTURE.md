@@ -92,6 +92,8 @@ El theme puede definir presentación, templates, patterns, estilos y tamaños de
 
 Un cambio visual se prueba tanto en Site Editor como en frontend. No se acepta CSS que “arregle” el frontend rompiendo la representación del editor. Los overrides guardados en base de datos se detectan y eliminan o se documentan antes de comparar archivos del theme.
 
+La estructura de portada usa locks nativos: `all` protege el ensamblaje de template y `contentOnly` cura la edición de cada sección y template part. El contrato completo, incluida la reconciliación de overrides, vive en [EDITOR.md](EDITOR.md).
+
 ## Decisiones aceptadas
 
 - Block theme desde cero, no child theme.
