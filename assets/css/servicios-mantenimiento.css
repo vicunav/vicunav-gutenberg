@@ -1,0 +1,53 @@
+.vicunav-servicios-maintenance {
+	background-image: linear-gradient(color-mix(in srgb, var(--wp--preset--color--neutral-200) 96%, transparent), color-mix(in srgb, var(--wp--preset--color--neutral-200) 96%, transparent)), url("../images/services/paper-texture.webp");
+	background-size: auto, 32rem;
+}
+
+.vicunav-servicios-maintenance__intro {
+	gap: var(--wp--preset--spacing--80);
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.vicunav-servicios-maintenance__plan {
+	border: 1px solid var(--wp--preset--color--neutral-400);
+	background-color: var(--wp--preset--color--neutral-100);
+}
+
+.vicunav-servicios-maintenance__grid {
+	display: grid;
+	grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.vicunav-servicios-maintenance__item {
+	min-height: 7rem;
+	border: 1px solid var(--wp--preset--color--neutral-300);
+	background-color: color-mix(in srgb, var(--wp--preset--color--neutral-100) 88%, transparent);
+}
+
+.vicunav-servicios-maintenance__icon {
+	display: grid;
+	flex: 0 0 3.5rem;
+	width: 3.5rem;
+	height: 3.5rem;
+	margin: 0;
+	place-items: center;
+}
+
+.vicunav-servicios-maintenance__icon img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+}
+
+@media (max-width: 1024px) {
+	.vicunav-servicios-maintenance__grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
+
+@media (max-width: 600px) {
+	.vicunav-servicios-maintenance__grid {
+		grid-template-columns: minmax(0, 1fr);
+	}
+}
