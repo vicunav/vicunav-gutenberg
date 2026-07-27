@@ -39,6 +39,7 @@ function vicunav_register_block_stylesheets() {
 		array( 'core/group', 'servicios-proceso' ),
 		array( 'core/group', 'servicios-mantenimiento' ),
 		array( 'core/group', 'servicios-adicionales' ),
+		array( 'core/details', 'servicios-faq' ),
 		array( 'core/columns', 'footer' ),
 	);
 
@@ -139,6 +140,7 @@ function vicunav_get_image_manifest() {
 		'maintenance-technical.webp'   => array( 160, 132, 'lazy', null ),
 		'maintenance-adjustments.webp' => array( 160, 151, 'lazy', null ),
 		'maintenance-reports.webp'     => array( 144, 160, 'lazy', null ),
+		'faq.webp'                     => array( 1024, 1536, 'lazy', null ),
 	);
 }
 
