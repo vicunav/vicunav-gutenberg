@@ -1,5 +1,5 @@
 .vicunav-servicios-process {
-	background-image: linear-gradient(color-mix(in srgb, var(--wp--preset--color--neutral-800) 96%, transparent), color-mix(in srgb, var(--wp--preset--color--neutral-800) 96%, transparent)), url("../images/services/surface-texture.webp");
+	background-image: linear-gradient(color-mix(in srgb, var(--wp--preset--color--neutral-100) 96%, transparent), color-mix(in srgb, var(--wp--preset--color--neutral-100) 96%, transparent)), url("../images/services/surface-texture.webp");
 	background-size: auto, 32rem;
 }
 
@@ -10,11 +10,11 @@
 }
 
 .vicunav-servicios-process__step {
-	border-top: 1px solid color-mix(in srgb, var(--wp--preset--color--neutral-400) 45%, transparent);
+	border-top: 1px solid var(--wp--preset--color--neutral-500);
 }
 
 .vicunav-servicios-process__step:last-child {
-	border-bottom: 1px solid color-mix(in srgb, var(--wp--preset--color--neutral-400) 45%, transparent);
+	border-bottom: 1px solid var(--wp--preset--color--neutral-500);
 }
 
 .vicunav-servicios-process__step-image {

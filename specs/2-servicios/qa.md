@@ -1,7 +1,7 @@
 # QA: página de Servicios
 
 Epic: #50  
-Estado: baseline completo; implementación en curso  
+Estado: aprobado localmente; pendiente de review del pull request
 Última actualización: 2026-07-27
 
 ## Entorno
@@ -35,17 +35,17 @@ Evidencia: [`docs/qa/evidence/services/baseline/`](../../docs/qa/evidence/servic
 | Criterio | Issue | Prueba | Estado |
 |---|---:|---|---|
 | AC-01 | #51 | Inventario, capturas, fuentes y checksums | Pass |
-| AC-02 | #52 | Hero, LCP, CTA y responsive | Pendiente |
-| AC-03 | #53 | Paquete Esencial y copy | Pendiente |
-| AC-04 | #54 | Paquete Completo y copy | Pendiente |
-| AC-05 | #55 | Ocho beneficios | Pendiente |
-| AC-06 | #56 | Cinco pasos | Pendiente |
-| AC-07 | #57 | Plan y ocho prestaciones | Pendiente |
-| AC-08 | #58 | Tres opciones adicionales | Pendiente |
-| AC-09 | #59 | 17 Details y teclado | Pendiente |
-| AC-10 | #60 | CTA, template, ruta y editor | Pendiente |
-| AC-11 | #61 | Paridad visual y responsive | Pendiente |
-| AC-12 | #61 | QA automatizado, enlaces, consola y assets | Pendiente |
+| AC-02 | #52 | Hero, LCP, CTA y responsive | Pass |
+| AC-03 | #53 | Paquete Esencial y copy | Pass |
+| AC-04 | #54 | Paquete Completo y copy | Pass |
+| AC-05 | #55 | Ocho beneficios | Pass |
+| AC-06 | #56 | Cinco pasos | Pass |
+| AC-07 | #57 | Plan y ocho prestaciones | Pass |
+| AC-08 | #58 | Tres opciones adicionales | Pass |
+| AC-09 | #59 | 17 Details y teclado | Pass |
+| AC-10 | #60 | CTA, template, ruta y editor | Pass |
+| AC-11 | #61 | Paridad visual y responsive | Pass |
+| AC-12 | #61 | QA automatizado, enlaces, consola y assets | Pass |
 
 ## Gate final
 
@@ -57,3 +57,19 @@ Evidencia: [`docs/qa/evidence/services/baseline/`](../../docs/qa/evidence/servic
 - Navegación por teclado y foco visible en botones, menú y FAQ.
 - Comparación visual sección por sección con diferencias justificadas.
 - Presupuesto de assets y estrategia de carga documentados.
+
+## Resultado final #61
+
+| Gate | Resultado |
+|---|---|
+| `composer qa` | Pass: 23 archivos PHP, WPCS y validación estructural |
+| Render WordPress | Pass: HTTP 200, un H1, nueve secciones y 17 Details |
+| Pattern registry | Pass: nueve slugs `vicunav/servicios-*` |
+| Editor del sitio | Pass: redirección a `page-servicios`, sin “Añadir título” |
+| Assets | Pass: cero fallos, hotlinks o construcciones peligrosas |
+| Responsive | Pass: cero overflow a 320, 390, 768 y 1440 px |
+| Accesibilidad | Pass: Lighthouse 100; FAQ funcional con Enter |
+| Rendimiento | Pass local: mediana 89; mejor corrida 93; cero JS propio |
+| Best Practices | Pass: Lighthouse 100 |
+
+Evidencia reproducible: [`docs/qa/evidence/services/regression/`](../../docs/qa/evidence/services/regression/).

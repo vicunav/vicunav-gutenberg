@@ -37,6 +37,15 @@
 	font-size: var(--wp--preset--font-size--body-large);
 	font-weight: 600;
 	line-height: 1.3;
+	list-style: none;
+}
+
+.vicunav-servicios-faq__item summary::-webkit-details-marker {
+	display: none;
+}
+
+.vicunav-servicios-faq__item summary::marker {
+	content: "";
 }
 
 .vicunav-servicios-faq__item summary::after {

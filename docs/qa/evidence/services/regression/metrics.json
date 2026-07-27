@@ -1,0 +1,51 @@
+{
+  "date": "2026-07-27",
+  "url": "https://vicunav-gutenberg.local/servicios/",
+  "structure": {
+    "httpStatus": 200,
+    "h1": 1,
+    "sections": 9,
+    "details": 17,
+    "postTitleBlocks": 0,
+    "registeredServicePatterns": 9,
+    "hotlinks": 0,
+    "assetFailures": 0
+  },
+  "assets": {
+    "serviceImagesBytes": 1022426,
+    "serviceCssBytes": 12489,
+    "htmlBytes": 168006
+  },
+  "layout": {
+    "desktop": {
+      "viewport": "1440x900",
+      "clientWidth": 1425,
+      "scrollWidth": 1425,
+      "pageHeight": 9005,
+      "sectionHeights": [566, 864, 905, 1224, 1078, 635, 556, 1320, 655]
+    },
+    "mobile": {
+      "viewport": "390x844",
+      "clientWidth": 375,
+      "scrollWidth": 375,
+      "pageHeight": 18396,
+      "referencePageHeight": 18301,
+      "sectionHeights": [809, 1782, 1989, 3583, 2050, 1641, 1174, 2199, 516]
+    },
+    "reflow": [
+      {"viewport": "320x800", "clientWidth": 305, "scrollWidth": 305},
+      {"viewport": "768x1024", "clientWidth": 753, "scrollWidth": 753}
+    ]
+  },
+  "lighthouse": {
+    "runs": [
+      {"performance": 56, "fcpMs": 2130, "lcpMs": 3705, "cls": 0, "tbtMs": 5109.5},
+      {"performance": 89, "fcpMs": 2102.382, "lcpMs": 3152.382, "cls": 0.0127337696, "tbtMs": 183},
+      {"performance": 93, "fcpMs": 2101.054, "lcpMs": 2926.054, "cls": 0.0127337696, "tbtMs": 5}
+    ],
+    "medianPerformance": 89,
+    "accessibility": 100,
+    "bestPractices": 100,
+    "seo": 92
+  }
+}
