@@ -35,6 +35,7 @@ function vicunav_register_block_stylesheets() {
 		array( 'core/group', 'cta-final' ),
 		array( 'core/columns', 'servicios-hero' ),
 		array( 'core/group', 'servicios-paquetes' ),
+		array( 'core/group', 'servicios-beneficios' ),
 		array( 'core/columns', 'footer' ),
 	);
 
@@ -113,6 +114,14 @@ function vicunav_get_image_manifest() {
 		'marca-quiet-path.webp'       => array( 400, 180, 'lazy', null ),
 		'marca-eleanor.webp'          => array( 400, 96, 'lazy', null ),
 		'hero-mockup.webp'            => array( 1024, 683, 'eager', 'high' ),
+		'benefit-design.webp'         => array( 480, 480, 'lazy', null ),
+		'benefit-copy.webp'           => array( 480, 480, 'lazy', null ),
+		'benefit-mobile.webp'         => array( 480, 480, 'lazy', null ),
+		'benefit-search-ai.webp'      => array( 480, 480, 'lazy', null ),
+		'benefit-performance.webp'    => array( 480, 480, 'lazy', null ),
+		'benefit-security.webp'       => array( 480, 480, 'lazy', null ),
+		'benefit-wordpress.webp'      => array( 480, 480, 'lazy', null ),
+		'benefit-walkthrough.webp'    => array( 480, 480, 'lazy', null ),
 	);
 }
 
