@@ -1,0 +1,93 @@
+.vicunav-servicios-hero {
+	min-height: 35.375rem;
+}
+
+.vicunav-servicios-hero__columns {
+	min-height: inherit;
+	margin: 0;
+}
+
+.vicunav-servicios-hero__visual {
+	position: relative;
+	min-height: inherit;
+	background-image: linear-gradient(var(--wp--preset--color--neutral-100), color-mix(in srgb, var(--wp--preset--color--neutral-100) 8%, transparent)), url("../images/services/hero-background.webp");
+	background-position: center 48%;
+	background-size: cover;
+}
+
+.vicunav-servicios-hero__mockup {
+	position: absolute;
+	right: -10%;
+	top: 50%;
+	z-index: 1;
+	width: min(72%, 31.25rem);
+	margin: 0;
+	transform: translateY(-50%);
+}
+
+.vicunav-servicios-hero__mockup img {
+	display: block;
+	width: 100%;
+	box-shadow: var(--wp--custom--shadow--card);
+}
+
+.vicunav-servicios-hero__copy {
+	position: relative;
+	z-index: 2;
+}
+
+.vicunav-servicios-hero__title em {
+	font-weight: inherit;
+}
+
+.vicunav-servicios-hero__title span {
+	position: relative;
+	display: inline;
+}
+
+.vicunav-servicios-hero__title span::after {
+	position: absolute;
+	right: 0;
+	bottom: -0.12em;
+	left: 0;
+	height: 0.08em;
+	background-color: var(--wp--preset--color--neutral-600);
+	content: "";
+	transform: rotate(-1deg);
+}
+
+@media (max-width: 781px) {
+	.vicunav-servicios-hero__columns {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.vicunav-servicios-hero__visual {
+		min-height: 22rem;
+	}
+
+	.vicunav-servicios-hero__mockup {
+		right: var(--wp--preset--spacing--site-gutter);
+		bottom: calc(var(--wp--preset--spacing--60) * -1);
+		top: auto;
+		width: min(74%, 21rem);
+		transform: none;
+	}
+
+	.vicunav-servicios-hero__copy {
+		padding-top: var(--wp--preset--spacing--90) !important;
+		padding-right: var(--wp--preset--spacing--site-gutter) !important;
+		padding-bottom: var(--wp--preset--spacing--80) !important;
+		padding-left: var(--wp--preset--spacing--site-gutter) !important;
+	}
+}
+
+@media (max-width: 420px) {
+	.vicunav-servicios-hero__visual {
+		min-height: 18.75rem;
+	}
+
+	.vicunav-servicios-hero__copy {
+		padding-top: var(--wp--preset--spacing--80) !important;
+	}
+}

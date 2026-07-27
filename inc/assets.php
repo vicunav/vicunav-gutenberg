@@ -33,6 +33,7 @@ function vicunav_register_block_stylesheets() {
 		array( 'core/columns', 'conoce-mario' ),
 		array( 'core/group', 'marcas' ),
 		array( 'core/group', 'cta-final' ),
+		array( 'core/columns', 'servicios-hero' ),
 		array( 'core/columns', 'footer' ),
 	);
 
@@ -64,12 +65,16 @@ add_action( 'init', 'vicunav_register_block_stylesheets' );
  * @return array
  */
 function vicunav_preload_lcp_asset( $preloads ) {
-	if ( ! is_front_page() ) {
+	if ( ! is_front_page() && ! is_page( 'servicios' ) ) {
 		return $preloads;
 	}
 
+	$hero_asset = is_page( 'servicios' )
+		? 'assets/images/services/hero-background.webp'
+		: 'assets/images/hero-vicunav.webp';
+
 	$preloads[] = array(
-		'href'          => get_theme_file_uri( 'assets/images/hero-vicunav.webp' ),
+		'href'          => get_theme_file_uri( $hero_asset ),
 		'as'            => 'image',
 		'type'          => 'image/webp',
 		'fetchpriority' => 'high',
@@ -106,6 +111,7 @@ function vicunav_get_image_manifest() {
 		'marca-redstage.webp'         => array( 400, 95, 'lazy', null ),
 		'marca-quiet-path.webp'       => array( 400, 180, 'lazy', null ),
 		'marca-eleanor.webp'          => array( 400, 96, 'lazy', null ),
+		'hero-mockup.webp'            => array( 1024, 683, 'eager', 'high' ),
 	);
 }
 
