@@ -1,7 +1,7 @@
 # Baseline de Servicios
 
-Referencia: `https://vicunav.com/servicios/`  
-Fecha: 2026-07-27  
+Referencia: `https://vicunav.com/servicios/`
+Fecha: 2026-07-27
 Issue: #51
 
 Las capturas documentan la referencia de solo lectura antes de implementar la plantilla Gutenberg. Se registraron recorridos desktop de 1440×900 y móvil nominal de 390×844; Chrome expuso un ancho útil de 1425 px y 375 px respectivamente por la barra de desplazamiento.

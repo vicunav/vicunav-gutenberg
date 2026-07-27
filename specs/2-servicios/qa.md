@@ -1,6 +1,6 @@
 # QA: página de Servicios
 
-Epic: #50  
+Epic: #50
 Estado: aprobado localmente; pendiente de review del pull request
 Última actualización: 2026-07-27
 

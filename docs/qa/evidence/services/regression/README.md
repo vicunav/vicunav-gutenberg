@@ -1,7 +1,7 @@
 # Regresión local de Servicios
 
-URL: `https://vicunav-gutenberg.local/servicios/`  
-Fecha: 2026-07-27  
+URL: `https://vicunav-gutenberg.local/servicios/`
+Fecha: 2026-07-27
 Issue: #61
 
 ## Resultado

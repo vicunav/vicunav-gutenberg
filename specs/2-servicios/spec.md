@@ -1,8 +1,8 @@
 # Especificación: página de Servicios
 
-Epic: #50  
-Referencia: `https://vicunav.com/servicios/`  
-Entorno objetivo: `https://vicunav-gutenberg.local/servicios/`  
+Epic: #50
+Referencia: `https://vicunav.com/servicios/`
+Entorno objetivo: `https://vicunav-gutenberg.local/servicios/`
 Estado: aprobado para implementación local
 
 ## Objetivo

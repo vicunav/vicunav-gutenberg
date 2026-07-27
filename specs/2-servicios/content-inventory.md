@@ -67,7 +67,7 @@ Fuente: `https://vicunav.com/servicios/`, inspeccionada el 2026-07-27. El orden,
 
 ## Incluido en cada proyecto
 
-Título: “Lo que Incluye cada Sitio Web de Vicunav”  
+Título: “Lo que Incluye cada Sitio Web de Vicunav”
 Introducción: “Cada proyecto de Vicunav incluye las bases esenciales para tener un sitio seguro, confiable y fácil de mantener.”
 
 1. **Diseño personalizado y coherencia de marca.** Diseñado para reflejar el tono y la profesionalidad de tu negocio, con una estructura clara, calmada y profesional.
@@ -101,7 +101,7 @@ Título: “Un proceso claro y acompañado, del inicio al lanzamiento”
 
 ## Opciones adicionales
 
-Título: “Soporte adicional para tu Sitio Web”  
+Título: “Soporte adicional para tu Sitio Web”
 Introducción: “Algunos proyectos necesitan elementos adicionales más allá de los paquetes base. Estos complementos opcionales pueden incluirse según las necesidades de tu negocio. Todo se conversa y confirma antes de comenzar el proyecto.”
 
 - **Página adicional — $150.** Una página estructurada, diseñada y desarrollada usando el mismo sistema visual y de mensaje del resto de tu sitio.
@@ -110,7 +110,7 @@ Introducción: “Algunos proyectos necesitan elementos adicionales más allá d
 
 ## Preguntas frecuentes
 
-Eyebrow: “Preguntas frecuentes”  
+Eyebrow: “Preguntas frecuentes”
 Título: “Respuestas claras para ayudarte a decidir”
 
 1. **¿Cómo sé cuál paquete es el indicado para mí?** Si estás comenzando o necesitas una presencia en línea simple y clara, el Paquete Esencial generalmente es suficiente. Si tu trabajo es más establecido o ofreces múltiples servicios, el Paquete Completo te da una estructura más sólida para presentarlo. Si no estás seguro, podemos decidirlo juntos.

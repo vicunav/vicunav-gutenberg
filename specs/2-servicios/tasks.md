@@ -1,7 +1,7 @@
 # Tareas: página de Servicios
 
-Epic: #50  
-Spec: [`spec.md`](spec.md)  
+Epic: #50
+Spec: [`spec.md`](spec.md)
 Plan: [`plan.md`](plan.md)
 
 | ID | Issue | Resultado | Criterios | Dependencia |

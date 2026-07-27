@@ -1,6 +1,6 @@
 # Plan: página de Servicios
 
-Spec: [`spec.md`](spec.md)  
+Spec: [`spec.md`](spec.md)
 Epic: #50
 
 ## Estrategia
