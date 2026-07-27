@@ -34,6 +34,7 @@ function vicunav_register_block_stylesheets() {
 		array( 'core/group', 'marcas' ),
 		array( 'core/group', 'cta-final' ),
 		array( 'core/columns', 'servicios-hero' ),
+		array( 'core/group', 'servicios-paquetes' ),
 		array( 'core/columns', 'footer' ),
 	);
 

@@ -1,0 +1,115 @@
+.vicunav-servicios-package {
+	position: relative;
+	overflow: hidden;
+}
+
+.vicunav-servicios-package::before,
+.vicunav-servicios-package::after {
+	position: absolute;
+	z-index: 0;
+	width: min(28vw, 25rem);
+	aspect-ratio: 1;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	content: "";
+	pointer-events: none;
+}
+
+.vicunav-servicios-package::before {
+	top: -8rem;
+	left: -8rem;
+}
+
+.vicunav-servicios-package::after {
+	right: -8rem;
+	bottom: -8rem;
+}
+
+.vicunav-servicios-package--essential {
+	background-image: linear-gradient(color-mix(in srgb, var(--wp--preset--color--neutral-100) 91%, transparent), color-mix(in srgb, var(--wp--preset--color--neutral-100) 91%, transparent)), url("../images/services/package-essential-background.webp");
+	background-position: center;
+	background-size: cover;
+}
+
+.vicunav-servicios-package--essential::before {
+	background-image: url("../images/services/package-essential-top.webp");
+}
+
+.vicunav-servicios-package--essential::after {
+	background-image: url("../images/services/package-essential-bottom.webp");
+}
+
+.vicunav-servicios-package > * {
+	position: relative;
+	z-index: 1;
+}
+
+.vicunav-servicios-package__columns {
+	gap: var(--wp--preset--spacing--50);
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.vicunav-servicios-package__summary,
+.vicunav-servicios-package__details {
+	border: 1px solid var(--wp--preset--color--neutral-400);
+	background: color-mix(in srgb, var(--wp--preset--color--neutral-100) 92%, transparent);
+	box-shadow: var(--wp--custom--shadow--card);
+}
+
+.vicunav-servicios-package__details {
+	background-color: color-mix(in srgb, var(--wp--preset--color--neutral-200) 92%, transparent);
+}
+
+.vicunav-servicios-package__investment {
+	border-left: 3px solid var(--wp--preset--color--neutral-600);
+	background-color: var(--wp--preset--color--neutral-200);
+}
+
+.vicunav-servicios-package__list {
+	padding: 0;
+	list-style: none;
+}
+
+.vicunav-servicios-package__list li {
+	position: relative;
+	padding-left: var(--wp--preset--spacing--50);
+}
+
+.vicunav-servicios-package__list li::before {
+	position: absolute;
+	left: 0;
+	top: 0;
+	color: var(--wp--preset--color--neutral-700);
+	content: "—";
+	font-weight: 700;
+}
+
+.vicunav-servicios-package__list--checks li::before {
+	content: "✓";
+}
+
+@media (max-width: 781px) {
+	.vicunav-servicios-package__columns {
+		gap: var(--wp--preset--spacing--50);
+	}
+
+	.vicunav-servicios-package__summary-inner,
+	.vicunav-servicios-package__details-inner {
+		padding: var(--wp--preset--spacing--60) !important;
+	}
+
+	.vicunav-servicios-package::before,
+	.vicunav-servicios-package::after {
+		width: 16rem;
+		opacity: 0.45;
+	}
+}
+
+@media (max-width: 420px) {
+	.vicunav-servicios-package__summary-inner,
+	.vicunav-servicios-package__details-inner {
+		padding: var(--wp--preset--spacing--50) !important;
+	}
+}
