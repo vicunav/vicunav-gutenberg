@@ -40,6 +40,20 @@
 	background-image: url("../images/services/package-essential-bottom.webp");
 }
 
+.vicunav-servicios-package--complete {
+	background-image: linear-gradient(color-mix(in srgb, var(--wp--preset--color--neutral-200) 91%, transparent), color-mix(in srgb, var(--wp--preset--color--neutral-200) 91%, transparent)), url("../images/services/decor-light.webp");
+	background-position: center;
+	background-size: cover;
+}
+
+.vicunav-servicios-package--complete::before {
+	background-image: url("../images/services/package-complete-top.webp");
+}
+
+.vicunav-servicios-package--complete::after {
+	background-image: url("../images/services/package-complete-bottom.webp");
+}
+
 .vicunav-servicios-package > * {
 	position: relative;
 	z-index: 1;
