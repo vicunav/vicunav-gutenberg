@@ -38,6 +38,7 @@ function vicunav_register_block_stylesheets() {
 		array( 'core/group', 'servicios-beneficios' ),
 		array( 'core/group', 'servicios-proceso' ),
 		array( 'core/group', 'servicios-mantenimiento' ),
+		array( 'core/group', 'servicios-adicionales' ),
 		array( 'core/columns', 'footer' ),
 	);
 

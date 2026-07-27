@@ -1,0 +1,24 @@
+.vicunav-servicios-extras {
+	position: relative;
+	overflow: hidden;
+	background-image: linear-gradient(color-mix(in srgb, var(--wp--preset--color--neutral-100) 94%, transparent), color-mix(in srgb, var(--wp--preset--color--neutral-100) 94%, transparent)), url("../images/cta-final-vicunav.webp");
+	background-position: center;
+	background-size: cover;
+}
+
+.vicunav-servicios-extras__grid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.vicunav-servicios-extras__card {
+	border-top: 3px solid var(--wp--preset--color--neutral-600);
+	background-color: color-mix(in srgb, var(--wp--preset--color--neutral-100) 94%, transparent);
+	box-shadow: var(--wp--custom--shadow--card);
+}
+
+@media (max-width: 781px) {
+	.vicunav-servicios-extras__grid {
+		grid-template-columns: minmax(0, 1fr);
+	}
+}
