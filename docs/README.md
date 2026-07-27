@@ -35,6 +35,8 @@ Las plantillas reutilizables viven en `docs/templates/`. Las decisiones arquitec
 
 La evidencia consolidada de Fase 1 vive en `docs/qa/evidence/phase-1/`: comparación visual, responsive cross-browser, accesibilidad, rendimiento y release candidate.
 
+La migración de la página de Servicios se especifica en `specs/2-servicios/`; su baseline y la evidencia de implementación viven en `docs/qa/evidence/services/`.
+
 ## Mantenimiento
 
 - Un cambio de contrato actualiza el spec.
