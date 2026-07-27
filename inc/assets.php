@@ -36,6 +36,7 @@ function vicunav_register_block_stylesheets() {
 		array( 'core/columns', 'servicios-hero' ),
 		array( 'core/group', 'servicios-paquetes' ),
 		array( 'core/group', 'servicios-beneficios' ),
+		array( 'core/group', 'servicios-proceso' ),
 		array( 'core/columns', 'footer' ),
 	);
 
@@ -122,6 +123,12 @@ function vicunav_get_image_manifest() {
 		'benefit-security.webp'       => array( 480, 480, 'lazy', null ),
 		'benefit-wordpress.webp'      => array( 480, 480, 'lazy', null ),
 		'benefit-walkthrough.webp'    => array( 480, 480, 'lazy', null ),
+		'process-discovery.webp'      => array( 1024, 1024, 'lazy', null ),
+		'process-content.webp'        => array( 1024, 1024, 'lazy', null ),
+		'process-build.webp'          => array( 1024, 1024, 'lazy', null ),
+		'process-review.webp'         => array( 1024, 1024, 'lazy', null ),
+		'process-launch.webp'         => array( 1024, 1024, 'lazy', null ),
+		'process-overview.webp'       => array( 1024, 1536, 'lazy', null ),
 	);
 }
 

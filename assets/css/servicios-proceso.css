@@ -1,0 +1,87 @@
+.vicunav-servicios-process {
+	background-image: linear-gradient(color-mix(in srgb, var(--wp--preset--color--neutral-800) 96%, transparent), color-mix(in srgb, var(--wp--preset--color--neutral-800) 96%, transparent)), url("../images/services/surface-texture.webp");
+	background-size: auto, 32rem;
+}
+
+.vicunav-servicios-process__columns {
+	gap: var(--wp--preset--spacing--80);
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.vicunav-servicios-process__step {
+	border-top: 1px solid color-mix(in srgb, var(--wp--preset--color--neutral-400) 45%, transparent);
+}
+
+.vicunav-servicios-process__step:last-child {
+	border-bottom: 1px solid color-mix(in srgb, var(--wp--preset--color--neutral-400) 45%, transparent);
+}
+
+.vicunav-servicios-process__step-image {
+	flex: 0 0 5.5rem;
+	width: 5.5rem;
+	margin: 0;
+}
+
+.vicunav-servicios-process__step-image img {
+	display: block;
+	width: 5.5rem;
+	height: 5.5rem;
+	object-fit: cover;
+}
+
+.vicunav-servicios-process__number {
+	flex: 0 0 2.75rem;
+}
+
+.vicunav-servicios-process__overview figure {
+	margin: 0;
+}
+
+.vicunav-servicios-process__overview img {
+	display: block;
+	width: 100%;
+	max-height: 51rem;
+	object-fit: cover;
+}
+
+@media (max-width: 900px) {
+	.vicunav-servicios-process__columns {
+		gap: var(--wp--preset--spacing--60);
+	}
+
+	.vicunav-servicios-process__step {
+		align-items: flex-start;
+		flex-wrap: wrap !important;
+	}
+
+	.vicunav-servicios-process__copy {
+		flex-basis: calc(100% - 11.25rem);
+	}
+}
+
+@media (max-width: 781px) {
+	.vicunav-servicios-process__overview {
+		order: -1;
+	}
+
+	.vicunav-servicios-process__overview img {
+		max-height: 34rem;
+	}
+}
+
+@media (max-width: 480px) {
+	.vicunav-servicios-process__step-image {
+		flex-basis: 4.5rem;
+		width: 4.5rem;
+	}
+
+	.vicunav-servicios-process__step-image img {
+		width: 4.5rem;
+		height: 4.5rem;
+	}
+
+	.vicunav-servicios-process__copy {
+		flex-basis: 100%;
+	}
+}
