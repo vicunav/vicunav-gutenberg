@@ -6,25 +6,28 @@
  * Block Types: core/post-content
  * Viewport Width: 1440
  * Description: Presentación de Mario Vicuña y el origen de Vicunav.
+ *
+ * @package Vicunav
  */
+
 ?>
 
-<!-- wp:group {"tagName":"section","align":"full","backgroundColor":"neutral-100","className":"vicunav-conoce-mario","style":{"spacing":{"padding":{"top":"var:preset|spacing|section-editorial","right":"var:preset|spacing|site-gutter","bottom":"var:preset|spacing|section-editorial","left":"var:preset|spacing|site-gutter"},"blockGap":"0","margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
-<section class="wp-block-group alignfull vicunav-conoce-mario has-neutral-100-background-color has-background" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--section-editorial);padding-right:var(--wp--preset--spacing--site-gutter);padding-bottom:var(--wp--preset--spacing--section-editorial);padding-left:var(--wp--preset--spacing--site-gutter)">
+<!-- wp:group {"templateLock":"contentOnly","tagName":"section","align":"full","backgroundColor":"neutral-100","className":"vicunav-conoce-mario is-style-surface-light","style":{"spacing":{"padding":{"top":"var:preset|spacing|section-editorial","right":"var:preset|spacing|site-gutter","bottom":"var:preset|spacing|section-editorial","left":"var:preset|spacing|site-gutter"},"blockGap":"0","margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
+<section class="wp-block-group alignfull vicunav-conoce-mario is-style-surface-light has-neutral-100-background-color has-background" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--section-editorial);padding-right:var(--wp--preset--spacing--site-gutter);padding-bottom:var(--wp--preset--spacing--section-editorial);padding-left:var(--wp--preset--spacing--site-gutter)">
 	<!-- wp:columns {"verticalAlignment":"center","align":"wide","className":"vicunav-conoce-mario__columns"} -->
 	<div class="wp-block-columns alignwide are-vertically-aligned-center vicunav-conoce-mario__columns">
 		<!-- wp:column {"verticalAlignment":"center","width":"54%","className":"vicunav-conoce-mario__copy"} -->
 		<div class="wp-block-column is-vertically-aligned-center vicunav-conoce-mario__copy" style="flex-basis:54%">
-			<!-- wp:paragraph {"textColor":"primary","fontFamily":"handwritten","fontSize":"eyebrow-display","style":{"typography":{"fontWeight":"400","lineHeight":"1"},"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|20"}}}} -->
-			<p class="has-primary-color has-text-color has-handwritten-font-family has-eyebrow-display-font-size" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--20);font-weight:400;line-height:1"><?php echo esc_html_x( 'Conoce a Mario', 'Eyebrow de la biografía.', 'vicunav' ); ?></p>
+			<!-- wp:paragraph {"textColor":"primary","fontFamily":"handwritten","fontSize":"accent-text","style":{"typography":{"fontWeight":"400","lineHeight":"1"},"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|20"}}}} -->
+			<p class="has-primary-color has-text-color has-handwritten-font-family has-accent-text-font-size" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--20);font-weight:400;line-height:1"><?php echo esc_html_x( 'Conoce a Mario', 'Eyebrow de la biografía.', 'vicunav' ); ?></p>
 			<!-- /wp:paragraph -->
 
-			<!-- wp:heading {"level":2,"textColor":"neutral-800","fontFamily":"heading","fontSize":"section-title","style":{"typography":{"fontWeight":"300","lineHeight":"1"},"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|50"}}}} -->
-			<h2 class="wp-block-heading has-neutral-800-color has-text-color has-heading-font-family has-section-title-font-size" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--50);font-weight:300;line-height:1"><?php echo esc_html_x( 'Construyendo sitios', 'Primera línea del título de la biografía.', 'vicunav' ); ?><br><?php echo esc_html_x( 'web desde 2016', 'Segunda línea del título de la biografía.', 'vicunav' ); ?></h2>
+			<!-- wp:heading {"level":2,"textColor":"neutral-800","fontFamily":"heading","fontSize":"heading-large","style":{"typography":{"fontWeight":"300","lineHeight":"1"},"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|50"}}}} -->
+			<h2 class="wp-block-heading has-neutral-800-color has-text-color has-heading-font-family has-heading-large-font-size" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--50);font-weight:300;line-height:1"><?php echo esc_html_x( 'Construyendo sitios', 'Primera línea del título de la biografía.', 'vicunav' ); ?><br><?php echo esc_html_x( 'web desde 2016', 'Segunda línea del título de la biografía.', 'vicunav' ); ?></h2>
 			<!-- /wp:heading -->
 
-			<!-- wp:paragraph {"textColor":"neutral-800","fontSize":"section-body","style":{"typography":{"fontWeight":"500"},"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|20"}}}} -->
-			<p class="has-neutral-800-color has-text-color has-section-body-font-size" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--20);font-weight:500"><?php echo esc_html_x( 'Haciendo el proceso simple, del inicio al lanzamiento', 'Subtítulo de la biografía.', 'vicunav' ); ?></p>
+			<!-- wp:paragraph {"textColor":"neutral-800","fontSize":"body-responsive","style":{"typography":{"fontWeight":"500"},"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|20"}}}} -->
+			<p class="has-neutral-800-color has-text-color has-body-responsive-font-size" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--20);font-weight:500"><?php echo esc_html_x( 'Haciendo el proceso simple, del inicio al lanzamiento', 'Subtítulo de la biografía.', 'vicunav' ); ?></p>
 			<!-- /wp:paragraph -->
 
 			<!-- wp:group {"className":"vicunav-conoce-mario__bio","style":{"spacing":{"blockGap":"var:preset|spacing|40"}},"layout":{"type":"default"}} -->

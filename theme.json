@@ -152,11 +152,6 @@
       "padding": true,
       "spacingSizes": [
         {
-          "name": "Sin espacio",
-          "size": "0",
-          "slug": "0"
-        },
-        {
           "name": "Extra pequeño",
           "size": "4px",
           "slug": "10"
@@ -217,29 +212,14 @@
           "slug": "90"
         },
         {
-          "name": "Sección amplia",
-          "size": "128px",
-          "slug": "100"
-        },
-        {
           "name": "Sección CTA",
           "size": "120px",
           "slug": "cta-section"
         },
-      {
-        "name": "Panel CTA",
-        "size": "61px",
-        "slug": "cta-panel"
-      },
         {
           "name": "Margen del sitio",
           "size": "clamp(1.25rem, 5vw, 5.5rem)",
           "slug": "site-gutter"
-        },
-        {
-          "name": "Margen del Hero",
-          "size": "42px",
-          "slug": "hero-gutter"
         }
       ],
       "units": [
@@ -342,11 +322,6 @@
       ],
       "fontSizes": [
         {
-          "name": "Legal",
-          "size": "0.694rem",
-          "slug": "legal"
-        },
-        {
           "name": "Eyebrow",
           "size": "0.833rem",
           "slug": "eyebrow"
@@ -357,79 +332,44 @@
           "slug": "body"
         },
         {
-          "name": "Título 6",
-          "size": "1.2rem",
-          "slug": "h6"
-        },
-        {
           "name": "Texto destacado",
           "size": "clamp(0.875rem, 0.761rem + 0.488vw, 1.2rem)",
           "slug": "lead"
         },
         {
-          "name": "Cuerpo del footer",
+          "name": "Cuerpo grande",
           "size": "1.125rem",
-          "slug": "footer-body"
+          "slug": "body-large"
         },
         {
           "name": "Cuerpo destacado",
           "size": "1.0625rem",
-          "slug": "callout-body"
+          "slug": "body-callout"
         },
         {
-          "name": "Acento manuscrito",
+          "name": "Texto de acento",
           "size": "1.3125rem",
-          "slug": "eyebrow-display"
+          "slug": "accent-text"
         },
         {
-          "name": "Título 5",
+          "name": "Título pequeño",
           "size": "1.44rem",
-          "slug": "h5"
+          "slug": "heading-small"
         },
         {
-          "name": "Título de paso",
-          "size": "1.375rem",
-          "slug": "process-title"
-        },
-        {
-          "name": "Número de paso",
+          "name": "Título mediano",
           "size": "2rem",
-          "slug": "process-number"
+          "slug": "heading-medium"
         },
         {
-          "name": "Título 4",
-          "size": "1.728rem",
-          "slug": "h4"
-        },
-        {
-          "name": "Título 3",
-          "size": "2.074rem",
-          "slug": "h3"
-        },
-        {
-          "name": "Título 2",
-          "size": "2.488rem",
-          "slug": "h2"
-        },
-        {
-          "name": "Título 1",
-          "size": "clamp(2rem, 1.652rem + 1.484vw, 2.986rem)",
-          "slug": "h1"
-        },
-        {
-          "name": "Display",
-          "size": "3rem",
-          "slug": "display"
-        },
-        {
-          "name": "Título de sección",
+          "name": "Título grande",
           "size": "clamp(2rem, 1.647rem + 1.507vw, 3rem)",
-          "slug": "section-title"
+          "slug": "heading-large"
         },
         {
-          "name": "Cuerpo de sección",
+          "name": "Cuerpo responsive",
           "size": "clamp(1rem, 0.956rem + 0.188vw, 1.125rem)",
-          "slug": "section-body"
+          "slug": "body-responsive"
         }
       ],
       "fontStyle": true,
@@ -442,6 +382,35 @@
     "useRootPaddingAwareAlignments": true
   },
   "styles": {
+    "blocks": {
+      "core/button": {
+        "typography": {
+          "fontFamily": "var:preset|font-family|body",
+          "fontSize": "var:preset|font-size|body",
+          "fontWeight": "500"
+        }
+      },
+      "core/group": {
+        "spacing": {
+          "blockGap": "var:preset|spacing|50"
+        }
+      },
+      "core/heading": {
+        "typography": {
+          "fontFamily": "var:preset|font-family|heading"
+        }
+      },
+      "core/image": {
+        "border": {
+          "radius": "0"
+        }
+      },
+      "core/paragraph": {
+        "typography": {
+          "fontFamily": "var:preset|font-family|body"
+        }
+      }
+    },
     "color": {
       "background": "var:preset|color|neutral-100",
       "text": "var:preset|color|text"
@@ -476,7 +445,7 @@
       "h1": {
         "typography": {
           "fontFamily": "var:preset|font-family|heading",
-          "fontSize": "var:preset|font-size|h1",
+          "fontSize": "var:preset|font-size|heading-large",
           "fontWeight": "400",
           "lineHeight": "clamp(2.4rem, 2.189rem + 0.901vw, 3rem)"
         }
@@ -484,7 +453,7 @@
       "h2": {
         "typography": {
           "fontFamily": "var:preset|font-family|heading",
-          "fontSize": "var:preset|font-size|h2",
+          "fontSize": "var:preset|font-size|heading-large",
           "fontWeight": "600",
           "lineHeight": "1.1"
         }
@@ -492,7 +461,7 @@
       "h3": {
         "typography": {
           "fontFamily": "var:preset|font-family|heading",
-          "fontSize": "var:preset|font-size|h3",
+          "fontSize": "var:preset|font-size|heading-medium",
           "fontWeight": "500",
           "lineHeight": "1.2"
         }
@@ -500,7 +469,7 @@
       "h4": {
         "typography": {
           "fontFamily": "var:preset|font-family|heading",
-          "fontSize": "var:preset|font-size|h4",
+          "fontSize": "var:preset|font-size|heading-small",
           "fontWeight": "500",
           "lineHeight": "1.2"
         }
@@ -508,7 +477,7 @@
       "h5": {
         "typography": {
           "fontFamily": "var:preset|font-family|accent-serif",
-          "fontSize": "var:preset|font-size|h5",
+          "fontSize": "var:preset|font-size|heading-small",
           "fontWeight": "400",
           "lineHeight": "1.2"
         }
@@ -516,7 +485,7 @@
       "h6": {
         "typography": {
           "fontFamily": "var:preset|font-family|heading",
-          "fontSize": "var:preset|font-size|h6",
+          "fontSize": "var:preset|font-size|body-large",
           "fontWeight": "500",
           "lineHeight": "1.2"
         }

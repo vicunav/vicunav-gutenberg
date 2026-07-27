@@ -1,0 +1,30 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "slug": "surface-dark",
+  "title": "Superficie oscura",
+  "description": "Fondo oscuro con contenido y enlaces claros.",
+  "blockTypes": [
+    "core/group",
+    "core/columns",
+    "core/cover"
+  ],
+  "styles": {
+    "color": {
+      "background": "var:preset|color|neutral-800",
+      "text": "var:preset|color|neutral-100"
+    },
+    "elements": {
+      "link": {
+        "color": {
+          "text": "var:preset|color|neutral-100"
+        },
+        ":hover": {
+          "color": {
+            "text": "var:preset|color|neutral-400"
+          }
+        }
+      }
+    }
+  }
+}

@@ -42,6 +42,18 @@ Los cambios guardados en el repositorio quedan disponibles inmediatamente en Loc
 
 El idioma del sitio debe configurarse como **Español** en **Ajustes → Generales → Idioma del sitio**. WordPress genera el atributo `lang` del documento desde esa preferencia; el theme no lo hardcodea.
 
+### Quality gates
+
+Las herramientas son dependencias de desarrollo y no entran al ZIP del theme:
+
+```bash
+composer install
+composer qa
+composer audit
+```
+
+`composer qa` ejecuta PHP lint, WordPress Coding Standards, PHPCompatibility y la validación estructural de JSON, patterns, section styles, rutas locales y firmas de secretos. GitHub Actions repite estos gates en PHP 8.0 y 8.2 con permisos de solo lectura y actions fijadas a commit SHA.
+
 ## Editar la portada, el header y el footer
 
 La portada se edita desde **Apariencia → Editor → Diseño → Plantillas → Portada**. El theme redirige los accesos “Editar página” de la página configurada como inicio hacia ese lienzo, porque `front-page.html` —no el contenido ni el título de la página estática— es la fuente real del diseño.
@@ -66,6 +78,8 @@ style.css     Metadatos y estilos globales mínimos del theme
 Empezar por [docs/README.md](docs/README.md). Las rutas principales son:
 
 - [Arquitectura](docs/ARCHITECTURE.md)
+- [Design System](docs/DESIGN_SYSTEM.md)
+- [Contrato del editor](docs/EDITOR.md)
 - [Spec-Driven Development](docs/SPEC_DRIVEN_DEVELOPMENT.md)
 - [Workflow de GitHub](docs/WORKFLOW.md)
 - [Estrategia de QA](docs/QA.md)

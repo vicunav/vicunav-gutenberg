@@ -6,19 +6,22 @@
  * Block Types: core/post-content
  * Viewport Width: 1440
  * Description: Testimonio destacado de TatiPilates.
+ *
+ * @package Vicunav
  */
+
 ?>
 
-<!-- wp:cover {"url":"<?php echo esc_url( get_theme_file_uri( 'assets/images/testimonio-fondo.webp' ) ); ?>","alt":"","dimRatio":80,"overlayColor":"neutral-200","isDark":false,"align":"full","className":"vicunav-testimonio","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","right":"var:preset|spacing|site-gutter","bottom":"var:preset|spacing|80","left":"var:preset|spacing|site-gutter"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
+<!-- wp:cover {"templateLock":"contentOnly","url":"<?php echo esc_url( get_theme_file_uri( 'assets/images/testimonio-fondo.webp' ) ); ?>","alt":"","dimRatio":80,"overlayColor":"neutral-200","isDark":false,"align":"full","className":"vicunav-testimonio","style":{"spacing":{"padding":{"top":"var:preset|spacing|80","right":"var:preset|spacing|site-gutter","bottom":"var:preset|spacing|80","left":"var:preset|spacing|site-gutter"},"margin":{"top":"0","bottom":"0"}}},"layout":{"type":"constrained"}} -->
 <div class="wp-block-cover alignfull is-light vicunav-testimonio" style="margin-top:0;margin-bottom:0;padding-top:var(--wp--preset--spacing--80);padding-right:var(--wp--preset--spacing--site-gutter);padding-bottom:var(--wp--preset--spacing--80);padding-left:var(--wp--preset--spacing--site-gutter)"><img class="wp-block-cover__image-background" alt="" src="<?php echo esc_url( get_theme_file_uri( 'assets/images/testimonio-fondo.webp' ) ); ?>" data-object-fit="cover"/><span aria-hidden="true" class="wp-block-cover__background has-neutral-200-background-color has-background-dim-80 has-background-dim"></span><div class="wp-block-cover__inner-container">
-	<!-- wp:paragraph {"align":"center","textColor":"primary","fontFamily":"handwritten","fontSize":"eyebrow-display","style":{"typography":{"fontWeight":"400","lineHeight":"1"},"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|40"}}}} -->
-	<p class="has-text-align-center has-primary-color has-text-color has-handwritten-font-family has-eyebrow-display-font-size" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--40);font-weight:400;line-height:1"><?php echo esc_html_x( 'Testimonio destacado', 'Eyebrow del testimonio.', 'vicunav' ); ?></p>
+	<!-- wp:paragraph {"align":"center","textColor":"primary","fontFamily":"handwritten","fontSize":"accent-text","style":{"typography":{"fontWeight":"400","lineHeight":"1"},"spacing":{"margin":{"top":"0","bottom":"var:preset|spacing|40"}}}} -->
+	<p class="has-text-align-center has-primary-color has-text-color has-handwritten-font-family has-accent-text-font-size" style="margin-top:0;margin-bottom:var(--wp--preset--spacing--40);font-weight:400;line-height:1"><?php echo esc_html_x( 'Testimonio destacado', 'Eyebrow del testimonio.', 'vicunav' ); ?></p>
 	<!-- /wp:paragraph -->
 
 	<!-- wp:quote {"className":"vicunav-testimonio__quote"} -->
 	<blockquote class="wp-block-quote vicunav-testimonio__quote">
-		<!-- wp:paragraph {"align":"center","textColor":"primary","fontFamily":"heading","fontSize":"section-title","style":{"typography":{"fontWeight":"300","lineHeight":"1"},"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
-		<p class="has-text-align-center has-primary-color has-text-color has-heading-font-family has-section-title-font-size" style="margin-top:0;margin-bottom:0;font-weight:300;line-height:1"><?php echo esc_html_x( 'TatiPilates maneja ahora todo su negocio desde un solo lugar', 'Cita principal del testimonio.', 'vicunav' ); ?></p>
+		<!-- wp:paragraph {"align":"center","textColor":"primary","fontFamily":"heading","fontSize":"heading-large","style":{"typography":{"fontWeight":"300","lineHeight":"1"},"spacing":{"margin":{"top":"0","bottom":"0"}}}} -->
+		<p class="has-text-align-center has-primary-color has-text-color has-heading-font-family has-heading-large-font-size" style="margin-top:0;margin-bottom:0;font-weight:300;line-height:1"><?php echo esc_html_x( 'TatiPilates maneja ahora todo su negocio desde un solo lugar', 'Cita principal del testimonio.', 'vicunav' ); ?></p>
 		<!-- /wp:paragraph -->
 	</blockquote>
 	<!-- /wp:quote -->

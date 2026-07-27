@@ -33,18 +33,21 @@ Antes de release probar:
 Ejecutar desde la raíz:
 
 ```bash
+composer install
+composer qa
+composer audit
+```
+
+Estos comandos cubren PHP lint, WPCS, PHPCompatibility, JSON, inventario de archivos, headers y slugs de patterns, section styles, rutas locales, firmas de secretos y advisories de dependencias. Como comprobaciones rápidas durante una edición:
+
+```bash
 jq empty theme.json
 git diff --check
+php -l patterns/<archivo>.php
 rg '#[0-9A-Fa-f]{3,8}|font-family' parts patterns templates
 ```
 
-El último comando debe devolver vacío para valores hardcodeados en bloques; revisar falsos positivos explícitamente. Para cada pattern PHP:
-
-```bash
-php -l patterns/<archivo>.php
-```
-
-Además:
+El último comando debe devolver vacío para valores hardcodeados en bloques; revisar falsos positivos explícitamente. Además:
 
 - confirmar headers `Title`, `Slug`, `Categories` y `Block Types`;
 - confirmar slugs únicos `vicunav/*`;
@@ -131,16 +134,15 @@ Limitaciones/riesgo residual:
 
 Usar `docs/templates/QA_EVIDENCE.md` para una validación extensa.
 
-## Tooling objetivo
+## Tooling
 
-Roadmap recomendado, cada punto como issue propio:
+Implementado:
 
-- PHPCS con WordPress Coding Standards si aparece PHP.
-- validación de Markdown y links.
-- Playwright para smoke, navegación y screenshots.
-- axe-core para asistencia automática de a11y.
-- Lighthouse CI con presupuestos.
-- Theme Check y Theme Unit Test Data.
-- `@wordpress/env` para matriz reproducible independiente de LocalWP.
+- PHP lint, WPCS y PHPCompatibility mediante Composer;
+- validación de estructura, JSON y firmas sensibles;
+- GitHub Actions en PHP 8.0 y 8.2;
+- Theme Check en el gate de release.
+
+Playwright, axe-core, Lighthouse y la matriz independiente con `@wordpress/env` se introducen únicamente cuando exista un entorno reproducible que no convierta el CI en una prueba frágil de LocalWP.
 
 Fuentes: [Testing de themes](https://developer.wordpress.org/themes/advanced-topics/testing/), [Theme review requirements](https://make.wordpress.org/themes/handbook/review/required/) y [`@wordpress/env`](https://developer.wordpress.org/block-editor/reference-guides/packages/packages-env/).

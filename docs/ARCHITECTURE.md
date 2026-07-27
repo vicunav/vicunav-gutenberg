@@ -26,7 +26,9 @@ Una API introducida después de WordPress 6.7 solo puede usarse con fallback o e
 | `parts/` | Cabecera, pie y otras regiones reutilizables |
 | `patterns/` | Una sección del homepage por archivo registrado |
 | `assets/` | Recursos locales con licencia y procedencia verificables |
-| `functions.php` | Solo hooks imprescindibles; no existe hasta que un spec justifique su necesidad |
+| `functions.php` | Bootstrap mínimo de módulos PHP |
+| `inc/assets.php` | Registro declarativo de CSS, preload y manifiesto de imágenes |
+| `inc/editor.php` | Integración y rutas canónicas del Editor del sitio |
 | `docs/` | Contratos de arquitectura, proceso y calidad |
 
 ## Composición esperada del homepage
@@ -91,6 +93,8 @@ El theme puede definir presentación, templates, patterns, estilos y tamaños de
 ## Compatibilidad con el editor
 
 Un cambio visual se prueba tanto en Site Editor como en frontend. No se acepta CSS que “arregle” el frontend rompiendo la representación del editor. Los overrides guardados en base de datos se detectan y eliminan o se documentan antes de comparar archivos del theme.
+
+La estructura de portada usa locks nativos: `all` protege el ensamblaje de template y `contentOnly` cura la edición de cada sección y template part. El contrato completo, incluida la reconciliación de overrides, vive en [EDITOR.md](EDITOR.md).
 
 ## Decisiones aceptadas
 
