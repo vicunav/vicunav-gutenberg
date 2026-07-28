@@ -83,13 +83,24 @@ Si `wp-load.php` muestra un error de base de datos, diagnosticar el socket segú
 
 Para cada sección:
 
-1. capturar sitio de referencia y local con mismo viewport;
-2. comparar estructura, ancho, espaciado, tipografía, color, imágenes y responsive;
-3. registrar commit, navegador, viewport y fecha;
-4. corregir diferencias o justificar una limitación técnica real;
-5. adjuntar before/after o diff visual al PR.
+1. capturar el estado estable de referencia y local con mismo viewport;
+2. completar primero la macrogeometría desktop: superficie, alto, ancho, gutter,
+   columnas, gaps, alineación e imágenes;
+3. validar la composición móvil como layout propio: orden, ancho, crop,
+   alineación, espaciado y estados;
+4. ajustar después tipografía, wrapping, bordes, botones y detalle editorial;
+5. registrar commit, navegador, viewport, fecha y medidas por sección;
+6. corregir diferencias o justificar una limitación técnica real;
+7. adjuntar before/after o diff visual al PR.
 
 La Fase 1 no acepta una preferencia de diseño como justificación. El contenido debe ser exacto; la tolerancia visual solo cubre rasterización de fuente/navegador y limitaciones documentadas de bloques core.
+
+Las alturas se usan como diagnóstico, no como sustituto de la comparación. En
+una referencia estable, revisar una diferencia acumulada de `main` superior a
+`0,5 %`, una sección que difiera más de `max(24 px, 2 %)` o ejes alineados con
+más de `8 px` de desplazamiento. Excluir admin bar y medir por separado
+header/footer compartidos. Consultar el protocolo completo en
+[`MIGRATION_PLAYBOOK.md`](MIGRATION_PLAYBOOK.md).
 
 ## Accesibilidad
 

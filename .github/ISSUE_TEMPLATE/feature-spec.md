@@ -46,6 +46,7 @@ Describe el resultado observable, no la implementación.
 - [ ] `specs/<issue>-<slug>/plan.md`
 - [ ] `specs/<issue>-<slug>/tasks.md`
 - [ ] `specs/<issue>-<slug>/qa.md`
+- [ ] `specs/<issue>-<slug>/migration-brief.md` o no aplica
 
 ## Sub-issues
 

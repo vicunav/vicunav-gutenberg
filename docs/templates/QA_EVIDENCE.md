@@ -38,6 +38,17 @@ Responsable: @<owner>
 | 768×1024 | | | |
 | 1440×900 | | | |
 
+### Paridad por sección
+
+| Sección | Alto referencia/local | Macro desktop | Móvil | Wrapping/crop | Estado |
+|---|---|---|---|---|---|
+| | | Pass/Fail | Pass/Fail | Pass/Fail | |
+
+- Estado estable de referencia:
+- Admin bar excluida de las medidas: Sí/No
+- `clientWidth` / `scrollWidth` por viewport:
+- Diferencias sobre umbral y justificación:
+
 ## Accesibilidad manual
 
 - [ ] Teclado y foco.

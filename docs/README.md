@@ -23,6 +23,7 @@ El código existente no invalida una regla superior. Si una regla necesita cambi
 | [ARCHITECTURE.md](ARCHITECTURE.md) | ¿Cómo se estructura y dónde vive cada responsabilidad? |
 | [DESIGN_SYSTEM.md](DESIGN_SYSTEM.md) | ¿Qué tokens existen y cuándo se puede añadir otro? |
 | [EDITOR.md](EDITOR.md) | ¿Qué puede editarse y cómo se gestionan los overrides? |
+| [MIGRATION_PLAYBOOK.md](MIGRATION_PLAYBOOK.md) | ¿Cómo se reproduce una página con fidelidad sin repetir descubrimiento? |
 | [SPEC_DRIVEN_DEVELOPMENT.md](SPEC_DRIVEN_DEVELOPMENT.md) | ¿Cómo pasa una intención a implementación verificable? |
 | [WORKFLOW.md](WORKFLOW.md) | ¿Cómo se organiza el trabajo en GitHub y Git? |
 | [QA.md](QA.md) | ¿Qué evidencia demuestra que un cambio está terminado? |

@@ -21,8 +21,17 @@ Estado: Draft | Approved | Implemented
 
 ## Flujo de implementación
 
-1. [Completar]
-2. [Completar]
+1. Capturar baseline y completar `migration-brief.md`.
+2. Alinear tokens, assets y componentes reutilizables.
+3. Implementar y aprobar una sección representativa de calibración.
+4. Implementar estructura por secciones.
+5. Completar macrogeometría desktop.
+6. Completar composición móvil y reflow.
+7. Ajustar detalle editorial.
+8. Validar ensamblaje, Site Editor y QA integral.
+
+Eliminar o adaptar las fases que no apliquen; no combinar integridad estructural
+y fidelidad visual en un único gate implícito.
 
 ## Alternativas consideradas
 

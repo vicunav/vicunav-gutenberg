@@ -6,6 +6,9 @@ Los cambios notables se documentan aquí. El proyecto usa [Semantic Versioning](
 
 ### Added
 
+- Playbook de migración visual y brief compacto reutilizable para capturar
+  baseline, paridad por sección y decisiones responsive sin repetir
+  descubrimiento.
 - Página de Servicios nativa con template propio y nueve patterns editables.
 - Inventario literal, baseline y evidencia visual responsive para Servicios.
 - Treinta y tres recursos locales optimizados para paquetes, beneficios, proceso, mantenimiento y FAQ.
@@ -13,6 +16,8 @@ Los cambios notables se documentan aquí. El proyecto usa [Semantic Versioning](
 
 ### Changed
 
+- Workflow, SDD, QA y plantillas de issues/PR separan integridad estructural de
+  fidelidad visual e incorporan checkpoints tempranos de calibración.
 - Los accesos de edición de Servicios abren directamente `page-servicios` en el Editor del sitio.
 - La precarga LCP selecciona el hero correspondiente a la portada o a Servicios.
 
