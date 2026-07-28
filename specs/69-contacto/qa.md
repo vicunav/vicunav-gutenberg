@@ -1,7 +1,7 @@
 # QA: página de Contacto
 
 Issue padre: #69<br>
-Estado: baseline aprobado; implementación bloqueada por #72<br>
+Estado: baseline y dependencia aprobados; implementación en progreso<br>
 Última actualización: 2026-07-28
 
 ## Entorno
@@ -22,6 +22,7 @@ Estado: baseline aprobado; implementación bloqueada por #72<br>
 - Cero overflow horizontal en desktop y móvil.
 - Fondo publicado identificado como asset ya disponible en el theme.
 - No se realizó ningún envío a producción.
+- Contact Form 7 + Turnstile, sin almacenamiento, aprobado en ADR 0001.
 
 ## Gates de implementación
 

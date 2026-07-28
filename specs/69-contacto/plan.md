@@ -2,13 +2,14 @@
 
 Spec: [`spec.md`](spec.md)<br>
 Issue padre: #69<br>
-Estado: Blocked by #72
+Estado: Approved
 
 ## Resumen técnico
 
 El template ensamblará header, contenido de Contacto y footer sin contenido de
-entrada. Los bloques core resolverán la composición; render, validación,
-entrega y antispam del formulario dependerán de la solución aprobada en #72.
+entrada. Los bloques core resolverán la composición; el bloque selector de
+Contact Form 7 integrará el formulario y Turnstile cubrirá antispam conforme al
+ADR 0001.
 
 ## Archivos previstos
 
@@ -22,8 +23,8 @@ entrega y antispam del formulario dependerán de la solución aprobada en #72.
 | `bin/validate-theme.php` | Modificar | Template requerido |
 | `specs/69-contacto/` | Modificar | Decisión, QA y regresión |
 
-La integración del formulario puede requerir archivos adicionales del plugin,
-pero no se decide su API antes de #72.
+La configuración de Contact Form 7 se exporta fuera del runtime del theme. No
+se instala almacenamiento de entradas.
 
 ## Flujo
 

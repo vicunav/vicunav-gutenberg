@@ -1,7 +1,7 @@
 # Spec: página de Contacto
 
 Issue padre: #69<br>
-Estado: Blocked by decision<br>
+Estado: In progress<br>
 Owner: @mariovicunadev<br>
 Última actualización: 2026-07-28
 
@@ -72,7 +72,7 @@ externa al theme.
 - [x] AC-01: baseline e inventario cubren desktop y móvil.
 - [x] AC-02: campos, opciones, requeridos y dependencia funcional están
   documentados.
-- [ ] AC-03: la solución de formularios está aprobada en #72.
+- [x] AC-03: la solución de formularios está aprobada en #72.
 - [ ] AC-04: composición y copy equivalen a producción.
 - [ ] AC-05: formulario funcional, accesible, seguro y localizable.
 - [ ] AC-06: `page-contacto.html` es la fuente canónica.
@@ -83,10 +83,10 @@ externa al theme.
 
 - Elementor entrega mensajes de éxito/error por AJAX y no publica su copy en
   el DOM inicial. No se envió el formulario de producción para descubrirlos.
-- La selección de plugin puede afectar markup, estilos, localización,
-  privacidad y mantenimiento.
-- reCAPTCHA v3 envía datos a un tercero; #72 debe valorar alternativas y
-  consentimiento.
+- La dependencia del plugin exige exportar su configuración y verificarla en
+  cada entorno.
+- Turnstile envía señales a Cloudflare; las claves y el aviso de privacidad se
+  gestionan fuera del theme.
 
 ## Decisiones
 
@@ -95,3 +95,4 @@ externa al theme.
 | 2026-07-28 | Corregir el título principal de H2 a H1 | Semántica sin cambio visual |
 | 2026-07-28 | No implementar envío en el theme | Separación de responsabilidades y seguridad |
 | 2026-07-28 | No enviar el formulario de producción durante QA | Evitar mensajes reales y efectos externos |
+| 2026-07-28 | Contact Form 7 6.1.6 + Turnstile, sin persistencia | ADR 0001 y aprobación en #72 |

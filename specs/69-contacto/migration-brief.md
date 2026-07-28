@@ -32,7 +32,8 @@ Spec: [`spec.md`](spec.md)<br>
 | Footer | `parts/footer.html` | Reutilizar |
 | Paleta/fuentes/spacing | `theme.json` | Reutilizar |
 | Fondo | `assets/images/testimonio-fondo.webp` | Reutilizar; mismo source y checksum |
-| Formulario | pendiente #72 | No vive en el theme |
+| Formulario | Contact Form 7 6.1.6 | Bloque selector; no vive en el theme |
+| Antispam | Cloudflare Turnstile | Integración nativa; claves fuera del repo |
 
 ## Mapa
 
@@ -90,9 +91,9 @@ El submit usa `#444444` y texto blanco. La superficie interior corresponde a
 
 | Sección | Contenido | Macro desktop | Móvil | Detalle | Editor | Estado |
 |---|---|---|---|---|---|---|
-| Introducción | Pass | Baseline | Baseline | Baseline | Pending | Blocked by #72 |
-| Formulario | Pass | Baseline | Baseline | Baseline | Pending | Blocked by #72 |
-| Qué pasa después | Pass | Baseline | Baseline | Baseline | Pending | Blocked by #72 |
+| Introducción | Pass | Baseline | Baseline | Baseline | Pending | Ready for #71 |
+| Formulario | Pass | Baseline | Baseline | Baseline | Pending | Ready for #71 |
+| Qué pasa después | Pass | Baseline | Baseline | Baseline | Pending | Ready for #71 |
 
 ## Evidencia
 

@@ -81,6 +81,11 @@ Nunca duplicar un color o una familia tipográfica en un pattern. Una excepción
 
 El theme puede definir presentación, templates, patterns, estilos y tamaños de imagen vinculados al diseño. No debe implementar formularios, reservas, analytics, schema de negocio, CPT, shortcodes, roles, endpoints o almacenamiento persistente. Esa separación protege portabilidad y seguridad.
 
+Contacto delega validación, entrega y antispam conforme al
+[ADR 0001](adr/0001-contact-form-7-y-turnstile.md). El bloque selector del
+plugin es una excepción aprobada y acotada; la composición continúa bajo
+responsabilidad del theme.
+
 ## Assets
 
 - Preferir recursos self-hosted.
