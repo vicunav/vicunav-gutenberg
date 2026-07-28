@@ -23,6 +23,7 @@ El código existente no invalida una regla superior. Si una regla necesita cambi
 | [ARCHITECTURE.md](ARCHITECTURE.md) | ¿Cómo se estructura y dónde vive cada responsabilidad? |
 | [DESIGN_SYSTEM.md](DESIGN_SYSTEM.md) | ¿Qué tokens existen y cuándo se puede añadir otro? |
 | [EDITOR.md](EDITOR.md) | ¿Qué puede editarse y cómo se gestionan los overrides? |
+| [CONTACT_FORM.md](CONTACT_FORM.md) | ¿Cómo se configura, prueba y opera el formulario? |
 | [MIGRATION_PLAYBOOK.md](MIGRATION_PLAYBOOK.md) | ¿Cómo se reproduce una página con fidelidad sin repetir descubrimiento? |
 | [CONTEXT_EFFICIENCY.md](CONTEXT_EFFICIENCY.md) | ¿Qué contexto es suficiente y cuándo debe ampliarse? |
 | [SPEC_DRIVEN_DEVELOPMENT.md](SPEC_DRIVEN_DEVELOPMENT.md) | ¿Cómo pasa una intención a implementación verificable? |
@@ -40,8 +41,8 @@ La evidencia consolidada de Fase 1 vive en `docs/qa/evidence/phase-1/`: comparac
 La migración de la página de Servicios se especifica en `specs/2-servicios/`; su baseline y la evidencia de implementación viven en `docs/qa/evidence/services/`.
 
 Portafolio se especifica en `specs/65-portafolio/`. Contacto se especifica en
-`specs/69-contacto/` y permanece bloqueado hasta aprobar la responsabilidad
-funcional del formulario en #72.
+`specs/69-contacto/`; su formulario, QA y operación están documentados en
+[CONTACT_FORM.md](CONTACT_FORM.md).
 
 ## Mantenimiento
 

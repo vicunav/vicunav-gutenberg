@@ -17,7 +17,9 @@ Candidato de Fase 1 comprobado el 25 de julio de 2026:
 - Página de Servicios implementada localmente con nueve patterns, template propio y 17 FAQ nativas.
 - Página de Portafolio implementada con dos patterns, cuatro proyectos,
   template propio y QA de paridad.
-- Pendiente: página de Contacto y arquitectura multidioma; no incluye despliegue a producción.
+- Página de Contacto implementada con template propio, Contact Form 7,
+  Turnstile, entrega local validada y cero almacenamiento de entradas.
+- Pendiente: arquitectura multidioma; no incluye despliegue a producción.
 
 ## Principios
 
@@ -65,6 +67,8 @@ Servicios se edita desde **Apariencia → Editor → Diseño → Plantillas → 
 
 Portafolio se edita desde **Apariencia → Editor → Diseño → Plantillas → page-portafolio**. Su acceso “Editar página” abre el mismo lienzo y `templates/page-portafolio.html` permanece como fuente canónica.
 
+Contacto se edita desde **Apariencia → Editor → Diseño → Plantillas → page-contacto**. La composición vive en `templates/page-contacto.html`; campos, correo y mensajes se administran en **Contacto → Formularios de contacto**. El procedimiento reproducible y las responsabilidades están en [docs/CONTACT_FORM.md](docs/CONTACT_FORM.md).
+
 El header y el footer se editan desde **Apariencia → Editor → Diseño → Patrones → Administrar mis patrones → Partes de plantilla**. Allí aparecen como **Cabecera** y **Pie de página**. Sus archivos fuente son `parts/header.html` y `parts/footer.html`; guardar una personalización desde WordPress crea un override en la base de datos, que debe exportarse al repositorio o eliminarse antes de comparar el theme limpio.
 
 ## Estructura
@@ -99,6 +103,8 @@ Empezar por [docs/README.md](docs/README.md). Las rutas principales son:
 - [Referencias oficiales](docs/REFERENCES.md)
 - [Spec de Servicios](specs/2-servicios/spec.md)
 - [Spec de Portafolio](specs/65-portafolio/spec.md)
+- [Spec de Contacto](specs/69-contacto/spec.md)
+- [Operación del formulario](docs/CONTACT_FORM.md)
 
 ## Contribuir
 

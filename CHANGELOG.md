@@ -6,6 +6,12 @@ Los cambios notables se documentan aquí. El proyecto usa [Semantic Versioning](
 
 ### Added
 
+- Página de Contacto nativa con template FSE, pattern editable y paridad
+  responsive documentada.
+- Configuración reproducible de Contact Form 7 `6.1.6`, integración nativa con
+  Cloudflare Turnstile y runbook operativo sin secretos.
+- Estados accesibles de validación y éxito, entrega verificada en Mailpit y
+  defensa `do_not_store` sin Flamingo ni persistencia de entradas.
 - Página de Portafolio nativa con template propio, dos patterns editables,
   cuatro proyectos y assets WebP locales.
 - Evidencia responsive y contrato del Editor del sitio para Portafolio.

@@ -1,0 +1,262 @@
+.vicunav-contact {
+	--vicunav-contact-border: color-mix(
+		in srgb,
+		var(--wp--preset--color--accent) 72%,
+		var(--wp--preset--color--neutral-100)
+	);
+	--vicunav-contact-control-height: 47px;
+	--vicunav-contact-textarea-height: 80px;
+	--vicunav-contact-textarea-final-height: 104px;
+	background-color: var(--wp--preset--color--neutral-100);
+	background-image: url("../images/testimonio-fondo.webp");
+	background-position: center;
+	background-size: cover;
+}
+
+.vicunav-contact__surface {
+	box-sizing: border-box;
+	width: min(100%, var(--wp--style--global--wide-size)) !important;
+}
+
+.vicunav-contact__form-card {
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.vicunav-contact .wpcf7,
+.vicunav-contact .wpcf7 form {
+	margin: 0;
+}
+
+.vicunav-contact-form__grid {
+	display: grid;
+	gap: var(--wp--preset--spacing--40);
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.vicunav-contact-form__field {
+	min-width: 0;
+}
+
+.vicunav-contact-form__field p,
+.vicunav-contact-form__submit p {
+	margin: 0;
+}
+
+.vicunav-contact-form__field p {
+	display: grid;
+}
+
+.vicunav-contact-form__field--wide {
+	grid-column: 1 / -1;
+}
+
+.vicunav-contact-form__field label {
+	color: var(--wp--preset--color--text);
+	display: inline-block;
+	font-family: var(--wp--preset--font-family--body);
+	font-size: var(--wp--preset--font-size--body);
+	font-weight: 400;
+	line-height: 1;
+	margin-bottom: var(--wp--preset--spacing--10);
+}
+
+.vicunav-contact-form__required,
+.vicunav-contact .wpcf7-not-valid-tip {
+	color: var(--wp--preset--color--error);
+}
+
+.vicunav-contact .wpcf7-form-control-wrap {
+	display: block;
+}
+
+.vicunav-contact
+	:where(
+		input[type="text"],
+		input[type="email"],
+		select,
+		textarea
+	) {
+	background: var(--wp--preset--color--neutral-100);
+	border: 1px solid var(--vicunav-contact-border);
+	border-radius: 4px;
+	box-sizing: border-box;
+	color: var(--wp--preset--color--text);
+	font-family: var(--wp--preset--font-family--body);
+	font-size: var(--wp--preset--font-size--body);
+	font-weight: 400;
+	line-height: 1.4;
+	min-height: var(--vicunav-contact-control-height);
+	padding: 6px var(--wp--preset--spacing--40);
+	width: 100%;
+}
+
+.vicunav-contact textarea {
+	display: block;
+	height: var(--vicunav-contact-textarea-height);
+	min-height: var(--vicunav-contact-textarea-height);
+	resize: vertical;
+}
+
+.vicunav-contact-form__field--final textarea {
+	height: var(--vicunav-contact-textarea-final-height);
+	min-height: var(--vicunav-contact-textarea-final-height);
+}
+
+.vicunav-contact
+	:where(
+		input[type="text"],
+		input[type="email"],
+		select,
+		textarea
+	):focus-visible {
+	border-color: var(--wp--preset--color--primary);
+	box-shadow: 0 0 0 2px var(--wp--preset--color--neutral-100);
+	outline: 2px solid var(--wp--preset--color--primary);
+	outline-offset: 1px;
+}
+
+.vicunav-contact .wpcf7-not-valid {
+	border-color: var(--wp--preset--color--error);
+}
+
+.vicunav-contact .wpcf7-not-valid-tip {
+	font-family: var(--wp--preset--font-family--body);
+	font-size: var(--wp--preset--font-size--eyebrow);
+	line-height: 1.4;
+	margin-top: var(--wp--preset--spacing--10);
+}
+
+.vicunav-contact-form__turnstile {
+	display: flex;
+	justify-content: center;
+	margin-top: var(--wp--preset--spacing--40);
+}
+
+.vicunav-contact-form__submit {
+	margin-top: var(--wp--preset--spacing--40);
+	position: relative;
+}
+
+.vicunav-contact .wpcf7-submit {
+	background: var(--wp--preset--color--accent);
+	border: 0;
+	border-radius: 4px;
+	box-sizing: border-box;
+	color: var(--wp--preset--color--neutral-100);
+	cursor: pointer;
+	font-family: var(--wp--preset--font-family--body);
+	font-size: var(--wp--preset--font-size--body);
+	font-weight: 500;
+	line-height: 1;
+	min-height: var(--vicunav-contact-control-height);
+	padding: var(--wp--preset--spacing--40) var(--wp--preset--spacing--60);
+	width: 100%;
+}
+
+.vicunav-contact .wpcf7-submit:hover {
+	background: var(--wp--preset--color--neutral-900);
+}
+
+.vicunav-contact .wpcf7-submit:focus-visible {
+	box-shadow: 0 0 0 4px var(--wp--preset--color--neutral-100);
+	outline: 2px solid var(--wp--preset--color--primary);
+	outline-offset: 2px;
+}
+
+.vicunav-contact .wpcf7-spinner {
+	bottom: var(--wp--preset--spacing--30);
+	margin: 0;
+	position: absolute;
+	right: var(--wp--preset--spacing--40);
+}
+
+.vicunav-contact .wpcf7 form .wpcf7-response-output {
+	border: 2px solid var(--wp--preset--color--neutral-700);
+	color: var(--wp--preset--color--text);
+	font-family: var(--wp--preset--font-family--body);
+	font-size: var(--wp--preset--font-size--body);
+	line-height: 1.5;
+	margin: var(--wp--preset--spacing--40) 0 0;
+	padding: var(--wp--preset--spacing--30) var(--wp--preset--spacing--40);
+}
+
+.vicunav-contact
+	.wpcf7
+	form:where(.invalid, .failed, .spam)
+	.wpcf7-response-output {
+	border-color: var(--wp--preset--color--error);
+}
+
+.vicunav-contact__after {
+	box-sizing: border-box;
+	max-width: var(--wp--custom--layout--testimonial-card) !important;
+}
+
+.vicunav-contact__after-list {
+	padding-left: var(--wp--preset--spacing--50);
+}
+
+@media (max-width: 781px) {
+	.vicunav-contact {
+		padding-bottom: var(--wp--preset--spacing--65) !important;
+		padding-top: var(--wp--preset--spacing--65) !important;
+	}
+
+	.vicunav-contact__surface {
+		padding: var(--wp--preset--spacing--60) var(--wp--preset--spacing--40)
+			var(--wp--preset--spacing--65) !important;
+	}
+
+	.vicunav-contact__surface > .has-accent-text-font-size {
+		margin-bottom: var(--wp--preset--spacing--50) !important;
+	}
+
+	.vicunav-contact__surface > .has-heading-large-font-size {
+		line-height: 1.2 !important;
+		margin-bottom: var(--wp--preset--spacing--50) !important;
+	}
+
+	.vicunav-contact__surface > .has-body-large-font-size {
+		margin-bottom: var(--wp--preset--spacing--60) !important;
+	}
+
+	.vicunav-contact__form-card {
+		max-width: calc(
+			100% + var(--wp--preset--spacing--40)
+		) !important;
+		padding: var(--wp--preset--spacing--50) !important;
+		transform: translateX(
+			calc(0px - var(--wp--preset--spacing--20))
+		);
+		width: calc(100% + var(--wp--preset--spacing--40)) !important;
+	}
+
+	.vicunav-contact-form__grid {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.vicunav-contact-form__field--wide {
+		grid-column: auto;
+	}
+
+	.vicunav-contact__after {
+		max-width: calc(
+			100% + var(--wp--preset--spacing--40)
+		) !important;
+		padding: var(--wp--preset--spacing--50) !important;
+		transform: translateX(
+			calc(0px - var(--wp--preset--spacing--20))
+		);
+		width: calc(100% + var(--wp--preset--spacing--40)) !important;
+	}
+
+	.vicunav-contact__after .has-heading-medium-font-size {
+		font-size: var(--wp--preset--font-size--heading-small) !important;
+	}
+
+	.vicunav-contact .vicunav-contact__after-list {
+		font-size: var(--wp--preset--font-size--body) !important;
+		margin-top: var(--wp--preset--spacing--40) !important;
+	}
+}

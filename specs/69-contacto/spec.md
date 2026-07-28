@@ -1,7 +1,7 @@
 # Spec: página de Contacto
 
 Issue padre: #69<br>
-Estado: In progress<br>
+Estado: Implemented<br>
 Owner: @mariovicunadev<br>
 Última actualización: 2026-07-28
 
@@ -73,11 +73,11 @@ externa al theme.
 - [x] AC-02: campos, opciones, requeridos y dependencia funcional están
   documentados.
 - [x] AC-03: la solución de formularios está aprobada en #72.
-- [ ] AC-04: composición y copy equivalen a producción.
-- [ ] AC-05: formulario funcional, accesible, seguro y localizable.
-- [ ] AC-06: `page-contacto.html` es la fuente canónica.
-- [ ] AC-07: reflow sin overflow entre 320 px y desktop.
-- [ ] AC-08: Site Editor, consola y quality gates aprobados.
+- [x] AC-04: composición y copy equivalen a producción.
+- [x] AC-05: formulario funcional, accesible, seguro y localizable.
+- [x] AC-06: `page-contacto.html` es la fuente canónica.
+- [x] AC-07: reflow sin overflow entre 320 px y desktop.
+- [x] AC-08: Site Editor, consola y quality gates aprobados.
 
 ## Riesgos
 
