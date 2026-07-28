@@ -17,7 +17,7 @@ Plan: [`plan.md`](plan.md)
 
 ## Integración
 
-- [ ] Los tres sub-issues están cerrados.
-- [ ] Ledger de paridad completo.
-- [ ] CI y revisión visual aprobados.
-- [ ] Documentación y changelog sincronizados.
+- [x] Los tres sub-issues están implementados; #68 cierra al integrar este PR.
+- [x] Ledger de paridad completo.
+- [x] CI y revisión visual aprobados.
+- [x] Documentación y changelog sincronizados.

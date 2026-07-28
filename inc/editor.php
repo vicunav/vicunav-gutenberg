@@ -32,6 +32,26 @@ function vicunav_get_template_edit_url( $template_slug ) {
 }
 
 /**
+ * Devuelve el template canónico gestionado por el theme para una página.
+ *
+ * @param int $post_id ID de la página.
+ * @return string
+ */
+function vicunav_get_managed_page_template_slug( $post_id ) {
+	if ( (int) get_option( 'page_on_front' ) === (int) $post_id ) {
+		return 'front-page';
+	}
+
+	$templates = array(
+		'servicios'  => 'page-servicios',
+		'portafolio' => 'page-portafolio',
+	);
+	$page_slug = get_post_field( 'post_name', $post_id );
+
+	return isset( $templates[ $page_slug ] ) ? $templates[ $page_slug ] : '';
+}
+
+/**
  * Sustituye el enlace de edición de la página estática por el template real.
  *
  * @param string $link    Enlace de edición original.
@@ -40,14 +60,7 @@ function vicunav_get_template_edit_url( $template_slug ) {
  * @return string
  */
 function vicunav_filter_front_page_edit_link( $link, $post_id, $context ) {
-	$front_page_id = (int) get_option( 'page_on_front' );
-	$template_slug = '';
-
-	if ( $front_page_id > 0 && $front_page_id === (int) $post_id ) {
-		$template_slug = 'front-page';
-	} elseif ( 'servicios' === get_post_field( 'post_name', $post_id ) ) {
-		$template_slug = 'page-servicios';
-	}
+	$template_slug = vicunav_get_managed_page_template_slug( $post_id );
 
 	if ( ! $template_slug || ! current_user_can( 'edit_theme_options' ) ) {
 		return $link;
@@ -75,14 +88,11 @@ function vicunav_redirect_front_page_editor() {
 	$action  = sanitize_key( wp_unslash( $_GET['action'] ) );
 	// phpcs:enable WordPress.Security.NonceVerification.Recommended
 
-	$is_front_page = (int) get_option( 'page_on_front' ) === $post_id;
-	$is_services   = 'servicios' === get_post_field( 'post_name', $post_id );
+	$template_slug = vicunav_get_managed_page_template_slug( $post_id );
 
-	if ( 'edit' !== $action || ( ! $is_front_page && ! $is_services ) || ! current_user_can( 'edit_theme_options' ) ) {
+	if ( 'edit' !== $action || ! $template_slug || ! current_user_can( 'edit_theme_options' ) ) {
 		return;
 	}
-
-	$template_slug = $is_front_page ? 'front-page' : 'page-servicios';
 
 	wp_safe_redirect( vicunav_get_template_edit_url( $template_slug ) );
 	exit;
