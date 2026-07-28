@@ -84,6 +84,7 @@ Empezar por [docs/README.md](docs/README.md). Las rutas principales son:
 - [Design System](docs/DESIGN_SYSTEM.md)
 - [Contrato del editor](docs/EDITOR.md)
 - [Playbook de migración visual](docs/MIGRATION_PLAYBOOK.md)
+- [Eficiencia de contexto y ejecución](docs/CONTEXT_EFFICIENCY.md)
 - [Spec-Driven Development](docs/SPEC_DRIVEN_DEVELOPMENT.md)
 - [Workflow de GitHub](docs/WORKFLOW.md)
 - [Estrategia de QA](docs/QA.md)
