@@ -40,6 +40,7 @@ function vicunav_register_block_stylesheets() {
 		array( 'core/group', 'servicios-mantenimiento' ),
 		array( 'core/group', 'servicios-adicionales' ),
 		array( 'core/details', 'servicios-faq' ),
+		array( 'core/group', 'portafolio' ),
 		array( 'core/columns', 'footer' ),
 	);
 
@@ -141,6 +142,10 @@ function vicunav_get_image_manifest() {
 		'maintenance-adjustments.webp' => array( 160, 151, 'lazy', null ),
 		'maintenance-reports.webp'     => array( 144, 160, 'lazy', null ),
 		'faq.webp'                     => array( 1024, 1536, 'lazy', null ),
+		'bhoga-yoga.webp'              => array( 916, 1024, 'lazy', null ),
+		'tatipilates.webp'             => array( 916, 1024, 'lazy', null ),
+		'clearpath-therapy.webp'       => array( 916, 1024, 'lazy', null ),
+		'eleanor-wilde.webp'           => array( 916, 1024, 'lazy', null ),
 	);
 }
 

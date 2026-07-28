@@ -2,7 +2,7 @@
 
 Issue padre: #65<br>
 Spec: [`spec.md`](spec.md)<br>
-Última actualización: 2026-07-27
+Última actualización: 2026-07-28
 
 ## Identidad y estado
 
@@ -66,10 +66,15 @@ escritorio. La introducción ocupa `960 px`. Las cards usan `28 px` vertical y
 ## Responsive
 
 - El grid se convierte en una columna.
-- La introducción móvil mide `327 px`; el grid, `325 px`.
-- Las imágenes conservan ratio `916/1024`.
+- La introducción, el grid y las cards miden `327 px`; las imágenes interiores,
+  `325×364 px`.
+- Las imágenes usan un encuadre equivalente a `462/517`, que reproduce el
+  redondeo observado de Elementor sobre los assets `916×1024`.
 - No cambian el orden ni los estados.
 - La composición móvil no muestra CTA adicional.
+- Eleanor Wilde conserva la excepción publicada de `27,648 px` en el título y
+  `24 px` de interlineado en la descripción; las otras tres cards usan `21 px`
+  y `21 px`, respectivamente.
 
 ## Movimiento
 
@@ -80,8 +85,16 @@ omite la animación conforme a `AGENTS.md`.
 
 | Sección | Contenido | Macro desktop | Móvil | Detalle | Editor | Estado |
 |---|---|---|---|---|---|---|
-| Introducción | Pass | Pending | Pending | Pending | Pending | Calibración |
-| Proyectos | Pass | Pending | Pending | Pending | Pending | Blocked |
+| Introducción | Pass | Pass | Pass | Pass | Pending | Ready para #68 |
+| Proyectos | Pass | Pass | Pass | Pass | Pending | Ready para #68 |
+
+La regresión de #67 midió, excluyendo header/footer compartidos:
+
+- desktop: grid `960 px`, cards `464 px`, imágenes `462×517 px` y `main`
+  `2363 px` frente a `2365 px` en producción;
+- móvil: grid/cards `327 px`, imágenes `325×364 px`, gaps `32 px` y `main`
+  `4107 px` frente a `4110 px`;
+- `scrollWidth === clientWidth` en ambos viewports.
 
 ## Evidencia
 

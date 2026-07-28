@@ -1,0 +1,225 @@
+.vicunav-portfolio-intro,
+.vicunav-portfolio-projects {
+	background-color: var(--wp--preset--color--neutral-300) !important;
+	background-image: linear-gradient(
+		color-mix(in srgb, var(--wp--preset--color--neutral-300) 80%, transparent),
+		color-mix(in srgb, var(--wp--preset--color--neutral-300) 80%, transparent)
+	), url("../images/portfolio/paper-texture.webp");
+	background-size: auto, 32rem;
+}
+
+.vicunav-portfolio-intro {
+	display: flow-root;
+}
+
+.vicunav-portfolio-intro__content,
+.vicunav-portfolio-projects__grid {
+	max-width: 60rem !important;
+}
+
+.vicunav-portfolio-intro__divider {
+	position: relative;
+	height: 1px;
+	margin: var(--wp--preset--spacing--65) 0 calc(var(--wp--preset--spacing--65) + var(--wp--preset--spacing--10)) !important;
+	border: 0;
+	overflow: visible;
+}
+
+.vicunav-portfolio-intro__divider::after {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	padding: 0 var(--wp--preset--spacing--40);
+	background-color: var(--wp--preset--color--neutral-300);
+	color: var(--wp--preset--color--neutral-700);
+	content: "✶";
+	line-height: 1;
+	transform: translate(-50%, -50%);
+}
+
+.vicunav-portfolio-projects__grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+	gap: var(--wp--preset--spacing--60) !important;
+}
+
+.vicunav-portfolio-projects__grid > * {
+	margin-block-start: 0 !important;
+}
+
+.vicunav-portfolio-card {
+	box-sizing: border-box;
+	overflow: hidden;
+	border: 1px solid var(--wp--preset--color--neutral-300);
+	background-color: var(--wp--preset--color--neutral-200) !important;
+	box-shadow: var(--wp--custom--shadow--card);
+}
+
+.vicunav-portfolio-card__image {
+	aspect-ratio: 462 / 517;
+	width: 100%;
+	margin: 0 !important;
+	overflow: hidden;
+}
+
+.vicunav-portfolio-card__image img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.vicunav-portfolio-card__content {
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	gap: var(--wp--preset--spacing--40);
+	min-height: 26.625rem;
+	padding-top: calc(var(--wp--preset--spacing--50) + var(--wp--preset--spacing--10)) !important;
+	padding-bottom: calc(var(--wp--preset--spacing--50) + var(--wp--preset--spacing--10)) !important;
+}
+
+.vicunav-portfolio-card__summary {
+	display: flex;
+	flex-direction: column;
+	gap: var(--wp--preset--spacing--40);
+	padding-top: var(--wp--preset--spacing--20);
+}
+
+.vicunav-portfolio-card__summary > .wp-block-heading {
+	font-size: calc(var(--wp--preset--font-size--heading-small) + var(--wp--preset--spacing--10)) !important;
+}
+
+.vicunav-portfolio-card__summary > p {
+	font-size: calc(var(--wp--preset--font-size--body) - 1px) !important;
+}
+
+.vicunav-portfolio-card__link a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.vicunav-portfolio-card__link a::after {
+	display: inline-block;
+	margin-left: var(--wp--preset--spacing--20);
+	content: "↗";
+	font-size: 1.1em;
+	line-height: 1;
+}
+
+.vicunav-portfolio-card__link a:hover,
+.vicunav-portfolio-card__link a:focus-visible {
+	text-decoration: underline;
+	text-underline-offset: 0.2em;
+}
+
+.vicunav-portfolio-card__divider {
+	height: 1px !important;
+	margin: var(--wp--preset--spacing--10) 0 !important;
+	border: 0 !important;
+}
+
+.vicunav-portfolio-card__metrics {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	column-gap: var(--wp--preset--spacing--40);
+	list-style: none;
+}
+
+.vicunav-portfolio-card__metrics li {
+	position: relative;
+	margin: 0;
+	padding-left: var(--wp--preset--spacing--50);
+}
+
+.vicunav-portfolio-card__metrics li::before {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	box-sizing: border-box;
+	width: var(--wp--preset--spacing--45);
+	height: var(--wp--preset--spacing--45);
+	border: 2px solid var(--wp--preset--color--neutral-600);
+	border-radius: 50%;
+	content: "";
+	transform: translateY(-50%);
+}
+
+@media (max-width: 781px) {
+	.vicunav-portfolio-intro {
+		padding-top: var(--wp--preset--spacing--65) !important;
+		padding-right: var(--wp--preset--spacing--50) !important;
+		padding-left: var(--wp--preset--spacing--50) !important;
+	}
+
+	.vicunav-portfolio-intro__content,
+	.vicunav-portfolio-projects__grid {
+		width: min(100%, 20.4375rem);
+	}
+
+	.vicunav-portfolio-intro__content > .has-body-large-font-size {
+		font-size: var(--wp--preset--font-size--body) !important;
+		line-height: 1.6 !important;
+	}
+
+	.vicunav-portfolio-intro__content > .wp-block-heading {
+		margin-bottom: var(--wp--preset--spacing--30) !important;
+		line-height: 1.2 !important;
+	}
+
+	.vicunav-portfolio-intro__divider {
+		margin-top: var(--wp--preset--spacing--20) !important;
+		margin-bottom: calc(var(--wp--preset--spacing--80) + 2px) !important;
+	}
+
+	.vicunav-portfolio-projects {
+		padding-right: var(--wp--preset--spacing--50) !important;
+		padding-bottom: var(--wp--preset--spacing--65) !important;
+		padding-left: var(--wp--preset--spacing--50) !important;
+	}
+
+	.vicunav-portfolio-projects__grid {
+		grid-template-columns: minmax(0, 1fr) !important;
+	}
+
+	.vicunav-portfolio-card__content {
+		min-height: 0;
+		padding-right: var(--wp--preset--spacing--60) !important;
+		padding-left: var(--wp--preset--spacing--60) !important;
+	}
+
+	.vicunav-portfolio-card__summary > .wp-block-heading {
+		font-size: var(--wp--preset--font-size--accent-text) !important;
+	}
+
+	.vicunav-portfolio-card__summary > p {
+		line-height: 1.4 !important;
+	}
+
+	.vicunav-portfolio-card:last-child .vicunav-portfolio-card__summary > .wp-block-heading {
+		font-size: calc(var(--wp--preset--font-size--heading-small) + var(--wp--preset--spacing--10)) !important;
+	}
+
+	.vicunav-portfolio-card:last-child .vicunav-portfolio-card__summary > p {
+		line-height: 1.6 !important;
+	}
+
+	.vicunav-portfolio-card__link.has-body-font-size {
+		margin-bottom: calc(var(--wp--preset--spacing--30) * -1) !important;
+		font-size: var(--wp--preset--font-size--eyebrow) !important;
+		font-weight: 700 !important;
+		line-height: 2.1 !important;
+	}
+
+	.vicunav-portfolio-card__metrics {
+		display: flex;
+		flex-wrap: wrap;
+		column-gap: 0;
+	}
+
+	.vicunav-portfolio-card__metrics,
+	.vicunav-portfolio-card__metrics li {
+		font-size: var(--wp--preset--font-size--body) !important;
+		line-height: 1.6 !important;
+	}
+}
