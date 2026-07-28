@@ -15,7 +15,9 @@ Candidato de Fase 1 comprobado el 25 de julio de 2026:
 - Completado: `theme.json`, cabecera, pie de página, diez patterns y `front-page.html`.
 - QA completado: paridad visual, responsive cross-browser, WCAG 2.2 AA y rendimiento.
 - Página de Servicios implementada localmente con nueve patterns, template propio y 17 FAQ nativas.
-- Pendiente: revisión e integración de Servicios; no incluye despliegue a producción.
+- Página de Portafolio implementada con dos patterns, cuatro proyectos,
+  template propio y QA de paridad.
+- Pendiente: página de Contacto y arquitectura multidioma; no incluye despliegue a producción.
 
 ## Principios
 
@@ -61,6 +63,8 @@ La portada se edita desde **Apariencia → Editor → Diseño → Plantillas →
 
 Servicios se edita desde **Apariencia → Editor → Diseño → Plantillas → page-servicios**. Su acceso “Editar página” también abre directamente ese lienzo; `templates/page-servicios.html` es la fuente del diseño y la entrada administrativa permanece sin contenido ni título visible.
 
+Portafolio se edita desde **Apariencia → Editor → Diseño → Plantillas → page-portafolio**. Su acceso “Editar página” abre el mismo lienzo y `templates/page-portafolio.html` permanece como fuente canónica.
+
 El header y el footer se editan desde **Apariencia → Editor → Diseño → Patrones → Administrar mis patrones → Partes de plantilla**. Allí aparecen como **Cabecera** y **Pie de página**. Sus archivos fuente son `parts/header.html` y `parts/footer.html`; guardar una personalización desde WordPress crea un override en la base de datos, que debe exportarse al repositorio o eliminarse antes de comparar el theme limpio.
 
 ## Estructura
@@ -94,6 +98,7 @@ Empezar por [docs/README.md](docs/README.md). Las rutas principales son:
 - [Releases](docs/RELEASES.md)
 - [Referencias oficiales](docs/REFERENCES.md)
 - [Spec de Servicios](specs/2-servicios/spec.md)
+- [Spec de Portafolio](specs/65-portafolio/spec.md)
 
 ## Contribuir
 

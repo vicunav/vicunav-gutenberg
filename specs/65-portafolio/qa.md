@@ -1,7 +1,7 @@
 # QA: página de Portafolio
 
 Issue padre: #65<br>
-Estado: contenido y composición completados; integración pendiente<br>
+Estado: aprobado<br>
 Última actualización: 2026-07-28
 
 ## Entorno
@@ -22,14 +22,14 @@ Estado: contenido y composición completados; integración pendiente<br>
 - Enlaces externos y foco.
 - Site Editor sin bloques inválidos.
 - Comparación sección por sección.
-- Lighthouse y consola.
+- Consola y contratos de rendimiento reproducibles definidos en `docs/QA.md`.
 
 ## Ledger
 
 | Sección | Contenido | Macro desktop | Móvil | Detalle | Editor | Estado |
 |---|---|---|---|---|---|---|
-| Introducción | Pass | Pass | Pass | Pass | Pending | Ready para #68 |
-| Proyectos | Pass | Pass | Pass | Pass | Pending | Ready para #68 |
+| Introducción | Pass | Pass | Pass | Pass | Pass | Done |
+| Proyectos | Pass | Pass | Pass | Pass | Pass | Done |
 
 ## Evidencia de #67
 
@@ -48,6 +48,34 @@ Estado: contenido y composición completados; integración pendiente<br>
 La tolerancia máxima observada en ejes y alturas del contenido es `3 px`. La
 diferencia de alto total restante pertenece al footer compartido y se excluye
 de este issue conforme al spec.
+
+## Integración y reflow
+
+- `page-portafolio.html` ensambla header, dos patterns y footer sin
+  `post-title` ni `post-content`.
+- La página `portafolio` abre directamente ese template en el Editor del sitio.
+- El Editor muestra los cuatro proyectos, no presenta bloques inválidos,
+  cambios pendientes ni un campo de título.
+- A 320 px, el contenido usa una columna de `257 px`; a 768 px conserva una
+  columna de `327 px`.
+- En 320, 390, 768 y desktop se cumple
+  `documentElement.scrollWidth === documentElement.clientWidth`.
+- La consola del frontend y del Editor no registró errores ni advertencias.
+
+## Contratos finales
+
+| Control | Resultado |
+|---|---|
+| HTTP | 200 |
+| Jerarquía | 1 H1, 4 H2 y 4 H3 |
+| Proyectos | 4 |
+| Enlaces externos | 4 con `_blank` y `noopener` |
+| Imágenes | 4 WebP locales, lazy, 916×1024 y alt informativo |
+| JavaScript propio | ninguno |
+| `composer qa` | Pass |
+| `composer audit` | Pass |
+
+Evidencia: `docs/qa/evidence/portfolio/regression/`.
 
 ## Riesgos residuales
 

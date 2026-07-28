@@ -1,0 +1,66 @@
+{
+  "fecha": "2026-07-28",
+  "issue": 68,
+  "desktop": {
+    "produccion": {
+      "grid_px": 960,
+      "card_px": 464,
+      "imagen_px": [462, 517],
+      "main_px": 2365
+    },
+    "local": {
+      "grid_px": 960,
+      "card_px": 464,
+      "imagen_px": [462, 517],
+      "main_px": 2363,
+      "overflow_horizontal": false
+    }
+  },
+  "movil_390": {
+    "produccion": {
+      "grid_px": 327,
+      "card_px": 327,
+      "imagen_px": [325, 364],
+      "main_px": 4110,
+      "gap_px": 32
+    },
+    "local": {
+      "grid_px": 327,
+      "card_px": 327,
+      "imagen_px": [325, 364],
+      "main_px": 4107,
+      "gap_px": 32,
+      "overflow_horizontal": false
+    }
+  },
+  "reflow": {
+    "320": {
+      "client_width_px": 305,
+      "grid_px": 257,
+      "columnas": 1,
+      "overflow_horizontal": false
+    },
+    "768": {
+      "client_width_px": 753,
+      "grid_px": 327,
+      "columnas": 1,
+      "overflow_horizontal": false
+    }
+  },
+  "contratos": {
+    "http_200": true,
+    "h1": 1,
+    "h2": 4,
+    "h3": 4,
+    "proyectos": 4,
+    "enlaces_externos_noopener": 4,
+    "imagenes_locales_lazy": 4,
+    "consola_warn_error": 0
+  },
+  "editor": {
+    "template": "page-portafolio",
+    "bloques_invalidos": 0,
+    "titulo_de_entrada_visible": false,
+    "guardado_pendiente": false
+  }
+}

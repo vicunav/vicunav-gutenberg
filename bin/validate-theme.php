@@ -50,6 +50,7 @@ $required_paths = array(
 	'templates/index.html',
 	'templates/front-page.html',
 	'templates/page-servicios.html',
+	'templates/page-portafolio.html',
 	'parts/header.html',
 	'parts/footer.html',
 	'inc/assets.php',

@@ -85,8 +85,8 @@ omite la animación conforme a `AGENTS.md`.
 
 | Sección | Contenido | Macro desktop | Móvil | Detalle | Editor | Estado |
 |---|---|---|---|---|---|---|
-| Introducción | Pass | Pass | Pass | Pass | Pending | Ready para #68 |
-| Proyectos | Pass | Pass | Pass | Pass | Pending | Ready para #68 |
+| Introducción | Pass | Pass | Pass | Pass | Pass | Done |
+| Proyectos | Pass | Pass | Pass | Pass | Pass | Done |
 
 La regresión de #67 midió, excluyendo header/footer compartidos:
 
@@ -95,6 +95,10 @@ La regresión de #67 midió, excluyendo header/footer compartidos:
 - móvil: grid/cards `327 px`, imágenes `325×364 px`, gaps `32 px` y `main`
   `4107 px` frente a `4110 px`;
 - `scrollWidth === clientWidth` en ambos viewports.
+
+La integración final confirmó además reflow sin overflow a 320 y 768 px,
+template canónico sin título de entrada y cero bloques inválidos en el Editor
+del sitio.
 
 ## Evidencia
 

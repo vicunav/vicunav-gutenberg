@@ -6,6 +6,9 @@ Los cambios notables se documentan aquí. El proyecto usa [Semantic Versioning](
 
 ### Added
 
+- Página de Portafolio nativa con template propio, dos patterns editables,
+  cuatro proyectos y assets WebP locales.
+- Evidencia responsive y contrato del Editor del sitio para Portafolio.
 - Playbook de migración visual y brief compacto reutilizable para capturar
   baseline, paridad por sección y decisiones responsive sin repetir
   descubrimiento.
@@ -16,6 +19,8 @@ Los cambios notables se documentan aquí. El proyecto usa [Semantic Versioning](
 
 ### Changed
 
+- Los accesos de edición de Portafolio abren directamente
+  `page-portafolio` en el Editor del sitio.
 - Workflow, SDD, QA y plantillas de issues/PR separan integridad estructural de
   fidelidad visual e incorporan checkpoints tempranos de calibración.
 - Los accesos de edición de Servicios abren directamente `page-servicios` en el Editor del sitio.

@@ -67,15 +67,15 @@ patterns registrados, assets locales y un template FSE editable.
 
 ## Criterios de aceptación
 
-- [ ] AC-01: baseline y brief cubren escritorio y móvil.
-- [ ] AC-02: introducción equivalente a producción.
-- [ ] AC-03: cuatro tarjetas completas y enlaces correctos.
-- [ ] AC-04: grid, alturas, wrapping y encuadre equivalentes en desktop.
-- [ ] AC-05: orden, ancho y ritmo equivalentes en móvil.
-- [ ] AC-06: `page-portafolio.html` es la fuente canónica.
-- [ ] AC-07: Site Editor y frontend conservan la misma intención.
-- [ ] AC-08: reflow sin overflow entre `320 px` y desktop.
-- [ ] AC-09: assets locales, accesibilidad y quality gates aprobados.
+- [x] AC-01: baseline y brief cubren escritorio y móvil.
+- [x] AC-02: introducción equivalente a producción.
+- [x] AC-03: cuatro tarjetas completas y enlaces correctos.
+- [x] AC-04: grid, alturas, wrapping y encuadre equivalentes en desktop.
+- [x] AC-05: orden, ancho y ritmo equivalentes en móvil.
+- [x] AC-06: `page-portafolio.html` es la fuente canónica.
+- [x] AC-07: Site Editor y frontend conservan la misma intención.
+- [x] AC-08: reflow sin overflow entre `320 px` y desktop.
+- [x] AC-09: assets locales, accesibilidad y quality gates aprobados.
 
 ## Assets
 
