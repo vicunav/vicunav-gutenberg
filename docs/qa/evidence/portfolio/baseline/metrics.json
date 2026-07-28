@@ -1,0 +1,33 @@
+{
+  "date": "2026-07-27",
+  "url": "https://vicunav.com/portafolio/",
+  "desktop": {
+    "viewport": "1440x900",
+    "clientWidth": 1425,
+    "pageHeight": 3543,
+    "mainHeight": 2365,
+    "gridWidth": 960,
+    "cardWidth": 464,
+    "gap": 32,
+    "imageSize": [462, 517]
+  },
+  "mobile": {
+    "viewport": "390x844",
+    "clientWidth": 375,
+    "pageHeight": 6424,
+    "mainHeight": 4110,
+    "gridWidth": 325,
+    "cardWidth": 325,
+    "imageSize": [325, 364]
+  },
+  "content": {
+    "projects": 4,
+    "externalLinks": 4,
+    "metricsPerProject": 4
+  },
+  "motion": {
+    "observed": "fadeIn",
+    "baselineState": "settled",
+    "includedInMigration": false
+  }
+}
