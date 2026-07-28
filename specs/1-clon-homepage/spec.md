@@ -61,13 +61,13 @@ El resultado se puede editar e inspeccionar en Gutenberg sin bloques inválidos,
 ### Contenido y diseño
 
 - **RD-01:** el orden obligatorio es header → hero → situaciones → introducción de cómo ayudamos → proceso → testimonio → resultados → debería sentirse como tú → conoce a Mario → marcas → CTA final → footer.
-- **RD-02:** el copy, las mayúsculas, la puntuación, los números y la jerarquía editorial deben coincidir literalmente con el inventario de `AGENTS.md` y el contrato de contenido de este documento.
+- **RD-02:** el copy, las mayúsculas, la puntuación, los números y la jerarquía editorial deben coincidir literalmente con `content-inventory.md` y el contrato de contenido de este documento.
 - **RD-03:** debe existir un solo `h1`, ubicado en el hero. Los títulos principales de sección usan `h2`; los títulos internos continúan la jerarquía sin saltos arbitrarios.
 - **RD-04:** colores y familias tipográficas solo se consumen mediante presets de `theme.json`. No se permiten valores de color ni `font-family` hardcodeados en patterns, parts, templates o CSS suelto.
 - **RD-05:** espaciado y tamaños deben reutilizar los presets existentes. Si una diferencia 1:1 demuestra que falta un token, se pausa la sección y se actualiza spec/plan antes de modificar `theme.json`.
 - **RD-06:** las fuentes son Red Hat Display para cuerpo/UI, Bodoni Moda para títulos principales, Gloock para el acento serif detectado y Caveat para acentos manuscritos, según el uso visible de referencia.
 - **RD-07:** todos los assets se sirven localmente. No se permiten hotlinks a `vicunav.com`, Google Fonts u otro tercero.
-- **RD-08:** la imagen del hero puede ser un asset local equivalente, tal como autoriza `AGENTS.md`, pero debe conservar escena, función, encuadre y tono visual comparables; su procedencia y licencia deben registrarse.
+- **RD-08:** la imagen del hero puede ser un asset local equivalente, tal como autoriza `content-inventory.md`, pero debe conservar escena, función, encuadre y tono visual comparables; su procedencia y licencia deben registrarse.
 - **RD-09:** cualquier otra imagen visible en la referencia se conserva o se sustituye únicamente cuando exista autorización equivalente; la decisión se documenta en el issue de la sección.
 - **RD-10:** se omiten fade-ins, parallax y otros efectos de Elementor sin intentar reemplazarlos en Fase 1.
 - **RD-11:** ninguna preferencia personal se acepta como justificación de una diferencia visual.
@@ -85,7 +85,9 @@ El resultado se puede editar e inspeccionar en Gutenberg sin bloques inválidos,
 
 ## Contrato de contenido
 
-`AGENTS.md` conserva el inventario verbatim completo y prevalece si una futura edición accidental de esta tabla introduce una discrepancia. Esta tabla define la unidad y jerarquía que debe verificar cada issue.
+`content-inventory.md` conserva el inventario verbatim completo y prevalece si
+una futura edición accidental de esta tabla introduce una discrepancia. Esta
+tabla define la unidad y jerarquía que debe verificar cada issue.
 
 | Sección | Elementos obligatorios | Jerarquía principal | Issue |
 |---|---|---|---:|
@@ -106,15 +108,15 @@ El resultado se puede editar e inspeccionar en Gutenberg sin bloques inválidos,
 Los siguientes textos deben aparecer sin paráfrasis:
 
 - **Hero:** “Para profesionales independientes y negocios”; “Tu sitio web es el primer paso que tus clientes dan hacia ti”; “Sitios web profesionales para profesionales independientes y negocios que ofrecen servicios. Diseñados para generar confianza, comunicar con claridad lo que haces, aparecer en Google y en sistemas de IA, recibir reservas en línea, y convertir visitantes en clientes.”; “Ver servicios”.
-- **Situaciones:** el título “¿Alguna de estas situaciones te describe?” y los ocho puntos numerados en `AGENTS.md`, en el mismo orden.
-- **Cómo ayudamos:** “Cómo ayudamos”; “Tu Sitio Web, Sin el Estrés”; “Guiamos el proceso con claridad en cada paso”; los cuatro puntos introductorios; “Así funciona”; “Tu Sitio Web, Completamente Acompañado”; los pasos 01–06 completos de `AGENTS.md`; “Ver paquetes”.
+- **Situaciones:** el título “¿Alguna de estas situaciones te describe?” y los ocho puntos numerados en `content-inventory.md`, en el mismo orden.
+- **Cómo ayudamos:** “Cómo ayudamos”; “Tu Sitio Web, Sin el Estrés”; “Guiamos el proceso con claridad en cada paso”; los cuatro puntos introductorios; “Así funciona”; “Tu Sitio Web, Completamente Acompañado”; los pasos 01–06 completos de `content-inventory.md`; “Ver paquetes”.
 - **Testimonio:** “Testimonio destacado”; “TatiPilates maneja ahora todo su negocio desde un solo lugar”; “- Tatiana Diaz, TatiPilates”.
-- **Resultados:** “Los Resultados”; “Un Sitio Web del que Sientes Orgullo de Compartir”; “Porque sabes que va a:” y los cinco resultados de `AGENTS.md`.
-- **Debería sentirse:** “Sin presiones, ni tácticas raras”; “Debería Sentirse Como Tú”; el párrafo completo de `AGENTS.md`; “¡Hablemos!”.
-- **Conoce a Mario:** “Conoce a Mario”; “Construyendo sitios web desde 2016”; “Haciendo el proceso simple, del inicio al lanzamiento”; los tres párrafos completos de bio de `AGENTS.md`.
+- **Resultados:** “Los Resultados”; “Un Sitio Web del que Sientes Orgullo de Compartir”; “Porque sabes que va a:” y los cinco resultados de `content-inventory.md`.
+- **Debería sentirse:** “Sin presiones, ni tácticas raras”; “Debería Sentirse Como Tú”; el párrafo completo de `content-inventory.md`; “¡Hablemos!”.
+- **Conoce a Mario:** “Conoce a Mario”; “Construyendo sitios web desde 2016”; “Haciendo el proceso simple, del inicio al lanzamiento”; los tres párrafos completos de bio de `content-inventory.md`.
 - **Marcas:** “Marcas con las que he trabajado” y los cinco logos locales de la referencia.
-- **CTA final:** “¿Listo para un sitio web que realmente refleje tu trabajo y te ayude a crecer?”; el párrafo completo de `AGENTS.md`; “Hablemos sobre tu sitio web”.
-- **Header y footer:** todo el contenido enumerado en las secciones “Header / Nav” y “Footer” de `AGENTS.md`.
+- **CTA final:** “¿Listo para un sitio web que realmente refleje tu trabajo y te ayude a crecer?”; el párrafo completo de `content-inventory.md`; “Hablemos sobre tu sitio web”.
+- **Header y footer:** todo el contenido enumerado en las secciones “Header / Nav” y “Footer” de `content-inventory.md`.
 
 ## Escenarios
 
@@ -200,7 +202,8 @@ No hay preguntas abiertas que cambien el resultado de Fase 1. La selección conc
 
 | Fecha | Decisión | Motivo |
 |---|---|---|
-| 2026-07-20 | Tratar `AGENTS.md` como inventario verbatim normativo. | Evita duplicaciones divergentes y preserva el contenido aprobado. |
+| 2026-07-20 | Tratar el inventario versionado como copy verbatim normativo. | Evita duplicaciones divergentes y preserva el contenido aprobado. |
+| 2026-07-28 | Mover el inventario a `content-inventory.md`. | Reduce el contexto global sin cambiar el contrato del homepage. |
 | 2026-07-20 | Mantener la excepción de asset local equivalente solo para el hero. | Está autorizada explícitamente en el inventario; no habilita un rediseño general. |
 | 2026-07-25 | Usar diez patterns registrados y bloques core. | La auditoría visual recuperó la introducción de cómo ayudamos y la franja de marcas presentes en producción pero ausentes del inventario inicial. |
 | 2026-07-20 | Mantener producción fuera de toda mutación. | La migración se desarrolla y valida en LocalWP. |

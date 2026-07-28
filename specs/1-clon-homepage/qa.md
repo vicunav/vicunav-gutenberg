@@ -567,7 +567,7 @@ Entorno: runtime PHP 8.2.29 de LocalWP, socket MySQL identificado por `home/site
 | Registro | Los diez patterns `vicunav/*` de la portada están registrados | Pass |
 | Render integral | 53.827 bytes; un H1, nueve H2 y 24 elementos de lista | Pass |
 | Orden | Hero → situaciones → introducción → proceso → testimonio → resultados → debería sentirse → Mario → marcas → CTA | Pass |
-| Copy contractual | Todas las agujas del inventario de `AGENTS.md` presentes | Pass |
+| Copy contractual | Todas las agujas de `content-inventory.md` presentes | Pass |
 | Estáticos | PHP lint, JSON, `git diff --check`, hotlinks y rutas locales | Pass |
 | Frontend | HTTP 200, 20 imágenes cargadas, cero assets remotos y consola sin errores del theme | Pass |
 | Responsive 390×844 | Ancho cliente y scroll de 390 px; cero elementos desbordados | Pass |
