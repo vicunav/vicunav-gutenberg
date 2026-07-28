@@ -37,6 +37,14 @@ Explica decisiones no obvias. Si apareció una decisión nueva, actualiza spec/p
 - [ ] 768×1024
 - [ ] 1440×900
 
+### Fidelidad visual
+
+- [ ] Baseline capturado en estado estable.
+- [ ] Macrogeometría comparada sección por sección.
+- [ ] Composición móvil validada como layout propio.
+- [ ] Wrapping, crop y estados interactivos comprobados.
+- [ ] Diferencias sobre umbral justificadas en la evidencia.
+
 ### Quality gates
 
 - [ ] JSON, markup y lint aplicable.

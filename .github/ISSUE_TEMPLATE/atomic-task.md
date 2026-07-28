@@ -50,6 +50,14 @@ Una frase que describa qué quedará verdadero al cerrar este issue.
 - [ ] Rendimiento:
 - [ ] Seguridad:
 
+Para secciones de una migración visual:
+
+- Baseline/brief:
+- Captura desktop:
+- Captura móvil:
+- Medidas y wrapping crítico:
+- Estado en el ledger de paridad:
+
 ## Atomicidad
 
 - [ ] Tiene un solo resultado.

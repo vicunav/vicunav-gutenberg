@@ -6,6 +6,8 @@
 2. Confirmar que existe un issue con alcance, criterios de aceptación y verificación.
 3. Revisar dependencias y decisiones abiertas. Un issue bloqueado no pasa a desarrollo.
 4. Para features o cambios de arquitectura, crear primero los artefactos SDD descritos en `docs/SPEC_DRIVEN_DEVELOPMENT.md`.
+5. Para una migración visual, leer `docs/MIGRATION_PLAYBOOK.md` y completar
+   `migration-brief.md` antes del primer pattern.
 
 ## Definition of Ready
 
@@ -17,6 +19,8 @@ Un issue está `Ready` cuando:
 - declara fuera de alcance, dependencias y riesgos;
 - indica qué QA debe producir evidencia;
 - no contiene una decisión de producto o diseño pendiente.
+- si reproduce una referencia, enlaza un baseline estable y su brief de
+  migración.
 
 ## Ramas
 

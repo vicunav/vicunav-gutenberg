@@ -28,10 +28,16 @@ specs/<issue-padre>-<slug>/
 ├── spec.md
 ├── plan.md
 ├── tasks.md
-└── qa.md
+├── qa.md
+└── migration-brief.md  # requerido para migraciones visuales
 ```
 
 Usar las plantillas de `docs/templates/`. El número enlaza el issue padre de GitHub; no inventar IDs antes de crear el issue.
+
+`migration-brief.md` no añade una segunda especificación. Resume la referencia,
+las medidas, la reutilización y las excepciones responsive que se consultan
+repetidamente. Su plantilla y workflow viven en
+[`MIGRATION_PLAYBOOK.md`](MIGRATION_PLAYBOOK.md).
 
 ## Fase 1: Constitución
 
@@ -88,11 +94,12 @@ Una sección del homepage suele ser una tarea. Una iniciativa grande es issue pa
 El agente o desarrollador trabaja un issue `Ready` por vez:
 
 1. crea la rama;
-2. confirma baseline y tests relevantes;
-3. implementa el menor cambio que satisface el spec;
-4. actualiza artefactos si descubre una inconsistencia;
-5. ejecuta QA proporcional al riesgo;
-6. registra evidencia en `qa.md` y el PR.
+2. confirma baseline, brief y tests relevantes;
+3. calibra una sección representativa antes de producir toda una página visual;
+4. implementa el menor cambio que satisface el spec;
+5. actualiza artefactos si descubre una inconsistencia;
+6. ejecuta QA proporcional al riesgo;
+7. registra evidencia en `qa.md` y el PR.
 
 El código no introduce decisiones nuevas. Si aparecen, se pausa la implementación y se actualiza spec/plan.
 

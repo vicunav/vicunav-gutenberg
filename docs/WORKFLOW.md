@@ -70,6 +70,13 @@ Aplicar la Definition of Ready de `CONTRIBUTING.md`. Asignar owner, milestone y 
 
 WIP recomendado: una tarea de implementación por persona o agente. Limitar WIP reduce divergencia y conflictos.
 
+Para una migración visual, seguir
+[`MIGRATION_PLAYBOOK.md`](MIGRATION_PLAYBOOK.md). El primer issue de
+implementación actúa como calibración y necesita revisión visual antes de
+replicar el mismo lenguaje de layout en el resto. Terminar contenido, markup y
+assets no habilita por sí solo el estado `Review`: también debe completarse la
+pasada de fidelidad visual de la sección.
+
 ### 6. Pull request
 
 Abrir draft temprano si facilita feedback, pero solicitar revisión solo con plantilla completa y checks locales pasados. Un PR cierra normalmente un issue atómico, no el issue padre.
@@ -77,6 +84,16 @@ Abrir draft temprano si facilita feedback, pero solicitar revisión solo con pla
 ### 7. Review y QA
 
 El reviewer valida intención, arquitectura y riesgos. QA valida criterios y registra evidencia en el commit exacto del PR. El autor resuelve comentarios con nuevos commits; no reescribe evidencia ya revisada sin avisar.
+
+En páginas completas, la revisión ocurre en cuatro checkpoints:
+
+1. baseline sin ambigüedades;
+2. sección representativa calibrada;
+3. macrogeometría de todas las secciones;
+4. regresión final responsive, editor y quality gates.
+
+El checkpoint temprano evita propagar un supuesto visual incorrecto a todos los
+sub-issues.
 
 ### 8. Merge
 

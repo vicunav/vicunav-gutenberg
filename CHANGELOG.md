@@ -4,6 +4,17 @@ Los cambios notables se documentan aquí. El proyecto usa [Semantic Versioning](
 
 ## [Unreleased]
 
+### Added
+
+- Playbook de migración visual y brief compacto reutilizable para capturar
+  baseline, paridad por sección y decisiones responsive sin repetir
+  descubrimiento.
+
+### Changed
+
+- Workflow, SDD, QA y plantillas de issues/PR separan integridad estructural de
+  fidelidad visual e incorporan checkpoints tempranos de calibración.
+
 ## [0.2.0] - 2026-07-25
 
 ### Added
