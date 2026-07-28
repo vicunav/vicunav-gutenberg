@@ -10,7 +10,8 @@ seguridad.
 
 Aplica cuando existe una referencia visual que debe reproducirse en un block
 theme. Complementa, no reemplaza, `AGENTS.md`, la Constitución, el Design
-System, el spec y los quality gates.
+System, el spec y los quality gates. La selección de archivos, pruebas y
+herramientas sigue [`CONTEXT_EFFICIENCY.md`](CONTEXT_EFFICIENCY.md).
 
 ## Lo que aprendimos
 
@@ -161,6 +162,10 @@ docs/qa/evidence/<slug>/
 5. Identificar componentes ya resueltos en el theme.
 6. Guardar procedencia y checksum de cada asset local.
 
+Las medidas capturadas son observaciones del baseline. No se convierten
+automáticamente en tokens: la promoción a `theme.json` ocurre en la fase
+siguiente y exige recurrencia y justificación.
+
 **Gate:** otra persona puede explicar la página y sus excepciones responsive
 sin volver a inspeccionar producción.
 
@@ -308,6 +313,11 @@ No usar “se ve bien” como estado. Un `Pass` enlaza una captura, medida o pru
 
 No cargar evidencia histórica completa de otras páginas salvo que se investigue
 una regresión compartida.
+
+Esta lista es el punto de partida, no un límite ciego. Aplicar los niveles
+atómico, de dependencias y transversal descritos en
+[`CONTEXT_EFFICIENCY.md`](CONTEXT_EFFICIENCY.md). El brief declara qué archivos
+y contratos forman el paquete del issue y qué queda excluido.
 
 ### Registrar una vez, referenciar después
 

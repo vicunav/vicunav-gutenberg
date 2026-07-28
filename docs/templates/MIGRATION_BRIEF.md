@@ -18,6 +18,19 @@ Spec: `specs/<issue>-<slug>/spec.md`<br>
 | Usuario de captura | Anónimo / autenticado |
 | Viewports | 390×844, 768×1024, 1440×900 |
 
+## Paquete de contexto
+
+| Categoría | Rutas o contratos | Motivo |
+|---|---|---|
+| Requeridos | | |
+| Dependencias directas | | |
+| Checks enfocados | | |
+| Excluidos | | |
+
+Se amplía el paquete solo ante una señal de
+`docs/CONTEXT_EFFICIENCY.md`. Registrar aquí el motivo si la implementación
+necesita revisión transversal.
+
 ## Reutilización
 
 | Elemento existente | Ruta/token | Decisión |

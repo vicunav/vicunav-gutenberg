@@ -63,6 +63,8 @@ Aplicar la Definition of Ready de `CONTRIBUTING.md`. Asignar owner, milestone y 
 
 - mover a `In progress`;
 - crear rama con el número del issue;
+- reunir el paquete mínimo del issue según
+  [`CONTEXT_EFFICIENCY.md`](CONTEXT_EFFICIENCY.md);
 - implementar dentro del alcance;
 - actualizar spec/plan si cambia la intención;
 - ejecutar los gates aplicables;

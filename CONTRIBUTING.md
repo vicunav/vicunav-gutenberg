@@ -8,6 +8,8 @@
 4. Para features o cambios de arquitectura, crear primero los artefactos SDD descritos en `docs/SPEC_DRIVEN_DEVELOPMENT.md`.
 5. Para una migración visual, leer `docs/MIGRATION_PLAYBOOK.md` y completar
    `migration-brief.md` antes del primer pattern.
+6. Aplicar `docs/CONTEXT_EFFICIENCY.md`: comenzar con el paquete del issue y
+   ampliar la lectura solo ante dependencias o riesgos demostrables.
 
 ## Definition of Ready
 
