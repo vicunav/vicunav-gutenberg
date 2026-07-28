@@ -13,8 +13,8 @@
   },
   "assets": {
     "serviceImagesBytes": 1022426,
-    "serviceCssBytes": 12489,
-    "htmlBytes": 168006
+    "serviceCssBytes": 27291,
+    "htmlBytes": 171318
   },
   "layout": {
     "desktop": {
@@ -22,15 +22,17 @@
       "clientWidth": 1425,
       "scrollWidth": 1425,
       "pageHeight": 9005,
-      "sectionHeights": [566, 864, 905, 1224, 1078, 635, 556, 1320, 655]
+      "sectionHeights": [566, 938, 971, 1090, 1151, 730, 601, 1309, 655],
+      "referenceSectionHeights": [564, 921, 1003, 1097, 1148, 732, 626, 1343, 649]
     },
     "mobile": {
-      "viewport": "390x844",
+      "viewport": "390x900",
       "clientWidth": 375,
       "scrollWidth": 375,
-      "pageHeight": 18396,
+      "pageHeight": 18586,
       "referencePageHeight": 18301,
-      "sectionHeights": [809, 1782, 1989, 3583, 2050, 1641, 1174, 2199, 516]
+      "sectionHeights": [850, 1894, 2132, 3324, 2464, 1274, 1229, 2250, 516],
+      "referenceSectionHeights": [848, 1884, 2157, 3382, 2463, 1269, 1224, 2236, 524]
     },
     "reflow": [
       {"viewport": "320x800", "clientWidth": 305, "scrollWidth": 305},
@@ -41,7 +43,9 @@
     "runs": [
       {"performance": 56, "fcpMs": 2130, "lcpMs": 3705, "cls": 0, "tbtMs": 5109.5},
       {"performance": 89, "fcpMs": 2102.382, "lcpMs": 3152.382, "cls": 0.0127337696, "tbtMs": 183},
-      {"performance": 93, "fcpMs": 2101.054, "lcpMs": 2926.054, "cls": 0.0127337696, "tbtMs": 5}
+      {"performance": 93, "fcpMs": 2101.054, "lcpMs": 2926.054, "cls": 0.0127337696, "tbtMs": 5},
+      {"performance": 69, "fcpMs": 2130, "lcpMs": 3180, "cls": 0.0406533077, "tbtMs": 1010.5},
+      {"performance": 89, "fcpMs": 2102.183, "lcpMs": 3152.183, "cls": 0.0406533077, "tbtMs": 162}
     ],
     "medianPerformance": 89,
     "accessibility": 100,

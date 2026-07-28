@@ -1,35 +1,60 @@
 .vicunav-servicios-maintenance {
+	display: grid;
+	grid-template-columns: minmax(0, 27rem) minmax(0, 41rem);
+	gap: var(--wp--preset--spacing--40) var(--wp--preset--spacing--40);
+	justify-content: center;
+	background-color: var(--wp--preset--color--neutral-300) !important;
 	background-image: linear-gradient(color-mix(in srgb, var(--wp--preset--color--neutral-200) 96%, transparent), color-mix(in srgb, var(--wp--preset--color--neutral-200) 96%, transparent)), url("../images/services/paper-texture.webp");
 	background-size: auto, 32rem;
 }
 
 .vicunav-servicios-maintenance__intro {
-	gap: var(--wp--preset--spacing--80);
-	margin-top: 0;
-	margin-bottom: 0;
+	display: contents !important;
+}
+
+.vicunav-servicios-maintenance__intro > .wp-block-column:first-child {
+	grid-column: 1 / -1;
+	max-width: var(--wp--custom--layout--section-content);
+	margin-right: auto;
+	margin-bottom: var(--wp--preset--spacing--cta-section);
+	margin-left: auto;
+	text-align: center;
 }
 
 .vicunav-servicios-maintenance__plan {
+	grid-column: 1;
+	box-sizing: border-box;
+	min-height: 19.75rem;
 	border: 1px solid var(--wp--preset--color--neutral-400);
 	background-color: var(--wp--preset--color--neutral-100);
+	box-shadow: var(--wp--custom--shadow--card);
 }
 
 .vicunav-servicios-maintenance__grid {
+	grid-column: 2;
 	display: grid;
-	grid-template-columns: repeat(4, minmax(0, 1fr));
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	box-sizing: border-box;
+	min-height: 19.75rem;
+	gap: var(--wp--preset--spacing--40);
+	margin: 0 !important;
+	padding: var(--wp--preset--spacing--50);
+	background-color: var(--wp--preset--color--neutral-100);
+	box-shadow: var(--wp--custom--shadow--card);
 }
 
 .vicunav-servicios-maintenance__item {
-	min-height: 7rem;
-	border: 1px solid var(--wp--preset--color--neutral-300);
-	background-color: color-mix(in srgb, var(--wp--preset--color--neutral-100) 88%, transparent);
+	min-height: 0;
+	padding: 0 !important;
+	border: 0;
+	background-color: transparent;
 }
 
 .vicunav-servicios-maintenance__icon {
 	display: grid;
-	flex: 0 0 3.5rem;
-	width: 3.5rem;
-	height: 3.5rem;
+	flex: 0 0 2.5rem;
+	width: 2.5rem;
+	height: 2.5rem;
 	margin: 0;
 	place-items: center;
 }
@@ -41,13 +66,54 @@
 }
 
 @media (max-width: 1024px) {
+	.vicunav-servicios-maintenance {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.vicunav-servicios-maintenance__plan,
 	.vicunav-servicios-maintenance__grid {
+		grid-column: 1;
 		grid-template-columns: repeat(2, minmax(0, 1fr));
 	}
 }
 
 @media (max-width: 600px) {
+	.vicunav-servicios-maintenance {
+		padding-top: var(--wp--preset--spacing--65) !important;
+		padding-bottom: var(--wp--preset--spacing--65) !important;
+	}
+
+	.vicunav-servicios-maintenance__intro > .wp-block-column:first-child {
+		margin-bottom: var(--wp--preset--spacing--80);
+	}
+
+	.vicunav-servicios-maintenance__plan {
+		min-height: calc((var(--wp--preset--spacing--cta-section) * 2) + var(--wp--preset--spacing--65));
+		padding: var(--wp--preset--spacing--45) !important;
+		text-align: center;
+	}
+
+	.vicunav-servicios-maintenance__plan > .wp-block-heading {
+		font-size: var(--wp--preset--font-size--heading-medium) !important;
+		line-height: 1.2 !important;
+	}
+
+	.vicunav-servicios-maintenance__plan > .has-heading-medium-font-size {
+		margin-bottom: var(--wp--preset--spacing--20) !important;
+		padding-bottom: var(--wp--preset--spacing--40);
+		border-bottom: 1px solid var(--wp--preset--color--neutral-500);
+	}
+
 	.vicunav-servicios-maintenance__grid {
-		grid-template-columns: minmax(0, 1fr);
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		height: calc((var(--wp--preset--spacing--cta-section) * 4) + var(--wp--preset--spacing--80));
+		min-height: 0;
+	}
+
+	.vicunav-servicios-maintenance__item {
+		flex-direction: column;
+		justify-content: center;
+		gap: var(--wp--preset--spacing--30) !important;
+		text-align: center;
 	}
 }

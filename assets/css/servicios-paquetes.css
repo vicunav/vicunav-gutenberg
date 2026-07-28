@@ -41,7 +41,8 @@
 }
 
 .vicunav-servicios-package--complete {
-	background-image: linear-gradient(color-mix(in srgb, var(--wp--preset--color--neutral-200) 91%, transparent), color-mix(in srgb, var(--wp--preset--color--neutral-200) 91%, transparent)), url("../images/services/decor-light.webp");
+	background-color: var(--wp--preset--color--neutral-500) !important;
+	background-image: linear-gradient(color-mix(in srgb, var(--wp--preset--color--neutral-500) 90%, transparent), color-mix(in srgb, var(--wp--preset--color--neutral-500) 90%, transparent)), url("../images/services/decor-light.webp");
 	background-position: center;
 	background-size: cover;
 }
@@ -59,26 +60,80 @@
 	z-index: 1;
 }
 
+.vicunav-servicios-package > .wp-block-heading {
+	box-sizing: border-box;
+	width: min(
+		calc(100% - (var(--wp--preset--spacing--site-gutter) * 2)),
+		calc(var(--wp--style--global--wide-size) - (var(--wp--preset--spacing--80) * 4))
+	);
+	max-width: none !important;
+	margin-right: auto !important;
+	margin-left: auto !important;
+	padding: var(--wp--preset--spacing--70) var(--wp--preset--spacing--60) var(--wp--preset--spacing--30);
+	border-radius: var(--wp--custom--radius--card) var(--wp--custom--radius--card) 0 0;
+	background: color-mix(in srgb, var(--wp--preset--color--neutral-100) 96%, transparent);
+}
+
 .vicunav-servicios-package__columns {
-	gap: var(--wp--preset--spacing--50);
+	box-sizing: border-box;
+	width: min(
+		calc(100% - (var(--wp--preset--spacing--site-gutter) * 2)),
+		calc(var(--wp--style--global--wide-size) - (var(--wp--preset--spacing--80) * 4))
+	);
+	max-width: none !important;
+	gap: 0;
 	margin-top: 0;
+	margin-right: auto !important;
 	margin-bottom: 0;
+	margin-left: auto !important;
+	margin-block-start: 0 !important;
+	padding: var(--wp--preset--spacing--30) var(--wp--preset--spacing--60) var(--wp--preset--spacing--70);
+	border-radius: 0 0 var(--wp--custom--radius--card) var(--wp--custom--radius--card);
+	background: color-mix(in srgb, var(--wp--preset--color--neutral-100) 96%, transparent);
+	box-shadow: var(--wp--custom--shadow--card);
 }
 
 .vicunav-servicios-package__summary,
 .vicunav-servicios-package__details {
-	border: 1px solid var(--wp--preset--color--neutral-400);
-	background: color-mix(in srgb, var(--wp--preset--color--neutral-100) 92%, transparent);
-	box-shadow: var(--wp--custom--shadow--card);
+	border: 0;
+	background: transparent;
+	box-shadow: none;
 }
 
 .vicunav-servicios-package__details {
-	background-color: color-mix(in srgb, var(--wp--preset--color--neutral-200) 92%, transparent);
+	border-left: 1px solid var(--wp--preset--color--neutral-300);
+	background-color: transparent;
+}
+
+.vicunav-servicios-package__summary-inner,
+.vicunav-servicios-package__details-inner {
+	padding: calc(var(--wp--preset--spacing--70) + var(--wp--preset--spacing--20)) var(--wp--preset--spacing--50) var(--wp--preset--spacing--50) !important;
+}
+
+.vicunav-servicios-package__summary-inner > .has-handwritten-font-family:first-child {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	margin: 0 !important;
+	text-align: center;
+}
+
+.vicunav-servicios-package__summary-inner > p:not(.has-handwritten-font-family),
+.vicunav-servicios-package__details-inner > p {
+	line-height: 1.4 !important;
+}
+
+.vicunav-servicios-package__summary-inner > .wp-block-heading,
+.vicunav-servicios-package__details-inner > .wp-block-heading {
+	font-weight: 400 !important;
+	line-height: 1 !important;
 }
 
 .vicunav-servicios-package__investment {
-	border-left: 3px solid var(--wp--preset--color--neutral-600);
-	background-color: var(--wp--preset--color--neutral-200);
+	border: 0;
+	border-bottom: 1px solid var(--wp--preset--color--neutral-300);
+	background-color: transparent;
 }
 
 .vicunav-servicios-package__list {
@@ -104,14 +159,59 @@
 	content: "✓";
 }
 
+.vicunav-servicios-package .wp-block-button__link {
+	border: 0;
+	background-color: var(--wp--preset--color--neutral-400) !important;
+	color: var(--wp--preset--color--text) !important;
+}
+
 @media (max-width: 781px) {
+	.vicunav-servicios-package {
+		padding-top: var(--wp--preset--spacing--40) !important;
+		padding-right: var(--wp--preset--spacing--40) !important;
+		padding-left: var(--wp--preset--spacing--40) !important;
+	}
+
+	.vicunav-servicios-package > .wp-block-heading,
+	.vicunav-servicios-package__columns {
+		width: 100%;
+		margin-right: 0 !important;
+		margin-left: 0 !important;
+		padding-right: var(--wp--preset--spacing--40);
+		padding-left: var(--wp--preset--spacing--40);
+	}
+
+	.vicunav-servicios-package > .wp-block-heading {
+		padding-top: var(--wp--preset--spacing--section-editorial);
+	}
+
 	.vicunav-servicios-package__columns {
 		gap: var(--wp--preset--spacing--50);
 	}
 
+	.vicunav-servicios-package__details {
+		border-top: 1px solid var(--wp--preset--color--neutral-300);
+		border-left: 0;
+	}
+
 	.vicunav-servicios-package__summary-inner,
 	.vicunav-servicios-package__details-inner {
-		padding: var(--wp--preset--spacing--60) !important;
+		padding: var(--wp--preset--spacing--60) var(--wp--preset--spacing--40) var(--wp--preset--spacing--40) !important;
+	}
+
+	.vicunav-servicios-package__summary-inner > .has-handwritten-font-family:first-child {
+		position: absolute;
+		top: calc((var(--wp--preset--spacing--cta-section) + var(--wp--preset--spacing--40)) * -1);
+		margin: 0 !important;
+		text-align: center;
+	}
+
+	.vicunav-servicios-package__list li + li {
+		margin-top: var(--wp--preset--spacing--30);
+	}
+
+	.vicunav-servicios-package__details-inner > .vicunav-servicios-package__list--checks:first-of-type {
+		margin-bottom: var(--wp--preset--spacing--80) !important;
 	}
 
 	.vicunav-servicios-package::before,
@@ -122,8 +222,14 @@
 }
 
 @media (max-width: 420px) {
+	.vicunav-servicios-package > .wp-block-heading,
+	.vicunav-servicios-package__columns {
+		padding-right: var(--wp--preset--spacing--40);
+		padding-left: var(--wp--preset--spacing--40);
+	}
+
 	.vicunav-servicios-package__summary-inner,
 	.vicunav-servicios-package__details-inner {
-		padding: var(--wp--preset--spacing--50) !important;
+		padding: var(--wp--preset--spacing--30) var(--wp--preset--spacing--40) !important;
 	}
 }

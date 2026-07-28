@@ -81,9 +81,9 @@ $faqs = array(
 
 			<!-- wp:group {"className":"vicunav-servicios-faq__list","style":{"spacing":{"blockGap":"0"}},"layout":{"type":"default"}} -->
 			<div class="wp-block-group vicunav-servicios-faq__list">
-				<?php foreach ( $faqs as $faq ) : ?>
-					<!-- wp:details {"className":"vicunav-servicios-faq__item"} -->
-					<details class="wp-block-details vicunav-servicios-faq__item"><summary><?php echo esc_html( $faq[0] ); ?></summary>
+				<?php foreach ( $faqs as $faq_index => $faq ) : ?>
+					<!-- wp:details {"showContent":<?php echo 0 === $faq_index ? 'true' : 'false'; ?>,"className":"vicunav-servicios-faq__item"} -->
+					<details class="wp-block-details vicunav-servicios-faq__item"<?php echo 0 === $faq_index ? ' open' : ''; ?>><summary><?php echo esc_html( $faq[0] ); ?></summary>
 						<?php foreach ( $faq[1] as $answer ) : ?>
 							<!-- wp:paragraph {"textColor":"accent","style":{"typography":{"fontWeight":"400","lineHeight":"1.5"}}} -->
 							<p class="has-accent-color has-text-color" style="font-weight:400;line-height:1.5"><?php echo esc_html( $answer ); ?></p>

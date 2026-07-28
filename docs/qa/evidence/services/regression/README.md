@@ -34,3 +34,24 @@ La referencia equivalente está en `../baseline/`. Las capturas locales autentic
 Se ejecutaron tres pasadas Lighthouse en LocalWP. La primera incluyó una tarea no atribuible de 6,1 s durante el arranque frío de Chromium/LocalWP; las dos pasadas estabilizadas obtuvieron 89 y 93. La mediana registrada es 89, con TBT estabilizado de 183 ms y CLS de 0,0127. No se atribuyó JavaScript propio: el theme no añade scripts.
 
 Los recursos del hero se cargan eager/high y el fondo LCP se precarga únicamente en `/servicios/`. Las demás imágenes usan lazy loading y dimensiones intrínsecas declaradas.
+# Regresión visual — Servicios
+
+Evidencia de la comparación de `https://vicunav-gutenberg.local/servicios/`
+contra `https://vicunav.com/servicios/`.
+
+La segunda pasada visual normaliza:
+
+- composición y saltos editoriales del hero;
+- panel compartido, jerarquía y ritmo de los paquetes;
+- proporciones de tarjetas en Beneficios y pasos del Proceso;
+- distribución de Mantenimiento y Servicios adicionales;
+- densidad y estado inicial del acordeón de FAQ.
+
+Las alturas por sección de la implementación y de la referencia se registran en
+`metrics.json`. También se verificaron reflow sin desbordamiento horizontal,
+un solo `h1`, 17 elementos `details`, 25 imágenes del theme cargadas y cero
+hotlinks.
+
+La ausencia de animaciones de entrada por scroll es intencional: `AGENTS.md`
+las deja fuera de esta fase para conservar una implementación nativa y
+predecible antes de evaluar movimiento accesible como mejora posterior.
