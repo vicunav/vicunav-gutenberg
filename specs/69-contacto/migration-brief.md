@@ -11,9 +11,9 @@ Spec: [`spec.md`](spec.md)<br>
 | Referencia de solo lectura | `https://vicunav.com/contacto/` |
 | URL local | `https://vicunav-gutenberg.local/contacto/` |
 | Template | `page-contacto.html` |
-| Estado estable | Fuentes, fondo y reCAPTCHA v3 cargados |
+| Estado estable | Fuentes, fondo, Contact Form 7 y Turnstile cargados |
 | Usuario | Anónimo |
-| Viewports | 390×844 y desktop; reflow 320/768 pendiente |
+| Viewports | 320, 390×844, 768 y 1280 |
 
 ## Paquete de contexto
 
@@ -32,7 +32,7 @@ Spec: [`spec.md`](spec.md)<br>
 | Footer | `parts/footer.html` | Reutilizar |
 | Paleta/fuentes/spacing | `theme.json` | Reutilizar |
 | Fondo | `assets/images/testimonio-fondo.webp` | Reutilizar; mismo source y checksum |
-| Formulario | Contact Form 7 6.1.6 | Bloque selector; no vive en el theme |
+| Formulario | Contact Form 7 6.1.6 | `core/shortcode`; lógica fuera del theme |
 | Antispam | Cloudflare Turnstile | Integración nativa; claves fuera del repo |
 
 ## Mapa
@@ -49,13 +49,16 @@ Header y footer compartidos se excluyen del alto de `main`.
 
 | Control | Desktop | Móvil 390 |
 |---|---:|---:|
-| Alto de `main` | 1311 px | 1487 px |
-| Superficie principal | 1265×1111 px | 375×1407 px |
-| Título | 1169×48 px | 343×77 px |
-| Formulario | 1087×570 px | 309×867 px |
-| Grupo de control | 552 px, dos columnas | 325 px, una columna |
-| Card “Qué pasa después” | 500×208 px | 359×167 px |
-| Overflow horizontal | ninguno | ninguno |
+| Alto de `main` | 1311 / 1301 px | 1487 / 1494 px |
+| Superficie principal | 1265×1111 / 1265×1109 px | 375×1407 / 375×1414 px |
+| Título | 1169×48 / 800×46 px | 343×77 / 343×77 px |
+| Formulario | 1087×570 / 1089×569 px | 309×867 / 311×866 px |
+| Card “Qué pasa después” | 500×208 / 500×202 px | 359×167 / 359×164 px |
+| Overflow horizontal | ninguno / ninguno | ninguno / ninguno |
+
+Cada celda compara referencia / implementación. El ancho semántico del título
+en desktop queda limitado al `contentSize` global de 800 px; el texto conserva
+la misma línea, tamaño y alineación.
 
 ## Tipografía y controles
 
@@ -82,20 +85,22 @@ El submit usa `#444444` y texto blanco. La superficie interior corresponde a
 
 ## Comportamiento
 
-- Elementor Pro usa POST/AJAX y reCAPTCHA v3.
-- No se ejecutó un envío real.
-- Los estados de error y éxito deben especificarse en #72 y probarse localmente.
+- La referencia usa POST/AJAX y reCAPTCHA v3.
+- Local usa Contact Form 7 por AJAX y Turnstile con credenciales oficiales de
+  prueba.
+- Error, éxito, entrega en Mailpit y ausencia de persistencia están aprobados.
+- No se ejecutó un envío contra producción.
 - No se observaron animaciones propias del contenido.
 
 ## Ledger
 
 | Sección | Contenido | Macro desktop | Móvil | Detalle | Editor | Estado |
 |---|---|---|---|---|---|---|
-| Introducción | Pass | Baseline | Baseline | Baseline | Pending | Ready for #71 |
-| Formulario | Pass | Baseline | Baseline | Baseline | Pending | Ready for #71 |
-| Qué pasa después | Pass | Baseline | Baseline | Baseline | Pending | Ready for #71 |
+| Introducción | Pass | Pass | Pass | Pass | Pass | Pass |
+| Formulario | Pass | Pass | Pass | Pass | Pass | Pass |
+| Qué pasa después | Pass | Pass | Pass | Pass | Pass | Pass |
 
 ## Evidencia
 
 - Baseline: `docs/qa/evidence/contacto/baseline/`.
-- Regresión: pendiente de #71.
+- Regresión: `docs/qa/evidence/contacto/regression/`.

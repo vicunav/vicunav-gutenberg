@@ -1,0 +1,47 @@
+{
+  "date": "2026-07-28",
+  "desktop": {
+    "viewport": "1280x900",
+    "reference": {
+      "main": "1265x1311",
+      "surface": "1265x1111",
+      "form": "1087x570",
+      "after": "500x208"
+    },
+    "local": {
+      "main": "1265x1301",
+      "surface": "1265x1109",
+      "form": "1089x569",
+      "after": "500x202"
+    },
+    "horizontal_overflow": 0
+  },
+  "mobile": {
+    "viewport": "390x844",
+    "reference": {
+      "main": "375x1487",
+      "surface": "375x1407",
+      "title": "343x77",
+      "form": "309x867",
+      "after": "359x167"
+    },
+    "local": {
+      "main": "375x1494",
+      "surface": "375x1414",
+      "title": "343x77",
+      "form": "311x866",
+      "after": "359x164"
+    },
+    "horizontal_overflow": 0
+  },
+  "contracts": {
+    "h1_count": 1,
+    "form_count": 1,
+    "turnstile_count": 1,
+    "configuration_errors": 0,
+    "stored_entries": 0,
+    "contact_assets_outside_contact": 0,
+    "frontend_console_errors": 0,
+    "editor_console_errors": 0
+  }
+}

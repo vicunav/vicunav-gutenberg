@@ -7,9 +7,10 @@ Estado: Approved
 ## Resumen técnico
 
 El template ensamblará header, contenido de Contacto y footer sin contenido de
-entrada. Los bloques core resolverán la composición; el bloque selector de
-Contact Form 7 integrará el formulario y Turnstile cubrirá antispam conforme al
-ADR 0001.
+entrada. Los bloques core resolverán la composición; `core/shortcode` conecta
+el formulario de Contact Form 7 y Turnstile cubre antispam conforme al ADR
+0001. Un filtro de render acotado ejecuta solo shortcodes de Contact Form 7
+cuando el pattern se incluye directamente desde un block template.
 
 ## Archivos previstos
 
@@ -19,8 +20,11 @@ ADR 0001.
 | `assets/css/contacto.css` | Nuevo | Grid y ajustes responsive |
 | `templates/page-contacto.html` | Nuevo | Template canónico |
 | `inc/assets.php` | Modificar | CSS acotado |
+| `inc/dependencies.php` | Nuevo | Contrato y puente de render de Contact Form 7 |
 | `inc/editor.php` | Modificar | Ruta canónica del editor |
 | `bin/validate-theme.php` | Modificar | Template requerido |
+| `bin/setup-contacto.php` | Nuevo | Sincronización reproducible de página y formulario |
+| `config/contact-form-7/contacto-es.json` | Nuevo | Configuración versionada sin secretos |
 | `specs/69-contacto/` | Modificar | Decisión, QA y regresión |
 
 La configuración de Contact Form 7 se exporta fuera del runtime del theme. No

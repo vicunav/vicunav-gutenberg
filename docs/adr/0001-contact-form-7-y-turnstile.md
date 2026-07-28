@@ -48,8 +48,9 @@ Usar Contact Form 7 `6.1.6` y su integración nativa con Cloudflare Turnstile.
   acompaña con un runbook reproducible.
 - Las claves reales de Turnstile viven fuera del repositorio. LocalWP usa
   exclusivamente las claves oficiales de prueba.
-- El bloque selector de Contact Form 7 es una excepción aprobada a la
-  preferencia por bloques core.
+- La presentación usa `core/shortcode`. Un filtro de render acotado ejecuta
+  únicamente `[contact-form-7 ...]` porque los patterns incluidos directamente
+  por templates FSE no atraviesan `the_content`.
 
 ## Consecuencias
 

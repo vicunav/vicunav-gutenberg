@@ -28,6 +28,7 @@ Una API introducida después de WordPress 6.7 solo puede usarse con fallback o e
 | `assets/` | Recursos locales con licencia y procedencia verificables |
 | `functions.php` | Bootstrap mínimo de módulos PHP |
 | `inc/assets.php` | Registro declarativo de CSS, preload y manifiesto de imágenes |
+| `inc/dependencies.php` | Contratos y puentes acotados con plugins requeridos |
 | `inc/editor.php` | Integración y rutas canónicas del Editor del sitio |
 | `docs/` | Contratos de arquitectura, proceso y calidad |
 
@@ -79,12 +80,13 @@ Nunca duplicar un color o una familia tipográfica en un pattern. Una excepción
 
 ## Theme versus plugin
 
-El theme puede definir presentación, templates, patterns, estilos y tamaños de imagen vinculados al diseño. No debe implementar formularios, reservas, analytics, schema de negocio, CPT, shortcodes, roles, endpoints o almacenamiento persistente. Esa separación protege portabilidad y seguridad.
+El theme puede definir presentación, templates, patterns, estilos y tamaños de imagen vinculados al diseño. No debe implementar formularios, reservas, analytics, schema de negocio, CPT, shortcodes funcionales, roles, endpoints o almacenamiento persistente. Esa separación protege portabilidad y seguridad.
 
 Contacto delega validación, entrega y antispam conforme al
-[ADR 0001](adr/0001-contact-form-7-y-turnstile.md). El bloque selector del
-plugin es una excepción aprobada y acotada; la composición continúa bajo
-responsabilidad del theme.
+[ADR 0001](adr/0001-contact-form-7-y-turnstile.md). La composición usa
+`core/shortcode`; un filtro de render acotado ejecuta únicamente shortcodes de
+Contact Form 7 en patterns incluidos directamente por templates FSE. El theme
+no registra el shortcode ni asume validación, entrega o persistencia.
 
 ## Assets
 

@@ -39,6 +39,11 @@
           "slug": "accent"
         },
         {
+          "color": "#B32D2E",
+          "name": "Error",
+          "slug": "error"
+        },
+        {
           "color": "#FFFCFB",
           "name": "Neutral 100",
           "slug": "neutral-100"

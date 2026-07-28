@@ -51,10 +51,14 @@ $required_paths = array(
 	'templates/front-page.html',
 	'templates/page-servicios.html',
 	'templates/page-portafolio.html',
+	'templates/page-contacto.html',
 	'parts/header.html',
 	'parts/footer.html',
 	'inc/assets.php',
+	'inc/dependencies.php',
 	'inc/editor.php',
+	'config/contact-form-7/contacto-es.json',
+	'bin/setup-contacto.php',
 );
 
 foreach ( $required_paths as $relative_path ) {

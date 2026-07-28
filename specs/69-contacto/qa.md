@@ -1,7 +1,7 @@
 # QA: página de Contacto
 
 Issue padre: #69<br>
-Estado: baseline y dependencia aprobados; implementación en progreso<br>
+Estado: aprobado<br>
 Última actualización: 2026-07-28
 
 ## Entorno
@@ -24,6 +24,20 @@ Estado: baseline y dependencia aprobados; implementación en progreso<br>
 - No se realizó ningún envío a producción.
 - Contact Form 7 + Turnstile, sin almacenamiento, aprobado en ADR 0001.
 
+## Resultado de implementación
+
+- Contact Form 7 `6.1.6` activo y configuración válida con cero errores.
+- Turnstile usa las claves oficiales de prueba de Cloudflare en LocalWP.
+- Envío AJAX exitoso y correo recibido en Mailpit con `Reply-To` correcto.
+- `do_not_store: true`, Flamingo ausente y cero tablas o posts de entradas.
+- Estados inválido y éxito comprobados con mensajes en español.
+- Consola sin errores ni warnings en frontend y Editor del sitio.
+- Reflow aprobado en 320, 390, 768 y 1280 px, sin overflow horizontal.
+- CSS, validación JavaScript y Turnstile no se cargan fuera de Contacto.
+- Un H1, un formulario y una instancia de Turnstile en frontend.
+- `page-contacto` abre en el Editor del sitio sin bloques inválidos, sin título
+  de entrada y con **Guardar** deshabilitado al no existir cambios.
+
 ## Gates de implementación
 
 - HTTP 200 y un solo H1.
@@ -41,10 +55,11 @@ Estado: baseline y dependencia aprobados; implementación en progreso<br>
 
 | Sección | Contenido | Macro desktop | Móvil | Funcional | Editor | Estado |
 |---|---|---|---|---|---|---|
-| Introducción | Pass | Baseline | Baseline | N/A | Pending | Blocked |
-| Formulario | Pass | Baseline | Baseline | Pending | Pending | Blocked by #72 |
-| Qué pasa después | Pass | Baseline | Baseline | N/A | Pending | Blocked |
+| Introducción | Pass | Pass | Pass | N/A | Pass | Pass |
+| Formulario | Pass | Pass | Pass | Pass | Pass | Pass |
+| Qué pasa después | Pass | Pass | Pass | N/A | Pass | Pass |
 
 ## Evidencia
 
-`docs/qa/evidence/contacto/baseline/`
+- Baseline: `docs/qa/evidence/contacto/baseline/`.
+- Regresión: `docs/qa/evidence/contacto/regression/`.

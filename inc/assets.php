@@ -41,6 +41,7 @@ function vicunav_register_block_stylesheets() {
 		array( 'core/group', 'servicios-adicionales' ),
 		array( 'core/details', 'servicios-faq' ),
 		array( 'core/group', 'portafolio' ),
+		array( 'core/group', 'contacto' ),
 		array( 'core/columns', 'footer' ),
 	);
 
