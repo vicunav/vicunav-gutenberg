@@ -1,0 +1,76 @@
+.vicunav-servicios-extras {
+	position: relative;
+	overflow: hidden;
+	background-image: linear-gradient(color-mix(in srgb, var(--wp--preset--color--neutral-100) 94%, transparent), color-mix(in srgb, var(--wp--preset--color--neutral-100) 94%, transparent)), url("../images/cta-final-vicunav.webp");
+	background-position: center;
+	background-size: cover;
+}
+
+.vicunav-servicios-extras__grid {
+	display: grid;
+	grid-template-columns: repeat(3, minmax(0, 1fr));
+	gap: var(--wp--preset--spacing--60);
+}
+
+.vicunav-servicios-extras > p.alignwide {
+	position: relative;
+	margin-bottom: var(--wp--preset--spacing--section-editorial) !important;
+	font-size: var(--wp--preset--font-size--body-large);
+}
+
+.vicunav-servicios-extras > p.alignwide::after {
+	position: absolute;
+	top: calc(100% + var(--wp--preset--spacing--40));
+	left: 12.5%;
+	width: 75%;
+	background:
+		linear-gradient(var(--wp--preset--color--neutral-500), var(--wp--preset--color--neutral-500)) left center / 48% 1px no-repeat,
+		linear-gradient(var(--wp--preset--color--neutral-500), var(--wp--preset--color--neutral-500)) right center / 48% 1px no-repeat;
+	color: var(--wp--preset--color--neutral-700);
+	content: "✶";
+	line-height: 1;
+	text-align: center;
+}
+
+.vicunav-servicios-extras__grid > * {
+	margin-block-start: 0 !important;
+}
+
+.vicunav-servicios-extras__card {
+	min-height: calc(13.5rem + var(--wp--preset--spacing--45));
+	border: 1px solid var(--wp--preset--color--neutral-300);
+	background-color: color-mix(in srgb, var(--wp--preset--color--neutral-100) 94%, transparent);
+	box-shadow: var(--wp--custom--shadow--card);
+}
+
+@media (max-width: 781px) {
+	.vicunav-servicios-extras {
+		padding-right: var(--wp--preset--spacing--50) !important;
+		padding-bottom: var(--wp--preset--spacing--65) !important;
+		padding-left: var(--wp--preset--spacing--50) !important;
+	}
+
+	.vicunav-servicios-extras > p.alignwide {
+		margin-bottom: var(--wp--preset--spacing--30) !important;
+	}
+
+	.vicunav-servicios-extras > p.alignwide::after {
+		top: calc(100% + var(--wp--preset--spacing--10));
+	}
+
+	.vicunav-servicios-extras__grid {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.vicunav-servicios-extras__card {
+		min-height: 0;
+		padding: var(--wp--preset--spacing--45) !important;
+		text-align: center;
+	}
+
+	.vicunav-servicios-extras__card > .has-heading-medium-font-size {
+		margin-bottom: var(--wp--preset--spacing--40) !important;
+		padding-bottom: var(--wp--preset--spacing--50);
+		border-bottom: 1px solid var(--wp--preset--color--neutral-500);
+	}
+}

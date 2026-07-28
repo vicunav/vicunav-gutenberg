@@ -1,6 +1,6 @@
 # Vicunav Gutenberg
 
-Theme de bloques nativo para migrar el homepage de Vicunav desde Elementor a Gutenberg Full Site Editing.
+Theme de bloques nativo para migrar el sitio de Vicunav desde Elementor a Gutenberg Full Site Editing.
 
 La Fase 1 es una reproducción fiel del sitio existente. No incluye rediseño, cambios de copy ni ampliación funcional. Las decisiones visuales nuevas pertenecen a fases posteriores.
 
@@ -14,13 +14,14 @@ Candidato de Fase 1 comprobado el 25 de julio de 2026:
 - Release candidate: `0.2.0`.
 - Completado: `theme.json`, cabecera, pie de página, diez patterns y `front-page.html`.
 - QA completado: paridad visual, responsive cross-browser, WCAG 2.2 AA y rendimiento.
-- Pendiente: gate final de release; no incluye despliegue a producción.
+- Página de Servicios implementada localmente con nueve patterns, template propio y 17 FAQ nativas.
+- Pendiente: revisión e integración de Servicios; no incluye despliegue a producción.
 
 ## Principios
 
 1. `theme.json` es la fuente única de tokens visuales.
 2. Se prefieren bloques core y patterns registrados antes que bloques custom.
-3. Cada sección del homepage es una unidad trazable y verificable.
+3. Cada sección de una página es una unidad trazable y verificable.
 4. El copy, el orden y la jerarquía definidos para la Fase 1 no se reinterpretan.
 5. Accesibilidad, rendimiento y seguridad son criterios de aceptación, no tareas posteriores.
 6. Una implementación no está terminada sin evidencia de QA.
@@ -54,9 +55,11 @@ composer audit
 
 `composer qa` ejecuta PHP lint, WordPress Coding Standards, PHPCompatibility y la validación estructural de JSON, patterns, section styles, rutas locales y firmas de secretos. GitHub Actions repite estos gates en PHP 8.0 y 8.2 con permisos de solo lectura y actions fijadas a commit SHA.
 
-## Editar la portada, el header y el footer
+## Editar las páginas, el header y el footer
 
 La portada se edita desde **Apariencia → Editor → Diseño → Plantillas → Portada**. El theme redirige los accesos “Editar página” de la página configurada como inicio hacia ese lienzo, porque `front-page.html` —no el contenido ni el título de la página estática— es la fuente real del diseño.
+
+Servicios se edita desde **Apariencia → Editor → Diseño → Plantillas → page-servicios**. Su acceso “Editar página” también abre directamente ese lienzo; `templates/page-servicios.html` es la fuente del diseño y la entrada administrativa permanece sin contenido ni título visible.
 
 El header y el footer se editan desde **Apariencia → Editor → Diseño → Patrones → Administrar mis patrones → Partes de plantilla**. Allí aparecen como **Cabecera** y **Pie de página**. Sus archivos fuente son `parts/header.html` y `parts/footer.html`; guardar una personalización desde WordPress crea un override en la base de datos, que debe exportarse al repositorio o eliminarse antes de comparar el theme limpio.
 
@@ -88,6 +91,7 @@ Empezar por [docs/README.md](docs/README.md). Las rutas principales son:
 - [Seguridad](SECURITY.md)
 - [Releases](docs/RELEASES.md)
 - [Referencias oficiales](docs/REFERENCES.md)
+- [Spec de Servicios](specs/2-servicios/spec.md)
 
 ## Contribuir
 

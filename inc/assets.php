@@ -33,6 +33,13 @@ function vicunav_register_block_stylesheets() {
 		array( 'core/columns', 'conoce-mario' ),
 		array( 'core/group', 'marcas' ),
 		array( 'core/group', 'cta-final' ),
+		array( 'core/columns', 'servicios-hero' ),
+		array( 'core/group', 'servicios-paquetes' ),
+		array( 'core/group', 'servicios-beneficios' ),
+		array( 'core/group', 'servicios-proceso' ),
+		array( 'core/group', 'servicios-mantenimiento' ),
+		array( 'core/group', 'servicios-adicionales' ),
+		array( 'core/details', 'servicios-faq' ),
 		array( 'core/columns', 'footer' ),
 	);
 
@@ -64,12 +71,16 @@ add_action( 'init', 'vicunav_register_block_stylesheets' );
  * @return array
  */
 function vicunav_preload_lcp_asset( $preloads ) {
-	if ( ! is_front_page() ) {
+	if ( ! is_front_page() && ! is_page( 'servicios' ) ) {
 		return $preloads;
 	}
 
+	$hero_asset = is_page( 'servicios' )
+		? 'assets/images/services/hero-background.webp'
+		: 'assets/images/hero-vicunav.webp';
+
 	$preloads[] = array(
-		'href'          => get_theme_file_uri( 'assets/images/hero-vicunav.webp' ),
+		'href'          => get_theme_file_uri( $hero_asset ),
 		'as'            => 'image',
 		'type'          => 'image/webp',
 		'fetchpriority' => 'high',
@@ -86,26 +97,50 @@ add_filter( 'wp_preload_resources', 'vicunav_preload_lcp_asset' );
  */
 function vicunav_get_image_manifest() {
 	return array(
-		'logo-dark.webp'              => array( 554, 113, 'eager', 'auto' ),
-		'hero-vicunav.webp'           => array( 1536, 1024, 'eager', 'high' ),
-		'situaciones-vicunav.webp'    => array( 1536, 1024, 'lazy', null ),
-		'como-ayudamos-vicunav.webp'  => array( 1024, 1280, 'lazy', null ),
-		'proceso-textos.webp'         => array( 400, 306, 'lazy', null ),
-		'proceso-visual.webp'         => array( 400, 306, 'lazy', null ),
-		'proceso-desarrollo.webp'     => array( 400, 306, 'lazy', null ),
-		'proceso-encontrado.webp'     => array( 400, 306, 'lazy', null ),
-		'proceso-herramientas.webp'   => array( 400, 306, 'lazy', null ),
-		'proceso-soporte.webp'        => array( 400, 306, 'lazy', null ),
-		'testimonio-fondo.webp'       => array( 1536, 1024, 'lazy', null ),
-		'testimonio-tatiana.webp'     => array( 300, 300, 'lazy', null ),
-		'testimonio-tatipilates.webp' => array( 520, 767, 'lazy', null ),
-		'resultados-vicunav.webp'     => array( 1024, 1280, 'lazy', null ),
-		'mario-vicuna.webp'           => array( 1024, 1536, 'lazy', null ),
-		'marca-clearpath.webp'        => array( 400, 125, 'lazy', null ),
-		'marca-tatipilates.webp'      => array( 400, 310, 'lazy', null ),
-		'marca-redstage.webp'         => array( 400, 95, 'lazy', null ),
-		'marca-quiet-path.webp'       => array( 400, 180, 'lazy', null ),
-		'marca-eleanor.webp'          => array( 400, 96, 'lazy', null ),
+		'logo-dark.webp'               => array( 554, 113, 'eager', 'auto' ),
+		'hero-vicunav.webp'            => array( 1536, 1024, 'eager', 'high' ),
+		'situaciones-vicunav.webp'     => array( 1536, 1024, 'lazy', null ),
+		'como-ayudamos-vicunav.webp'   => array( 1024, 1280, 'lazy', null ),
+		'proceso-textos.webp'          => array( 400, 306, 'lazy', null ),
+		'proceso-visual.webp'          => array( 400, 306, 'lazy', null ),
+		'proceso-desarrollo.webp'      => array( 400, 306, 'lazy', null ),
+		'proceso-encontrado.webp'      => array( 400, 306, 'lazy', null ),
+		'proceso-herramientas.webp'    => array( 400, 306, 'lazy', null ),
+		'proceso-soporte.webp'         => array( 400, 306, 'lazy', null ),
+		'testimonio-fondo.webp'        => array( 1536, 1024, 'lazy', null ),
+		'testimonio-tatiana.webp'      => array( 300, 300, 'lazy', null ),
+		'testimonio-tatipilates.webp'  => array( 520, 767, 'lazy', null ),
+		'resultados-vicunav.webp'      => array( 1024, 1280, 'lazy', null ),
+		'mario-vicuna.webp'            => array( 1024, 1536, 'lazy', null ),
+		'marca-clearpath.webp'         => array( 400, 125, 'lazy', null ),
+		'marca-tatipilates.webp'       => array( 400, 310, 'lazy', null ),
+		'marca-redstage.webp'          => array( 400, 95, 'lazy', null ),
+		'marca-quiet-path.webp'        => array( 400, 180, 'lazy', null ),
+		'marca-eleanor.webp'           => array( 400, 96, 'lazy', null ),
+		'hero-mockup.webp'             => array( 1024, 683, 'eager', 'high' ),
+		'benefit-design.webp'          => array( 480, 480, 'lazy', null ),
+		'benefit-copy.webp'            => array( 480, 480, 'lazy', null ),
+		'benefit-mobile.webp'          => array( 480, 480, 'lazy', null ),
+		'benefit-search-ai.webp'       => array( 480, 480, 'lazy', null ),
+		'benefit-performance.webp'     => array( 480, 480, 'lazy', null ),
+		'benefit-security.webp'        => array( 480, 480, 'lazy', null ),
+		'benefit-wordpress.webp'       => array( 480, 480, 'lazy', null ),
+		'benefit-walkthrough.webp'     => array( 480, 480, 'lazy', null ),
+		'process-discovery.webp'       => array( 1024, 1024, 'lazy', null ),
+		'process-content.webp'         => array( 1024, 1024, 'lazy', null ),
+		'process-build.webp'           => array( 1024, 1024, 'lazy', null ),
+		'process-review.webp'          => array( 1024, 1024, 'lazy', null ),
+		'process-launch.webp'          => array( 1024, 1024, 'lazy', null ),
+		'process-overview.webp'        => array( 1024, 1536, 'lazy', null ),
+		'maintenance-hosting.webp'     => array( 121, 160, 'lazy', null ),
+		'maintenance-security.webp'    => array( 135, 160, 'lazy', null ),
+		'maintenance-backups.webp'     => array( 160, 144, 'lazy', null ),
+		'maintenance-updates.webp'     => array( 160, 156, 'lazy', null ),
+		'maintenance-uptime.webp'      => array( 160, 150, 'lazy', null ),
+		'maintenance-technical.webp'   => array( 160, 132, 'lazy', null ),
+		'maintenance-adjustments.webp' => array( 160, 151, 'lazy', null ),
+		'maintenance-reports.webp'     => array( 144, 160, 'lazy', null ),
+		'faq.webp'                     => array( 1024, 1536, 'lazy', null ),
 	);
 }
 

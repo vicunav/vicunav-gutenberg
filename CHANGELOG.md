@@ -4,6 +4,18 @@ Los cambios notables se documentan aquí. El proyecto usa [Semantic Versioning](
 
 ## [Unreleased]
 
+### Added
+
+- Página de Servicios nativa con template propio y nueve patterns editables.
+- Inventario literal, baseline y evidencia visual responsive para Servicios.
+- Treinta y tres recursos locales optimizados para paquetes, beneficios, proceso, mantenimiento y FAQ.
+- Diecisiete preguntas frecuentes con el bloque core Details y soporte de teclado sin JavaScript propio.
+
+### Changed
+
+- Los accesos de edición de Servicios abren directamente `page-servicios` en el Editor del sitio.
+- La precarga LCP selecciona el hero correspondiente a la portada o a Servicios.
+
 ## [0.2.0] - 2026-07-25
 
 ### Added
