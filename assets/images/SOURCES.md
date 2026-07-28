@@ -157,3 +157,26 @@ Las ocho ilustraciones de mantenimiento proceden, en orden, de `Managed-WordPres
 | `services/faq.webp` | 1024×1536 | 94.694 bytes | `2ae821aa6f8ec3aeb8110a3cd91f76ea2b4d86dcbfd23f1e5e99c21624837c68` |
 
 La imagen FAQ procede de `https://vicunav.com/wp-content/uploads/2026/03/faq-1-1.png`.
+
+## Portafolio
+
+Los recursos se recuperaron el 2026-07-27 desde la página pública de
+Portafolio. Las capturas de proyecto se sirven localmente a `916×1024 px`,
+aproximadamente el doble de su ancho de render desktop. Los JPG se convirtieron
+a WebP sin metadata.
+
+| Archivo local | Fuente | Peso | SHA-256 local |
+|---|---|---:|---|
+| `portfolio/bhoga-yoga.webp` | `https://vicunav.com/wp-content/uploads/2026/06/bhoga-yoga-916x1024.webp` | 55.764 bytes | `68c4fb378e8e1ad93e4d1f2d4bca2c851a06b1266a376510df59385acb197102` |
+| `portfolio/tatipilates.webp` | `https://vicunav.com/wp-content/uploads/2026/04/tatipilates-916x1024.jpg` | 66.190 bytes | `f197089427d25def1fdef2043b2760093d62f525ef0e1f09c0c7076c2f7b1107` |
+| `portfolio/clearpath-therapy.webp` | `https://vicunav.com/wp-content/uploads/2026/03/therapy.staging.vicunav-916x1024.jpg` | 76.566 bytes | `c2d63b17e3113c90533487869f4b47527b82c7b3c1e0f121b67730a65c8c63e2` |
+| `portfolio/eleanor-wilde.webp` | `https://vicunav.com/wp-content/uploads/2026/03/editorial.staging.vicunav-916x1024.jpg` | 60.648 bytes | `9c914531372d79020d4b2d986b4d01445055525cae1901d52563e4fca52648b9` |
+| `portfolio/paper-texture.webp` | `https://vicunav.com/wp-content/uploads/2026/03/bg-asset.png` | 4.898 bytes | `03f6b844ed28c16876a317b6cd65eb846d0ba5bc1355ccef0fa633b8cca21eef` |
+
+Checksums de los orígenes JPG: TatiPilates
+`a594f4c1401e1a0deca71410a8bda78cc92ab2c0598f7867206cc08ea805624e`,
+Clearpath `cd47af406cd478a7f015083a885297c92349439ce898a687032dc6a12c7c78a0`
+y Eleanor
+`593d11d81348c8e702902651ca35255e8987e2b306d755735828432038ace577`.
+El PNG de textura de origen tiene SHA-256
+`c799a57e83a35aac582c764d8ba1b5c2ac252cd746878c87a2340fbf527bc373`.
