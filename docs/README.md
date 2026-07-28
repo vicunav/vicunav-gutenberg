@@ -39,6 +39,10 @@ La evidencia consolidada de Fase 1 vive en `docs/qa/evidence/phase-1/`: comparac
 
 La migración de la página de Servicios se especifica en `specs/2-servicios/`; su baseline y la evidencia de implementación viven en `docs/qa/evidence/services/`.
 
+Portafolio se especifica en `specs/65-portafolio/`. Contacto se especifica en
+`specs/69-contacto/` y permanece bloqueado hasta aprobar la responsabilidad
+funcional del formulario en #72.
+
 ## Mantenimiento
 
 - Un cambio de contrato actualiza el spec.
