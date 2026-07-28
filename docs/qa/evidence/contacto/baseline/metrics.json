@@ -1,0 +1,41 @@
+{
+  "fecha": "2026-07-28",
+  "issue": 70,
+  "referencia": "https://vicunav.com/contacto/",
+  "desktop_1280": {
+    "client_width_px": 1265,
+    "main_height_px": 1311,
+    "surface_px": [1265, 1111],
+    "title_px": [1169, 48],
+    "form_px": [1087, 570],
+    "field_group_width_px": 552,
+    "after_card_px": [500, 208],
+    "overflow_horizontal": false
+  },
+  "mobile_390": {
+    "client_width_px": 375,
+    "main_height_px": 1487,
+    "surface_px": [375, 1407],
+    "title_px": [343, 77],
+    "form_px": [309, 867],
+    "field_group_width_px": 325,
+    "after_card_px": [359, 167],
+    "overflow_horizontal": false
+  },
+  "form": {
+    "visible_fields": 8,
+    "required_fields": 4,
+    "select_options_total": 16,
+    "method": "POST",
+    "ajax": true,
+    "recaptcha_v3": true,
+    "production_submission_performed": false,
+    "dynamic_messages_exposed_in_initial_dom": false
+  },
+  "asset_reuse": {
+    "local": "assets/images/testimonio-fondo.webp",
+    "dimensions_px": [1536, 1024],
+    "bytes": 49050,
+    "sha256": "78728d488bff4a17c317768c51952c9c0d56c47936ac851d257d0e5074a878e7"
+  }
+}
