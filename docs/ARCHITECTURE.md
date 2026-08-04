@@ -88,6 +88,12 @@ Contacto delega validación, entrega y antispam conforme al
 Contact Form 7 en patterns incluidos directamente por templates FSE. El theme
 no registra el shortcode ni asume validación, entrega o persistencia.
 
+La experiencia ES/EN delega idiomas, relaciones entre traducciones, locale,
+URLs y selector a Polylang Free conforme al
+[ADR 0002](adr/0002-polylang-free-para-es-en.md). El theme conserva la
+presentación y el contenido visual versionado; no implementa routing,
+traducción automática ni persistencia multidioma propia.
+
 ## Assets
 
 - Preferir recursos self-hosted.
@@ -111,5 +117,7 @@ La estructura de portada usa locks nativos: `all` protege el ensamblaje de templ
 - Fuentes self-hosted.
 - LocalWP consume el repositorio mediante symlink.
 - Sin animaciones Elementor en Fase 1.
+- Polylang Free administra la experiencia ES/EN; el theme no implementa
+  routing multidioma.
 
 Una modificación de estas decisiones requiere ADR.

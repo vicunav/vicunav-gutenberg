@@ -24,6 +24,7 @@ El código existente no invalida una regla superior. Si una regla necesita cambi
 | [DESIGN_SYSTEM.md](DESIGN_SYSTEM.md) | ¿Qué tokens existen y cuándo se puede añadir otro? |
 | [EDITOR.md](EDITOR.md) | ¿Qué puede editarse y cómo se gestionan los overrides? |
 | [CONTACT_FORM.md](CONTACT_FORM.md) | ¿Cómo se configura, prueba y opera el formulario? |
+| [MULTILINGUAL.md](MULTILINGUAL.md) | ¿Cómo se instala, configura, prueba y revierte la experiencia ES/EN? |
 | [MIGRATION_PLAYBOOK.md](MIGRATION_PLAYBOOK.md) | ¿Cómo se reproduce una página con fidelidad sin repetir descubrimiento? |
 | [CONTEXT_EFFICIENCY.md](CONTEXT_EFFICIENCY.md) | ¿Qué contexto es suficiente y cuándo debe ampliarse? |
 | [SPEC_DRIVEN_DEVELOPMENT.md](SPEC_DRIVEN_DEVELOPMENT.md) | ¿Cómo pasa una intención a implementación verificable? |
@@ -34,7 +35,7 @@ El código existente no invalida una regla superior. Si una regla necesita cambi
 | [RELEASES.md](RELEASES.md) | ¿Cómo se empaqueta, publica y revierte? |
 | [REFERENCES.md](REFERENCES.md) | ¿Qué fuentes oficiales respaldan las reglas? |
 
-Las plantillas reutilizables viven en `docs/templates/`. Las decisiones arquitectónicas futuras se documentan en `docs/adr/`.
+Las plantillas reutilizables viven en `docs/templates/`. Las decisiones arquitectónicas se documentan en `docs/adr/`.
 
 La evidencia consolidada de Fase 1 vive en `docs/qa/evidence/phase-1/`: comparación visual, responsive cross-browser, accesibilidad, rendimiento y release candidate.
 

@@ -6,6 +6,8 @@ Los cambios notables se documentan aquí. El proyecto usa [Semantic Versioning](
 
 ### Added
 
+- ADR y runbook reproducible para la arquitectura ES/EN con Polylang Free,
+  separación de responsabilidades y rollback.
 - Página de Contacto nativa con template FSE, pattern editable y paridad
   responsive documentada.
 - Configuración reproducible de Contact Form 7 `6.1.6`, integración nativa con
