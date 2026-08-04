@@ -25,6 +25,19 @@ wp plugin install polylang --version=3.8.6 --activate
 wp plugin get polylang --fields=name,status,version
 ```
 
+Con el PHP y socket de LocalWP activos, aplicar la configuración versionada:
+
+```bash
+wp eval-file bin/setup-polylang.php
+```
+
+El script requiere Polylang `3.8.6`, crea de forma idempotente `es_ES` (`es`)
+y `en_US` (`en`), conserva español sin prefijo, asigna las páginas españolas
+existentes y desactiva las redirecciones por preferencia del navegador. El
+estado persistente vive en las taxonomías de idioma, relaciones de Polylang y
+la opción `polylang` de la base de datos local; las relaciones ES/EN se crean
+en los issues de cada página, nunca contra Portafolio.
+
 Si WP-CLI carga `wp-load.php` pero devuelve un error de conexión, no se modifica
 el plugin ni `wp-config.php` por inferencia. Se aplican las reglas de socket
 LocalWP de `AGENTS.md`: identificar el socket activo mediante una consulta de
@@ -46,6 +59,11 @@ debe convertir estos pasos en configuración reproducible y verificable:
 
 No se edita `parts/header.html` para simular URLs por idioma. El selector debe
 usar la integración pública de Polylang o sus bloques soportados.
+
+El header usa `polylang/navigation-language-switcher`, el bloque público apto
+para `core/navigation`. Muestra nombres y banderas locales; con
+`hide_if_no_translation` oculta un destino sin traducción, por lo que
+Portafolio no ofrece un enlace inglés hasta que exista una traducción aprobada.
 
 ## Rutas aprobadas
 

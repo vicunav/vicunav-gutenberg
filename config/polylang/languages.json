@@ -1,0 +1,33 @@
+{
+  "plugin_version": "3.8.6",
+  "languages": [
+    {
+      "name": "Español",
+      "slug": "es",
+      "locale": "es_ES",
+      "flag_code": "es",
+      "term_group": 1
+    },
+    {
+      "name": "English",
+      "slug": "en",
+      "locale": "en_US",
+      "flag_code": "us",
+      "term_group": 2
+    }
+  ],
+  "default_language": "es",
+  "options": {
+    "force_lang": 1,
+    "hide_default": true,
+    "rewrite": true,
+    "redirect_lang": false,
+    "browser": false
+  },
+  "spanish_pages": [
+    "inicio",
+    "servicios",
+    "portafolio",
+    "contacto"
+  ]
+}

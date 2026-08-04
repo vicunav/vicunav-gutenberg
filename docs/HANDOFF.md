@@ -40,52 +40,40 @@ nada por rutina.
   local conforme al ADR 0001.
 - El PR #93 aceptó Polylang Free `3.8.6` como arquitectura ES/EN y cerró #85.
 - El lote multidioma vive en el padre #86 y sus tareas #87–#91.
+- #87 deja Polylang Free `3.8.6` activo solo en LocalWP, con `es_ES` sin
+  prefijo, `en_US` bajo `/en/` y selector público que oculta destinos sin
+  traducción.
 - No se ha iniciado markup ni copy de las páginas inglesas.
 - No se ha realizado ningún cambio en producción.
 
 ## Siguiente trabajo exacto
 
-Ejecutar [#87: integrar Polylang Free y selector ES/EN](https://github.com/vicunav/vicunav-gutenberg/issues/87).
+Ejecutar [#88: migrar Home EN](https://github.com/vicunav/vicunav-gutenberg/issues/88).
 
 Orden crítico aprobado:
 
 ```text
-#87 infraestructura → #88 Home EN → #89 Servicios EN
-                    → #90 Contacto EN → #91 QA integral
+#88 Home EN → #89 Servicios EN → #90 Contacto EN → #91 QA integral
 ```
 
-Fuentes mínimas para #87:
+Fuentes mínimas para #88:
 
 - `AGENTS.md`;
-- `docs/adr/0002-polylang-free-para-es-en.md`;
 - `docs/MULTILINGUAL.md`;
 - `specs/86-multilingual/spec.md`;
 - `specs/86-multilingual/plan.md`;
 - `specs/86-multilingual/tasks.md`;
 - `specs/86-multilingual/qa.md`;
 - `specs/86-multilingual/migration-brief.md`;
-- `parts/header.html`, `inc/dependencies.php` e `inc/editor.php` solo cuando el
-  diseño de la integración lo exija.
+- inventario español aprobado de Home y los patterns/templates que ensambla.
 
 ## Estado de LocalWP
 
 El repositorio continúa enlazado al theme local mediante el symlink documentado
-en `README.md`. En la última comprobación, el sitio de LocalWP estaba detenido:
-no había proceso MySQL ni socket activo y la URL local no aceptaba conexiones.
-Por eso **Polylang todavía no está instalado ni activo**.
-
-El siguiente agente debe:
-
-1. iniciar el sitio `vicunav-gutenberg` desde LocalWP;
-2. comprobar que `https://vicunav-gutenberg.local/` responde;
-3. seguir la instalación exacta de `docs/MULTILINGUAL.md`;
-4. si WordPress devuelve error de base de datos, aplicar el diagnóstico de
-   socket de `AGENTS.md` sin imprimir secretos ni modificar `wp-config.php` por
-   inferencia;
-5. registrar en #87 la versión y el resultado, no rutas de socket efímeras.
-
-Que el sitio esté detenido es estado local recuperable, no un defecto del
-theme ni un bloqueo de arquitectura.
+en `README.md`. LocalWP estaba iniciado al completar #87. Polylang `3.8.6`
+está activo solo en ese entorno y se reprovisiona con
+`bin/setup-polylang.php` siguiendo `docs/MULTILINGUAL.md`. No registrar rutas
+de socket efímeras en GitHub.
 
 ## Contratos que no deben redescubrirse
 
