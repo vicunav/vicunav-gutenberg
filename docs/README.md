@@ -27,6 +27,7 @@ El código existente no invalida una regla superior. Si una regla necesita cambi
 | [MULTILINGUAL.md](MULTILINGUAL.md) | ¿Cómo se instala, configura, prueba y revierte la experiencia ES/EN? |
 | [MIGRATION_PLAYBOOK.md](MIGRATION_PLAYBOOK.md) | ¿Cómo se reproduce una página con fidelidad sin repetir descubrimiento? |
 | [CONTEXT_EFFICIENCY.md](CONTEXT_EFFICIENCY.md) | ¿Qué contexto es suficiente y cuándo debe ampliarse? |
+| [HANDOFF.md](HANDOFF.md) | ¿Cuál es el estado actual y cómo retoma cualquier agente sin depender del chat? |
 | [SPEC_DRIVEN_DEVELOPMENT.md](SPEC_DRIVEN_DEVELOPMENT.md) | ¿Cómo pasa una intención a implementación verificable? |
 | [WORKFLOW.md](WORKFLOW.md) | ¿Cómo se organiza el trabajo en GitHub y Git? |
 | [QA.md](QA.md) | ¿Qué evidencia demuestra que un cambio está terminado? |
@@ -44,6 +45,10 @@ La migración de la página de Servicios se especifica en `specs/2-servicios/`; 
 Portafolio se especifica en `specs/65-portafolio/`. Contacto se especifica en
 `specs/69-contacto/`; su formulario, QA y operación están documentados en
 [CONTACT_FORM.md](CONTACT_FORM.md).
+
+La experiencia ES/EN se especifica en `specs/86-multilingual/` y su operación
+se documenta en [MULTILINGUAL.md](MULTILINGUAL.md). El estado breve para
+personas y agentes vive en [HANDOFF.md](HANDOFF.md).
 
 ## Mantenimiento
 
