@@ -1,6 +1,7 @@
 # Experiencia multidioma ES/EN
 
-Decisión: [ADR 0002](adr/0002-polylang-free-para-es-en.md)  
+Decisión: [ADR 0002](adr/0002-polylang-free-para-es-en.md)
+
 Backlog: [issue #86](https://github.com/vicunav/vicunav-gutenberg/issues/86)
 
 ## Contrato
@@ -93,4 +94,3 @@ Para rollback:
 3. desactivar Polylang;
 4. comprobar que los templates españoles siguen renderizando;
 5. no eliminar páginas ni datos sin una autorización explícita.
-

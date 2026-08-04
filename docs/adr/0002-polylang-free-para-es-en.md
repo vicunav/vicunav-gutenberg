@@ -1,7 +1,9 @@
 # ADR 0002: Polylang Free para la experiencia ES/EN
 
-Estado: Accepted  
-Fecha: 2026-08-03  
+Estado: Accepted
+
+Fecha: 2026-08-03
+
 Issue: #85
 
 ## Contexto
@@ -101,4 +103,3 @@ debe impedir que el theme renderice sus templates en el idioma predeterminado.
 - [Polylang en WordPress.org](https://wordpress.org/plugins/polylang/)
 - [Language switcher](https://polylang.pro/documentation/support/guides/the-language-switcher/)
 - [Polylang y Site Editor](https://polylang.pro/documentation/support/guides/site-editor/)
-
