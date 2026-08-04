@@ -6,6 +6,8 @@ Los cambios notables se documentan aquí. El proyecto usa [Semantic Versioning](
 
 ### Added
 
+- Handoff neutral entre agentes, adaptador delgado para Claude Code y paquete
+  SDD del lote multidioma #86–#91.
 - ADR y runbook reproducible para la arquitectura ES/EN con Polylang Free,
   separación de responsabilidades y rollback.
 - Página de Contacto nativa con template FSE, pattern editable y paridad
