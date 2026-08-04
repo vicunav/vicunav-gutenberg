@@ -16,20 +16,12 @@
 	line-height: 0;
 }
 
-.vicunav-header__navigation .wp-block-navigation-item:last-child .wp-block-navigation-item__content {
+.vicunav-header__navigation .wp-block-polylang-navigation-language-switcher .wp-block-navigation-item__content {
 	align-items: center;
 	border-bottom: 1px solid currentColor;
 	display: inline-flex;
 	gap: var(--wp--preset--spacing--20);
 	padding-bottom: var(--wp--preset--spacing--10);
-}
-
-.vicunav-header__navigation .wp-block-navigation-item:last-child .wp-block-navigation-item__content::before {
-	background: url("../images/flag-en.svg") center / cover no-repeat;
-	content: "";
-	display: inline-block;
-	height: var(--wp--custom--header--flag-height);
-	width: var(--wp--custom--header--flag-width);
 }
 
 @media (max-width: 600px) {
