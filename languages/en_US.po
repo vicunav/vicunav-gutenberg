@@ -1017,3 +1017,33 @@ msgstr "Do you work with clients outside Latin America?"
 msgctxt "Respuesta frecuente."
 msgid "Sí. Trabajamos de forma remota con clientes en español e inglés."
 msgstr "Yes. We work remotely with clients in Spanish and English."
+
+msgctxt "Eyebrow de Contacto."
+msgid "Comencemos"
+msgstr "Let's Get Started"
+
+msgctxt "Título principal de Contacto."
+msgid "El primer paso es <em>simple</em>"
+msgstr "The first step is <em>simple</em>"
+
+msgctxt "Introducción del formulario de Contacto."
+msgid "Este formulario corto nos ayuda a entender dónde estás, y cómo orientarte mejor a partir de ahí."
+msgstr "This short form helps us understand where you are and how we can best guide you from there."
+
+msgid "Formulario para comenzar un proyecto con Vicunav"
+msgstr "Form to start a project with Vicunav"
+
+msgid "El formulario no está disponible temporalmente. Escríbenos a <a href=\"mailto:hello@vicunav.com\">hello@vicunav.com</a>."
+msgstr "The form is temporarily unavailable. Email us at <a href=\"mailto:hello@vicunav.com\">hello@vicunav.com</a>."
+
+msgctxt "Título posterior al formulario."
+msgid "Qué pasa después"
+msgstr "What Happens Next"
+
+msgctxt "Expectativa de Contacto."
+msgid "Revisamos tu mensaje personalmente"
+msgstr "We review your message personally"
+
+msgctxt "Expectativa de Contacto."
+msgid "Respondemos dentro de 1 a 2 días hábiles"
+msgstr "We reply within 1 to 2 business days"

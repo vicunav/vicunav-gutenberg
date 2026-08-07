@@ -51,6 +51,7 @@ $required_paths = array(
 	'templates/front-page.html',
 	'templates/page-home.html',
 	'templates/page-services-en.html',
+	'templates/page-contact-en.html',
 	'templates/page-servicios.html',
 	'templates/page-portafolio.html',
 	'templates/page-contacto.html',
@@ -67,6 +68,7 @@ $required_paths = array(
 	'config/polylang/languages.json',
 	'bin/setup-polylang.php',
 	'config/contact-form-7/contacto-es.json',
+	'config/contact-form-7/contact-en.json',
 	'bin/setup-contacto.php',
 );
 
@@ -91,6 +93,7 @@ foreach (
 		'servicios-adicionales-en.php',
 		'servicios-faq-en.php',
 		'servicios-cta-en.php',
+		'contacto-formulario-en.php',
 	) as $english_pattern
 ) {
 	$required_paths[] = 'patterns/' . $english_pattern;

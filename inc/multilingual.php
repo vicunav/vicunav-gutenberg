@@ -70,6 +70,7 @@ function vicunav_register_english_patterns() {
 		'servicios-adicionales-en.php'      => array( 'vicunav/servicios-adicionales-en', 'Additional Services EN' ),
 		'servicios-faq-en.php'              => array( 'vicunav/servicios-faq-en', 'Services FAQ EN' ),
 		'servicios-cta-en.php'              => array( 'vicunav/servicios-cta-en', 'Services Final CTA EN' ),
+		'contacto-formulario-en.php'        => array( 'vicunav/contacto-formulario-en', 'Contact Form EN' ),
 	);
 	$registry = WP_Block_Patterns_Registry::get_instance();
 

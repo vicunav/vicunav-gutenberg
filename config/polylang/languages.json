@@ -42,6 +42,12 @@
       "title": "Website Design for Therapists and Wellness Practices",
       "slug": "website-design-for-therapists-and-wellness-practices",
       "template": "page-services-en"
+    },
+    {
+      "source_slug": "contacto",
+      "title": "Contact",
+      "slug": "contact",
+      "template": "page-contact-en"
     }
   ]
 }

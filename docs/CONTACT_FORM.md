@@ -12,10 +12,11 @@ El plugin se instala en WordPress, no dentro del theme ni del ZIP de release.
 
 ## Configuración reproducible
 
-La fuente versionada del formulario español es
-`config/contact-form-7/contacto-es.json`. El script
-`bin/setup-contacto.php` crea o actualiza el formulario por título y garantiza
-que exista la página vacía `/contacto/`.
+Las fuentes versionadas son `config/contact-form-7/contacto-es.json` y
+`config/contact-form-7/contact-en.json`. El script `bin/setup-contacto.php`
+crea o actualiza ambos formularios por título y garantiza que exista la página
+vacía `/contacto/`. `bin/setup-polylang.php` crea `/en/contact/`, le asigna el
+template inglés y relaciona ambas páginas.
 
 El pattern usa el bloque core Shortcode. `inc/dependencies.php` ejecuta
 únicamente shortcodes que comienzan con `[contact-form-7 ` porque los patterns
@@ -29,6 +30,7 @@ otro slug debe ampliar explícitamente ese contrato.
 
 ```bash
 wp plugin install contact-form-7 --version=6.1.6 --activate
+wp eval-file wp-content/themes/vicunav/bin/setup-polylang.php
 wp eval-file wp-content/themes/vicunav/bin/setup-contacto.php
 ```
 
@@ -51,7 +53,8 @@ Contact Form 7 usa `wp_mail`. LocalWP intercepta las pruebas en Mailpit. Antes
 de producción se debe comprobar el proveedor SMTP, SPF, DKIM, DMARC y una
 entrega real controlada.
 
-La configuración usa:
+Cada idioma usa un post CF7 independiente con su locale, campos, mensajes y
+correo. Ambas configuraciones usan:
 
 - sender generado para el dominio actual mediante `wordpress@{site_domain}`;
 - recipient `hello@vicunav.com`;
