@@ -47,21 +47,23 @@ nada por rutina.
   patterns, header, footer, copy y evidencia versionados.
 - #89 añade Servicios EN en la ruta aprobada, relacionado con `/servicios/`,
   con nueve variantes localizadas, 17 FAQ, CTA por locale y evidencia completa.
+- #90 añade Contacto EN en `/en/contact/`, relacionado con `/contacto/`, con
+  formulario CF7 independiente, Turnstile, `do_not_store` y entrega en Mailpit.
 - El PR #99 actualizó PHP_CodeSniffer a `3.13.6` y cerró el advisory
   CVE-2026-67434 que bloqueaba `composer audit`.
 - No se ha realizado ningún cambio en producción.
 
 ## Siguiente trabajo exacto
 
-Ejecutar [#90: migrar Contacto EN](https://github.com/vicunav/vicunav-gutenberg/issues/90).
+Ejecutar [#91: QA integral multidioma](https://github.com/vicunav/vicunav-gutenberg/issues/91).
 
 Orden crítico aprobado:
 
 ```text
-#90 Contacto EN → #91 QA integral
+#91 QA integral
 ```
 
-Fuentes mínimas para #90:
+Fuentes mínimas para #91:
 
 - `AGENTS.md`;
 - `docs/MULTILINGUAL.md`;
@@ -70,9 +72,9 @@ Fuentes mínimas para #90:
 - `specs/86-multilingual/tasks.md`;
 - `specs/86-multilingual/qa.md`;
 - `specs/86-multilingual/migration-brief.md`;
-- `specs/88-home-en/` y `specs/89-servicios-en/` como calibración aprobada;
-- inventario español aprobado de Contacto, ADR 0001 y sus patterns, template y
-  configuración de Contact Form 7.
+- `specs/86-multilingual/` y las evidencias de #87 a #90;
+- `docs/QA.md`, `docs/PERFORMANCE.md` y `docs/MULTILINGUAL.md`;
+- templates, navegación y formularios de las seis rutas aprobadas.
 
 ## Estado de LocalWP
 

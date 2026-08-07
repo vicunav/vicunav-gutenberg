@@ -10,7 +10,9 @@
  * @package Vicunav
  */
 
-$contact_form_title = 'Vicunav — Contacto ES';
+$is_english_contact = str_starts_with( get_locale(), 'en_' );
+$contact_form_title = $is_english_contact ? 'Vicunav - Contact EN' : 'Vicunav — Contacto ES';
+$contact_form_id    = $is_english_contact ? 'vicunav-contact-form-en' : 'vicunav-contact-form';
 $contact_form       = vicunav_has_contact_form_dependency()
 	? wpcf7_get_contact_form_by_title( $contact_form_title )
 	: null;
@@ -41,7 +43,7 @@ $contact_form       = vicunav_has_contact_form_dependency()
 					'[contact-form-7 id="%1$s" title="%2$s" html_id="%3$s" html_title="%4$s" html_class="%5$s"]',
 					sanitize_key( $contact_form->hash() ),
 					sanitize_text_field( $contact_form_title ),
-					'vicunav-contact-form',
+					$contact_form_id,
 					sanitize_text_field( __( 'Formulario para comenzar un proyecto con Vicunav', 'vicunav' ) ),
 					'vicunav-contact-form'
 				);

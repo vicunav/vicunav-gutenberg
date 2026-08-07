@@ -1,0 +1,53 @@
+{
+  "title": "Vicunav - Contact EN",
+  "locale": "en_US",
+  "form": "<div class=\"vicunav-contact-form__grid\">\n<div class=\"vicunav-contact-form__field\"><label for=\"vicunav-contact-en-name\">Full name <span class=\"vicunav-contact-form__required\" aria-hidden=\"true\">*</span><span class=\"screen-reader-text\"> (required)</span></label>[text* contact-name id:vicunav-contact-en-name autocomplete:name placeholder \"Full name\"]</div>\n<div class=\"vicunav-contact-form__field\"><label for=\"vicunav-contact-en-email\">Email address <span class=\"vicunav-contact-form__required\" aria-hidden=\"true\">*</span><span class=\"screen-reader-text\"> (required)</span></label>[email* contact-email id:vicunav-contact-en-email autocomplete:email placeholder \"Email address\"]</div>\n<div class=\"vicunav-contact-form__field\"><label for=\"vicunav-contact-en-practice\">Type of business or practice <span class=\"vicunav-contact-form__required\" aria-hidden=\"true\">*</span><span class=\"screen-reader-text\"> (required)</span></label>[select* contact-practice id:vicunav-contact-en-practice \"Coach or consultant\" \"Therapist or mental health professional\" \"Wellness or lifestyle professional\" \"Trainer or educator\" \"Independent professional\" \"Small service business\" \"Other\"]</div>\n<div class=\"vicunav-contact-form__field\"><label for=\"vicunav-contact-en-website\">Do you currently have a website? <span class=\"vicunav-contact-form__required\" aria-hidden=\"true\">*</span><span class=\"screen-reader-text\"> (required)</span></label>[select* contact-website id:vicunav-contact-en-website \"Yes\" \"No\"]</div>\n<div class=\"vicunav-contact-form__field\"><label for=\"vicunav-contact-en-situation\">Which of these situations best describes you?</label>[select contact-situation id:vicunav-contact-en-situation \"I am starting from scratch\" \"My current website no longer reflects my work\" \"I need more clarity and structure\" \"I am not sure yet, but I feel stuck\" \"Other\"]</div>\n<div class=\"vicunav-contact-form__field\"><label for=\"vicunav-contact-en-next-step\">How would you prefer to continue?</label>[select contact-next-step id:vicunav-contact-en-next-step \"I would like to schedule a discovery call\" \"I prefer to start with written guidance\"]</div>\n<div class=\"vicunav-contact-form__field vicunav-contact-form__field--wide\"><label for=\"vicunav-contact-en-help\">What are you hoping to get help with right now?</label>[textarea contact-help id:vicunav-contact-en-help 40x4 placeholder \"Write here...\"]</div>\n<div class=\"vicunav-contact-form__field vicunav-contact-form__field--wide vicunav-contact-form__field--final\"><label for=\"vicunav-contact-en-context\">Is there anything you would like us to know before we reply?</label>[textarea contact-context id:vicunav-contact-en-context 40x5 placeholder \"Write here...\"]</div>\n</div>\n<div class=\"vicunav-contact-form__turnstile\">[turnstile appearance:interaction-only size:flexible theme:light language:en]</div>\n<div class=\"vicunav-contact-form__submit\">[submit \"SEND\"]</div>",
+  "mail": {
+    "active": true,
+    "subject": "New message from Vicunav - [contact-name]",
+    "sender": "Vicunav <wordpress@{{site_domain}}>",
+    "body": "Name: [contact-name]\nEmail: [contact-email]\nType of business or practice: [contact-practice]\nCurrent website: [contact-website]\nCurrent situation: [contact-situation]\nPreferred next step: [contact-next-step]\n\nHelp requested:\n[contact-help]\n\nAdditional context:\n[contact-context]\n\n--\nSent from [_site_title] ([_site_url])",
+    "recipient": "hello@vicunav.com",
+    "additional_headers": "Reply-To: [contact-email]",
+    "attachments": "",
+    "use_html": 0,
+    "exclude_blank": 0
+  },
+  "mail_2": {
+    "active": false,
+    "subject": "",
+    "sender": "",
+    "body": "",
+    "recipient": "",
+    "additional_headers": "",
+    "attachments": "",
+    "use_html": 0,
+    "exclude_blank": 0
+  },
+  "messages": {
+    "mail_sent_ok": "Thank you for contacting us. We received your message and will reply within 1 to 2 business days.",
+    "mail_sent_ng": "We could not send your message. Please try again or email hello@vicunav.com.",
+    "validation_error": "One or more fields have errors. Please review them and try again.",
+    "spam": "We could not verify your submission. Refresh the page and try again.",
+    "accept_terms": "You must accept the terms before sending your message.",
+    "invalid_required": "Please complete this field.",
+    "invalid_too_long": "The content of this field is too long.",
+    "invalid_too_short": "The content of this field is too short.",
+    "upload_failed": "The file could not be uploaded.",
+    "upload_file_type_invalid": "This file type is not allowed.",
+    "upload_file_too_large": "The file is too large.",
+    "upload_failed_php_error": "The file could not be uploaded.",
+    "invalid_date": "Please enter a valid date.",
+    "date_too_early": "The date is too early.",
+    "date_too_late": "The date is too late.",
+    "invalid_number": "Please enter a valid number.",
+    "number_too_small": "The number is too small.",
+    "number_too_large": "The number is too large.",
+    "quiz_answer_not_correct": "The answer is not correct.",
+    "captcha_not_match": "We could not verify the code.",
+    "invalid_email": "Please enter a valid email address.",
+    "invalid_url": "Please enter a valid URL.",
+    "invalid_tel": "Please enter a valid phone number."
+  },
+  "additional_settings": "do_not_store: true"
+}

@@ -38,9 +38,9 @@ desactiva las redirecciones por preferencia del navegador. El estado persistente
 vive en las taxonomías de idioma, relaciones de Polylang y la opción `polylang`
 de la base de datos local; nunca se crea una relación contra Portafolio.
 
-Desde #89, `english_pages` crea y relaciona Home EN y Servicios EN, les asigna
-`page-home` y `page-services-en`, y puede ejecutarse repetidamente sin duplicar
-páginas o relaciones. El siguiente issue amplía el mismo contrato para Contacto.
+Desde #90, `english_pages` crea y relaciona Home EN, Servicios EN y Contacto EN,
+les asigna sus templates y puede ejecutarse repetidamente sin duplicar páginas
+o relaciones.
 
 Servicios EN reutiliza los nueve patterns españoles mediante el catálogo
 `en_US`. Los tres CTA de los paquetes y cierre resuelven Contacto según el
@@ -94,8 +94,9 @@ locale, etiquetas, mensajes y correo. Comparte el contrato del
 integración nativa, `do_not_store`, sin Flamingo y sin secretos versionados.
 
 La configuración española no se reutiliza cambiando texto en tiempo de render.
-El aprovisionamiento inglés debe ser idempotente y vivir en un archivo de
-configuración y un script versionados.
+`contact-en.json` define un post CF7 independiente con locale `en_US`, labels,
+opciones, mensajes y correo ingleses. `setup-contacto.php` sincroniza ambos
+formularios, y `setup-polylang.php` conserva la relación entre sus páginas.
 
 ## QA mínimo
 
