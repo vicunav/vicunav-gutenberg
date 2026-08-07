@@ -33,10 +33,14 @@ wp eval-file bin/setup-polylang.php
 
 El script requiere Polylang `3.8.6`, crea de forma idempotente `es_ES` (`es`)
 y `en_US` (`en`), conserva español sin prefijo, asigna las páginas españolas
-existentes y desactiva las redirecciones por preferencia del navegador. El
-estado persistente vive en las taxonomías de idioma, relaciones de Polylang y
-la opción `polylang` de la base de datos local; las relaciones ES/EN se crean
-en los issues de cada página, nunca contra Portafolio.
+existentes, aprovisiona las páginas inglesas declaradas en la configuración y
+desactiva las redirecciones por preferencia del navegador. El estado persistente
+vive en las taxonomías de idioma, relaciones de Polylang y la opción `polylang`
+de la base de datos local; nunca se crea una relación contra Portafolio.
+
+Desde #88, `english_pages` crea y relaciona Home EN en `/en/home/`, le asigna
+`page-home` y puede ejecutarse repetidamente sin duplicar páginas o relaciones.
+Los siguientes issues amplían el mismo contrato para Servicios y Contacto.
 
 Si WP-CLI carga `wp-load.php` pero devuelve un error de conexión, no se modifica
 el plugin ni `wp-config.php` por inferencia. Se aplican las reglas de socket

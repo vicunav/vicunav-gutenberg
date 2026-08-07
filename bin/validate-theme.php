@@ -49,17 +49,42 @@ $required_paths = array(
 	'functions.php',
 	'templates/index.html',
 	'templates/front-page.html',
+	'templates/page-home.html',
 	'templates/page-servicios.html',
 	'templates/page-portafolio.html',
 	'templates/page-contacto.html',
 	'parts/header.html',
 	'parts/footer.html',
+	'parts/header-en.html',
+	'parts/footer-en.html',
+	'languages/en_US.po',
+	'languages/en_US.mo',
 	'inc/assets.php',
 	'inc/dependencies.php',
 	'inc/editor.php',
+	'inc/multilingual.php',
+	'config/polylang/languages.json',
+	'bin/setup-polylang.php',
 	'config/contact-form-7/contacto-es.json',
 	'bin/setup-contacto.php',
 );
+
+foreach (
+	array(
+		'hero-en.php',
+		'situaciones-en.php',
+		'como-ayudamos-intro-en.php',
+		'como-ayudamos-en.php',
+		'testimonio-destacado-en.php',
+		'resultados-en.php',
+		'deberia-sentirse-como-tu-en.php',
+		'conoce-a-mario-en.php',
+		'marcas-en.php',
+		'cta-final-en.php',
+	) as $english_pattern
+) {
+	$required_paths[] = 'patterns/' . $english_pattern;
+}
 
 foreach ( $required_paths as $relative_path ) {
 	if ( ! is_file( $theme_root . '/' . $relative_path ) ) {

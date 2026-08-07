@@ -1,0 +1,323 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Vicunav 0.2.0\n"
+"PO-Revision-Date: 2026-08-06 20:00-0400\n"
+"Last-Translator: Mario Vicuña\n"
+"Language-Team: English\n"
+"Language: en_US\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Domain: vicunav\n"
+
+msgctxt "Eyebrow del Hero."
+msgid "Para profesionales independientes y negocios"
+msgstr "For independent professionals and service businesses"
+
+msgctxt "Título principal del Hero."
+msgid "Tu <em>sitio web</em> es el <u>primer paso</u> que tus clientes dan <em>hacia ti</em>"
+msgstr "Your <em>website</em> is the <u>first step</u> your clients take <em>toward you</em>"
+
+msgctxt "Descripción del Hero."
+msgid "Sitios web profesionales para profesionales independientes y negocios que ofrecen servicios. Diseñados para generar confianza, comunicar con claridad lo que haces, aparecer en Google y en sistemas de IA, recibir reservas en línea, y convertir visitantes en clientes."
+msgstr "Professional websites for independent professionals and service businesses. Designed to build trust, explain clearly what you do, appear in Google and AI systems, accept online bookings, and turn visitors into clients."
+
+msgctxt "Botón del Hero."
+msgid "Ver servicios"
+msgstr "View Services"
+
+msgctxt "Título de la sección de situaciones."
+msgid "¿Alguna de estas situaciones te describe?"
+msgstr "Do any of these situations sound familiar?"
+
+msgctxt "Situación 1."
+msgid "Tu sitio web no refleja la calidad real de tu trabajo. Se ve más genérico que lo que realmente ofreces."
+msgstr "Your website does not reflect the true quality of your work. It looks more generic than what you actually offer."
+
+msgctxt "Situación 2."
+msgid "Explicar tus servicios por escrito es más difícil de lo que parece. Nunca sabes bien qué decir ni cómo ordenarlo."
+msgstr "Explaining your services in writing is harder than it seems. You are never quite sure what to say or how to organize it."
+
+msgctxt "Situación 3."
+msgid "Tus clientes ideales no te encuentran en Google, y cuando alguien le pregunta a ChatGPT por alguien como tú, no apareces."
+msgstr "Your ideal clients cannot find you on Google, and when someone asks ChatGPT for a professional like you, you do not appear."
+
+msgctxt "Situación 4."
+msgid "La parte técnica, el dominio, el hosting, las actualizaciones, te quita tiempo que deberías invertir en tu negocio."
+msgstr "The technical side, your domain, hosting, and updates, takes time away from your business."
+
+msgctxt "Situación 5."
+msgid "La gente llega a tu sitio pero no te escribe. Algo los frena, y no sabes exactamente qué."
+msgstr "People visit your website but do not contact you. Something holds them back, and you do not know exactly what it is."
+
+msgctxt "Situación 6."
+msgid "Quieres algo profesional y que genere confianza, pero que no suene corporativo ni desconectado de lo que haces."
+msgstr "You want something professional that builds trust, without sounding corporate or disconnected from your work."
+
+msgctxt "Situación 7."
+msgid "Tus clientes aún tienen que llamarte o escribirte para agendar. No hay una forma clara de reservar desde tu sitio."
+msgstr "Your clients still have to call or message you to book. There is no clear way to schedule from your website."
+
+msgctxt "Situación 8."
+msgid "Usas demasiadas herramientas separadas para gestionar tu negocio y nada está conectado."
+msgstr "You use too many separate tools to run your business, and nothing is connected."
+
+msgctxt "Eyebrow de la introducción de servicios."
+msgid "Cómo ayudamos"
+msgstr "How We Help"
+
+msgctxt "Primera línea del título de la introducción de servicios."
+msgid "Tu Sitio Web,"
+msgstr "Your Website,"
+
+msgctxt "Segunda línea del título de la introducción de servicios."
+msgid "Sin el Estrés"
+msgstr "Without the Stress"
+
+msgctxt "Subtítulo de la introducción de servicios."
+msgid "Guiamos el proceso con claridad en cada paso"
+msgstr "We guide the process clearly at every step"
+
+msgctxt "Acción de servicio."
+msgid "Escribimos"
+msgstr "We Write"
+
+msgctxt "Descripción de escritura."
+msgid "Para que nunca tengas que adivinar qué decir. El texto suena como tú y comunica claramente cómo ayudas."
+msgstr "So you never have to guess what to say. The copy sounds like you and clearly explains how you help."
+
+msgctxt "Acción de servicio."
+msgid "Diseñamos"
+msgstr "We Design"
+
+msgctxt "Descripción de diseño."
+msgid "Para que no te pierdas en decisiones interminables. Definimos juntos una dirección visual que refleje tu negocio."
+msgstr "So you do not get lost in endless decisions. Together, we define a visual direction that reflects your business."
+
+msgctxt "Acción de servicio."
+msgid "Configuramos"
+msgstr "We Set Things Up"
+
+msgctxt "Descripción de configuración."
+msgid "Para que tus clientes puedan reservar o contactarte directamente desde tu sitio, sin pasar por WhatsApp o llamadas."
+msgstr "So your clients can book or contact you directly from your website, without relying on WhatsApp or phone calls."
+
+msgctxt "Acción de servicio."
+msgid "Apoyamos"
+msgstr "We Support You"
+
+msgctxt "Descripción de soporte."
+msgid "Para que no tengas que manejar la parte técnica solo. Estamos contigo antes, durante y después del lanzamiento."
+msgstr "So you do not have to manage the technical side alone. We are with you before, during, and after launch."
+
+msgctxt "Texto alternativo de la sección Cómo ayudamos."
+msgid "Composición editorial que representa el acompañamiento de Vicunav"
+msgstr "Editorial composition representing Vicunav's support"
+
+msgctxt "Eyebrow de la sección de proceso."
+msgid "Así funciona"
+msgstr "How It Works"
+
+msgctxt "Título de la sección de proceso."
+msgid "Tu Sitio Web, Completamente Acompañado"
+msgstr "Your Website, Supported Every Step of the Way"
+
+msgctxt "Texto alternativo del paso 1."
+msgid "Material de escritura para preparar los textos del sitio"
+msgstr "Writing materials for preparing the website copy"
+
+msgctxt "Título del paso 1."
+msgid "Tus textos, listos"
+msgstr "Your copy, ready"
+
+msgctxt "Descripción del paso 1."
+msgid "Ponemos en palabras lo que haces para que nunca te enfrentes a una página en blanco. El copy suena auténtico y explica con claridad cómo ayudas."
+msgstr "We put what you do into words so you never face a blank page. The copy sounds authentic and clearly explains how you help."
+
+msgctxt "Texto alternativo del paso 2."
+msgid "Muestras de color y tipografía para definir la dirección visual"
+msgstr "Color and typography samples for defining the visual direction"
+
+msgctxt "Título del paso 2."
+msgid "La dirección visual de tu sitio"
+msgstr "Your website's visual direction"
+
+msgctxt "Descripción del paso 2."
+msgid "Definimos juntos la estética: colores, tipografía y estructura. Profesional, coherente y fiel a tu negocio desde el inicio."
+msgstr "Together, we define the look: colors, typography, and structure. Professional, consistent, and true to your business from the start."
+
+msgctxt "Texto alternativo del paso 3."
+msgid "Diseño de un sitio web en una computadora"
+msgstr "A website design displayed on a computer"
+
+msgctxt "Título del paso 3."
+msgid "Tu sitio, diseñado y desarrollado"
+msgstr "Your website, designed and developed"
+
+msgctxt "Descripción del paso 3."
+msgid "Construimos tu sitio en WordPress. Estable, rápido, fácil de navegar, y optimizado para aparecer en Google y en sistemas de IA."
+msgstr "We build your website in WordPress. Stable, fast, easy to navigate, and optimized to appear in Google and AI systems."
+
+msgctxt "Texto alternativo del paso 4."
+msgid "Resultados de búsqueda que representan un sitio fácil de encontrar"
+msgstr "Search results representing a website that is easy to find"
+
+msgctxt "Título del paso 4."
+msgid "Tu sitio, listo para ser encontrado"
+msgstr "Your website, ready to be found"
+
+msgctxt "Descripción del paso 4."
+msgid "Tu sitio sale estructurado para que Google y los sistemas de IA entiendan qué haces, a quién ayudas y dónde estás. Sin trucos, con claridad."
+msgstr "Your website launches with a structure that helps Google and AI systems understand what you do, who you help, and where you are. No tricks, just clarity."
+
+msgctxt "Texto alternativo del paso 5."
+msgid "Calendario y herramientas conectadas al sitio web"
+msgstr "Calendar and tools connected to the website"
+
+msgctxt "Título del paso 5."
+msgid "Tus herramientas, configuradas"
+msgstr "Your tools, set up"
+
+msgctxt "Descripción del paso 5."
+msgid "Sistema de reservas, formularios de contacto, o las herramientas que tu negocio necesite, configuradas para que todo funcione desde el primer día."
+msgstr "Booking systems, contact forms, or the tools your business needs, configured so everything works from day one."
+
+msgctxt "Texto alternativo del paso 6."
+msgid "Asistencia para mantener el sitio después del lanzamiento"
+msgstr "Support for maintaining the website after launch"
+
+msgctxt "Título del paso 6."
+msgid "Soporte cuando lo necesitas"
+msgstr "Support when you need it"
+
+msgctxt "Descripción del paso 6."
+msgid "Si necesitas cambiar algo después, no estás solo. Podemos ayudarte con ajustes y actualizaciones a medida que tu negocio crece."
+msgstr "If you need a change later, you are not alone. We can help with adjustments and updates as your business grows."
+
+msgctxt "Botón de la sección de proceso."
+msgid "Ver paquetes"
+msgstr "View Packages"
+
+msgctxt "Eyebrow del testimonio."
+msgid "Testimonio destacado"
+msgstr "Featured Testimonial"
+
+msgctxt "Cita principal del testimonio."
+msgid "TatiPilates maneja ahora todo su negocio desde un solo lugar"
+msgstr "TatiPilates now runs its entire business from one place"
+
+msgctxt "Texto alternativo de la autora del testimonio."
+msgid "Tatiana Diaz, fundadora de TatiPilates"
+msgstr "Tatiana Diaz, founder of TatiPilates"
+
+msgctxt "Texto alternativo del testimonio visual."
+msgid "TatiPilates mostrando su plataforma de negocio"
+msgstr "TatiPilates displaying its business platform"
+
+msgctxt "Atribución del testimonio."
+msgid "Tatiana Diaz, TatiPilates"
+msgstr "Tatiana Diaz, TatiPilates"
+
+msgctxt "Texto alternativo de Resultados."
+msgid "Composición visual que representa los resultados de un sitio Vicunav"
+msgstr "Visual composition representing the results of a Vicunav website"
+
+msgctxt "Eyebrow de Resultados."
+msgid "Los Resultados"
+msgstr "The Results"
+
+msgctxt "Primera línea del título de Resultados."
+msgid "Un Sitio Web del que"
+msgstr "A Website You Are"
+
+msgctxt "Segunda línea del título de Resultados."
+msgid "Sientes Orgullo de Compartir"
+msgstr "Proud to Share"
+
+msgctxt "Introducción de Resultados."
+msgid "Porque sabes que va a:"
+msgstr "Because you know it will:"
+
+msgctxt "Primer resultado."
+msgid "Reflejar tu trabajo con claridad y honestidad"
+msgstr "Reflect your work with clarity and honesty"
+
+msgctxt "Segundo resultado."
+msgid "Atraer a las personas correctas para tu negocio"
+msgstr "Attract the right people for your business"
+
+msgctxt "Tercer resultado."
+msgid "Aparecer cuando te buscan en Google y en sistemas de IA"
+msgstr "Appear when people search for you on Google and in AI systems"
+
+msgctxt "Cuarto resultado."
+msgid "Permitir que tus clientes reserven directamente, sin pasos intermedios"
+msgstr "Let your clients book directly, without extra steps"
+
+msgctxt "Quinto resultado."
+msgid "Funcionar con las herramientas que ya usas o las que configuremos juntos"
+msgstr "Work with the tools you already use or the ones we set up together"
+
+msgctxt "Eyebrow de la sección de autenticidad."
+msgid "Sin presiones, ni tácticas raras"
+msgstr "No pressure or strange tactics"
+
+msgctxt "Título de la sección de autenticidad."
+msgid "Debería Sentirse Como Tú"
+msgstr "It Should Feel Like You"
+
+msgctxt "Texto de la sección de autenticidad."
+msgid "Si ofreces un servicio, lo último que quieres es un sitio web que se sienta agresivo o de ventas. Eso simplemente no es como operas. Tu sitio debería sentirse como lo que eres: claro, honesto, y una extensión natural de cómo ya apoyas a las personas que trabajan contigo."
+msgstr "If you offer a service, the last thing you want is a website that feels pushy or overly sales-driven. That is simply not how you work. Your website should feel like you: clear, honest, and a natural extension of how you already support the people who work with you."
+
+msgctxt "Botón de la sección de autenticidad."
+msgid "¡Hablemos!"
+msgstr "Let's Talk!"
+
+msgctxt "Eyebrow de la biografía."
+msgid "Conoce a Mario"
+msgstr "Meet Mario"
+
+msgctxt "Primera línea del título de la biografía."
+msgid "Construyendo sitios"
+msgstr "Building websites"
+
+msgctxt "Segunda línea del título de la biografía."
+msgid "web desde 2016"
+msgstr "since 2016"
+
+msgctxt "Subtítulo de la biografía."
+msgid "Haciendo el proceso simple, del inicio al lanzamiento"
+msgstr "Making the process simple, from start to launch"
+
+msgctxt "Primer párrafo de la biografía."
+msgid "Hola, soy Mario. Llevo más de nueve años diseñando y desarrollando sitios web para negocios y profesionales de servicios. Con el tiempo entendí algo que se repite mucho: hay profesionales muy buenos en lo que hacen que son casi invisibles en internet. No porque su trabajo no valga, sino porque su presencia digital no los representa bien."
+msgstr "Hi, I'm Mario. I have spent more than nine years designing and developing websites for businesses and service professionals. Over time, I noticed the same thing again and again: many professionals who are excellent at what they do are almost invisible online. Not because their work lacks value, but because their digital presence does not represent them well."
+
+msgctxt "Segundo párrafo de la biografía."
+msgid "Eso fue lo que me llevó a crear Vicunav. Un estudio enfocado en diseñar sitios web claros y profesionales para coaches, consultores, terapeutas, formadores y cualquier profesional cuyo negocio se basa en el servicio que ofrece. Sin marketing agresivo, sin diseños genéricos, sin que tengas que resolverlo todo solo."
+msgstr "That is what led me to create Vicunav, a studio focused on designing clear, professional websites for coaches, consultants, therapists, educators, and any professional whose business is built around the service they provide. No aggressive marketing, no generic designs, and no expectation that you solve everything on your own."
+
+msgctxt "Tercer párrafo de la biografía."
+msgid "Si tu trabajo importa, tu sitio web debería reflejarlo. Y las personas correctas deberían poder encontrarte, tanto en Google como cuando le preguntan a una IA."
+msgstr "If your work matters, your website should reflect it. And the right people should be able to find you, both on Google and when they ask an AI system."
+
+msgctxt "Texto alternativo del retrato de Mario."
+msgid "Mario Vicuña, diseñador y desarrollador de Vicunav"
+msgstr "Mario Vicuña, designer and developer at Vicunav"
+
+msgctxt "Título de la sección de marcas."
+msgid "Marcas con las que he trabajado"
+msgstr "Brands I've Worked With"
+
+msgctxt "Título del CTA final."
+msgid "¿Listo para un sitio web que <em>realmente refleje</em> tu trabajo y te <u>ayude a crecer</u>?"
+msgstr "Ready for a website that <em>truly reflects</em> your work and <u>helps you grow</u>?"
+
+msgctxt "Texto del CTA final."
+msgid "Si buscas un sitio claro y profesional, con reservas en línea y las herramientas que tu negocio necesita, podemos empezar con una conversación sencilla."
+msgstr "If you are looking for a clear, professional website with online booking and the tools your business needs, we can start with a simple conversation."
+
+msgctxt "Botón del CTA final."
+msgid "Hablemos sobre tu sitio web"
+msgstr "Let's Talk About Your Website"
