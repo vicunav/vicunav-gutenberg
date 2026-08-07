@@ -98,6 +98,41 @@ function vicunav_register_english_patterns() {
 add_action( 'init', 'vicunav_register_english_patterns', 20 );
 
 /**
+ * Usa la composición inglesa cuando Polylang resuelve su Home como portada.
+ *
+ * WordPress prioriza `front-page` para cualquier traducción de la página
+ * configurada como portada y omite el template asignado al post. La versión
+ * inglesa necesita `page-home` para usar header y footer de su locale.
+ *
+ * @param WP_Block_Template[] $templates    Templates candidatos.
+ * @param array               $query        Argumentos de consulta.
+ * @param string              $template_type Tipo de template.
+ * @return WP_Block_Template[]
+ */
+function vicunav_use_english_front_page_template( $templates, $query, $template_type ) {
+	if ( 'wp_template' !== $template_type || ! is_page( 'home' ) ) {
+		return $templates;
+	}
+
+	$english_template_id = get_stylesheet() . '//page-home';
+	$english_template    = get_block_template( $english_template_id, $template_type );
+
+	if ( ! $english_template ) {
+		return $templates;
+	}
+
+	foreach ( $templates as $index => $template ) {
+		if ( 'front-page' === $template->slug ) {
+			$templates[ $index ] = $english_template;
+			break;
+		}
+	}
+
+	return $templates;
+}
+add_filter( 'get_block_templates', 'vicunav_use_english_front_page_template', 10, 3 );
+
+/**
  * Devuelve la URL aprobada de una página en el locale activo.
  *
  * Prioriza la relación pública de Polylang cuando ya existe. El fallback

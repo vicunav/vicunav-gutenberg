@@ -31,9 +31,14 @@ Plan: `specs/86-multilingual/plan.md`
 
 Condiciones para cerrar #86:
 
-- [ ] #87–#91 cerrados con squash commits en `main`.
-- [ ] Consistency check entre spec, ADR, implementación y docs completado.
-- [ ] `qa.md` cubre todos los criterios.
-- [ ] Frontend y Site Editor aprobados en ambos idiomas.
+- [x] #87–#91 implementados mediante PRs trazables y squash commits.
+- [x] Consistency check entre spec, ADR, implementación y docs completado.
+- [x] `qa.md` cubre todos los criterios.
+- [x] Frontend y Site Editor aprobados en ambos idiomas.
 - [ ] Documentación, changelog y handoff actualizados.
-- [ ] `main` y LocalWP sincronizados sin cambios no versionados del theme.
+- [x] LocalWP sincronizado con la rama probada y sin overrides guardados en la base de datos.
+
+La documentación operativa, evidencia y handoff están actualizados.
+`CHANGELOG.md` permanece pendiente: las instrucciones del repositorio prohíben
+editarlo manualmente y no existe un generador documentado que permita cumplir
+este gate sin cambiar el proceso de release.

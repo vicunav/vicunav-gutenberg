@@ -49,32 +49,23 @@ nada por rutina.
   con nueve variantes localizadas, 17 FAQ, CTA por locale y evidencia completa.
 - #90 añade Contacto EN en `/en/contact/`, relacionado con `/contacto/`, con
   formulario CF7 independiente, Turnstile, `do_not_store` y entrega en Mailpit.
+- #91 aprueba la matriz integral de seis rutas y corrige la selección de
+  `page-home` para que Home EN no herede header y footer españoles por la
+  jerarquía `front-page` de WordPress.
+- El lote multidioma #86–#91 está implementado y validado en LocalWP; su
+  evidencia consolidada vive en `docs/qa/evidence/multilingual/91-integral.md`.
+  #86 permanece abierto porque `tasks.md` exige actualizar `CHANGELOG.md`, las
+  instrucciones prohíben editarlo manualmente y no hay generador documentado.
 - El PR #99 actualizó PHP_CodeSniffer a `3.13.6` y cerró el advisory
   CVE-2026-67434 que bloqueaba `composer audit`.
 - No se ha realizado ningún cambio en producción.
 
 ## Siguiente trabajo exacto
 
-Ejecutar [#91: QA integral multidioma](https://github.com/vicunav/vicunav-gutenberg/issues/91).
-
-Orden crítico aprobado:
-
-```text
-#91 QA integral
-```
-
-Fuentes mínimas para #91:
-
-- `AGENTS.md`;
-- `docs/MULTILINGUAL.md`;
-- `specs/86-multilingual/spec.md`;
-- `specs/86-multilingual/plan.md`;
-- `specs/86-multilingual/tasks.md`;
-- `specs/86-multilingual/qa.md`;
-- `specs/86-multilingual/migration-brief.md`;
-- `specs/86-multilingual/` y las evidencias de #87 a #90;
-- `docs/QA.md`, `docs/PERFORMANCE.md` y `docs/MULTILINGUAL.md`;
-- templates, navegación y formularios de las seis rutas aprobadas.
+Cerrar #86 cuando exista un flujo permitido para actualizar `CHANGELOG.md` o el
+owner retire explícitamente ese gate. No se debe editar el archivo a mano ni
+crear un generador improvisado dentro de este issue. Producción continúa fuera
+de alcance.
 
 ## Estado de LocalWP
 
@@ -89,12 +80,13 @@ de socket efímeras en GitHub.
 - Español es el idioma predeterminado sin prefijo; inglés usa `/en/`.
 - La verdad de contenido para las versiones inglesas es el inventario español
   aprobado, no la versión inglesa histórica.
-- Polylang administra idiomas, relaciones, locale, URLs y selector; el theme
-  no implementa routing propio.
+- Polylang administra idiomas, relaciones, locale, URLs y selector. La única
+  excepción del theme es seleccionar `page-home` para Home EN después de que la
+  jerarquía core la clasifica como portada; no crea ni reescribe rutas.
 - Polylang Pro queda fuera de alcance mientras no exista un requisito aprobado
   de edición traducida dentro de FSE.
 - Portafolio no tiene versión inglesa aprobada en este lote.
-- Contacto inglés tendrá un formulario CF7 independiente y el mismo contrato de
+- Contacto inglés tiene un formulario CF7 independiente y el mismo contrato de
   privacidad y antispam que Contacto español.
 - No se reintroducen animaciones de Elementor en este lote.
 

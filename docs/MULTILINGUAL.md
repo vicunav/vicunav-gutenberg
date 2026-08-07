@@ -4,6 +4,9 @@ Decisión: [ADR 0002](adr/0002-polylang-free-para-es-en.md)
 
 Backlog: [issue #86](https://github.com/vicunav/vicunav-gutenberg/issues/86)
 
+Estado: lote #87–#91 implementado y validado en LocalWP el 2026-08-06. El cierre
+administrativo de #86 espera un flujo permitido para actualizar el changelog.
+
 ## Contrato
 
 - Dependencia aprobada: Polylang Free `3.8.6`.
@@ -47,6 +50,13 @@ Servicios EN reutiliza los nueve patterns españoles mediante el catálogo
 locale activo. La fuente crítica Bodoni y el hero se precargan en ambas
 plantillas de Servicios para conservar CLS y LCP bajo la misma baseline.
 
+WordPress aplica la jerarquía `front-page` a las traducciones de la página
+estática configurada como portada, incluso cuando Home EN tiene asignado
+`page-home`. El theme filtra los candidatos de `get_block_templates` únicamente
+para la página inglesa `home` y usa `page-home`, de modo que su header y footer
+también pertenezcan al locale inglés. La portada española conserva
+`front-page` y el filtro no implementa routing ni relaciones de traducción.
+
 Si WP-CLI carga `wp-load.php` pero devuelve un error de conexión, no se modifica
 el plugin ni `wp-config.php` por inferencia. Se aplican las reglas de socket
 LocalWP de `AGENTS.md`: identificar el socket activo mediante una consulta de
@@ -56,7 +66,7 @@ de LocalWP. Nunca se imprimen credenciales, salts o claves.
 ## Configuración inicial
 
 La tarea de infraestructura [#87](https://github.com/vicunav/vicunav-gutenberg/issues/87)
-debe convertir estos pasos en configuración reproducible y verificable:
+convirtió estos pasos en configuración reproducible y verificable:
 
 1. crear `es_ES` como idioma predeterminado;
 2. crear el locale inglés aprobado y asignarle el slug `en`;
@@ -82,9 +92,8 @@ Portafolio no ofrece un enlace inglés hasta que exista una traducción aprobada
 | `/servicios/` | `/en/website-design-for-therapists-and-wellness-practices/` |
 | `/contacto/` | `/en/contact/` |
 
-Portafolio no tiene traducción inglesa aprobada en este lote. El comportamiento
-del selector cuando no exista traducción se define y prueba en #87 antes de
-publicar el control.
+Portafolio no tiene traducción inglesa aprobada en este lote. El selector oculta
+English en esa página y no crea una relación ni un destino sustituto.
 
 ## Formularios
 

@@ -4,7 +4,7 @@ Spec: `specs/86-multilingual/spec.md`
 
 Issue padre: #86
 
-Estado: Approved
+Estado: Completed
 
 ## Resumen técnico
 
