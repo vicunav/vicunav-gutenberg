@@ -35,10 +35,10 @@ Condiciones para cerrar #86:
 - [x] Consistency check entre spec, ADR, implementación y docs completado.
 - [x] `qa.md` cubre todos los criterios.
 - [x] Frontend y Site Editor aprobados en ambos idiomas.
-- [ ] Documentación, changelog y handoff actualizados.
+- [x] Documentación operativa, evidencia y handoff actualizados.
 - [x] LocalWP sincronizado con la rama probada y sin overrides guardados en la base de datos.
 
-La documentación operativa, evidencia y handoff están actualizados.
-`CHANGELOG.md` permanece pendiente: las instrucciones del repositorio prohíben
-editarlo manualmente y no existe un generador documentado que permita cumplir
-este gate sin cambiar el proceso de release.
+Decisión de cierre del 2026-08-06: `CHANGELOG.md` no es un criterio del issue
+canónico #86 y permanece reservado al flujo de release. Las instrucciones del
+repositorio prohíben editarlo manualmente; cerrar este lote no cambia una
+versión ni autoriza inventar un generador dentro de su alcance.

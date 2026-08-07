@@ -54,18 +54,17 @@ nada por rutina.
   jerarquía `front-page` de WordPress.
 - El lote multidioma #86–#91 está implementado y validado en LocalWP; su
   evidencia consolidada vive en `docs/qa/evidence/multilingual/91-integral.md`.
-  #86 permanece abierto porque `tasks.md` exige actualizar `CHANGELOG.md`, las
-  instrucciones prohíben editarlo manualmente y no hay generador documentado.
+  #86 queda cerrado contra sus criterios canónicos; `CHANGELOG.md` permanece
+  reservado al flujo de release y no se edita manualmente.
 - El PR #99 actualizó PHP_CodeSniffer a `3.13.6` y cerró el advisory
   CVE-2026-67434 que bloqueaba `composer audit`.
 - No se ha realizado ningún cambio en producción.
 
 ## Siguiente trabajo exacto
 
-Cerrar #86 cuando exista un flujo permitido para actualizar `CHANGELOG.md` o el
-owner retire explícitamente ese gate. No se debe editar el archivo a mano ni
-crear un generador improvisado dentro de este issue. Producción continúa fuera
-de alcance.
+No queda otro issue aprobado dentro del lote multidioma. Antes de iniciar una
+nueva migración, seleccionar un issue abierto y construir su contexto mínimo
+desde GitHub y sus specs. Producción continúa fuera de alcance.
 
 ## Estado de LocalWP
 
