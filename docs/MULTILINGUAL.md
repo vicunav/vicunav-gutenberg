@@ -4,8 +4,8 @@ Decisión: [ADR 0002](adr/0002-polylang-free-para-es-en.md)
 
 Backlog: [issue #86](https://github.com/vicunav/vicunav-gutenberg/issues/86)
 
-Estado: lote #87–#91 implementado y validado en LocalWP el 2026-08-06. El cierre
-administrativo de #86 espera un flujo permitido para actualizar el changelog.
+Estado: lote #86–#91 completado y validado en LocalWP el 2026-08-06. El
+changelog permanece reservado al flujo de release.
 
 ## Contrato
 

@@ -101,7 +101,7 @@ Theme Check 20231220: PASS=yes, 0 resultados REQUIRED
 Templates: parse_blocks y do_blocks producen salida en las seis composiciones
 debug.log: ausente
 Rollback Polylang: portada ES HTTP 200; plugin reactivado y Home EN HTTP 200
-GitHub Actions PHP 8.0/8.2: validar en el PR
+GitHub Actions PHP 8.0/8.2: Pass en PR #103
 ```
 
 Theme Check mostró cinco advertencias no bloqueantes sobre `bin/` y capturas de
