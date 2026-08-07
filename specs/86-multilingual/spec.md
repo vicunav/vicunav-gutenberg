@@ -2,7 +2,7 @@
 
 Issue padre: #86
 
-Estado: Approved
+Estado: Completed
 
 Owner: @vicunav
 
@@ -96,12 +96,12 @@ accesibilidad, rendimiento, seguridad y privacidad existentes.
 
 ## Criterios de aceptación
 
-- [ ] AC-01: infraestructura y selector cumplen #87.
-- [ ] AC-02: Home EN cumple #88.
-- [ ] AC-03: Servicios EN cumple #89.
-- [ ] AC-04: Contacto EN y su formulario cumplen #90.
-- [ ] AC-05: QA integral y regresión española cumplen #91.
-- [ ] AC-06: documentación, evidencia y handoff identifican estado y rollback.
+- [x] AC-01: infraestructura y selector cumplen #87.
+- [x] AC-02: Home EN cumple #88.
+- [x] AC-03: Servicios EN cumple #89.
+- [x] AC-04: Contacto EN y su formulario cumplen #90.
+- [x] AC-05: QA integral y regresión española cumplen #91.
+- [x] AC-06: documentación, evidencia y handoff identifican estado y rollback.
 
 ## Assets y datos
 
@@ -129,3 +129,4 @@ resuelven en su issue antes del markup.
 | 2026-08-03 | Polylang Free `3.8.6` | ADR 0002 y aprobación explícita en #85 |
 | 2026-08-03 | Fuente inglesa: inventarios españoles | El contenido español es la verdad aprobada |
 | 2026-08-03 | Ejecución secuencial #87–#91 | Reduce deriva y conserva gates por entrega |
+| 2026-08-06 | `page-home` sustituye `front-page` solo para Home EN | WordPress prioriza la jerarquía de portada sobre el template asignado a la traducción |

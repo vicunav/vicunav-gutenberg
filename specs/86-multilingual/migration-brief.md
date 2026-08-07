@@ -4,7 +4,7 @@ Issue padre: #86
 
 Spec: `specs/86-multilingual/spec.md`
 
-Última actualización: 2026-08-03
+Última actualización: 2026-08-06
 
 > Este brief registra contratos compartidos. Cada página hija crea su propio
 > inventario bilingüe y evidencia sin copiar el contexto de otras páginas.
@@ -77,11 +77,11 @@ registrar el motivo en el issue.
 
 | Entrega | Contenido | Macro desktop | Móvil | Editor | Locale/URLs | Estado |
 |---|---|---|---|---|---|---|
-| #87 infraestructura | N/A | Pending | Pending | Pending | Pending | Ready |
+| #87 infraestructura | N/A | Pass | Pass | Pass | Pass | Pass |
 | #88 Home EN | Pass | Pass | Pass | Pass | Pass | Pass |
-| #89 Servicios EN | Pending | Pending | Pending | Pending | Pending | Ready after #88 |
-| #90 Contacto EN | Pending | Pending | Pending | Pending | Pending | Blocked by #89 |
-| #91 QA integral | Pending | Pending | Pending | Pending | Pending | Blocked by #87–#90 |
+| #89 Servicios EN | Pass | Pass | Pass | Pass | Pass | Pass |
+| #90 Contacto EN | Pass | Pass | Pass | Pass | Pass | Pass |
+| #91 QA integral | Pass | Pass | Pass | Pass | Pass | Pass |
 
 ## Decisiones y preguntas
 
@@ -92,10 +92,11 @@ registrar el motivo en el issue.
 | 2026-08-03 | Español sin prefijo; inglés bajo `/en/` | ADR 0002 |
 | 2026-08-03 | Inventarios españoles son verdad de contenido | Instrucción del proyecto / #86 |
 | 2026-08-03 | Portafolio EN fuera del lote | #86 |
+| 2026-08-06 | Home EN usa `page-home` aunque WordPress la resuelva dentro de la jerarquía de portada | #91 |
 
 ## Evidencia
 
-- Baseline: crear por página hija desde su fuente española.
-- Regresión: `docs/qa/evidence/multilingual/` y carpetas por página.
-- Métricas: crear en #87 para infraestructura y consolidar en #91.
-- PR: uno por #87–#91.
+- Baseline: cada página hija usa su fuente española aprobada.
+- Regresión: `docs/qa/evidence/multilingual/` contiene evidencia de #87–#91.
+- Métricas: `docs/qa/evidence/multilingual/91-integral.md` consolida seis rutas.
+- PR: uno por #87–#91, con squash merge.
