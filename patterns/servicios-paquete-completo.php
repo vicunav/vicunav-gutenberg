@@ -50,7 +50,7 @@
 					<!-- wp:paragraph {"textColor":"accent","style":{"typography":{"fontWeight":"600"},"spacing":{"margin":{"top":"0","bottom":"0"}}}} --><p class="has-accent-color has-text-color" style="margin-top:0;margin-bottom:0;font-weight:600"><?php echo esc_html_x( 'Entrega: 4 a 6 semanas', 'Plazo del paquete Completo.', 'vicunav' ); ?></p><!-- /wp:paragraph -->
 				</div>
 				<!-- /wp:group -->
-				<!-- wp:buttons --><div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"neutral-900","textColor":"neutral-100"} --><div class="wp-block-button"><a class="wp-block-button__link has-neutral-100-color has-neutral-900-background-color has-text-color has-background wp-element-button" href="/contacto/"><?php echo esc_html_x( '¡Comencemos!', 'CTA del paquete Completo.', 'vicunav' ); ?></a></div><!-- /wp:button --></div><!-- /wp:buttons -->
+				<!-- wp:buttons --><div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"neutral-900","textColor":"neutral-100"} --><div class="wp-block-button"><a class="wp-block-button__link has-neutral-100-color has-neutral-900-background-color has-text-color has-background wp-element-button" href="<?php echo esc_url( vicunav_get_localized_page_url( 'contact' ) ); ?>"><?php echo esc_html_x( '¡Comencemos!', 'CTA del paquete Completo.', 'vicunav' ); ?></a></div><!-- /wp:button --></div><!-- /wp:buttons -->
 			</div>
 			<!-- /wp:group -->
 		</div>

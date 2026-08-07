@@ -51,16 +51,25 @@ function vicunav_render_localized_pattern( $pattern_file, $locale ) {
  */
 function vicunav_register_english_patterns() {
 	$patterns = array(
-		'hero-en.php'                     => array( 'vicunav/hero-en', 'Hero EN' ),
-		'situaciones-en.php'              => array( 'vicunav/situaciones-en', 'Situations EN' ),
-		'como-ayudamos-intro-en.php'      => array( 'vicunav/como-ayudamos-intro-en', 'How We Help EN' ),
-		'como-ayudamos-en.php'            => array( 'vicunav/como-ayudamos-en', 'Process EN' ),
-		'testimonio-destacado-en.php'     => array( 'vicunav/testimonio-destacado-en', 'Featured Testimonial EN' ),
-		'resultados-en.php'               => array( 'vicunav/resultados-en', 'Results EN' ),
-		'deberia-sentirse-como-tu-en.php' => array( 'vicunav/deberia-sentirse-como-tu-en', 'It Should Feel Like You EN' ),
-		'conoce-a-mario-en.php'           => array( 'vicunav/conoce-a-mario-en', 'Meet Mario EN' ),
-		'marcas-en.php'                   => array( 'vicunav/marcas-en', 'Brands EN' ),
-		'cta-final-en.php'                => array( 'vicunav/cta-final-en', 'Final CTA EN' ),
+		'hero-en.php'                       => array( 'vicunav/hero-en', 'Hero EN' ),
+		'situaciones-en.php'                => array( 'vicunav/situaciones-en', 'Situations EN' ),
+		'como-ayudamos-intro-en.php'        => array( 'vicunav/como-ayudamos-intro-en', 'How We Help EN' ),
+		'como-ayudamos-en.php'              => array( 'vicunav/como-ayudamos-en', 'Process EN' ),
+		'testimonio-destacado-en.php'       => array( 'vicunav/testimonio-destacado-en', 'Featured Testimonial EN' ),
+		'resultados-en.php'                 => array( 'vicunav/resultados-en', 'Results EN' ),
+		'deberia-sentirse-como-tu-en.php'   => array( 'vicunav/deberia-sentirse-como-tu-en', 'It Should Feel Like You EN' ),
+		'conoce-a-mario-en.php'             => array( 'vicunav/conoce-a-mario-en', 'Meet Mario EN' ),
+		'marcas-en.php'                     => array( 'vicunav/marcas-en', 'Brands EN' ),
+		'cta-final-en.php'                  => array( 'vicunav/cta-final-en', 'Final CTA EN' ),
+		'servicios-hero-en.php'             => array( 'vicunav/servicios-hero-en', 'Services Hero EN' ),
+		'servicios-paquete-esencial-en.php' => array( 'vicunav/servicios-paquete-esencial-en', 'Essential Website Package EN' ),
+		'servicios-paquete-completo-en.php' => array( 'vicunav/servicios-paquete-completo-en', 'Complete Website Package EN' ),
+		'servicios-beneficios-en.php'       => array( 'vicunav/servicios-beneficios-en', 'Services Benefits EN' ),
+		'servicios-proceso-en.php'          => array( 'vicunav/servicios-proceso-en', 'Services Process EN' ),
+		'servicios-mantenimiento-en.php'    => array( 'vicunav/servicios-mantenimiento-en', 'Maintenance Plan EN' ),
+		'servicios-adicionales-en.php'      => array( 'vicunav/servicios-adicionales-en', 'Additional Services EN' ),
+		'servicios-faq-en.php'              => array( 'vicunav/servicios-faq-en', 'Services FAQ EN' ),
+		'servicios-cta-en.php'              => array( 'vicunav/servicios-cta-en', 'Services Final CTA EN' ),
 	);
 	$registry = WP_Block_Patterns_Registry::get_instance();
 

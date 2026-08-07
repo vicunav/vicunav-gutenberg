@@ -47,6 +47,7 @@ function vicunav_get_managed_page_template_slug( $post_id ) {
 		'portafolio' => 'page-portafolio',
 		'contacto'   => 'page-contacto',
 		'home'       => 'page-home',
+		'website-design-for-therapists-and-wellness-practices' => 'page-services-en',
 	);
 	$page_slug = get_post_field( 'post_name', $post_id );
 

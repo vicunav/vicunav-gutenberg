@@ -321,3 +321,699 @@ msgstr "If you are looking for a clear, professional website with online booking
 msgctxt "Botón del CTA final."
 msgid "Hablemos sobre tu sitio web"
 msgstr "Let's Talk About Your Website"
+
+msgctxt "Texto alternativo del hero de Servicios."
+msgid "Sitio Vicunav presentado en una computadora portátil"
+msgstr "Vicunav website displayed on a laptop"
+
+msgctxt "Eyebrow del hero de Servicios."
+msgid "Para profesionales independientes y negocios"
+msgstr "For independent professionals and service businesses"
+
+msgctxt "Inicio del título de Servicios."
+msgid "Un sitio web que "
+msgstr "A website that "
+
+msgctxt "Inicio del énfasis del título de Servicios."
+msgid "ayuda"
+msgstr "helps"
+
+msgctxt "Cierre del énfasis del título de Servicios."
+msgid " a las personas a"
+msgstr " people"
+
+msgctxt "Cierre subrayado del título de Servicios."
+msgid "entender tu trabajo"
+msgstr "understand your work"
+
+msgctxt "Descripción del hero de Servicios."
+msgid "Desde un sitio de una sola página hasta una estructura más completa, tu sitio web se construye alrededor de lo que tu negocio necesita."
+msgstr "From a one-page website to a more complete structure, your website is built around what your business needs."
+
+msgctxt "CTA del hero de Servicios."
+msgid "Ver paquetes"
+msgstr "View Packages"
+
+msgctxt "Título del paquete Esencial."
+msgid "Paquete Sitio Web Esencial"
+msgstr "Essential Website Package"
+
+msgctxt "Subtítulo del paquete Esencial."
+msgid "Diseño web para profesionales independientes y negocios"
+msgstr "Web design for independent professionals and service businesses"
+
+msgctxt "Descripción inicial del paquete Esencial."
+msgid "Para profesionales que necesitan una presencia en línea clara y profesional, sin la complejidad de un sitio completo."
+msgstr "For professionals who need a clear, professional online presence without the complexity of a full website."
+
+msgctxt "Descripción del alcance del paquete Esencial."
+msgid "Esta opción se enfoca en lo esencial: presentar tu trabajo con claridad, ayudar a los visitantes a entender lo que ofreces, y hacer fácil que las personas correctas den el primer paso."
+msgstr "This option focuses on the essentials: presenting your work clearly, helping visitors understand what you offer, and making it easy for the right people to take the first step."
+
+msgctxt "Audiencia del paquete Esencial."
+msgid "Diseñado para"
+msgstr "Designed For"
+
+msgctxt "Audiencia del paquete Esencial."
+msgid "Profesionales que están comenzando"
+msgstr "Professionals who are just getting started"
+
+msgctxt "Audiencia del paquete Esencial."
+msgid "Independientes que necesitan su primera presencia en línea"
+msgstr "Independent professionals who need their first online presence"
+
+msgctxt "Audiencia del paquete Esencial."
+msgid "Negocios que buscan una presencia clara y sin complicaciones"
+msgstr "Businesses looking for a clear, straightforward presence"
+
+msgctxt "Inversión del paquete Esencial."
+msgid "Inversión: desde $200 USD"
+msgstr "Investment: starting at $200 USD"
+
+msgctxt "Mantenimiento del paquete Esencial."
+msgid "+ $40 USD / mes — plan de mantenimiento"
+msgstr "+ $40 USD / month - maintenance plan"
+
+msgctxt "Plazo del paquete Esencial."
+msgid "Entrega: 2 a 4 semanas"
+msgstr "Timeline: 2 to 4 weeks"
+
+msgctxt "CTA del paquete Esencial."
+msgid "¡Comencemos!"
+msgstr "Let's Get Started!"
+
+msgctxt "Contenido del paquete Esencial."
+msgid "Lo que incluye"
+msgstr "What's Included"
+
+msgctxt "Contenido del paquete Esencial."
+msgid "Una página web larga y estructurada"
+msgstr "One long, structured web page"
+
+msgctxt "Contenido del paquete Esencial."
+msgid "Orientación para el mensaje de las secciones principales"
+msgstr "Guidance for the messaging in key sections"
+
+msgctxt "Contenido del paquete Esencial."
+msgid "Diseño limpio y profesional"
+msgstr "Clean, professional design"
+
+msgctxt "Contenido del paquete Esencial."
+msgid "Diseño optimizado para móvil"
+msgstr "Mobile-optimized design"
+
+msgctxt "Contenido del paquete Esencial."
+msgid "Formulario de contacto e integración de Whatsapp"
+msgstr "Contact form and WhatsApp integration"
+
+msgctxt "Contenido del paquete Esencial."
+msgid "Estructura preparada para que Google y sistemas de IA"
+msgstr "A structure prepared for Google and AI systems"
+
+msgctxt "Contenido del paquete Esencial."
+msgid "Dos rondas de revisión"
+msgstr "Two rounds of revisions"
+
+msgctxt "Título del paquete Completo."
+msgid "Paquete Sitio Web Completo"
+msgstr "Complete Website Package"
+
+msgctxt "Subtítulo del paquete Completo."
+msgid "Diseño web para profesionales independientes y negocios"
+msgstr "Web design for independent professionals and service businesses"
+
+msgctxt "Descripción inicial del paquete Completo."
+msgid "Para profesionales que están consolidando o haciendo crecer su negocio y necesitan un sitio completo que presente claramente sus servicios, enfoque y experiencia."
+msgstr "For professionals who are establishing or growing their business and need a complete website that clearly presents their services, approach, and experience."
+
+msgctxt "Descripción del alcance del paquete Completo."
+msgid "En lugar de una sola página, este paquete crea una experiencia multipágina profesional, diseñada para apoyar la visibilidad y el crecimiento a largo plazo."
+msgstr "Instead of a single page, this package creates a professional multi-page experience designed to support long-term visibility and growth."
+
+msgctxt "Audiencia del paquete Completo."
+msgid "Diseñado para"
+msgstr "Designed For"
+
+msgctxt "Audiencia del paquete Completo."
+msgid "Profesionales con un negocio establecido"
+msgstr "Professionals with an established business"
+
+msgctxt "Audiencia del paquete Completo."
+msgid "Negocios que ofrecen múltiples servicios"
+msgstr "Businesses that offer multiple services"
+
+msgctxt "Audiencia del paquete Completo."
+msgid "Profesionales listos para un sitio completo y escalable"
+msgstr "Professionals ready for a complete, scalable website"
+
+msgctxt "Inversión del paquete Completo."
+msgid "Inversión: desde $500 USD"
+msgstr "Investment: starting at $500 USD"
+
+msgctxt "Mantenimiento del paquete Completo."
+msgid "+ $80 USD / mes — plan de mantenimiento"
+msgstr "+ $80 USD / month - maintenance plan"
+
+msgctxt "Plazo del paquete Completo."
+msgid "Entrega: 4 a 6 semanas"
+msgstr "Timeline: 4 to 6 weeks"
+
+msgctxt "CTA del paquete Completo."
+msgid "¡Comencemos!"
+msgstr "Let's Get Started!"
+
+msgctxt "Contenido del paquete Completo."
+msgid "Lo que incluye"
+msgstr "What's Included"
+
+msgctxt "Contenido del paquete Completo."
+msgid "Estructura multipágina (hasta 6 páginas principales)"
+msgstr "Multi-page structure (up to 6 main pages)"
+
+msgctxt "Contenido del paquete Completo."
+msgid "Sistema de gestión de citas, agenda y comunidad"
+msgstr "Appointment, scheduling, and community management system"
+
+msgctxt "Contenido del paquete Completo."
+msgid "App para que tus clientes manejen su perfil y agendas"
+msgstr "An app for clients to manage their profile and appointments"
+
+msgctxt "Contenido del paquete Completo."
+msgid "Estructura clara para servicios o especialidades"
+msgstr "Clear structure for services or specialties"
+
+msgctxt "Contenido del paquete Completo."
+msgid "Orientación para el mensaje de las secciones principales"
+msgstr "Guidance for the messaging in key sections"
+
+msgctxt "Contenido del paquete Completo."
+msgid "Diseño limpio y profesional"
+msgstr "Clean, professional design"
+
+msgctxt "Contenido del paquete Completo."
+msgid "Diseño optimizado para móvil"
+msgstr "Mobile-optimized design"
+
+msgctxt "Contenido del paquete Completo."
+msgid "Formulario de contacto e integración de Whatsapp"
+msgstr "Contact form and WhatsApp integration"
+
+msgctxt "Contenido del paquete Completo."
+msgid "Estructura preparada para que Google y sistemas de IA"
+msgstr "A structure prepared for Google and AI systems"
+
+msgctxt "Contenido del paquete Completo."
+msgid "Dos rondas de revisión"
+msgstr "Two rounds of revisions"
+
+msgctxt "Eyebrow del mantenimiento incluido."
+msgid "Después del lanzamiento"
+msgstr "After Launch"
+
+msgctxt "Título del mantenimiento incluido."
+msgid "Plan de Mantenimiento mensual"
+msgstr "Monthly Maintenance Plan"
+
+msgctxt "Descripción del mantenimiento incluido."
+msgid "Cuidado continuo para mantener tu sitio seguro, actualizado y funcionando bien una vez que está en línea."
+msgstr "Ongoing care to keep your website secure, updated, and working well once it is live."
+
+msgctxt "Mantenimiento del paquete."
+msgid "Hosting administrado en WordPress"
+msgstr "Managed WordPress hosting"
+
+msgctxt "Mantenimiento del paquete."
+msgid "Monitoreo y protección de seguridad"
+msgstr "Security monitoring and protection"
+
+msgctxt "Mantenimiento del paquete."
+msgid "Copias de seguridad y actualizaciones regulares"
+msgstr "Regular backups and updates"
+
+msgctxt "Mantenimiento del paquete."
+msgid "Mantenimiento técnico y monitoreo"
+msgstr "Technical maintenance and monitoring"
+
+msgctxt "Mantenimiento del paquete."
+msgid "Ajustes pequeños cuando los necesites"
+msgstr "Small adjustments when you need them"
+
+msgctxt "Mantenimiento del paquete."
+msgid "Monitoreo de rendimiento y disponibilidad"
+msgstr "Performance and uptime monitoring"
+
+msgctxt "Beneficio de Servicios."
+msgid "Diseño personalizado y coherencia de marca"
+msgstr "Custom Design and Brand Consistency"
+
+msgctxt "Descripción de beneficio."
+msgid "Diseñado para reflejar el tono y la profesionalidad de tu negocio, con una estructura clara, calmada y profesional."
+msgstr "Designed to reflect the tone and professionalism of your business, with a clear, calm, and professional structure."
+
+msgctxt "Texto alternativo de beneficio."
+msgid "Mesa de trabajo para definir una identidad visual"
+msgstr "Workspace for defining a visual identity"
+
+msgctxt "Beneficio de Servicios."
+msgid "Orientación de Copy y Contenido"
+msgstr "Copy and Content Guidance"
+
+msgctxt "Descripción de beneficio."
+msgid "Guiamos el mensaje de tu sitio para que los visitantes entiendan rápidamente tu trabajo y cómo puedes ayudarles."
+msgstr "We guide your website's messaging so visitors quickly understand your work and how you can help them."
+
+msgctxt "Texto alternativo de beneficio."
+msgid "Materiales de escritura para preparar el contenido"
+msgstr "Writing materials for preparing website content"
+
+msgctxt "Beneficio de Servicios."
+msgid "Experiencia optimizada para móvil"
+msgstr "Mobile-Optimized Experience"
+
+msgctxt "Descripción de beneficio."
+msgid "Tu sitio se diseña y prueba para que se vea bien, sea fácil de leer y de navegar en teléfonos, tablets y computadoras."
+msgstr "Your website is designed and tested to look good and be easy to read and navigate on phones, tablets, and computers."
+
+msgctxt "Texto alternativo de beneficio."
+msgid "Sitio web presentado en un teléfono móvil"
+msgstr "Website displayed on a mobile phone"
+
+msgctxt "Beneficio de Servicios."
+msgid "Optimización para Buscadores e IA"
+msgstr "Search and AI Optimization"
+
+msgctxt "Descripción de beneficio."
+msgid "Tu sitio se estructura para que Google y los sistemas de IA modernos puedan entender claramente tu trabajo y tus servicios."
+msgstr "Your website is structured so Google and modern AI systems can clearly understand your work and services."
+
+msgctxt "Texto alternativo de beneficio."
+msgid "Composición visual sobre búsqueda y sistemas de IA"
+msgstr "Visual composition representing search and AI systems"
+
+msgctxt "Beneficio de Servicios."
+msgid "Optimización de rendimiento"
+msgstr "Performance Optimization"
+
+msgctxt "Descripción de beneficio."
+msgid "Imágenes, scripts y estructura de página optimizados para que tu sitio cargue rápido y funcione sin problemas."
+msgstr "Images, scripts, and page structure are optimized so your website loads quickly and runs smoothly."
+
+msgctxt "Texto alternativo de beneficio."
+msgid "Medición visual del rendimiento de un sitio web"
+msgstr "Visual measurement of website performance"
+
+msgctxt "Beneficio de Servicios."
+msgid "Seguridad, copias de seguridad y protección técnica"
+msgstr "Security, Backups, and Technical Protection"
+
+msgctxt "Descripción de beneficio."
+msgid "Protección de seguridad, filtro de spam y copias de seguridad externas para mantener tu sitio estable y protegido."
+msgstr "Security protection, spam filtering, and off-site backups keep your website stable and protected."
+
+msgctxt "Texto alternativo de beneficio."
+msgid "Representación de seguridad y protección técnica"
+msgstr "Representation of security and technical protection"
+
+msgctxt "Beneficio de Servicios."
+msgid "Base profesional en WordPress"
+msgstr "Professional WordPress Foundation"
+
+msgctxt "Descripción de beneficio."
+msgid "Tu sitio se construye en WordPress con un constructor de páginas moderno, lo que facilita cualquier actualización futura."
+msgstr "Your website is built in WordPress with a modern editing system, making future updates easier."
+
+msgctxt "Texto alternativo de beneficio."
+msgid "Espacio de trabajo profesional con WordPress"
+msgstr "Professional WordPress workspace"
+
+msgctxt "Beneficio de Servicios."
+msgid "Recorrido y orientación post-lanzamiento"
+msgstr "Post-Launch Walkthrough and Guidance"
+
+msgctxt "Descripción de beneficio."
+msgid "Después del lanzamiento recibes un recorrido por tu sitio para que te sientas cómodo haciendo actualizaciones cuando las necesites."
+msgstr "After launch, you receive a walkthrough of your website so you feel comfortable making updates when you need them."
+
+msgctxt "Texto alternativo de beneficio."
+msgid "Sesión de orientación para gestionar un sitio web"
+msgstr "Guidance session for managing a website"
+
+msgctxt "Eyebrow de beneficios de Servicios."
+msgid "Incluido en cada proyecto"
+msgstr "Included in Every Project"
+
+msgctxt "Título de beneficios de Servicios."
+msgid "Lo que Incluye cada Sitio Web de Vicunav"
+msgstr "What Every Vicunav Website Includes"
+
+msgctxt "Introducción de beneficios de Servicios."
+msgid "Cada proyecto de Vicunav incluye las bases esenciales para tener un sitio seguro, confiable y fácil de mantener."
+msgstr "Every Vicunav project includes the essential foundations for a secure, reliable website that is easy to maintain."
+
+msgctxt "Paso del proceso de Servicios."
+msgid "Descubrimiento"
+msgstr "Discovery"
+
+msgctxt "Descripción de paso."
+msgid "Una conversación corta para entender tu negocio y confirmar que hay buena compatibilidad. Es sobre claridad, no sobre vender."
+msgstr "A short conversation to understand your business and confirm that we are a good fit. It is about clarity, not selling."
+
+msgctxt "Texto alternativo del proceso."
+msgid "Conversación inicial de descubrimiento"
+msgstr "Initial discovery conversation"
+
+msgctxt "Paso del proceso de Servicios."
+msgid "Claridad de contenido"
+msgstr "Content Clarity"
+
+msgctxt "Descripción de paso."
+msgid "Preguntas guiadas para definir el mensaje de tu sitio de forma que refleje tu trabajo con precisión y naturalidad. Sin presión, sin sobreexposición."
+msgstr "Guided questions define your website's messaging so it reflects your work accurately and naturally. No pressure and no overexposure."
+
+msgctxt "Texto alternativo del proceso."
+msgid "Preparación guiada del contenido del sitio"
+msgstr "Guided preparation of website content"
+
+msgctxt "Paso del proceso de Servicios."
+msgid "Diseño y Desarrollo"
+msgstr "Design and Development"
+
+msgctxt "Descripción de paso."
+msgid "Tu sitio se estructura y construye en WordPress. Diseño limpio y ejecución profesional detrás de escena."
+msgstr "Your website is structured and built in WordPress, with clean design and professional implementation behind the scenes."
+
+msgctxt "Texto alternativo del proceso."
+msgid "Diseño y desarrollo de un sitio en WordPress"
+msgstr "Design and development of a WordPress website"
+
+msgctxt "Paso del proceso de Servicios."
+msgid "Revisión y ajustes"
+msgstr "Review and Adjustments"
+
+msgctxt "Descripción de paso."
+msgid "Dos rondas de revisión enfocadas. Un proceso estructurado que mantiene todo claro, colaborativo y en orden."
+msgstr "Two focused rounds of review. A structured process keeps everything clear, collaborative, and organized."
+
+msgctxt "Texto alternativo del proceso."
+msgid "Revisión colaborativa del sitio web"
+msgstr "Collaborative website review"
+
+msgctxt "Paso del proceso de Servicios."
+msgid "Lanzamiento"
+msgstr "Launch"
+
+msgctxt "Descripción de paso."
+msgid "Una vez que todo está alineado, tu sitio sale en línea. Hosting y configuración técnica incluidos para que puedas avanzar con confianza."
+msgstr "Once everything is aligned, your website goes live. Hosting and technical setup are included so you can move forward with confidence."
+
+msgctxt "Texto alternativo del proceso."
+msgid "Sitio web preparado para su lanzamiento"
+msgstr "Website prepared for launch"
+
+msgctxt "Eyebrow del proceso de Servicios."
+msgid "Nuestro proceso"
+msgstr "Our Process"
+
+msgctxt "Título del proceso de Servicios."
+msgid "Un proceso claro y acompañado, del inicio al lanzamiento"
+msgstr "A Clear, Supported Process from Start to Launch"
+
+msgctxt "Texto alternativo del proceso de Servicios."
+msgid "Composición editorial del proceso de trabajo de Vicunav"
+msgstr "Editorial composition of the Vicunav process"
+
+msgctxt "Prestación de mantenimiento."
+msgid "Hosting administrado en WordPress"
+msgstr "Managed WordPress hosting"
+
+msgctxt "Prestación de mantenimiento."
+msgid "Monitoreo de seguridad"
+msgstr "Security monitoring"
+
+msgctxt "Prestación de mantenimiento."
+msgid "Copias de seguridad regulares"
+msgstr "Regular backups"
+
+msgctxt "Prestación de mantenimiento."
+msgid "Actualizaciones de WordPress"
+msgstr "WordPress updates"
+
+msgctxt "Prestación de mantenimiento."
+msgid "Monitoreo de disponibilidad"
+msgstr "Uptime monitoring"
+
+msgctxt "Prestación de mantenimiento."
+msgid "Mantenimiento técnico"
+msgstr "Technical maintenance"
+
+msgctxt "Prestación de mantenimiento."
+msgid "Ajustes pequeños de contenido"
+msgstr "Small content adjustments"
+
+msgctxt "Prestación de mantenimiento."
+msgid "Reportes mensuales"
+msgstr "Monthly reports"
+
+msgctxt "Eyebrow de mantenimiento."
+msgid "Después del lanzamiento"
+msgstr "After Launch"
+
+msgctxt "Título de mantenimiento."
+msgid "Cuidado continuo para tu Sitio Web"
+msgstr "Ongoing Care for Your Website"
+
+msgctxt "Descripción de mantenimiento."
+msgid "Una vez que tu sitio está en línea, el mantenimiento continuo asegura que todo siga funcionando bien. Tu sitio permanece seguro, actualizado y técnicamente estable para que puedas enfocarte en tu negocio en lugar de gestionar la tecnología detrás de él."
+msgstr "Once your website is live, ongoing maintenance keeps everything working well. Your website stays secure, updated, and technically stable so you can focus on your business instead of managing the technology behind it."
+
+msgctxt "Nombre del plan de mantenimiento."
+msgid "Plan de Mantenimiento mensual"
+msgstr "Monthly Maintenance Plan"
+
+msgctxt "Precio del mantenimiento."
+msgid "$80 USD / mes"
+msgstr "$80 USD / month"
+
+msgctxt "Descripción del plan de mantenimiento."
+msgid "Un plan simple que mantiene tu sitio seguro, actualizado y profesionalmente mantenido a lo largo del tiempo."
+msgstr "A simple plan that keeps your website secure, updated, and professionally maintained over time."
+
+msgctxt "Opción adicional."
+msgid "Página adicional"
+msgstr "Additional Page"
+
+msgctxt "Descripción de opción adicional."
+msgid "Una página estructurada, diseñada y desarrollada usando el mismo sistema visual y de mensaje del resto de tu sitio."
+msgstr "A structured page designed and developed using the same visual and messaging system as the rest of your website."
+
+msgctxt "Opción adicional."
+msgid "Migración de contenido"
+msgstr "Content Migration"
+
+msgctxt "Descripción de opción adicional."
+msgid "Transferencia del contenido relevante de un sitio existente a la nueva estructura. El contenido se revisa y organiza para adaptarse al nuevo diseño."
+msgstr "Relevant content is transferred from an existing website to the new structure, then reviewed and organized to fit the new design."
+
+msgctxt "Opción adicional."
+msgid "Additional Language Version"
+msgstr "Additional Language Version"
+
+msgctxt "Descripción de opción adicional."
+msgid "Creación de una segunda versión del sitio en otro idioma, incluyendo duplicación de estructura y configuración. La traducción del contenido no está incluida."
+msgstr "Creation of a second website version in another language, including duplicated structure and configuration. Content translation is not included."
+
+msgctxt "Eyebrow de opciones adicionales."
+msgid "Opciones adicionales"
+msgstr "Additional Options"
+
+msgctxt "Título de opciones adicionales."
+msgid "Soporte adicional para tu Sitio Web"
+msgstr "Additional Support for Your Website"
+
+msgctxt "Introducción de opciones adicionales."
+msgid "Algunos proyectos necesitan elementos adicionales más allá de los paquetes base. Estos complementos opcionales pueden incluirse según las necesidades de tu negocio. Todo se conversa y confirma antes de comenzar el proyecto."
+msgstr "Some projects need additional elements beyond the base packages. These optional add-ons can be included according to your business needs. Everything is discussed and confirmed before the project begins."
+
+msgctxt "Texto alternativo de FAQ."
+msgid "Preguntas frecuentes sobre los servicios de Vicunav"
+msgstr "Frequently asked questions about Vicunav services"
+
+msgctxt "Eyebrow de FAQ."
+msgid "Preguntas frecuentes"
+msgstr "Frequently Asked Questions"
+
+msgctxt "Título de FAQ."
+msgid "Respuestas claras para ayudarte a decidir"
+msgstr "Clear Answers to Help You Decide"
+
+msgctxt "Título del CTA de Servicios."
+msgid "¿Listo para un sitio web que <em>realmente refleje</em> tu trabajo?"
+msgstr "Ready for a website that <em>truly reflects</em> your work?"
+
+msgctxt "Texto del CTA de Servicios."
+msgid "Si buscas una presencia digital clara y profesional, diseñada para profesionales independientes y negocios, podemos empezar con una conversación sencilla."
+msgstr "If you are looking for a clear, professional digital presence designed for independent professionals and service businesses, we can start with a simple conversation."
+
+msgctxt "Botón del CTA de Servicios."
+msgid "¡Comencemos!"
+msgstr "Let's Get Started!"
+
+msgctxt "Pregunta frecuente."
+msgid "¿Cómo sé cuál paquete es el indicado para mí?"
+msgstr "How do I know which package is right for me?"
+
+msgctxt "Respuesta frecuente."
+msgid "Si estás comenzando o necesitas una presencia en línea simple y clara, el Paquete Esencial generalmente es suficiente."
+msgstr "If you are just getting started or need a simple, clear online presence, the Essential Package is usually enough."
+
+msgctxt "Respuesta frecuente."
+msgid "Si tu trabajo es más establecido o ofreces múltiples servicios, el Paquete Completo te da una estructura más sólida para presentarlo."
+msgstr "If your work is more established or you offer multiple services, the Complete Package gives you a stronger structure for presenting it."
+
+msgctxt "Respuesta frecuente."
+msgid "Si no estás seguro, podemos decidirlo juntos."
+msgstr "If you are not sure, we can decide together."
+
+msgctxt "Pregunta frecuente."
+msgid "¿Cuánto tiempo toma el proceso?"
+msgstr "How long does the process take?"
+
+msgctxt "Respuesta frecuente."
+msgid "El Paquete Esencial se completa en aproximadamente 2 semanas."
+msgstr "The Essential Package takes approximately 2 weeks."
+
+msgctxt "Respuesta frecuente."
+msgid "El Paquete Completo generalmente toma entre 3 y 4 semanas."
+msgstr "The Complete Package usually takes between 3 and 4 weeks."
+
+msgctxt "Respuesta frecuente."
+msgid "El proceso está estructurado para mantener todo claro y evitar demoras innecesarias."
+msgstr "The process is structured to keep everything clear and avoid unnecessary delays."
+
+msgctxt "Pregunta frecuente."
+msgid "¿Qué necesitas de mi parte para comenzar?"
+msgstr "What do you need from me to get started?"
+
+msgctxt "Respuesta frecuente."
+msgid "Completarás una lista de preparación corta. Esto nos ayuda a reunir información básica sobre tu negocio, tus servicios y cómo quieres que se sienta tu sitio. No necesitas tener todo resuelto. Guiamos el proceso desde ahí."
+msgstr "You will complete a short preparation checklist. This helps us gather basic information about your business, your services, and how you want your website to feel. You do not need to have everything figured out. We guide the process from there."
+
+msgctxt "Pregunta frecuente."
+msgid "¿Tengo que escribir todo el contenido yo mismo?"
+msgstr "Do I have to write all the content myself?"
+
+msgctxt "Respuesta frecuente."
+msgid "No. Tú compartes la información base y nosotros la convertimos en contenido claro y estructurado que refleja tu trabajo."
+msgstr "No. You share the essential information, and we turn it into clear, structured content that reflects your work."
+
+msgctxt "Pregunta frecuente."
+msgid "¿Se puede pagar en cuotas?"
+msgstr "Can I pay in installments?"
+
+msgctxt "Respuesta frecuente."
+msgid "Sí. El costo del proyecto puede dividirse en pagos. El trabajo comienza una vez que se completa el primer pago."
+msgstr "Yes. The project cost can be split into payments. Work begins once the first payment is complete."
+
+msgctxt "Pregunta frecuente."
+msgid "¿Necesito comprar mi propio dominio?"
+msgstr "Do I need to buy my own domain?"
+
+msgctxt "Respuesta frecuente."
+msgid "Si aún no tienes un dominio, podemos ayudarte a comprarlo y configurarlo."
+msgstr "If you do not have a domain yet, we can help you buy and configure one."
+
+msgctxt "Respuesta frecuente."
+msgid "Si ya tienes uno, lo conectamos por ti."
+msgstr "If you already have one, we connect it for you."
+
+msgctxt "Pregunta frecuente."
+msgid "¿Necesito contratar mi propio alojamiento?"
+msgstr "Do I need to arrange my own hosting?"
+
+msgctxt "Respuesta frecuente."
+msgid "No. El alojamiento está incluido como parte del plan de mantenimiento mensual, así que todo queda configurado y administrado para ti."
+msgstr "No. Hosting is included in the monthly maintenance plan, so everything is configured and managed for you."
+
+msgctxt "Pregunta frecuente."
+msgid "¿Qué incluye el plan de mantenimiento?"
+msgstr "What does the maintenance plan include?"
+
+msgctxt "Respuesta frecuente."
+msgid "El plan cubre hosting, seguridad, actualizaciones, copias de seguridad y mantenimiento técnico. Está diseñado para que no tengas que gestionar la parte técnica de tu sitio web."
+msgstr "The plan covers hosting, security, updates, backups, and technical maintenance. It is designed so you do not have to manage the technical side of your website."
+
+msgctxt "Pregunta frecuente."
+msgid "¿Qué pasa si cancelo el plan de mantenimiento?"
+msgstr "What happens if I cancel the maintenance plan?"
+
+msgctxt "Respuesta frecuente."
+msgid "El plan mantiene tu sitio alojado, seguro y mantenido. Si se cancela, el sitio dejaría de estar gestionado u hospedado a través de Vicunav."
+msgstr "The plan keeps your website hosted, secure, and maintained. If it is canceled, the website will no longer be managed or hosted through Vicunav."
+
+msgctxt "Respuesta frecuente."
+msgid "Si lo necesitas, podemos ayudarte a hacer la transición."
+msgstr "If needed, we can help you with the transition."
+
+msgctxt "Pregunta frecuente."
+msgid "¿Quién es dueño de mi sitio web?"
+msgstr "Who owns my website?"
+
+msgctxt "Respuesta frecuente."
+msgid "Tú eres dueño de tu sitio web y de todo su contenido. Nosotros nos encargamos del diseño, desarrollo y configuración técnica, pero todo lo creado para tu sitio te pertenece."
+msgstr "You own your website and all its content. We handle the design, development, and technical setup, but everything created for your website belongs to you."
+
+msgctxt "Pregunta frecuente."
+msgid "¿Mi sitio estará optimizado para buscadores?"
+msgstr "Will my website be optimized for search engines?"
+
+msgctxt "Respuesta frecuente."
+msgid "Cada sitio incluye una estructura y configuración básica de SEO para asegurar que esté bien construido y pueda ser indexado correctamente."
+msgstr "Every website includes basic SEO structure and configuration to ensure it is well built and can be indexed correctly."
+
+msgctxt "Pregunta frecuente."
+msgid "¿Mi sitio me ayuda a aparecer en herramientas de IA como ChatGPT?"
+msgstr "Can my website help me appear in AI tools like ChatGPT?"
+
+msgctxt "Respuesta frecuente."
+msgid "Tu sitio se estructura para que tanto los buscadores como los sistemas de IA modernos puedan entender claramente tu trabajo. En lugar de depender de trucos, se enfoca en claridad, estructura e información consistente, que es lo que estos sistemas usan para interpretar y recomendar negocios."
+msgstr "Your website is structured so search engines and modern AI systems can clearly understand your work. Instead of relying on tricks, it focuses on clarity, structure, and consistent information, which these systems use to interpret and recommend businesses."
+
+msgctxt "Pregunta frecuente."
+msgid "¿Voy a poder actualizar mi sitio yo mismo?"
+msgstr "Will I be able to update my website myself?"
+
+msgctxt "Respuesta frecuente."
+msgid "Sí. Después del lanzamiento recibes un recorrido por tu sitio para que te sientas cómodo haciendo cambios pequeños cuando los necesites."
+msgstr "Yes. After launch, you receive a walkthrough of your website so you feel comfortable making small changes when you need them."
+
+msgctxt "Pregunta frecuente."
+msgid "¿Puedo pedir cambios adicionales después del lanzamiento?"
+msgstr "Can I request additional changes after launch?"
+
+msgctxt "Respuesta frecuente."
+msgid "Sí. Los ajustes pequeños se manejan como parte del plan de mantenimiento mensual. Si necesitas cambios más grandes o secciones nuevas, también podemos encargarnos. Esos se manejan por separado según el alcance del trabajo."
+msgstr "Yes. Small adjustments are handled as part of the monthly maintenance plan. If you need larger changes or new sections, we can handle those too. They are scoped separately according to the work required."
+
+msgctxt "Pregunta frecuente."
+msgid "¿Qué cuenta como un ajuste pequeño y qué como un cambio mayor?"
+msgstr "What counts as a small adjustment and what is a major change?"
+
+msgctxt "Respuesta frecuente."
+msgid "Los ajustes pequeños incluyen cosas como ediciones de texto, cambio de imágenes o modificaciones menores. Los cambios mayores implican secciones nuevas, cambios de estructura o nueva funcionalidad. Si algo está fuera del soporte continuo, siempre lo aclaramos primero y damos un estimado antes de proceder."
+msgstr "Small adjustments include text edits, image changes, or minor modifications. Major changes involve new sections, structural changes, or new functionality. If something falls outside ongoing support, we always clarify it and provide an estimate before proceeding."
+
+msgctxt "Pregunta frecuente."
+msgid "¿Pueden rediseñar mi sitio actual?"
+msgstr "Can you redesign my current website?"
+
+msgctxt "Respuesta frecuente."
+msgid "Sí. Podemos reconstruir tu sitio desde cero o reestructurar tu contenido existente, dependiendo de lo que tenga más sentido."
+msgstr "Yes. We can rebuild your website from scratch or restructure your existing content, depending on what makes the most sense."
+
+msgctxt "Pregunta frecuente."
+msgid "¿Trabajan con clientes fuera de latinoamérica?"
+msgstr "Do you work with clients outside Latin America?"
+
+msgctxt "Respuesta frecuente."
+msgid "Sí. Trabajamos de forma remota con clientes en español e inglés."
+msgstr "Yes. We work remotely with clients in Spanish and English."

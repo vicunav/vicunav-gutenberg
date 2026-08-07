@@ -50,6 +50,7 @@ $required_paths = array(
 	'templates/index.html',
 	'templates/front-page.html',
 	'templates/page-home.html',
+	'templates/page-services-en.html',
 	'templates/page-servicios.html',
 	'templates/page-portafolio.html',
 	'templates/page-contacto.html',
@@ -81,6 +82,15 @@ foreach (
 		'conoce-a-mario-en.php',
 		'marcas-en.php',
 		'cta-final-en.php',
+		'servicios-hero-en.php',
+		'servicios-paquete-esencial-en.php',
+		'servicios-paquete-completo-en.php',
+		'servicios-beneficios-en.php',
+		'servicios-proceso-en.php',
+		'servicios-mantenimiento-en.php',
+		'servicios-adicionales-en.php',
+		'servicios-faq-en.php',
+		'servicios-cta-en.php',
 	) as $english_pattern
 ) {
 	$required_paths[] = 'patterns/' . $english_pattern;

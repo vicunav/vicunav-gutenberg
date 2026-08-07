@@ -53,7 +53,7 @@
 				</div>
 				<!-- /wp:group -->
 
-				<!-- wp:buttons --><div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"neutral-900","textColor":"neutral-100"} --><div class="wp-block-button"><a class="wp-block-button__link has-neutral-100-color has-neutral-900-background-color has-text-color has-background wp-element-button" href="/contacto/"><?php echo esc_html_x( '¡Comencemos!', 'CTA del paquete Esencial.', 'vicunav' ); ?></a></div><!-- /wp:button --></div><!-- /wp:buttons -->
+				<!-- wp:buttons --><div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"neutral-900","textColor":"neutral-100"} --><div class="wp-block-button"><a class="wp-block-button__link has-neutral-100-color has-neutral-900-background-color has-text-color has-background wp-element-button" href="<?php echo esc_url( vicunav_get_localized_page_url( 'contact' ) ); ?>"><?php echo esc_html_x( '¡Comencemos!', 'CTA del paquete Esencial.', 'vicunav' ); ?></a></div><!-- /wp:button --></div><!-- /wp:buttons -->
 			</div>
 			<!-- /wp:group -->
 		</div>
