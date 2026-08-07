@@ -73,11 +73,14 @@ add_action( 'init', 'vicunav_register_block_stylesheets' );
  * @return array
  */
 function vicunav_preload_lcp_asset( $preloads ) {
-	if ( ! is_front_page() && ! is_page( 'servicios' ) ) {
+	$page_template    = get_page_template_slug( get_queried_object_id() );
+	$is_services_page = in_array( $page_template, array( 'page-servicios', 'page-services-en' ), true );
+
+	if ( ! is_front_page() && ! $is_services_page ) {
 		return $preloads;
 	}
 
-	$hero_asset = is_page( 'servicios' )
+	$hero_asset = $is_services_page
 		? 'assets/images/services/hero-background.webp'
 		: 'assets/images/hero-vicunav.webp';
 
@@ -87,6 +90,15 @@ function vicunav_preload_lcp_asset( $preloads ) {
 		'type'          => 'image/webp',
 		'fetchpriority' => 'high',
 	);
+
+	if ( $is_services_page ) {
+		$preloads[] = array(
+			'href'        => get_theme_file_uri( 'assets/fonts/bodoni-moda/BodoniModa-Variable.woff2' ),
+			'as'          => 'font',
+			'type'        => 'font/woff2',
+			'crossorigin' => 'anonymous',
+		);
+	}
 
 	return $preloads;
 }

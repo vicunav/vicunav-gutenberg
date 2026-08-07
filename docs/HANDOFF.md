@@ -45,21 +45,23 @@ nada por rutina.
   traducción.
 - #88 añade Home EN en `/en/home/`, relacionada con `/`, con template,
   patterns, header, footer, copy y evidencia versionados.
+- #89 añade Servicios EN en la ruta aprobada, relacionado con `/servicios/`,
+  con nueve variantes localizadas, 17 FAQ, CTA por locale y evidencia completa.
 - El PR #99 actualizó PHP_CodeSniffer a `3.13.6` y cerró el advisory
   CVE-2026-67434 que bloqueaba `composer audit`.
 - No se ha realizado ningún cambio en producción.
 
 ## Siguiente trabajo exacto
 
-Ejecutar [#89: migrar Servicios EN](https://github.com/vicunav/vicunav-gutenberg/issues/89).
+Ejecutar [#90: migrar Contacto EN](https://github.com/vicunav/vicunav-gutenberg/issues/90).
 
 Orden crítico aprobado:
 
 ```text
-#89 Servicios EN → #90 Contacto EN → #91 QA integral
+#90 Contacto EN → #91 QA integral
 ```
 
-Fuentes mínimas para #89:
+Fuentes mínimas para #90:
 
 - `AGENTS.md`;
 - `docs/MULTILINGUAL.md`;
@@ -68,8 +70,9 @@ Fuentes mínimas para #89:
 - `specs/86-multilingual/tasks.md`;
 - `specs/86-multilingual/qa.md`;
 - `specs/86-multilingual/migration-brief.md`;
-- `specs/88-home-en/` como calibración aprobada;
-- inventario español aprobado de Servicios y los patterns/templates que ensambla.
+- `specs/88-home-en/` y `specs/89-servicios-en/` como calibración aprobada;
+- inventario español aprobado de Contacto, ADR 0001 y sus patterns, template y
+  configuración de Contact Form 7.
 
 ## Estado de LocalWP
 

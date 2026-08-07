@@ -38,9 +38,14 @@ desactiva las redirecciones por preferencia del navegador. El estado persistente
 vive en las taxonomías de idioma, relaciones de Polylang y la opción `polylang`
 de la base de datos local; nunca se crea una relación contra Portafolio.
 
-Desde #88, `english_pages` crea y relaciona Home EN en `/en/home/`, le asigna
-`page-home` y puede ejecutarse repetidamente sin duplicar páginas o relaciones.
-Los siguientes issues amplían el mismo contrato para Servicios y Contacto.
+Desde #89, `english_pages` crea y relaciona Home EN y Servicios EN, les asigna
+`page-home` y `page-services-en`, y puede ejecutarse repetidamente sin duplicar
+páginas o relaciones. El siguiente issue amplía el mismo contrato para Contacto.
+
+Servicios EN reutiliza los nueve patterns españoles mediante el catálogo
+`en_US`. Los tres CTA de los paquetes y cierre resuelven Contacto según el
+locale activo. La fuente crítica Bodoni y el hero se precargan en ambas
+plantillas de Servicios para conservar CLS y LCP bajo la misma baseline.
 
 Si WP-CLI carga `wp-load.php` pero devuelve un error de conexión, no se modifica
 el plugin ni `wp-config.php` por inferencia. Se aplican las reglas de socket

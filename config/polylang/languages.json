@@ -36,6 +36,12 @@
       "title": "Home",
       "slug": "home",
       "template": "page-home"
+    },
+    {
+      "source_slug": "servicios",
+      "title": "Website Design for Therapists and Wellness Practices",
+      "slug": "website-design-for-therapists-and-wellness-practices",
+      "template": "page-services-en"
     }
   ]
 }

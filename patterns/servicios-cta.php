@@ -25,7 +25,7 @@
 		<!-- wp:buttons {"className":"vicunav-cta-final__actions","layout":{"type":"flex","justifyContent":"center"}} -->
 		<div class="wp-block-buttons vicunav-cta-final__actions">
 			<!-- wp:button {"backgroundColor":"neutral-400","textColor":"text","fontFamily":"body","fontSize":"body-responsive","style":{"spacing":{"padding":{"left":"var:preset|spacing|60","right":"var:preset|spacing|60"}}}} -->
-			<div class="wp-block-button"><a class="wp-block-button__link has-text-color has-neutral-400-background-color has-text-color has-background has-body-font-family has-body-responsive-font-size has-custom-font-size wp-element-button" href="<?php echo esc_url( home_url( '/contacto/' ) ); ?>" style="padding-right:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60)"><?php echo esc_html_x( '¡Comencemos!', 'Botón del CTA de Servicios.', 'vicunav' ); ?></a></div>
+			<div class="wp-block-button"><a class="wp-block-button__link has-text-color has-neutral-400-background-color has-text-color has-background has-body-font-family has-body-responsive-font-size has-custom-font-size wp-element-button" href="<?php echo esc_url( vicunav_get_localized_page_url( 'contact' ) ); ?>" style="padding-right:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--60)"><?php echo esc_html_x( '¡Comencemos!', 'Botón del CTA de Servicios.', 'vicunav' ); ?></a></div>
 			<!-- /wp:button -->
 		</div>
 		<!-- /wp:buttons -->
