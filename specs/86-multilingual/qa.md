@@ -32,7 +32,7 @@ Responsable: pendiente
 | Criterio | Estado | Evidencia |
 |---|---|---|
 | AC-01 infraestructura y selector | Pending | #87 |
-| AC-02 Home EN | Pending | #88 |
+| AC-02 Home EN | Pass | `docs/qa/evidence/multilingual/88-home-en.md` |
 | AC-03 Servicios EN | Pending | #89 |
 | AC-04 Contacto EN | Pending | #90 |
 | AC-05 QA integral | Pending | #91 |
@@ -42,7 +42,7 @@ Responsable: pendiente
 
 | Superficie | Español | Inglés | Relación/selector | Estado |
 |---|---|---|---|---|
-| Home | `/` | `/en/home/` | Pendiente | Pending |
+| Home | `/` | `/en/home/` | Relación bidireccional | Pass |
 | Servicios | `/servicios/` | `/en/website-design-for-therapists-and-wellness-practices/` | Pendiente | Pending |
 | Contacto | `/contacto/` | `/en/contact/` | Pendiente | Pending |
 | Portafolio | `/portafolio/` | Fuera de alcance | Estado sin traducción por definir en #87 | Pending |

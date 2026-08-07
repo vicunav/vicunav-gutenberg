@@ -29,5 +29,13 @@
     "servicios",
     "portafolio",
     "contacto"
+  ],
+  "english_pages": [
+    {
+      "source_slug": "inicio",
+      "title": "Home",
+      "slug": "home",
+      "template": "page-home"
+    }
   ]
 }

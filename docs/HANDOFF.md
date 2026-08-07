@@ -1,6 +1,6 @@
 # Handoff neutral entre agentes
 
-Última actualización: 2026-08-03
+Última actualización: 2026-08-06
 
 ## Propósito
 
@@ -43,20 +43,23 @@ nada por rutina.
 - #87 deja Polylang Free `3.8.6` activo solo en LocalWP, con `es_ES` sin
   prefijo, `en_US` bajo `/en/` y selector público que oculta destinos sin
   traducción.
-- No se ha iniciado markup ni copy de las páginas inglesas.
+- #88 añade Home EN en `/en/home/`, relacionada con `/`, con template,
+  patterns, header, footer, copy y evidencia versionados.
+- El PR #99 actualizó PHP_CodeSniffer a `3.13.6` y cerró el advisory
+  CVE-2026-67434 que bloqueaba `composer audit`.
 - No se ha realizado ningún cambio en producción.
 
 ## Siguiente trabajo exacto
 
-Ejecutar [#88: migrar Home EN](https://github.com/vicunav/vicunav-gutenberg/issues/88).
+Ejecutar [#89: migrar Servicios EN](https://github.com/vicunav/vicunav-gutenberg/issues/89).
 
 Orden crítico aprobado:
 
 ```text
-#88 Home EN → #89 Servicios EN → #90 Contacto EN → #91 QA integral
+#89 Servicios EN → #90 Contacto EN → #91 QA integral
 ```
 
-Fuentes mínimas para #88:
+Fuentes mínimas para #89:
 
 - `AGENTS.md`;
 - `docs/MULTILINGUAL.md`;
@@ -65,7 +68,8 @@ Fuentes mínimas para #88:
 - `specs/86-multilingual/tasks.md`;
 - `specs/86-multilingual/qa.md`;
 - `specs/86-multilingual/migration-brief.md`;
-- inventario español aprobado de Home y los patterns/templates que ensambla.
+- `specs/88-home-en/` como calibración aprobada;
+- inventario español aprobado de Servicios y los patterns/templates que ensambla.
 
 ## Estado de LocalWP
 

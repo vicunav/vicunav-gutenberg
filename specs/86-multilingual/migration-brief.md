@@ -78,8 +78,8 @@ registrar el motivo en el issue.
 | Entrega | Contenido | Macro desktop | Móvil | Editor | Locale/URLs | Estado |
 |---|---|---|---|---|---|---|
 | #87 infraestructura | N/A | Pending | Pending | Pending | Pending | Ready |
-| #88 Home EN | Pending | Pending | Pending | Pending | Pending | Blocked by #87 |
-| #89 Servicios EN | Pending | Pending | Pending | Pending | Pending | Blocked by #88 |
+| #88 Home EN | Pass | Pass | Pass | Pass | Pass | Pass |
+| #89 Servicios EN | Pending | Pending | Pending | Pending | Pending | Ready after #88 |
 | #90 Contacto EN | Pending | Pending | Pending | Pending | Pending | Blocked by #89 |
 | #91 QA integral | Pending | Pending | Pending | Pending | Pending | Blocked by #87–#90 |
 
@@ -88,6 +88,7 @@ registrar el motivo en el issue.
 | Fecha | Hecho/decisión | Fuente |
 |---|---|---|
 | 2026-08-03 | Polylang Free `3.8.6` | ADR 0002 / #85 |
+| 2026-08-06 | Home EN reutiliza estructura mediante patterns localizados y partes EN | #88 |
 | 2026-08-03 | Español sin prefijo; inglés bajo `/en/` | ADR 0002 |
 | 2026-08-03 | Inventarios españoles son verdad de contenido | Instrucción del proyecto / #86 |
 | 2026-08-03 | Portafolio EN fuera del lote | #86 |

@@ -155,7 +155,7 @@
 	<!-- wp:buttons {"layout":{"type":"flex","justifyContent":"center"}} -->
 	<div class="wp-block-buttons">
 		<!-- wp:button {"backgroundColor":"neutral-400","textColor":"text","fontFamily":"body","fontSize":"body","style":{"spacing":{"padding":{"left":"var:preset|spacing|50","right":"var:preset|spacing|50"}}}} -->
-		<div class="wp-block-button"><a class="wp-block-button__link has-text-color has-neutral-400-background-color has-text-color has-background has-body-font-family has-body-font-size has-custom-font-size wp-element-button" href="<?php echo esc_url( home_url( '/servicios/' ) ); ?>" style="padding-right:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><?php echo esc_html_x( 'Ver paquetes', 'Botón de la sección de proceso.', 'vicunav' ); ?></a></div>
+		<div class="wp-block-button"><a class="wp-block-button__link has-text-color has-neutral-400-background-color has-text-color has-background has-body-font-family has-body-font-size has-custom-font-size wp-element-button" href="<?php echo esc_url( vicunav_get_localized_page_url( 'services' ) ); ?>" style="padding-right:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--50)"><?php echo esc_html_x( 'Ver paquetes', 'Botón de la sección de proceso.', 'vicunav' ); ?></a></div>
 		<!-- /wp:button -->
 	</div>
 	<!-- /wp:buttons -->

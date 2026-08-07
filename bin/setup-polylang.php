@@ -70,6 +70,64 @@ foreach ( $config['spanish_pages'] as $page_slug ) {
 	pll_set_post_language( $page->ID, $config['default_language'] );
 }
 
+foreach ( $config['english_pages'] as $page_config ) {
+	$source_page = get_page_by_path( $page_config['source_slug'], OBJECT, 'page' );
+	$template     = sanitize_key( $page_config['template'] );
+
+	if ( ! $source_page ) {
+		WP_CLI::error( sprintf( 'No existe la página fuente %s.', $page_config['source_slug'] ) );
+	}
+
+	if ( ! is_file( get_theme_file_path( 'templates/' . $template . '.html' ) ) ) {
+		WP_CLI::error( sprintf( 'No existe el template %s.', $template ) );
+	}
+
+	$english_page = get_page_by_path( $page_config['slug'], OBJECT, 'page' );
+
+	if ( ! $english_page ) {
+		$english_page_id = wp_insert_post(
+			array(
+				'post_title'  => $page_config['title'],
+				'post_name'   => $page_config['slug'],
+				'post_status' => 'publish',
+				'post_type'   => 'page',
+			),
+			true
+		);
+
+		if ( is_wp_error( $english_page_id ) ) {
+			WP_CLI::error( $english_page_id->get_error_message() );
+		}
+
+		$english_page = get_post( $english_page_id );
+	} elseif ( pll_get_post_language( $english_page->ID ) && 'en' !== pll_get_post_language( $english_page->ID ) ) {
+		WP_CLI::error( sprintf( 'La página %s ya pertenece a otro idioma.', $page_config['slug'] ) );
+	}
+
+	$updated_page_id = wp_update_post(
+		array(
+			'ID'          => $english_page->ID,
+			'post_title'  => $page_config['title'],
+			'post_name'   => $page_config['slug'],
+			'post_status' => 'publish',
+		),
+		true
+	);
+
+	if ( is_wp_error( $updated_page_id ) ) {
+		WP_CLI::error( $updated_page_id->get_error_message() );
+	}
+
+	pll_set_post_language( $english_page->ID, 'en' );
+	update_post_meta( $english_page->ID, '_wp_page_template', $template );
+	pll_save_post_translations(
+		array(
+			$config['default_language'] => $source_page->ID,
+			'en'                       => $english_page->ID,
+		)
+	);
+}
+
 flush_rewrite_rules();
 
-WP_CLI::success( 'Polylang configurado: es_ES predeterminado sin prefijo y en_US bajo /en/.' );
+WP_CLI::success( 'Polylang configurado: idiomas, páginas inglesas y relaciones sincronizados.' );
