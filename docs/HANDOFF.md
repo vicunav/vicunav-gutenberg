@@ -1,6 +1,6 @@
 # Handoff neutral entre agentes
 
-Última actualización: 2026-08-06
+Última actualización: 2026-09-22
 
 ## Propósito
 
@@ -58,13 +58,21 @@ nada por rutina.
   reservado al flujo de release y no se edita manualmente.
 - El PR #99 actualizó PHP_CodeSniffer a `3.13.6` y cerró el advisory
   CVE-2026-67434 que bloqueaba `composer audit`.
+- El PR #106 cerró #105 y corrigió la geometría de "Así funciona" en el
+  Editor del sitio.
+- El PR #109 cerró #107: el selector de idioma (Polylang) ya no lista el
+  idioma activo como opción, en ambos headers (`hide_current`).
+- El PR #110 cerró #108: `.vicunav-testimonio__card` usa `overflow: visible`
+  en vez de `hidden`, para no recortar contenido superpuesto.
 - No se ha realizado ningún cambio en producción.
 
 ## Siguiente trabajo exacto
 
-No queda otro issue aprobado dentro del lote multidioma. Antes de iniciar una
-nueva migración, seleccionar un issue abierto y construir su contexto mínimo
-desde GitHub y sus specs. Producción continúa fuera de alcance.
+No hay issues abiertos. No queda otro issue aprobado dentro del lote
+multidioma. Antes de iniciar una nueva migración o cambio, crear un issue
+que exprese un solo resultado observable (ver Definition of Ready en
+`CONTRIBUTING.md`) y construir su contexto mínimo desde GitHub y sus specs.
+Producción continúa fuera de alcance.
 
 ## Estado de LocalWP
 
