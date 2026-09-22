@@ -23,7 +23,7 @@
 		var(--wp--preset--spacing--90) + var(--wp--preset--spacing--10)
 	) !important;
 	max-width: var(--wp--custom--layout--testimonial-card) !important;
-	overflow: hidden;
+	overflow: visible;
 	width: 100%;
 }
 
