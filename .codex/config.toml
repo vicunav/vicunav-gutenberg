@@ -1,2 +1,0 @@
-[mcp_servers.qwen-bridge.env]
-QWEN_APPLY_ALLOWED_PATHS = "scratch/qwen,docs/qa/evidence/generated,docs/generated/drafts"

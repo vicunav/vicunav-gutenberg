@@ -29,7 +29,7 @@
 	width: 100%;
 }
 
-.vicunav-proceso__number {
+.vicunav-proceso__step > .vicunav-proceso__number {
 	background: var(--wp--preset--color--neutral-100);
 	left: calc(var(--wp--custom--process--image-column) - var(--wp--preset--spacing--60));
 	margin: 0;
@@ -60,7 +60,7 @@
 		padding: var(--wp--preset--spacing--20);
 	}
 
-	.vicunav-proceso__number {
+	.vicunav-proceso__step > .vicunav-proceso__number {
 		left: calc(var(--wp--preset--spacing--90) - var(--wp--preset--spacing--50));
 	}
 
