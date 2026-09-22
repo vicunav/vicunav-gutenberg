@@ -18,6 +18,6 @@ Claude sin un issue y una decisión aprobada. GitHub, los specs, los ADR y la
 evidencia versionada son la memoria durable; la conversación del agente no lo
 es.
 
-El workflow es el mismo para personas, Codex, Claude Code u otros agentes:
+El workflow es el mismo para personas, Claude Code u otros agentes:
 issue atómico, rama trazable, implementación acotada, QA, PR, checks verdes,
 squash merge y sincronización de `main`.

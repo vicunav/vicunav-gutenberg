@@ -28,7 +28,6 @@ El código existente no invalida una regla superior. Si una regla necesita cambi
 | [MIGRATION_PLAYBOOK.md](MIGRATION_PLAYBOOK.md) | ¿Cómo se reproduce una página con fidelidad sin repetir descubrimiento? |
 | [CONTEXT_EFFICIENCY.md](CONTEXT_EFFICIENCY.md) | ¿Qué contexto es suficiente y cuándo debe ampliarse? |
 | [HANDOFF.md](HANDOFF.md) | ¿Cuál es el estado actual y cómo retoma cualquier agente sin depender del chat? |
-| [QWEN.md](QWEN.md) | ¿Dónde puede escribir Qwen y qué revisión exige su salida? |
 | [SPEC_DRIVEN_DEVELOPMENT.md](SPEC_DRIVEN_DEVELOPMENT.md) | ¿Cómo pasa una intención a implementación verificable? |
 | [WORKFLOW.md](WORKFLOW.md) | ¿Cómo se organiza el trabajo en GitHub y Git? |
 | [QA.md](QA.md) | ¿Qué evidencia demuestra que un cambio está terminado? |
