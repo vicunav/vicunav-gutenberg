@@ -6,8 +6,6 @@ Los cambios notables se documentan aquí. El proyecto usa [Semantic Versioning](
 
 ### Added
 
-- Sandbox de escritura directa para Qwen limitado a scratch, evidencia generada
-  y borradores documentales fuera del runtime del theme.
 - Handoff neutral entre agentes, adaptador delgado para Claude Code y paquete
   SDD del lote multidioma #86–#91.
 - ADR y runbook reproducible para la arquitectura ES/EN con Polylang Free,

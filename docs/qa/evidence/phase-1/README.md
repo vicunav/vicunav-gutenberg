@@ -9,7 +9,7 @@ Responsable: @mariovicunadev
 
 - Referencia de solo lectura: `https://vicunav.com/`
 - Implementación local: `https://vicunav-gutenberg.local/`
-- Navegador: Codex In-app Browser, Chromium, sesión anónima
+- Navegador: navegador integrado del agente, Chromium, sesión anónima
 - Sistema operativo: macOS
 - Viewport: 1440×900 CSS px
 - Zoom: 100 %

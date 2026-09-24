@@ -454,7 +454,7 @@ WordPress agrega el landmark semántico al wrapper de cada `core/template-part`.
 Fecha: 2026-07-25<br>
 Rama: `agent/12-qa-visual`<br>
 Commit base probado: `ab47ba0`<br>
-Entorno: Codex In-app Browser basado en Chromium, macOS, sesión anónima y viewport 1440×900
+Entorno: navegador integrado del agente basado en Chromium, macOS, sesión anónima y viewport 1440×900
 
 | Check | Resultado | Evidencia |
 |---|---|---|

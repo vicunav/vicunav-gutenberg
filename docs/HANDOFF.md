@@ -4,7 +4,7 @@
 
 ## Propósito
 
-Este documento permite retomar el proyecto con Codex, Claude Code u otro agente
+Este documento permite retomar el proyecto con Claude Code u otro agente
 sin depender del historial de una conversación. Es un snapshot operativo; las
 reglas permanentes viven en `AGENTS.md` y la verdad del trabajo vive en GitHub,
 los specs, ADR, commits y evidencia.
@@ -23,8 +23,7 @@ Después:
 1. leer `AGENTS.md` completo;
 2. abrir el issue que se va a ejecutar y confirmar sus dependencias;
 3. leer solo su spec, plan, tareas, QA, brief y dependencias directas;
-4. crear una rama `codex/<issue>-<slug>` o el prefijo equivalente permitido por
-   la herramienta, siempre trazable al mismo issue;
+4. crear una rama `<tipo>/<issue>-<slug>`, siempre trazable al mismo issue;
 5. mantener producción como referencia de solo lectura.
 
 No se continúa sobre una rama ajena o con cambios sin identificar. Si el árbol

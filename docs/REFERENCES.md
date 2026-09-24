@@ -33,14 +33,6 @@
 - [Issue templates](https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository)
 - [GitHub Actions secure use](https://docs.github.com/en/actions/reference/security/secure-use)
 
-## Codex y eficiencia de agentes
-
-- [Use Work efficiently](https://learn.chatgpt.com/docs/prompting#use-work-efficiently)
-- [Custom instructions with AGENTS.md](https://learn.chatgpt.com/docs/agent-configuration/agents-md)
-- [Subagents](https://learn.chatgpt.com/docs/agent-configuration/subagents)
-- [Model selection](https://learn.chatgpt.com/docs/models)
-- [Slash commands in Codex CLI](https://learn.chatgpt.com/docs/developer-commands?surface=cli)
-
 ## Accesibilidad
 
 - [WCAG 2.2, W3C Recommendation](https://www.w3.org/TR/WCAG22/)

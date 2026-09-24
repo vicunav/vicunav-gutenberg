@@ -46,7 +46,7 @@ release.
 - contenido repetido que ya tiene una fuente canónica.
 
 Estas exclusiones son una política de selección, no una razón para crear un
-archivo `.codexignore` no documentado. Los lockfiles permanecen versionados:
+archivo de ignore no documentado. Los lockfiles permanecen versionados:
 normalmente no se leen, pero sí se revisan cuando cambia una dependencia porque
 protegen reproducibilidad y auditoría.
 
@@ -143,7 +143,7 @@ cuando el beneficio de paralelismo supera el costo de duplicar contexto. Los
 subagentes no son una estrategia automática de ahorro: cada uno consume su
 propio contexto y herramientas.
 
-En Codex CLI, `/status` y `/usage` permiten inspeccionar sesión y consumo. Son
+En Claude Code, `/context` y `/usage` permiten inspeccionar sesión y consumo. Son
 controles opcionales del operador, no quality gates ni recordatorios que deban
 interrumpir cada ronda de pruebas.
 
