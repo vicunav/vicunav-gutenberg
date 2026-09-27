@@ -37,8 +37,7 @@ The full rules are in [AGENTS.md](AGENTS.md) and in the [project Constitution](d
 The LocalWP installation consumes this repository through a symlink:
 
 ```text
-/Users/vicunav/Local Sites/vicunav-gutenberg/app/public/wp-content/themes/vicunav
-  → /Users/vicunav/Documents/Codex/vicunav/vicunav-gutenberg
+<LocalWP site>/app/public/wp-content/themes/vicunav → <ruta-del-repositorio>/vicunav-gutenberg
 ```
 
 Site: <https://vicunav-gutenberg.local/>

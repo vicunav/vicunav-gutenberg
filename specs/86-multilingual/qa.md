@@ -2,7 +2,7 @@
 
 Issues: #86 y #91
 
-Commit probado: rama `codex/91-qa-multilingual`; CI confirma el head del PR
+Commit probado: PR #103 (rama de QA de multidioma); CI confirma el head del PR
 
 Fecha: 2026-08-06
 
